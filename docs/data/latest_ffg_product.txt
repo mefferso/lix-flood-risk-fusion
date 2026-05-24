@@ -1,0 +1,395 @@
+
+
+  
+        
+    
+    
+    Iowa Environmental Mesonet
+    
+    
+
+    
+    
+    
+    
+
+    
+    
+    
+    
+    
+    
+    
+        
+
+    
+    
+    
+    
+    
+    
+    
+    
+  
+
+  
+    Skip to main content
+
+
+
+    
+        
+            
+                
+                    
+                
+            
+            
+            
+                
+                    
+                
+            
+            
+            
+                
+                
+                    
+                    Primary navigation
+                
+            
+        
+        
+        
+            
+                contact us
+                disclaimer
+                apps
+            
+        
+    
+
+
+
+
+    
+        
+            
+                
+                    Iowa State University
+                    Iowa Environmental Mesonet
+                
+            
+            
+            
+                
+                    
+                        
+                    
+                
+                
+                
+                    
+                        contact us
+                        disclaimer
+                        apps
+                    
+                
+            
+        
+    
+
+
+
+
+
+    
+        
+        
+            
+        
+        
+    
+    
+            
+                
+                     Home resources 
+                        
+Iowa Atmospheric Observatory
+Iowa Environmental Mesonet
+CoCoRaHS
+Daily Erosion Project
+Weather.IM Project
+                        
+                    
+AppsApplication Index
+Automated Data Plotting
+Climodat
+Climodat Monitor
+IEM Explorer
+Hourly Precip
+Interactive Radar
+Pest Maps + Forecasting
+Sortable Currents
+Time Machine
+Wind Roses
+
+AreasAg Weather/Climate Info
+Archive Mainpage
+Climate Mainpage
+Current Mainpage
+Drought
+GIS Mainpage
+NWS Mainpage
+Severe Weather Mainpage
+
+DatasetsDaily Climatology
+Daily Observations
+Dataset Documentation
+IEM Reanalysis
+Model Output Statistics
+NEXRAD Mosaic
+PIREP - Pilot Reports
+Roads Mainpage
+RADAR & Satellite
+Rainfall Data
+Sounding Archive
+Soil Moisture Satellite
+
+InfoInfo Mainpage
+Daily Features
+Links
+News
+Presentations
+Referenced By
+Station Data and Metadata
+Quality Control
+Variables
+
+NetworksNetwork Tables
+ASOS/AWOS Airports
+CoCoRaHS - Citizen Science
+DCP/HADS/SHEF - Hydrological
+NWS COOP - Daily Climate
+ISU Soil Moisture
+NLAE Flux
+RWIS - Roadway Weather
+SCAN - NRCS Soil Climate
+Other
+US Climate Reference
+
+NWS DataNWS Mainpage
+Local Storm Report App
+IEM Cow (SBW Verification)
+IEM Raccoon (SBW Powerpoints)
+River Summary
+Satellite Data
+Search for Warnings
+Special Weather Statement (SPS) Search
+SPC Convective Outlook / MCD Search
+SPC Watches
+Text Archives Mainpage
+Text Listing by WFO/Center/Product
+Text by Product ID
+VTEC Browser
+
+ServicesAPI Mainpage
+CGI / Bulk Data
+Gibson Ridge Placefiles
+iembot
+JSON Webservices
+LDM
+Max CSV
+OGC Webservices
+RadMap API
+RADAR Services
+
+WebcamsWebcam mainpage
+Build your own lapses
+Cool lapses
+IEM Webcam Viewer
+ISU Campus Webcams
+Recent lapses
+Still images
+
+                
+            
+            
+                
+                    
+                        
+                            Home
+                        
+                        
+                            
+Iowa Atmospheric Observatory
+Iowa Environmental Mesonet
+CoCoRaHS
+Daily Erosion Project
+Weather.IM Project
+                            
+                        
+                    
+AppsApplication Index
+Automated Data Plotting
+Climodat
+Climodat Monitor
+IEM Explorer
+Hourly Precip
+Interactive Radar
+Pest Maps + Forecasting
+Sortable Currents
+Time Machine
+Wind Roses
+
+AreasAg Weather/Climate Info
+Archive Mainpage
+Climate Mainpage
+Current Mainpage
+Drought
+GIS Mainpage
+NWS Mainpage
+Severe Weather Mainpage
+
+DatasetsDaily Climatology
+Daily Observations
+Dataset Documentation
+IEM Reanalysis
+Model Output Statistics
+NEXRAD Mosaic
+PIREP - Pilot Reports
+Roads Mainpage
+RADAR & Satellite
+Rainfall Data
+Sounding Archive
+Soil Moisture Satellite
+
+InfoInfo Mainpage
+Daily Features
+Links
+News
+Presentations
+Referenced By
+Station Data and Metadata
+Quality Control
+Variables
+
+NetworksNetwork Tables
+ASOS/AWOS Airports
+CoCoRaHS - Citizen Science
+DCP/HADS/SHEF - Hydrological
+NWS COOP - Daily Climate
+ISU Soil Moisture
+NLAE Flux
+RWIS - Roadway Weather
+SCAN - NRCS Soil Climate
+Other
+US Climate Reference
+
+NWS DataNWS Mainpage
+Local Storm Report App
+IEM Cow (SBW Verification)
+IEM Raccoon (SBW Powerpoints)
+River Summary
+Satellite Data
+Search for Warnings
+Special Weather Statement (SPS) Search
+SPC Convective Outlook / MCD Search
+SPC Watches
+Text Archives Mainpage
+Text Listing by WFO/Center/Product
+Text by Product ID
+VTEC Browser
+
+ServicesAPI Mainpage
+CGI / Bulk Data
+Gibson Ridge Placefiles
+iembot
+JSON Webservices
+LDM
+Max CSV
+OGC Webservices
+RadMap API
+RADAR Services
+
+WebcamsWebcam mainpage
+Build your own lapses
+Cool lapses
+IEM Webcam Viewer
+ISU Campus Webcams
+Recent lapses
+Still images
+
+                
+            
+        
+    
+
+
+  
+    NWS Text ProductsFFGORNNational Weather Service Text ProductAFOS product FFGORNDates interpreted at 00:00 UTCSorry, could not find product.  
+
+
+    
+        
+
+            
+            
+                
+                    
+                    College of Ag
+                    Department of Agronomy
+                
+            
+
+            
+            
+                Contact
+                
+                    Department of Agronomy
+
+                    716 Farm House Ln
+
+                    Ames, IA 50011
+                
+                akrherz@iastate.edu
+
+            
+
+            
+            
+                Social media
+                
+                 Facebook
+                 Twitter
+                 Github
+                 YouTube
+                 RSS
+                
+            
+
+            
+            
+                Legal
+                Copyright © 2001-2026
+
+                                Iowa State University
+
+                                of Science and Technology
+
+                                All rights reserved.
+                
+                    Non-discrimination Policy
+                    Privacy Policy
+                    Digital Access & Accessibility
+                
+            
+
+        
+    
+
+    
+    
+
+      
+

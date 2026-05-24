@@ -1,0 +1,116 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Sample New Orleans metro FFG zone",
+        "ffg_1hr": 2.0,
+        "ffg_3hr": 3.0,
+        "ffg_6hr": 4.0,
+        "source": "placeholder"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -90.55,
+              29.7
+            ],
+            [
+              -89.7,
+              29.7
+            ],
+            [
+              -89.7,
+              30.25
+            ],
+            [
+              -90.55,
+              30.25
+            ],
+            [
+              -90.55,
+              29.7
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Sample Baton Rouge metro FFG zone",
+        "ffg_1hr": 2.2,
+        "ffg_3hr": 3.3,
+        "ffg_6hr": 4.5,
+        "source": "placeholder"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -91.45,
+              30.2
+            ],
+            [
+              -90.85,
+              30.2
+            ],
+            [
+              -90.85,
+              30.75
+            ],
+            [
+              -91.45,
+              30.75
+            ],
+            [
+              -91.45,
+              30.2
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Sample Northshore FFG zone",
+        "ffg_1hr": 2.4,
+        "ffg_3hr": 3.6,
+        "ffg_6hr": 5.0,
+        "source": "placeholder"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -90.5,
+              30.2
+            ],
+            [
+              -89.6,
+              30.2
+            ],
+            [
+              -89.6,
+              30.75
+            ],
+            [
+              -90.5,
+              30.75
+            ],
+            [
+              -90.5,
+              30.2
+            ]
+          ]
+        ]
+      }
+    }
+  ]
+}
