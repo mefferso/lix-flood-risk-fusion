@@ -45,6 +45,15 @@ jobs:
         run: |
           python scripts/make_sample_inputs.py --only-if-missing
 
+      - name: Try fetching real LMRFC FFG
+        continue-on-error: true
+        run: |
+          python scripts/fetch_ffg_orn.py \
+            --out data/ffg/ffg.geojson \
+            --raw-out docs/data/latest_ffg_product.txt \
+            --debug-json docs/data/ffg_parse_debug.json \
+            --states LA,MS
+
       - name: Fuse HREF QPF + FFG + flood-prone areas
         run: |
           python scripts/fuse_flash_flood_risk.py \
@@ -67,7 +76,7 @@ jobs:
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add docs/data/*.geojson docs/data/*.json || true
+          git add docs/data/*.geojson docs/data/*.json docs/data/*.txt data/ffg/ffg.geojson || true
           if git diff --cached --quiet; then
             echo "No generated data changes to commit."
           else
