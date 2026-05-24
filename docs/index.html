@@ -12,9 +12,11 @@
     .topbar { position: absolute; z-index: 1000; top: 12px; left: 54px; right: 12px; background: rgba(15,23,42,.94); border: 1px solid #334155; border-radius: 12px; padding: 12px 14px; box-shadow: 0 6px 20px rgba(0,0,0,.25); }
     .title { font-weight: 800; font-size: 18px; margin: 0; }
     .subtitle { margin-top: 3px; color: #cbd5e1; font-size: 13px; }
-    .panel { position: absolute; z-index: 1000; top: 105px; right: 12px; width: 350px; background: rgba(15,23,42,.94); border: 1px solid #334155; border-radius: 12px; padding: 12px; box-shadow: 0 6px 20px rgba(0,0,0,.25); font-size: 13px; line-height: 1.35; }
+    .panel { position: absolute; z-index: 1000; top: 105px; right: 12px; width: 360px; background: rgba(15,23,42,.94); border: 1px solid #334155; border-radius: 12px; padding: 12px; box-shadow: 0 6px 20px rgba(0,0,0,.25); font-size: 13px; line-height: 1.35; }
     .panel h2 { margin: 0 0 8px 0; font-size: 15px; }
     .row { display: flex; align-items: center; gap: 8px; margin: 5px 0; }
+    .control-row { display: flex; align-items: center; gap: 8px; margin: 7px 0; }
+    .control-row input[type="range"] { flex: 1; }
     .swatch { width: 15px; height: 15px; border-radius: 4px; border: 1px solid rgba(255,255,255,.55); display: inline-block; flex: 0 0 auto; }
     .small { color: #cbd5e1; font-size: 12px; }
     .warn { color: #fcd34d; font-weight: 700; }
@@ -36,6 +38,15 @@
     <div class="row"><span class="swatch" style="background:#38bdf8"></span> FFG input polygons</div>
     <div class="row"><span class="swatch" style="background:#a78bfa"></span> Flood-prone input polygons</div>
     <div class="row"><span class="swatch" style="background:#22c55e"></span> HREF QPF raster overlay</div>
+    <hr style="border-color:#334155">
+    <div class="control-row">
+      <label><input id="hrefRasterToggle" type="checkbox" checked> Show HREF QPF raster</label>
+    </div>
+    <div class="control-row small">
+      <span>QPF opacity</span>
+      <input id="hrefOpacity" type="range" min="0" max="1" step="0.05" value="0.58">
+      <span id="hrefOpacityValue">58%</span>
+    </div>
     <hr style="border-color:#334155">
     <div id="status" class="small">Loading generated data...</div>
     <div class="links small" style="margin-top:8px;">
@@ -124,17 +135,51 @@ function resolveHrefAssetUrl(catalogUrl, rel) {
   return new URL(rel, base).href;
 }
 
+function currentHrefOpacity() {
+  var slider = document.getElementById('hrefOpacity');
+  return slider ? Number(slider.value) : 0.58;
+}
+
+function updateHrefOpacityLabel() {
+  var value = currentHrefOpacity();
+  var label = document.getElementById('hrefOpacityValue');
+  if (label) label.textContent = Math.round(value * 100) + '%';
+}
+
+function syncHrefRasterVisibility() {
+  if (!hrefRasterLayer) return;
+  var toggle = document.getElementById('hrefRasterToggle');
+  var shouldShow = !toggle || toggle.checked;
+  if (shouldShow && !map.hasLayer(hrefRasterLayer)) hrefRasterLayer.addTo(map);
+  if (!shouldShow && map.hasLayer(hrefRasterLayer)) map.removeLayer(hrefRasterLayer);
+  hrefRasterLayer.setOpacity(currentHrefOpacity());
+  if (map.hasLayer(hrefRasterLayer)) hrefRasterLayer.bringToBack();
+}
+
+function wireHrefControls() {
+  var toggle = document.getElementById('hrefRasterToggle');
+  var slider = document.getElementById('hrefOpacity');
+  if (toggle) toggle.addEventListener('change', syncHrefRasterVisibility);
+  if (slider) slider.addEventListener('input', function() {
+    updateHrefOpacityLabel();
+    syncHrefRasterVisibility();
+  });
+  updateHrefOpacityLabel();
+}
+
 function addHrefRaster(manifest, risk) {
   var layer = risk && risk.metadata ? risk.metadata.href_layer : null;
   if (!layer || !layer.rasterUrl || !layer.rasterBounds) return false;
   var b = layer.rasterBounds;
   var bounds = [[b.south, b.west], [b.north, b.east]];
   var rasterUrl = resolveHrefAssetUrl(manifest.href_catalog_url, layer.rasterUrl);
-  hrefRasterLayer = L.imageOverlay(rasterUrl, bounds, { opacity: 0.58, interactive: false }).addTo(map);
+  hrefRasterLayer = L.imageOverlay(rasterUrl, bounds, { opacity: currentHrefOpacity(), interactive: false }).addTo(map);
   layerControl.addOverlay(hrefRasterLayer, 'HREF QPF raster');
-  hrefRasterLayer.bringToBack();
+  syncHrefRasterVisibility();
   return true;
 }
+
+wireHrefControls();
 
 Promise.all([
   getJSON('data/manifest.json'),
@@ -165,7 +210,7 @@ Promise.all([
     'Generated: ' + (manifest.generated_utc || '') + '<br>' +
     'HREF: ' + (manifest.href_period || '') + '<br>' +
     'Run: ' + (manifest.href_run || '') + '<br>' +
-    'HREF raster: ' + (hasHrefRaster ? 'on' : 'not available') + '<br>' +
+    'HREF raster: ' + (hasHrefRaster ? 'available' : 'not available') + '<br>' +
     'Risk polygons: ' + (manifest.risk_feature_count || 0) + '<br>' +
     'Raw cells: ' + (manifest.raw_cell_count || 0) + '<br>' +
     'FFG input polygons: ' + featureCount(ffg) + '<br>' +
