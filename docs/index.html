@@ -12,11 +12,16 @@
     .topbar { position: absolute; z-index: 1000; top: 12px; left: 54px; right: 12px; background: rgba(15,23,42,.94); border: 1px solid #334155; border-radius: 12px; padding: 12px 14px; box-shadow: 0 6px 20px rgba(0,0,0,.25); }
     .title { font-weight: 800; font-size: 18px; margin: 0; }
     .subtitle { margin-top: 3px; color: #cbd5e1; font-size: 13px; }
-    .panel { position: absolute; z-index: 1000; top: 105px; right: 12px; width: 390px; background: rgba(15,23,42,.94); border: 1px solid #334155; border-radius: 12px; padding: 12px; box-shadow: 0 6px 20px rgba(0,0,0,.25); font-size: 13px; line-height: 1.35; }
+    .panel { position: absolute; z-index: 1000; top: 105px; right: 12px; width: 405px; background: rgba(15,23,42,.94); border: 1px solid #334155; border-radius: 12px; padding: 12px; box-shadow: 0 6px 20px rgba(0,0,0,.25); font-size: 13px; line-height: 1.35; }
     .panel h2 { margin: 0 0 8px 0; font-size: 15px; }
     .row { display: flex; align-items: center; gap: 8px; margin: 5px 0; }
     .control-row { display: flex; align-items: center; gap: 8px; margin: 7px 0; }
     .control-row input[type="range"] { flex: 1; }
+    .period-buttons { display: grid; grid-template-columns: repeat(2, 1fr); gap: 6px; margin: 8px 0; }
+    .period-btn { cursor: pointer; border: 1px solid #475569; border-radius: 9px; background: rgba(30,41,59,.85); color: #e2e8f0; padding: 7px 8px; text-align: left; font-size: 12px; }
+    .period-btn.active { border-color: #38bdf8; background: rgba(14,116,144,.75); }
+    .period-btn b { display:block; font-size:12px; }
+    .period-btn span { color:#cbd5e1; font-size:11px; }
     .swatch { width: 15px; height: 15px; border-radius: 4px; border: 1px solid rgba(255,255,255,.55); display: inline-block; flex: 0 0 auto; }
     .small { color: #cbd5e1; font-size: 12px; }
     .tiny { color: #94a3b8; font-size: 11px; }
@@ -33,9 +38,13 @@
   <div id="map"></div>
   <div class="topbar">
     <div class="title">LIX Flood Risk Fusion</div>
-    <div class="subtitle">HREF 6-hour ensemble max QPF x official RFC FFG / local threshold x local flood-prone areas</div>
+    <div class="subtitle">Sequential HREF 6-hour ensemble max QPF x official RFC FFG / local threshold x local flood-prone areas</div>
   </div>
   <div class="panel">
+    <h2>Forecast period</h2>
+    <div id="periodButtons" class="period-buttons"><div class="small">Loading periods...</div></div>
+    <div id="periodNote" class="tiny">FFG and flood-prone layers stay fixed; HREF period changes.</div>
+    <hr style="border-color:#334155">
     <h2>Layers / status</h2>
     <div id="sourceMode" class="sourcebox small">Checking data source...</div>
     <div class="row"><span class="swatch" style="background:#dc2626"></span> Significant: QPF >= 150% of guidance</div>
@@ -58,6 +67,7 @@
     <div id="status" class="small">Loading generated data...</div>
     <div class="links small" style="margin-top:8px;">
       <a href="data/manifest.json">manifest</a>
+      <a href="data/periods_manifest.json">periods</a>
       <a href="data/flash_flood_risk.geojson">risk</a>
       <a href="data/flash_flood_risk_raw_cells.geojson">raw cells</a>
       <a href="data/ffg_prod_arcgis_debug.json">ffg debug</a>
@@ -68,17 +78,17 @@
 
 <script>
 var map = L.map('map', { preferCanvas: true }).setView([30.1, -90.25], 8);
-
-var osm = L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
-  maxZoom: 18,
-  attribution: '&copy; OpenStreetMap contributors'
-}).addTo(map);
-
+var osm = L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', { maxZoom: 18, attribution: '&copy; OpenStreetMap contributors' }).addTo(map);
 var hrefRasterLayer = null;
+var currentManifest = null;
+var periodsManifest = null;
+var ffgData = null;
+var proneData = null;
+var activePeriodIndex = 1;
 
-function fmtIn(value) {
-  return value == null || value === '' ? '' : Number(value).toFixed(2).replace(/\.00$/, '') + ' in';
-}
+function fmtIn(value) { return value == null || value === '' ? '' : Number(value).toFixed(2).replace(/\.00$/, '') + ' in'; }
+function featureCount(fc) { return fc && fc.features ? fc.features.length : 0; }
+function getJSON(url) { return fetch(url, { cache: 'no-store' }).then(function(r){ if(!r.ok) throw new Error(url + ': HTTP ' + r.status); return r.json(); }); }
 
 var riskLayer = L.geoJSON(null, {
   style: function(f) {
@@ -128,44 +138,18 @@ var proneLayer = L.geoJSON(null, {
   }
 });
 
-var layerControl = L.control.layers(
-  { 'OpenStreetMap': osm },
-  { 'Risk polygons': riskLayer, 'Raw risk cells': rawLayer, 'Guidance inputs': ffgLayer, 'Flood-prone inputs': proneLayer },
-  { collapsed: false }
-).addTo(map);
-
-function getJSON(url) {
-  return fetch(url, { cache: 'no-store' }).then(function(r) {
-    if (!r.ok) throw new Error(url + ': HTTP ' + r.status);
-    return r.json();
-  });
-}
-
-function featureCount(fc) {
-  return fc && fc.features ? fc.features.length : 0;
-}
+var layerControl = L.control.layers({ 'OpenStreetMap': osm }, { 'Risk polygons': riskLayer, 'Raw risk cells': rawLayer, 'Guidance inputs': ffgLayer, 'Flood-prone inputs': proneLayer }, { collapsed: false }).addTo(map);
 
 function resolveHrefAssetUrl(catalogUrl, rel) {
   if (!rel) return null;
   if (rel.indexOf('http://') === 0 || rel.indexOf('https://') === 0) return rel;
   var base = catalogUrl.split('/').slice(0, -1).join('/') + '/';
-  if (rel.indexOf('data/') === 0 && base.endsWith('/data/')) {
-    base = base.slice(0, -6) + '/';
-  }
+  if (rel.indexOf('data/') === 0 && base.endsWith('/data/')) base = base.slice(0, -6) + '/';
   return new URL(rel, base).href;
 }
 
-function currentHrefOpacity() {
-  var slider = document.getElementById('hrefOpacity');
-  return slider ? Number(slider.value) : 0.58;
-}
-
-function updateHrefOpacityLabel() {
-  var value = currentHrefOpacity();
-  var label = document.getElementById('hrefOpacityValue');
-  if (label) label.textContent = Math.round(value * 100) + '%';
-}
-
+function currentHrefOpacity() { var slider = document.getElementById('hrefOpacity'); return slider ? Number(slider.value) : 0.58; }
+function updateHrefOpacityLabel() { var label = document.getElementById('hrefOpacityValue'); if (label) label.textContent = Math.round(currentHrefOpacity() * 100) + '%'; }
 function syncHrefRasterVisibility() {
   if (!hrefRasterLayer) return;
   var toggle = document.getElementById('hrefRasterToggle');
@@ -175,26 +159,29 @@ function syncHrefRasterVisibility() {
   hrefRasterLayer.setOpacity(currentHrefOpacity());
   if (map.hasLayer(hrefRasterLayer)) hrefRasterLayer.bringToBack();
 }
-
 function wireHrefControls() {
   var toggle = document.getElementById('hrefRasterToggle');
   var slider = document.getElementById('hrefOpacity');
   if (toggle) toggle.addEventListener('change', syncHrefRasterVisibility);
-  if (slider) slider.addEventListener('input', function() {
-    updateHrefOpacityLabel();
-    syncHrefRasterVisibility();
-  });
+  if (slider) slider.addEventListener('input', function(){ updateHrefOpacityLabel(); syncHrefRasterVisibility(); });
   updateHrefOpacityLabel();
 }
 
-function addHrefRaster(manifest, risk) {
+function removeHrefRaster() {
+  if (!hrefRasterLayer) return;
+  map.removeLayer(hrefRasterLayer);
+  try { layerControl.removeLayer(hrefRasterLayer); } catch(e) {}
+  hrefRasterLayer = null;
+}
+function addHrefRasterForRisk(period, risk) {
+  removeHrefRaster();
   var layer = risk && risk.metadata ? risk.metadata.href_layer : null;
   if (!layer || !layer.rasterUrl || !layer.rasterBounds) return false;
   var b = layer.rasterBounds;
   var bounds = [[b.south, b.west], [b.north, b.east]];
-  var rasterUrl = resolveHrefAssetUrl(manifest.href_catalog_url, layer.rasterUrl);
+  var rasterUrl = resolveHrefAssetUrl(currentManifest.href_catalog_url, layer.rasterUrl);
   hrefRasterLayer = L.imageOverlay(rasterUrl, bounds, { opacity: currentHrefOpacity(), interactive: false }).addTo(map);
-  layerControl.addOverlay(hrefRasterLayer, 'HREF QPF raster');
+  layerControl.addOverlay(hrefRasterLayer, 'HREF QPF raster: ' + (period.href_period || 'selected period'));
   syncHrefRasterVisibility();
   return true;
 }
@@ -205,61 +192,78 @@ function describeSource(ffg) {
   var binEstimated = meta.bin_conversion_applied === true || (meta.value_note || '').toLowerCase().indexOf('bin') >= 0;
   var featureCountText = meta.feature_count == null ? featureCount(ffg) : meta.feature_count;
   var source = meta.source || meta.source_service || 'unknown source';
-  if (official && binEstimated) {
-    return '<span class="badge good">Official FFG: bin-estimated</span><br>' +
-      'Guidance features: ' + featureCountText + '<br>' +
-      'Source: ' + source + '<br>' +
-      '<span class="warn">Values are estimated from published FFG legend bins, not raw continuous raster pixels.</span>';
-  }
-  if (official) {
-    return '<span class="badge good">Official FFG mode</span><br>' +
-      'Guidance features: ' + featureCountText + '<br>Source: ' + source;
-  }
-  return '<span class="badge warn">Local fallback mode</span><br>' +
-    'Guidance features: ' + featureCountText + '<br>' +
-    'Source: ' + source + '<br>' +
-    '<span class="warn">Not official RFC FFG. Local empirical threshold is being used as temporary guidance for fusion testing.</span>';
+  if (official && binEstimated) return '<span class="badge good">Official FFG: bin-estimated</span><br>Guidance features: ' + featureCountText + '<br>Source: ' + source + '<br><span class="warn">Values are estimated from published FFG legend bins, not raw continuous raster pixels.</span>';
+  if (official) return '<span class="badge good">Official FFG mode</span><br>Guidance features: ' + featureCountText + '<br>Source: ' + source;
+  return '<span class="badge warn">Local fallback mode</span><br>Guidance features: ' + featureCountText + '<br>Source: ' + source + '<br><span class="warn">Not official RFC FFG. Local empirical threshold is being used as temporary guidance for fusion testing.</span>';
+}
+
+function renderPeriodButtons() {
+  var holder = document.getElementById('periodButtons');
+  var periods = periodsManifest.periods || [];
+  holder.innerHTML = periods.map(function(p) {
+    return '<button class="period-btn" data-period="' + p.period_index + '"><b>Period ' + p.period_index + '</b><span>' + (p.href_period || '') + '</span><br><span>Risk: ' + p.risk_feature_count + ' / Raw: ' + p.raw_cell_count + '</span></button>';
+  }).join('');
+  holder.querySelectorAll('.period-btn').forEach(function(btn) {
+    btn.addEventListener('click', function(){ loadPeriod(Number(btn.getAttribute('data-period'))); });
+  });
+}
+
+function setActiveButton(periodIndex) {
+  document.querySelectorAll('.period-btn').forEach(function(btn) {
+    btn.classList.toggle('active', Number(btn.getAttribute('data-period')) === periodIndex);
+  });
+}
+
+function loadPeriod(periodIndex) {
+  var period = (periodsManifest.periods || []).find(function(p){ return p.period_index === periodIndex; });
+  if (!period) return;
+  activePeriodIndex = periodIndex;
+  setActiveButton(periodIndex);
+  document.getElementById('status').innerHTML = 'Loading ' + (period.label || ('period ' + periodIndex)) + '...';
+  Promise.all([getJSON(period.risk_url), getJSON(period.raw_url)]).then(function(results) {
+    var risk = results[0];
+    var raw = results[1];
+    riskLayer.clearLayers();
+    rawLayer.clearLayers();
+    riskLayer.addData(risk);
+    rawLayer.addData(raw);
+    var hasHrefRaster = addHrefRasterForRisk(period, risk);
+    if (featureCount(risk)) map.fitBounds(riskLayer.getBounds(), { padding: [25, 25] });
+    var noRisk = (period.risk_feature_count || 0) === 0;
+    document.getElementById('status').innerHTML =
+      '<b>Selected: Period ' + period.period_index + '</b><br>' +
+      'HREF: ' + (period.href_period || '') + '<br>' +
+      'Run: ' + (period.href_run || '') + '<br>' +
+      'Forecast hour: F' + String(period.forecast_hour || '').padStart(2, '0') + '<br>' +
+      'HREF raster: ' + (hasHrefRaster ? 'available' : 'not available') + '<br>' +
+      'Risk polygons: ' + (period.risk_feature_count || 0) + '<br>' +
+      'Raw cells: ' + (period.raw_cell_count || 0) + '<br>' +
+      'Guidance polygons: ' + featureCount(ffgData) + '<br>' +
+      'Flood-prone polygons: ' + featureCount(proneData) +
+      (noRisk ? '<br><br><span class="warn">No highlighted risk areas for this period. Input/debug layers can still be toggled on.</span>' : '');
+  }).catch(function(err) {
+    document.getElementById('status').textContent = 'Period load failed: ' + err.message;
+    console.error(err);
+  });
 }
 
 wireHrefControls();
 
 Promise.all([
   getJSON('data/manifest.json'),
-  getJSON('data/flash_flood_risk.geojson'),
-  getJSON('data/flash_flood_risk_raw_cells.geojson'),
+  getJSON('data/periods_manifest.json'),
   getJSON('data/ffg.geojson').catch(function(){ return {type:'FeatureCollection', features:[]}; }),
   getJSON('data/flood_prone.geojson').catch(function(){ return {type:'FeatureCollection', features:[]}; })
 ]).then(function(results) {
-  var manifest = results[0];
-  var risk = results[1];
-  var raw = results[2];
-  var ffg = results[3];
-  var prone = results[4];
-
-  document.getElementById('sourceMode').innerHTML = describeSource(ffg);
-
-  var hasHrefRaster = addHrefRaster(manifest, risk);
-  riskLayer.addData(risk);
-  rawLayer.addData(raw);
-  ffgLayer.addData(ffg);
-  proneLayer.addData(prone);
-
-  var fitLayer = featureCount(risk) ? riskLayer : featureCount(prone) ? proneLayer : featureCount(ffg) ? ffgLayer : null;
-  if (fitLayer) {
-    map.fitBounds(fitLayer.getBounds(), { padding: [25, 25] });
-  }
-
-  var noRisk = (manifest.risk_feature_count || 0) === 0;
-  document.getElementById('status').innerHTML =
-    'Generated: ' + (manifest.generated_utc || '') + '<br>' +
-    'HREF: ' + (manifest.href_period || '') + '<br>' +
-    'Run: ' + (manifest.href_run || '') + '<br>' +
-    'HREF raster: ' + (hasHrefRaster ? 'available' : 'not available') + '<br>' +
-    'Risk polygons: ' + (manifest.risk_feature_count || 0) + '<br>' +
-    'Raw cells: ' + (manifest.raw_cell_count || 0) + '<br>' +
-    'Guidance polygons: ' + featureCount(ffg) + '<br>' +
-    'Flood-prone polygons: ' + featureCount(prone) +
-    (noRisk ? '<br><br><span class="warn">No highlighted risk areas for this run. Input/debug layers can still be toggled on.</span>' : '');
+  currentManifest = results[0];
+  periodsManifest = results[1];
+  ffgData = results[2];
+  proneData = results[3];
+  document.getElementById('sourceMode').innerHTML = describeSource(ffgData);
+  ffgLayer.addData(ffgData);
+  proneLayer.addData(proneData);
+  renderPeriodButtons();
+  loadPeriod(1);
 }).catch(function(err) {
   document.getElementById('status').textContent = 'Load failed: ' + err.message;
   console.error(err);
