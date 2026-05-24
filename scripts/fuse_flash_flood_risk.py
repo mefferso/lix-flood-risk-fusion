@@ -77,12 +77,43 @@ def get_catalog_base(catalog_url: str) -> str:
     return str(Path(catalog_url).parent) + "/"
 
 
-def value_grid_url(catalog_url: str, rel: str) -> str:
+def href_asset_url(catalog_url: str, rel: str) -> str:
+    """Resolve asset paths from the href-qpf-viewer catalog.
+
+    Important gotcha: href-qpf-viewer publishes catalog.json at:
+
+        .../href-qpf-viewer/data/catalog.json
+
+    but each layer URL inside that catalog is written from the GitHub Pages
+    document root, for example:
+
+        data/value_grids/<layer>.json.gz
+
+    If we naively join that path to the catalog directory, we get the bad URL:
+
+        .../href-qpf-viewer/data/data/value_grids/<layer>.json.gz
+
+    This function treats paths beginning with "data/" as relative to the Pages
+    root instead of relative to catalog.json's own data/ directory.
+    """
     if rel.startswith(("http://", "https://")):
         return rel
+
     if catalog_url.startswith(("http://", "https://")):
-        return urljoin(get_catalog_base(catalog_url), rel)
-    return str(Path(catalog_url).parent / rel)
+        base = get_catalog_base(catalog_url)
+        if rel.startswith("data/") and base.rstrip("/").endswith("/data"):
+            return urljoin(base, "../" + rel)
+        return urljoin(base, rel)
+
+    catalog_path = Path(catalog_url)
+    base_path = catalog_path.parent
+    if rel.startswith("data/") and base_path.name == "data":
+        return str(base_path.parent / rel)
+    return str(base_path / rel)
+
+
+def value_grid_url(catalog_url: str, rel: str) -> str:
+    return href_asset_url(catalog_url, rel)
 
 
 def load_fc(path: str) -> list[dict]:
