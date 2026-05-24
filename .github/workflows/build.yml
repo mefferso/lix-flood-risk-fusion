@@ -104,16 +104,17 @@ jobs:
             --flood-prone-out data/flood_prone/flood_prone.geojson \
             --debug-json docs/data/local_threshold_fallback_debug.json
 
-      - name: Fuse HREF QPF + FFG + flood-prone areas
+      - name: Fuse four HREF QPF periods + FFG + flood-prone areas
         run: |
-          python scripts/fuse_flash_flood_risk.py \
+          python scripts/build_multi_period_risk.py \
             --href-catalog-url https://mefferso.github.io/href-qpf-viewer/data/catalog.json \
             --ffg data/ffg/ffg.geojson \
             --flood-prone data/flood_prone/flood_prone.geojson \
             --duration 6 \
-            --out docs/data/flash_flood_risk.geojson \
-            --raw-out docs/data/flash_flood_risk_raw_cells.geojson \
-            --manifest-out docs/data/manifest.json
+            --period-count 4 \
+            --out-dir docs/data \
+            --manifest-out docs/data/manifest.json \
+            --periods-manifest-out docs/data/periods_manifest.json
 
       - name: Publish debug input layers
         run: |
