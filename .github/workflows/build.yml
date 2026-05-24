@@ -52,7 +52,7 @@ jobs:
           python scripts/fetch_ffg_arcgis.py \
             --out data/ffg/ffg.geojson \
             --debug-json docs/data/ffg_arcgis_debug.json \
-            --bbox -92.75,28.75,-88.25,31.25 \
+            --bbox="-92.75,28.75,-88.25,31.25" \
             --duration 6
 
       - name: Try fetching text FFG fallback
