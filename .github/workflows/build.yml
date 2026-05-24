@@ -44,6 +44,13 @@ jobs:
       - name: Create sample inputs if missing
         run: python scripts/make_sample_inputs.py --only-if-missing
 
+      - name: Probe official OGC FFG sources
+        continue-on-error: true
+        run: |
+          mkdir -p docs/data
+          python scripts/probe_ffg_ogc_sources.py \
+            --out docs/data/ffg_ogc_probe.json
+
       - name: Try fetching real gridded FFG from ArcGIS
         id: fetch_ffg_arcgis
         continue-on-error: true
