@@ -24,7 +24,6 @@ import sys
 from datetime import datetime, timezone
 from pathlib import Path
 from typing import Any
-from urllib.parse import urlencode
 
 import requests
 
@@ -33,18 +32,33 @@ DEFAULT_BBOX = "-92.75,28.75,-88.25,31.25"
 DEFAULT_LAYER_MAP = ""
 
 
+def utc_now() -> str:
+    return datetime.now(timezone.utc).isoformat()
+
+
 def log(msg: str) -> None:
     print(f"[{datetime.now(timezone.utc).strftime('%Y-%m-%d %H:%M:%SZ')}] {msg}", flush=True)
+
+
+def write_json(path: Path, obj: Any) -> None:
+    path.parent.mkdir(parents=True, exist_ok=True)
+    path.write_text(json.dumps(obj, indent=2), encoding="utf-8")
 
 
 def get_json(url: str, params: dict | None = None, timeout: int = 90) -> Any:
     headers = {"User-Agent": "lix-flood-risk-fusion/0.1"}
     r = requests.get(url, params=params, timeout=timeout, headers=headers)
-    r.raise_for_status()
+    debug_url = r.url
+    try:
+        r.raise_for_status()
+    except Exception as e:
+        body = r.text[:1000] if r.text else ""
+        raise RuntimeError(f"HTTP failure for {debug_url}: {e}; response preview={body!r}") from e
     try:
         return r.json()
     except Exception as e:
-        raise RuntimeError(f"Response from {r.url} was not JSON: {e}") from e
+        body = r.text[:1000] if r.text else ""
+        raise RuntimeError(f"Response from {debug_url} was not JSON: {e}; response preview={body!r}") from e
 
 
 def parse_bbox(value: str) -> tuple[float, float, float, float]:
@@ -79,7 +93,7 @@ def duration_score(layer_name: str, duration: int) -> int:
     name = layer_name.lower()
     compact = re.sub(r"[^a-z0-9]+", "", name)
     score = 0
-    if "ffg" in compact or "flashfloodguidance" in compact:
+    if "ffg" in compact or "flashfloodguidance" in compact or "flashflood" in compact:
         score += 5
     patterns = [
         f"{duration}hour",
@@ -93,7 +107,6 @@ def duration_score(layer_name: str, duration: int) -> int:
     for p in patterns:
         if p in compact:
             score += 10
-    # Avoid matching 6 inside 16/60/etc by also checking separated tokens.
     if re.search(rf"\b0?{duration}\s*(?:h|hr|hrs|hour|hours)\b", name):
         score += 10
     return score
@@ -104,11 +117,11 @@ def discover_layer_id(service: dict, duration: int) -> tuple[int | None, list[di
     for layer in service.get("layers", []):
         name = str(layer.get("name") or "")
         score = duration_score(name, duration)
-        if score > 0:
-            candidates.append({"id": layer.get("id"), "name": name, "score": score})
+        candidates.append({"id": layer.get("id"), "name": name, "score": score, "type": layer.get("type")})
     candidates.sort(key=lambda x: x["score"], reverse=True)
-    if candidates:
-        return int(candidates[0]["id"]), candidates
+    positive = [c for c in candidates if c["score"] > 0]
+    if positive:
+        return int(positive[0]["id"]), candidates
     return None, candidates
 
 
@@ -162,7 +175,6 @@ def candidate_value_fields(props: dict, duration: int) -> list[str]:
         for k in keys:
             if k.lower() == exact:
                 preferred.append(k)
-    # Then any numeric-ish field that is not an ID/object field.
     for k in keys:
         lk = k.lower()
         if any(bad in lk for bad in ["objectid", "fid", "shape", "area", "length", "id"]):
@@ -189,7 +201,6 @@ def normalize_features(fc: dict, duration: int, layer_meta: dict, service_url: s
     for field in fields:
         vals = [numeric_value((f.get("properties") or {}).get(field)) for f in features[:100]]
         vals = [v for v in vals if v is not None]
-        # FFG in inches is normally sane in roughly 0-15 inch range. Give room.
         sane = [v for v in vals if 0 <= v <= 25]
         if sane:
             chosen_field = field
@@ -217,9 +228,15 @@ def normalize_features(fc: dict, duration: int, layer_meta: dict, service_url: s
     return out, chosen_field
 
 
-def write_json(path: Path, obj: Any) -> None:
-    path.parent.mkdir(parents=True, exist_ok=True)
-    path.write_text(json.dumps(obj, indent=2), encoding="utf-8")
+def build_debug(args: argparse.Namespace) -> dict[str, Any]:
+    return {
+        "generated_utc": utc_now(),
+        "status": "started",
+        "service_url": args.service_url.rstrip("/"),
+        "bbox_raw": args.bbox,
+        "duration": args.duration,
+        "attempts": [],
+    }
 
 
 def main() -> int:
@@ -232,77 +249,84 @@ def main() -> int:
     ap.add_argument("--layer-map", default=DEFAULT_LAYER_MAP, help="Optional duration:layer_id map, e.g. 1:0,3:1,6:2")
     args = ap.parse_args()
 
-    service_url = args.service_url.rstrip("/")
-    bbox = parse_bbox(args.bbox)
-    layer_map = parse_layer_map(args.layer_map)
-    debug: dict[str, Any] = {
-        "generated_utc": datetime.now(timezone.utc).isoformat(),
-        "service_url": service_url,
-        "bbox": bbox,
-        "duration": args.duration,
-        "attempts": [],
-    }
+    debug = build_debug(args)
+    debug_path = Path(args.debug_json)
 
-    log(f"Reading ArcGIS service metadata: {service_url}")
-    service = service_json(service_url)
-    layers = service.get("layers") or []
-    debug["service_name"] = service.get("mapName") or service.get("name")
-    debug["layers"] = [{"id": l.get("id"), "name": l.get("name"), "type": l.get("type")} for l in layers]
+    try:
+        service_url = args.service_url.rstrip("/")
+        bbox = parse_bbox(args.bbox)
+        layer_map = parse_layer_map(args.layer_map)
+        debug["bbox"] = bbox
+        debug["layer_map"] = layer_map
 
-    layer_id = layer_map.get(args.duration)
-    discovery_candidates = []
-    if layer_id is None:
-        layer_id, discovery_candidates = discover_layer_id(service, args.duration)
-    debug["discovery_candidates"] = discovery_candidates
+        log(f"Reading ArcGIS service metadata: {service_url}")
+        service = service_json(service_url)
+        layers = service.get("layers") or []
+        debug["status"] = "service metadata loaded"
+        debug["service_name"] = service.get("mapName") or service.get("name")
+        debug["layers"] = [{"id": l.get("id"), "name": l.get("name"), "type": l.get("type")} for l in layers]
 
-    if layer_id is None:
-        write_json(Path(args.debug_json), debug)
-        raise RuntimeError(f"Could not discover a {args.duration}-hour FFG layer in ArcGIS service")
+        layer_id = layer_map.get(args.duration)
+        discovery_candidates = []
+        if layer_id is None:
+            layer_id, discovery_candidates = discover_layer_id(service, args.duration)
+        debug["discovery_candidates"] = discovery_candidates
 
-    log(f"Trying ArcGIS layer {layer_id} for {args.duration}-hour FFG")
-    lmeta = layer_json(service_url, layer_id)
-    debug["selected_layer"] = {
-        "id": layer_id,
-        "name": lmeta.get("name"),
-        "type": lmeta.get("type"),
-        "geometryType": lmeta.get("geometryType"),
-        "capabilities": lmeta.get("capabilities"),
-        "fields": [{"name": f.get("name"), "type": f.get("type")} for f in lmeta.get("fields", [])],
-    }
+        if layer_id is None:
+            debug["status"] = "failed: no matching duration layer discovered"
+            write_json(debug_path, debug)
+            raise RuntimeError(f"Could not discover a {args.duration}-hour FFG layer in ArcGIS service")
 
-    fc = query_layer_geojson(service_url, layer_id, bbox)
-    debug["queried_feature_count"] = len(fc.get("features") or [])
-    features, chosen_field = normalize_features(fc, args.duration, {"id": layer_id, "name": lmeta.get("name")}, service_url)
-    debug["chosen_value_field"] = chosen_field
-    debug["normalized_feature_count"] = len(features)
+        log(f"Trying ArcGIS layer {layer_id} for {args.duration}-hour FFG")
+        lmeta = layer_json(service_url, layer_id)
+        debug["selected_layer"] = {
+            "id": layer_id,
+            "name": lmeta.get("name"),
+            "type": lmeta.get("type"),
+            "geometryType": lmeta.get("geometryType"),
+            "capabilities": lmeta.get("capabilities"),
+            "fields": [{"name": f.get("name"), "type": f.get("type")} for f in lmeta.get("fields", [])],
+        }
 
-    if not features:
-        write_json(Path(args.debug_json), debug)
-        raise RuntimeError("ArcGIS FFG service query returned no usable polygon features/values. It may be raster-only or use an unexpected schema.")
+        fc = query_layer_geojson(service_url, layer_id, bbox)
+        debug["queried_feature_count"] = len(fc.get("features") or [])
+        features, chosen_field = normalize_features(fc, args.duration, {"id": layer_id, "name": lmeta.get("name")}, service_url)
+        debug["chosen_value_field"] = chosen_field
+        debug["normalized_feature_count"] = len(features)
 
-    out_fc = {
-        "type": "FeatureCollection",
-        "metadata": {
-            "generated_utc": datetime.now(timezone.utc).isoformat(),
-            "method": "Queried NCEP IDP GIS rfc_gridded_ffg ArcGIS REST MapServer and normalized to FFG GeoJSON",
-            "source_service": service_url,
-            "source_layer_id": layer_id,
-            "source_layer_name": lmeta.get("name"),
-            "source_value_field": chosen_field,
-            "duration_hr": args.duration,
-            "feature_count": len(features),
-        },
-        "features": features,
-    }
-    write_json(Path(args.out), out_fc)
-    write_json(Path(args.debug_json), debug)
-    log(f"Wrote {args.out} with {len(features)} feature(s)")
-    return 0
+        if not features:
+            debug["status"] = "failed: no usable features or values returned"
+            write_json(debug_path, debug)
+            raise RuntimeError("ArcGIS FFG service query returned no usable polygon features/values. It may be raster-only or use an unexpected schema.")
+
+        out_fc = {
+            "type": "FeatureCollection",
+            "metadata": {
+                "generated_utc": utc_now(),
+                "method": "Queried NCEP IDP GIS rfc_gridded_ffg ArcGIS REST MapServer and normalized to FFG GeoJSON",
+                "source_service": service_url,
+                "source_layer_id": layer_id,
+                "source_layer_name": lmeta.get("name"),
+                "source_value_field": chosen_field,
+                "duration_hr": args.duration,
+                "feature_count": len(features),
+            },
+            "features": features,
+        }
+        debug["status"] = "success"
+        write_json(Path(args.out), out_fc)
+        write_json(debug_path, debug)
+        log(f"Wrote {args.out} with {len(features)} feature(s)")
+        return 0
+
+    except Exception as e:
+        debug["generated_utc"] = utc_now()
+        debug["status"] = "failed"
+        debug["error"] = str(e)
+        write_json(debug_path, debug)
+        print(f"ERROR: {e}", file=sys.stderr)
+        return 1
 
 
 if __name__ == "__main__":
-    try:
-        raise SystemExit(main())
-    except Exception as e:
-        print(f"ERROR: {e}", file=sys.stderr)
-        raise
+    raise SystemExit(main())
