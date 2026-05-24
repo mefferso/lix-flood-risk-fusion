@@ -1,0 +1,107 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Sample flood-prone New Orleans / Jefferson / St Bernard",
+        "susceptibility": "high"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -90.35,
+              29.78
+            ],
+            [
+              -89.78,
+              29.78
+            ],
+            [
+              -89.78,
+              30.08
+            ],
+            [
+              -90.35,
+              30.08
+            ],
+            [
+              -90.35,
+              29.78
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Sample flood-prone Baton Rouge",
+        "susceptibility": "moderate"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -91.25,
+              30.33
+            ],
+            [
+              -90.95,
+              30.33
+            ],
+            [
+              -90.95,
+              30.58
+            ],
+            [
+              -91.25,
+              30.58
+            ],
+            [
+              -91.25,
+              30.33
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Sample flood-prone Slidell / Pearl River",
+        "susceptibility": "moderate"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -90.05,
+              30.15
+            ],
+            [
+              -89.62,
+              30.15
+            ],
+            [
+              -89.62,
+              30.45
+            ],
+            [
+              -90.05,
+              30.45
+            ],
+            [
+              -90.05,
+              30.15
+            ]
+          ]
+        ]
+      }
+    }
+  ]
+}
