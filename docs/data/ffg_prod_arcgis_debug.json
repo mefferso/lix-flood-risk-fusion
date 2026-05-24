@@ -1,0 +1,126 @@
+{
+  "generated_utc": "2026-05-24T17:45:05.702021+00:00",
+  "status": "success",
+  "service_url": "https://mapservices.weather.noaa.gov/raster/rest/services/precip/rfc_gridded_ffg/MapServer",
+  "duration": 6,
+  "mosaic_layer_id": 8,
+  "image_layer_id": 11,
+  "bbox": [
+    -92.75,
+    28.75,
+    -88.25,
+    31.25
+  ],
+  "step_deg": 0.1315587028960544,
+  "rows": 20,
+  "cols": 35,
+  "attempted_points": 700,
+  "value_fields_seen": {
+    "Classify.Class value": 401
+  },
+  "sample_errors": [],
+  "service_name": "Flash Flood Guidance",
+  "layers": [
+    {
+      "id": 0,
+      "name": "Flash Flood Guidance 01 Hour",
+      "type": "Mosaic Layer"
+    },
+    {
+      "id": 1,
+      "name": "Boundary",
+      "type": "Feature Layer"
+    },
+    {
+      "id": 2,
+      "name": "Footprint",
+      "type": "Feature Layer"
+    },
+    {
+      "id": 3,
+      "name": "Image",
+      "type": "Raster Layer"
+    },
+    {
+      "id": 4,
+      "name": "Flash Flood Guidance 03 Hour",
+      "type": "Mosaic Layer"
+    },
+    {
+      "id": 5,
+      "name": "Boundary",
+      "type": "Feature Layer"
+    },
+    {
+      "id": 6,
+      "name": "Footprint",
+      "type": "Feature Layer"
+    },
+    {
+      "id": 7,
+      "name": "Image",
+      "type": "Raster Layer"
+    },
+    {
+      "id": 8,
+      "name": "Flash Flood Guidance 06 Hour",
+      "type": "Mosaic Layer"
+    },
+    {
+      "id": 9,
+      "name": "Boundary",
+      "type": "Feature Layer"
+    },
+    {
+      "id": 10,
+      "name": "Footprint",
+      "type": "Feature Layer"
+    },
+    {
+      "id": 11,
+      "name": "Image",
+      "type": "Raster Layer"
+    },
+    {
+      "id": 12,
+      "name": "Flash Flood Guidance 12 Hour",
+      "type": "Mosaic Layer"
+    },
+    {
+      "id": 13,
+      "name": "Boundary",
+      "type": "Feature Layer"
+    },
+    {
+      "id": 14,
+      "name": "Footprint",
+      "type": "Feature Layer"
+    },
+    {
+      "id": 15,
+      "name": "Image",
+      "type": "Raster Layer"
+    },
+    {
+      "id": 16,
+      "name": "Flash Flood Guidance 24 Hour",
+      "type": "Mosaic Layer"
+    },
+    {
+      "id": 17,
+      "name": "Boundary",
+      "type": "Feature Layer"
+    },
+    {
+      "id": 18,
+      "name": "Footprint",
+      "type": "Feature Layer"
+    },
+    {
+      "id": 19,
+      "name": "Image",
+      "type": "Raster Layer"
+    }
+  ],
+  "feature_count": 401
+}
