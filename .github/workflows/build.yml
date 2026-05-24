@@ -67,9 +67,14 @@ jobs:
             --debug-json docs/data/ffg_parse_debug.json \
             --states LA,MS
 
-      - name: Write FFG fallback debug output
+      - name: Use local empirical threshold fallback
         if: steps.fetch_ffg_arcgis.outcome == 'failure' && steps.fetch_ffg_text.outcome == 'failure'
-        run: python scripts/write_ffg_fallback_debug.py
+        run: |
+          python scripts/write_ffg_fallback_debug.py --reason "live FFG unavailable; using local empirical threshold fallback"
+          python scripts/fetch_local_threshold_fallback.py \
+            --out data/ffg/ffg.geojson \
+            --flood-prone-out data/flood_prone/flood_prone.geojson \
+            --debug-json docs/data/local_threshold_fallback_debug.json
 
       - name: Fuse HREF QPF + FFG + flood-prone areas
         run: |
@@ -93,7 +98,7 @@ jobs:
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add docs/data/*.geojson docs/data/*.json docs/data/*.txt data/ffg/ffg.geojson || true
+          git add docs/data/*.geojson docs/data/*.json docs/data/*.txt data/ffg/ffg.geojson data/flood_prone/flood_prone.geojson || true
           if git diff --cached --quiet; then
             echo "No generated data changes to commit."
           else
