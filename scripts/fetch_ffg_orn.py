@@ -1,9 +1,9 @@
 #!/usr/bin/env python3
-"""Fetch and normalize LMRFC county/parish Flash Flood Guidance.
+"""Fetch and normalize county/parish Flash Flood Guidance.
 
 This is intentionally conservative:
-- Try the NWS API first for the latest FFG product from location ORN.
-- Fall back to the IEM AFOS text-product endpoint.
+- Try the NWS API for multiple candidate FFG source locations.
+- Fall back to the IEM AFOS text-product endpoint for multiple candidate PILs.
 - Parse county/parish rows with 1/3/6 hour FFG values.
 - Join parsed rows to county/parish polygons from a public county GeoJSON.
 
@@ -25,8 +25,8 @@ from typing import Any
 import requests
 
 DEFAULT_PRODUCT_TYPE = "FFG"
-DEFAULT_LOCATION = "ORN"
-DEFAULT_PIL = "FFGORN"
+DEFAULT_LOCATIONS = "ORN,LIX,JAN,LCH,SHV,MOB,MEG,BMX"
+DEFAULT_PILS = "FFGORN,FFGLIX,FFGJAN,FFGLCH,FFGSHV,FFGMOB,FFGMEG,FFGBMX"
 DEFAULT_COUNTIES_URL = "https://raw.githubusercontent.com/plotly/datasets/master/geojson-counties-fips.json"
 STATE_FIPS = {"LA": "22", "MS": "28", "AL": "01"}
 
@@ -93,25 +93,34 @@ def fetch_from_iem(pil: str) -> tuple[str, dict]:
     text = strip_basic_html(get_text(url))
     if not text.strip():
         raise RuntimeError("IEM AFOS endpoint returned empty text")
+    if "Sorry, could not find product" in text:
+        raise RuntimeError(f"IEM AFOS could not find {pil}")
     meta = {"source": "IEM AFOS", "product_url": url, "pil": pil}
     return text, meta
 
 
-def fetch_ffg_text(product_type: str, location: str, pil: str) -> tuple[str, dict]:
-    errors = []
-    try:
-        log(f"Fetching latest {product_type}/{location} from api.weather.gov")
-        return fetch_from_weather_api(product_type, location)
-    except Exception as e:
-        errors.append(f"NWS API: {e}")
-        log(f"NWS API fetch failed: {e}")
+def split_csv(value: str) -> list[str]:
+    return [x.strip().upper() for x in value.split(",") if x.strip()]
 
-    try:
-        log(f"Fetching latest {pil} from IEM AFOS")
-        return fetch_from_iem(pil)
-    except Exception as e:
-        errors.append(f"IEM: {e}")
-        log(f"IEM fetch failed: {e}")
+
+def fetch_ffg_text(product_type: str, locations: list[str], pils: list[str]) -> tuple[str, dict]:
+    errors = []
+
+    for location in locations:
+        try:
+            log(f"Fetching latest {product_type}/{location} from api.weather.gov")
+            return fetch_from_weather_api(product_type, location)
+        except Exception as e:
+            errors.append(f"NWS API {product_type}/{location}: {e}")
+            log(f"NWS API fetch failed for {product_type}/{location}: {e}")
+
+    for pil in pils:
+        try:
+            log(f"Fetching latest {pil} from IEM AFOS")
+            return fetch_from_iem(pil)
+        except Exception as e:
+            errors.append(f"IEM {pil}: {e}")
+            log(f"IEM fetch failed for {pil}: {e}")
 
     raise RuntimeError("Could not fetch FFG text product. " + " | ".join(errors))
 
@@ -156,19 +165,11 @@ def parse_ffg_rows(product_text: str) -> list[dict]:
         line = raw_line.rstrip()
         if not line.strip():
             continue
-        upper = line.upper()
-
-        if any(skip in upper for skip in ["FLASH FLOOD GUIDANCE", "NATIONAL WEATHER", "INCHES", "VALID", "ISSUED", "COUNTY", "PARISH"]):
-            # Header lines sometimes include the word county/parish; still allow them
-            # through below only if they contain a clear name plus at least 3 values.
-            pass
-
         matches = list(float_re.finditer(line))
         if len(matches) < 3:
             continue
 
-        # Use the final 3+ numeric tokens as guidance values. Product tables often
-        # include exactly 1/3/6hr, and some include 12/24hr after those.
+        # Use the first 3 numeric values after the area name as 1/3/6 hr guidance.
         vals = [parse_float_token(m.group(0)) for m in matches]
         vals = [v for v in vals if v is not None]
         if len(vals) < 3:
@@ -178,7 +179,6 @@ def parse_ffg_rows(product_text: str) -> list[dict]:
         area_raw = cleanup_area_name(line[:first_num])
         area_norm = norm_name(area_raw)
 
-        # Avoid parsing headers or station/product codes as fake counties.
         if not area_norm or len(area_norm) < 3:
             continue
         if area_norm in {"HR", "HOUR", "HOURS", "BASIN", "AREA", "STATE", "COUNTY", "PARISH"}:
@@ -255,6 +255,7 @@ def join_rows_to_counties(rows: list[dict], counties: list[dict], meta: dict) ->
                 "ffg_6hr": row["ffg_6hr"],
                 "source": meta.get("source"),
                 "source_product": meta.get("pil") or meta.get("product_type"),
+                "source_location": meta.get("location"),
                 "source_url": meta.get("product_url"),
                 "issue_time": meta.get("issue_time"),
                 "raw_ffg_line": row["line"],
@@ -272,8 +273,8 @@ def main() -> int:
     ap = argparse.ArgumentParser()
     ap.add_argument("--out", default="data/ffg/ffg.geojson")
     ap.add_argument("--product-type", default=DEFAULT_PRODUCT_TYPE)
-    ap.add_argument("--location", default=DEFAULT_LOCATION)
-    ap.add_argument("--pil", default=DEFAULT_PIL)
+    ap.add_argument("--locations", default=DEFAULT_LOCATIONS)
+    ap.add_argument("--pils", default=DEFAULT_PILS)
     ap.add_argument("--counties-url", default=DEFAULT_COUNTIES_URL)
     ap.add_argument("--states", default="LA,MS")
     ap.add_argument("--raw-out", default="docs/data/latest_ffg_product.txt")
@@ -281,7 +282,9 @@ def main() -> int:
     args = ap.parse_args()
 
     states = [s.strip().upper() for s in args.states.split(",") if s.strip()]
-    text, meta = fetch_ffg_text(args.product_type, args.location, args.pil)
+    locations = split_csv(args.locations)
+    pils = split_csv(args.pils)
+    text, meta = fetch_ffg_text(args.product_type, locations, pils)
 
     raw_path = Path(args.raw_out)
     raw_path.parent.mkdir(parents=True, exist_ok=True)
@@ -301,6 +304,8 @@ def main() -> int:
     debug = {
         "generated_utc": datetime.now(timezone.utc).isoformat(),
         "meta": meta,
+        "locations_tried": locations,
+        "pils_tried": pils,
         "parsed_rows": rows,
         "unmatched_rows": unmatched,
         "matched_feature_count": len(features),
