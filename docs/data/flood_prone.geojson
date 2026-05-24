@@ -1,7 +1,7 @@
 {
   "type": "FeatureCollection",
   "metadata": {
-    "generated_utc": "2026-05-24T17:22:16.629218+00:00",
+    "generated_utc": "2026-05-24T17:36:34.562847+00:00",
     "source": "https://raw.githubusercontent.com/mefferso/Flash-Flood-Guidance-Map/main/docs/data/threshold_grid.geojson",
     "method": "Converted local empirical threshold grid points to flood-prone polygons",
     "feature_count": 228
