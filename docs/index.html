@@ -2,25 +2,152 @@
 <html>
 <head>
   <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>LIX Flood Risk Fusion</title>
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css">
+  <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
   <style>
-    body { font-family: Arial, sans-serif; margin: 32px; background: #0f172a; color: #e2e8f0; }
-    a { color: #93c5fd; }
-    code { background: #1e293b; padding: 2px 5px; border-radius: 4px; }
-    .card { max-width: 850px; background: #111827; border: 1px solid #334155; border-radius: 12px; padding: 20px; }
+    html, body { margin: 0; height: 100%; font-family: Arial, sans-serif; background: #0f172a; color: #e2e8f0; }
+    #map { position: absolute; inset: 0; }
+    .topbar { position: absolute; z-index: 1000; top: 12px; left: 54px; right: 12px; background: rgba(15,23,42,.94); border: 1px solid #334155; border-radius: 12px; padding: 12px 14px; box-shadow: 0 6px 20px rgba(0,0,0,.25); }
+    .title { font-weight: 800; font-size: 18px; margin: 0; }
+    .subtitle { margin-top: 3px; color: #cbd5e1; font-size: 13px; }
+    .panel { position: absolute; z-index: 1000; top: 105px; right: 12px; width: 335px; background: rgba(15,23,42,.94); border: 1px solid #334155; border-radius: 12px; padding: 12px; box-shadow: 0 6px 20px rgba(0,0,0,.25); font-size: 13px; line-height: 1.35; }
+    .panel h2 { margin: 0 0 8px 0; font-size: 15px; }
+    .row { display: flex; align-items: center; gap: 8px; margin: 5px 0; }
+    .swatch { width: 15px; height: 15px; border-radius: 4px; border: 1px solid rgba(255,255,255,.55); display: inline-block; flex: 0 0 auto; }
+    .small { color: #cbd5e1; font-size: 12px; }
+    .warn { color: #fcd34d; font-weight: 700; }
+    .links a { color: #93c5fd; margin-right: 8px; }
+    .leaflet-popup-content { font-size: 13px; }
   </style>
 </head>
 <body>
-  <div class="card">
-    <h1>LIX Flood Risk Fusion</h1>
-    <p>HREF 6-hour ensemble max QPF × FFG × local flood-prone areas.</p>
-    <p>The map shell is being staged. For now, the generated outputs are:</p>
-    <ul>
-      <li><a href="data/manifest.json">manifest.json</a></li>
-      <li><a href="data/flash_flood_risk.geojson">flash_flood_risk.geojson</a></li>
-      <li><a href="data/flash_flood_risk_raw_cells.geojson">flash_flood_risk_raw_cells.geojson</a></li>
-    </ul>
-    <p>If the manifest shows <code>risk_feature_count: 0</code>, the current HREF/placeholder FFG/flood-prone overlap did not generate highlighted areas.</p>
+  <div id="map"></div>
+  <div class="topbar">
+    <div class="title">LIX Flood Risk Fusion</div>
+    <div class="subtitle">HREF 6-hour ensemble max QPF x FFG x local flood-prone areas</div>
   </div>
+  <div class="panel">
+    <h2>Layers / status</h2>
+    <div class="row"><span class="swatch" style="background:#dc2626"></span> Significant: QPF >= 150% of FFG</div>
+    <div class="row"><span class="swatch" style="background:#f97316"></span> Probable: QPF >= FFG</div>
+    <div class="row"><span class="swatch" style="background:#facc15"></span> Possible: QPF >= 75% of FFG</div>
+    <div class="row"><span class="swatch" style="background:#38bdf8"></span> FFG input polygons</div>
+    <div class="row"><span class="swatch" style="background:#a78bfa"></span> Flood-prone input polygons</div>
+    <hr style="border-color:#334155">
+    <div id="status" class="small">Loading generated data...</div>
+    <div class="links small" style="margin-top:8px;">
+      <a href="data/manifest.json">manifest</a>
+      <a href="data/flash_flood_risk.geojson">risk geojson</a>
+      <a href="data/flash_flood_risk_raw_cells.geojson">raw cells</a>
+    </div>
+  </div>
+
+<script>
+var map = L.map('map', { preferCanvas: true }).setView([30.1, -90.25], 8);
+
+var osm = L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+  maxZoom: 18,
+  attribution: '&copy; OpenStreetMap contributors'
+}).addTo(map);
+
+var riskLayer = L.geoJSON(null, {
+  style: function(f) {
+    var color = (f.properties && f.properties.color) || '#f97316';
+    return { color: color, weight: 2, opacity: 0.95, fillColor: color, fillOpacity: 0.36 };
+  },
+  onEachFeature: function(f, layer) {
+    var p = f.properties || {};
+    var html = '<b>' + (p.category || 'Risk Area') + '</b><br>' +
+      'Period: ' + (p.href_period || '') + '<br>' +
+      'Run: ' + (p.href_run || '') + '<br>' +
+      'Max QPF: ' + (p.max_qpf_in == null ? '' : p.max_qpf_in + ' in') + '<br>' +
+      'Min FFG: ' + (p.min_ffg_in == null ? '' : p.min_ffg_in + ' in') + '<br>' +
+      'Max QPF/FFG: ' + (p.max_qpf_ffg_ratio == null ? '' : p.max_qpf_ffg_ratio) + '<br>' +
+      'Grid cells: ' + (p.cell_count == null ? '' : p.cell_count);
+    layer.bindPopup(html);
+  }
+}).addTo(map);
+
+var rawLayer = L.geoJSON(null, {
+  style: function(f) {
+    var cat = f.properties ? f.properties.category : '';
+    var color = cat === 'Significant' ? '#dc2626' : cat === 'Probable' ? '#f97316' : '#facc15';
+    return { color: color, weight: 0.5, opacity: 0.45, fillColor: color, fillOpacity: 0.12 };
+  }
+});
+
+var ffgLayer = L.geoJSON(null, {
+  style: { color: '#38bdf8', weight: 2, opacity: 0.8, fillColor: '#38bdf8', fillOpacity: 0.08 },
+  onEachFeature: function(f, layer) {
+    var p = f.properties || {};
+    layer.bindPopup('<b>FFG input</b><br>' + (p.name || '') + '<br>1hr: ' + (p.ffg_1hr || '') + '<br>3hr: ' + (p.ffg_3hr || '') + '<br>6hr: ' + (p.ffg_6hr || ''));
+  }
+}).addTo(map);
+
+var proneLayer = L.geoJSON(null, {
+  style: { color: '#a78bfa', weight: 2, opacity: 0.85, fillColor: '#a78bfa', fillOpacity: 0.12 },
+  onEachFeature: function(f, layer) {
+    var p = f.properties || {};
+    layer.bindPopup('<b>Flood-prone input</b><br>' + (p.name || '') + '<br>' + (p.susceptibility || ''));
+  }
+}).addTo(map);
+
+L.control.layers(
+  { 'OpenStreetMap': osm },
+  { 'Risk polygons': riskLayer, 'Raw risk cells': rawLayer, 'FFG inputs': ffgLayer, 'Flood-prone inputs': proneLayer },
+  { collapsed: false }
+).addTo(map);
+
+function getJSON(url) {
+  return fetch(url, { cache: 'no-store' }).then(function(r) {
+    if (!r.ok) throw new Error(url + ': HTTP ' + r.status);
+    return r.json();
+  });
+}
+
+function featureCount(fc) {
+  return fc && fc.features ? fc.features.length : 0;
+}
+
+Promise.all([
+  getJSON('data/manifest.json'),
+  getJSON('data/flash_flood_risk.geojson'),
+  getJSON('data/flash_flood_risk_raw_cells.geojson'),
+  getJSON('data/ffg.geojson').catch(function(){ return {type:'FeatureCollection', features:[]}; }),
+  getJSON('data/flood_prone.geojson').catch(function(){ return {type:'FeatureCollection', features:[]}; })
+]).then(function(results) {
+  var manifest = results[0];
+  var risk = results[1];
+  var raw = results[2];
+  var ffg = results[3];
+  var prone = results[4];
+
+  riskLayer.addData(risk);
+  rawLayer.addData(raw);
+  ffgLayer.addData(ffg);
+  proneLayer.addData(prone);
+
+  var fitLayer = featureCount(risk) ? riskLayer : featureCount(prone) ? proneLayer : featureCount(ffg) ? ffgLayer : null;
+  if (fitLayer) {
+    map.fitBounds(fitLayer.getBounds(), { padding: [25, 25] });
+  }
+
+  var noRisk = (manifest.risk_feature_count || 0) === 0;
+  document.getElementById('status').innerHTML =
+    'Generated: ' + (manifest.generated_utc || '') + '<br>' +
+    'HREF: ' + (manifest.href_period || '') + '<br>' +
+    'Run: ' + (manifest.href_run || '') + '<br>' +
+    'Risk polygons: ' + (manifest.risk_feature_count || 0) + '<br>' +
+    'Raw cells: ' + (manifest.raw_cell_count || 0) + '<br>' +
+    'FFG input polygons: ' + featureCount(ffg) + '<br>' +
+    'Flood-prone polygons: ' + featureCount(prone) +
+    (noRisk ? '<br><br><span class="warn">No highlighted risk areas for this run. Debug input layers should still display.</span>' : '');
+}).catch(function(err) {
+  document.getElementById('status').textContent = 'Load failed: ' + err.message;
+  console.error(err);
+});
+</script>
 </body>
 </html>
