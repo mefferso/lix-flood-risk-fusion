@@ -56,6 +56,12 @@ jobs:
             --raw-out docs/data/flash_flood_risk_raw_cells.geojson \
             --manifest-out docs/data/manifest.json
 
+      - name: Publish debug input layers
+        run: |
+          mkdir -p docs/data
+          cp data/ffg/ffg.geojson docs/data/ffg.geojson
+          cp data/flood_prone/flood_prone.geojson docs/data/flood_prone.geojson
+
       - name: Commit generated data
         if: github.event_name != 'pull_request'
         run: |
