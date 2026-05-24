@@ -46,13 +46,43 @@ jobs:
           python scripts/make_sample_inputs.py --only-if-missing
 
       - name: Try fetching real LMRFC FFG
-        continue-on-error: true
         run: |
+          mkdir -p docs/data
+          set +e
           python scripts/fetch_ffg_orn.py \
             --out data/ffg/ffg.geojson \
             --raw-out docs/data/latest_ffg_product.txt \
             --debug-json docs/data/ffg_parse_debug.json \
             --states LA,MS
+          status=$?
+          if [ "$status" -ne 0 ]; then
+            echo "FFG fetch/parse failed with exit code $status. Keeping existing data/ffg/ffg.geojson." >&2
+            if [ ! -f docs/data/latest_ffg_product.txt ]; then
+              cat > docs/data/latest_ffg_product.txt <<'TXT'
+FFG fetch/parse failed before a raw text product could be saved.
+The workflow kept the existing data/ffg/ffg.geojson file so the map could still build.
+TXT
+            fi
+            python - <<'PY'
+import json
+from datetime import datetime, timezone
+from pathlib import Path
+p = Path('docs/data/ffg_parse_debug.json')
+if not p.exists():
+    p.parent.mkdir(parents=True, exist_ok=True)
+    p.write_text(json.dumps({
+        'generated_utc': datetime.now(timezone.utc).isoformat(),
+        'status': 'failed before parser debug output was created',
+        'fallback': 'kept existing data/ffg/ffg.geojson',
+        'attempted_sources': [
+            'https://api.weather.gov/products/types/FFG/locations/ORN',
+            'https://mesonet.agron.iastate.edu/wx/afos/p.php?pil=FFGORN'
+        ],
+        'note': 'This file exists so GitHub Pages has a debug artifact even when the live FFG pull fails.'
+    }, indent=2), encoding='utf-8')
+PY
+          fi
+          exit 0
 
       - name: Fuse HREF QPF + FFG + flood-prone areas
         run: |
