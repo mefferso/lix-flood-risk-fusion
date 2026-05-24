@@ -51,8 +51,22 @@ jobs:
           python scripts/probe_ffg_ogc_sources.py \
             --out docs/data/ffg_ogc_probe.json
 
+      - name: Try production RFC gridded FFG MapServer
+        id: fetch_ffg_prod
+        continue-on-error: true
+        run: |
+          mkdir -p docs/data
+          python scripts/fetch_ffg_prod_arcgis.py \
+            --out data/ffg/ffg.geojson \
+            --debug-json docs/data/ffg_prod_arcgis_debug.json \
+            --bbox="-92.75,28.75,-88.25,31.25" \
+            --duration 6 \
+            --step-deg 0.10 \
+            --max-points 650
+
       - name: Try fetching real gridded FFG from ArcGIS
         id: fetch_ffg_arcgis
+        if: steps.fetch_ffg_prod.outcome == 'failure'
         continue-on-error: true
         run: |
           mkdir -p docs/data
@@ -64,7 +78,7 @@ jobs:
 
       - name: Try fetching text FFG fallback
         id: fetch_ffg_text
-        if: steps.fetch_ffg_arcgis.outcome == 'failure'
+        if: steps.fetch_ffg_prod.outcome == 'failure' && steps.fetch_ffg_arcgis.outcome == 'failure'
         continue-on-error: true
         run: |
           mkdir -p docs/data
@@ -75,7 +89,7 @@ jobs:
             --states LA,MS
 
       - name: Use local empirical threshold fallback
-        if: steps.fetch_ffg_arcgis.outcome == 'failure' && steps.fetch_ffg_text.outcome == 'failure'
+        if: steps.fetch_ffg_prod.outcome == 'failure' && steps.fetch_ffg_arcgis.outcome == 'failure' && steps.fetch_ffg_text.outcome == 'failure'
         run: |
           python scripts/write_ffg_fallback_debug.py --reason "live FFG unavailable; using local empirical threshold fallback"
           python scripts/fetch_local_threshold_fallback.py \
