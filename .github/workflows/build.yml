@@ -64,6 +64,13 @@ jobs:
             --step-deg 0.10 \
             --max-points 650
 
+      - name: Convert production FFG class bins
+        if: steps.fetch_ffg_prod.outcome == 'success'
+        run: |
+          python scripts/convert_ffg_bins.py \
+            --path data/ffg/ffg.geojson \
+            --debug-json docs/data/ffg_bin_conversion_debug.json
+
       - name: Try fetching real gridded FFG from ArcGIS
         id: fetch_ffg_arcgis
         if: steps.fetch_ffg_prod.outcome == 'failure'
