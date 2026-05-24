@@ -44,8 +44,20 @@ jobs:
       - name: Create sample inputs if missing
         run: python scripts/make_sample_inputs.py --only-if-missing
 
-      - name: Try fetching real LMRFC FFG
-        id: fetch_ffg
+      - name: Try fetching real gridded FFG from ArcGIS
+        id: fetch_ffg_arcgis
+        continue-on-error: true
+        run: |
+          mkdir -p docs/data
+          python scripts/fetch_ffg_arcgis.py \
+            --out data/ffg/ffg.geojson \
+            --debug-json docs/data/ffg_arcgis_debug.json \
+            --bbox -92.75,28.75,-88.25,31.25 \
+            --duration 6
+
+      - name: Try fetching text FFG fallback
+        id: fetch_ffg_text
+        if: steps.fetch_ffg_arcgis.outcome == 'failure'
         continue-on-error: true
         run: |
           mkdir -p docs/data
@@ -56,7 +68,7 @@ jobs:
             --states LA,MS
 
       - name: Write FFG fallback debug output
-        if: steps.fetch_ffg.outcome == 'failure'
+        if: steps.fetch_ffg_arcgis.outcome == 'failure' && steps.fetch_ffg_text.outcome == 'failure'
         run: python scripts/write_ffg_fallback_debug.py
 
       - name: Fuse HREF QPF + FFG + flood-prone areas
