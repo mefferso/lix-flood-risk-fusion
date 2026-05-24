@@ -1,7 +1,16 @@
 {
-  "generated_utc": "2026-05-24T16:56:56.180937+00:00",
-  "status": "ArcGIS FFG fetch failed before debug output was created",
-  "fallback": "kept existing data/ffg/ffg.geojson",
-  "attempted_source": "https://idpgis.ncep.noaa.gov/arcgis/rest/services/NWS_Forecasts_Guidance_Warnings/rfc_gridded_ffg/MapServer",
-  "note": "This file exists so GitHub Pages has an ArcGIS FFG debug artifact even when the service request fails early."
+  "generated_utc": "2026-05-24T17:00:05.790499+00:00",
+  "status": "failed",
+  "service_url": "https://idpgis.ncep.noaa.gov/arcgis/rest/services/NWS_Forecasts_Guidance_Warnings/rfc_gridded_ffg/MapServer",
+  "bbox_raw": "-92.75,28.75,-88.25,31.25",
+  "duration": 6,
+  "attempts": [],
+  "bbox": [
+    -92.75,
+    28.75,
+    -88.25,
+    31.25
+  ],
+  "layer_map": {},
+  "error": "HTTPSConnectionPool(host='idpgis.ncep.noaa.gov', port=443): Max retries exceeded with url: /arcgis/rest/services/NWS_Forecasts_Guidance_Warnings/rfc_gridded_ffg/MapServer?f=pjson (Caused by NameResolutionError(\"HTTPSConnection(host='idpgis.ncep.noaa.gov', port=443): Failed to resolve 'idpgis.ncep.noaa.gov' ([Errno -5] No address associated with hostname)\"))"
 }
