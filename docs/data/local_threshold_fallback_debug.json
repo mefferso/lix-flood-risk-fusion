@@ -1,0 +1,10 @@
+{
+  "generated_utc": "2026-05-24T17:18:54.754768+00:00",
+  "status": "success",
+  "source": "https://raw.githubusercontent.com/mefferso/Flash-Flood-Guidance-Map/main/docs/data/threshold_grid.geojson",
+  "threshold_feature_count": 228,
+  "flood_prone_feature_count": 228,
+  "skipped_count": 1,
+  "official_ffg": false,
+  "warning": "This fallback is not official RFC FFG. It is a local empirical threshold layer for testing the fusion pipeline."
+}

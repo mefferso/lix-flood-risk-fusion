@@ -1,5 +1,5 @@
 {
-  "generated_utc": "2026-05-24T17:18:01.938908+00:00",
+  "generated_utc": "2026-05-24T17:18:52.552438+00:00",
   "status": "failed: no service returned usable queryable FFG features",
   "bbox": [
     -92.75,
@@ -25,11 +25,11 @@
       "service_url": "https://idpgis.ncep.noaa.gov/arcgis/rest/services/NWS_Forecasts_Guidance_Warnings/rfc_gridded_ffg/MapServer",
       "status": "failed: exception",
       "error": "HTTPSConnectionPool(host='idpgis.ncep.noaa.gov', port=443): Max retries exceeded with url: /arcgis/rest/services/NWS_Forecasts_Guidance_Warnings/rfc_gridded_ffg/MapServer?f=pjson (Caused by NameResolutionError(\"HTTPSConnection(host='idpgis.ncep.noaa.gov', port=443): Failed to resolve 'idpgis.ncep.noaa.gov' ([Errno -5] No address associated with hostname)\"))",
-      "ended_utc": "2026-05-24T17:18:00.882144+00:00"
+      "ended_utc": "2026-05-24T17:18:51.456904+00:00"
     },
     {
       "service_url": "https://mapservices.weather.noaa.gov/raster/rest/services/NWS_Forecasts_Guidance_Warnings/rfc_gridded_ffg/MapServer",
-      "started_utc": "2026-05-24T17:18:00.882505+00:00",
+      "started_utc": "2026-05-24T17:18:51.457318+00:00",
       "status": "failed: no matching duration layer discovered",
       "service_name": null,
       "layer_count": 0,
@@ -38,7 +38,7 @@
     },
     {
       "service_url": "https://mapservices.weather.noaa.gov/vector/rest/services/NWS_Forecasts_Guidance_Warnings/rfc_gridded_ffg/MapServer",
-      "started_utc": "2026-05-24T17:18:01.087246+00:00",
+      "started_utc": "2026-05-24T17:18:51.663478+00:00",
       "status": "failed: no matching duration layer discovered",
       "service_name": null,
       "layer_count": 0,
@@ -47,7 +47,7 @@
     },
     {
       "service_url": "https://mapservices.weather.noaa.gov/eventdriven/rest/services/NWS_Forecasts_Guidance_Warnings/rfc_gridded_ffg/MapServer",
-      "started_utc": "2026-05-24T17:18:01.150338+00:00",
+      "started_utc": "2026-05-24T17:18:51.767681+00:00",
       "status": "failed: no matching duration layer discovered",
       "service_name": null,
       "layer_count": 0,
@@ -56,7 +56,7 @@
     },
     {
       "service_url": "https://mapservices.weather.noaa.gov/raster/rest/services/forecasts/rfc_gridded_ffg/MapServer",
-      "started_utc": "2026-05-24T17:18:01.202541+00:00",
+      "started_utc": "2026-05-24T17:18:51.865657+00:00",
       "status": "failed: no matching duration layer discovered",
       "service_name": null,
       "layer_count": 0,
@@ -65,7 +65,7 @@
     },
     {
       "service_url": "https://mapservices.weather.noaa.gov/vector/rest/services/forecasts/rfc_gridded_ffg/MapServer",
-      "started_utc": "2026-05-24T17:18:01.277653+00:00",
+      "started_utc": "2026-05-24T17:18:51.959058+00:00",
       "status": "failed: no matching duration layer discovered",
       "service_name": null,
       "layer_count": 0,
@@ -74,7 +74,7 @@
     },
     {
       "service_url": "https://mapservices.weather.noaa.gov/raster/rest/services/hydro/rfc_gridded_ffg/MapServer",
-      "started_utc": "2026-05-24T17:18:01.330992+00:00",
+      "started_utc": "2026-05-24T17:18:52.032503+00:00",
       "status": "failed: no matching duration layer discovered",
       "service_name": null,
       "layer_count": 0,
@@ -83,7 +83,7 @@
     },
     {
       "service_url": "https://mapservices.weather.noaa.gov/vector/rest/services/hydro/rfc_gridded_ffg/MapServer",
-      "started_utc": "2026-05-24T17:18:01.379361+00:00",
+      "started_utc": "2026-05-24T17:18:52.109542+00:00",
       "status": "failed: no matching duration layer discovered",
       "service_name": null,
       "layer_count": 0,
@@ -94,7 +94,7 @@
       "service_url": "https://nowcoast.noaa.gov/arcgis/rest/services/nowcoast/guidance_ncep_ffg_time/MapServer",
       "status": "failed: exception",
       "error": "HTTP failure for https://nowcoast.noaa.gov/arcgis/rest/services/nowcoast/guidance_ncep_ffg_time/MapServer?f=pjson: 403 Client Error: Forbidden for url: https://nowcoast.noaa.gov/arcgis/rest/services/nowcoast/guidance_ncep_ffg_time/MapServer?f=pjson; response preview='<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.01 Transitional//EN\" \"http://www.w3.org/TR/html4/loose.dtd\">\\n<HTML><HEAD><META HTTP-EQUIV=\"Content-Type\" CONTENT=\"text/html; charset=iso-8859-1\">\\n<TITLE>ERROR: The request could not be satisfied</TITLE>\\n</HEAD><BODY>\\n<H1>403 ERROR</H1>\\n<H2>The request could not be satisfied. (Request blocked)</H2>\\n<HR noshade size=\"1px\">\\nThis request was blocked, likely due to rate limiting or incorrect URI contents.\\n<BR clear=\"all\">\\n<BR clear=\"all\">\\nNote that as of 4/19/2023 nowCOAST no longer accepts requests to \"arcgis\" or \"layerinfo\" as map services have changed. (<a href=\"https://www.weather.gov/media/notification/pdf_2023_24/scn23-12_nowcoast_aab.pdf\" target=\"_blank\" rel=\"noopener noreferrer\">Service Change Announcement</a>) Please visit <a href=\"https://nowcoast.noaa.gov\" target=\"_blank\" rel=\"noopener noreferrer\">nowcoast.noaa.gov</a> to find our new map services.\\n<BR clear=\"all\">\\n<BR clear=\"all\">\\nWe apologize for the inconvenience. Please send any quest'",
-      "ended_utc": "2026-05-24T17:18:01.937827+00:00"
+      "ended_utc": "2026-05-24T17:18:52.551270+00:00"
     }
   ]
 }
