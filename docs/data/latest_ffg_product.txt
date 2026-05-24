@@ -1,395 +1,84 @@
+084 
+FOUS64 KORN 010042
+FFGLIX
 
 
+Notice: NWS is proposing the termination of this county/zone-based flash flood guidance (FFG) 
+text product. The NWS has transitioned to gridded FFG. 
+
+More information is available at the following link:
+https://www.weather.gov/media/notification/pdfs/scn18-80disc_county_ffgaaa.pdf
+
+Gridded FFG is available at the following ftp site:
+ftp://ftp.wpc.ncep.noaa.gov/workoff/ffg/
+
+If you have any comments or questions please contact:
+Jeff Graschel
+Service Coordination Hydrologist
+Lower Mississippi River Forecast Center
+Slidell, LA 
+jeffrey.graschel@noaa.gov
   
-        
-    
-    
-    Iowa Environmental Mesonet
-    
-    
+                                                                        
+NATIONAL WEATHER SERVICE                                                
+LOWER MISSISSIPPI RIVER FORECAST CENTER, SLIDELL LA                     
+741 PM CDT SUN MAR 31 2019
+                                                                        
+FLASH FLOOD GUIDANCE FOR CWA.....NEW ORLEANS/BATON ROUGE LA             
+                                                                        
+INCHES OF RAINFALL FOR SPECIFIED DURATIONS REQUIRED TO PRODUCE          
+FLASH FLOODING IN ANY SMALL STREAM WITHIN FORECAST ZONES. LOWER         
+AMOUNTS MAY CAUSE FLASH FLOODING IN URBAN OR MOUNTAINOUS AREAS.         
+                                                                        
+.B SIL 190401 Z DH00/DC1904010041 /DUE/PPHCF/PPTCF/PPQCF
+:IDENTIFIERS ARE STATE ID, Z FOR ZONE, NWS-MAR ZONE NUMBER.             
+:                                                                       
+:...STATE     DURATION                                                  
+:IDENT    1HR   3HR   6HR  ZONE NAME
+:======= ====  ====  ====  ====================
+:                                                                       
+:.....LOUISIANA                                                         
+:                                                                       
+LAZ049    3.6/  4.1/  4.9 :ASCENSION
+LAZ056    3.8/  4.2/  4.8 :ASSUMPTION
+LAZ048    3.5/  4.2/  5.2 :E_BATON_ROUGE
+LAZ036    3.4/  4.2/  5.3 :E_FELICIANA
+LAZ046    3.7/  4.2/  5.0 :IBERVILLE
+LAZ061    2.6/  4.0/  5.2 :JEFFERSON (UPPER)
+LAZ068    5.0/  6.4/  7.6 :JEFFERSON (LOWER)
+LAZ059    3.9/  4.4/  5.0 :LAFOURCHE (UPPER)
+LAZ067    3.9/  4.4/  5.1 :LAFOURCHE (LOWER)
+LAZ050    3.8/  4.5/  5.3 :LIVINGSTON
+LAZ062    2.5/  4.0/  5.5 :ORLEANS
+LAZ063    3.5/  4.3/  5.3 :PLAQUEMINES(UPPER)
+LAZ069    3.8/  4.5/  5.4 :PLAQUEMINES(LOWER)
+LAZ034    3.5/  4.2/  5.1 :POINTE_COUPEE
+LAZ064    3.3/  4.3/  5.3 :ST._BERNARD(UPPER)
+LAZ070    3.8/  4.5/  5.3 :ST._BERNARD(LOWER)
+LAZ060    3.8/  4.5/  5.4 :ST._CHARLES
+LAZ037    3.3/  4.2/  5.3 :ST._HELENA
+LAZ057    3.6/  4.1/  4.7 :ST._JAMES
+LAZ058    3.8/  4.3/  5.0 :ST._JOHN_BAPTIST
+LAZ040    3.7/  4.5/  5.4 :ST._TAMMANY
+LAZ071    3.5/  4.4/  5.6 :NORTHERN TANGIPAHOA
+LAZ072    3.7/  4.5/  5.4 :SOUTHERN TANGIPAHOA
+LAZ065    3.8/  4.3/  5.0 :TERREBONNE (UPPER)
+LAZ066    3.8/  4.4/  5.2 :TERREBONNE (LOWER)
+LAZ039    3.8/  4.8/  6.1 :WASHINGTON
+LAZ047    3.3/  4.0/  4.9 :W_BATON_ROUGE
+LAZ035    3.4/  4.2/  5.2 :W_FELICIANA
+:                                                                       
+:.....MISSISSIPPI                                                       
+:                                                                       
+MSZ069    3.1/  4.0/  5.0 :AMITE
+MSZ080    4.2/  5.1/  6.3 :HANCOCK
+MSZ081    4.5/  5.5/  6.9 :HARRISON
+MSZ082    4.7/  5.7/  7.2 :JACKSON
+MSZ077    4.0/  5.0/  6.4 :PEARL_RIVER
+MSZ070    3.3/  4.1/  5.2 :PIKE
+MSZ071    3.5/  4.4/  5.5 :WALTHALL
+MSZ068    3.2/  4.1/  5.2 :WILKINSON
+.END
+$$
 
-    
-    
-    
-    
-
-    
-    
-    
-    
-    
-    
-    
-        
-
-    
-    
-    
-    
-    
-    
-    
-    
-  
-
-  
-    Skip to main content
-
-
-
-    
-        
-            
-                
-                    
-                
-            
-            
-            
-                
-                    
-                
-            
-            
-            
-                
-                
-                    
-                    Primary navigation
-                
-            
-        
-        
-        
-            
-                contact us
-                disclaimer
-                apps
-            
-        
-    
-
-
-
-
-    
-        
-            
-                
-                    Iowa State University
-                    Iowa Environmental Mesonet
-                
-            
-            
-            
-                
-                    
-                        
-                    
-                
-                
-                
-                    
-                        contact us
-                        disclaimer
-                        apps
-                    
-                
-            
-        
-    
-
-
-
-
-
-    
-        
-        
-            
-        
-        
-    
-    
-            
-                
-                     Home resources 
-                        
-Iowa Atmospheric Observatory
-Iowa Environmental Mesonet
-CoCoRaHS
-Daily Erosion Project
-Weather.IM Project
-                        
-                    
-AppsApplication Index
-Automated Data Plotting
-Climodat
-Climodat Monitor
-IEM Explorer
-Hourly Precip
-Interactive Radar
-Pest Maps + Forecasting
-Sortable Currents
-Time Machine
-Wind Roses
-
-AreasAg Weather/Climate Info
-Archive Mainpage
-Climate Mainpage
-Current Mainpage
-Drought
-GIS Mainpage
-NWS Mainpage
-Severe Weather Mainpage
-
-DatasetsDaily Climatology
-Daily Observations
-Dataset Documentation
-IEM Reanalysis
-Model Output Statistics
-NEXRAD Mosaic
-PIREP - Pilot Reports
-Roads Mainpage
-RADAR & Satellite
-Rainfall Data
-Sounding Archive
-Soil Moisture Satellite
-
-InfoInfo Mainpage
-Daily Features
-Links
-News
-Presentations
-Referenced By
-Station Data and Metadata
-Quality Control
-Variables
-
-NetworksNetwork Tables
-ASOS/AWOS Airports
-CoCoRaHS - Citizen Science
-DCP/HADS/SHEF - Hydrological
-NWS COOP - Daily Climate
-ISU Soil Moisture
-NLAE Flux
-RWIS - Roadway Weather
-SCAN - NRCS Soil Climate
-Other
-US Climate Reference
-
-NWS DataNWS Mainpage
-Local Storm Report App
-IEM Cow (SBW Verification)
-IEM Raccoon (SBW Powerpoints)
-River Summary
-Satellite Data
-Search for Warnings
-Special Weather Statement (SPS) Search
-SPC Convective Outlook / MCD Search
-SPC Watches
-Text Archives Mainpage
-Text Listing by WFO/Center/Product
-Text by Product ID
-VTEC Browser
-
-ServicesAPI Mainpage
-CGI / Bulk Data
-Gibson Ridge Placefiles
-iembot
-JSON Webservices
-LDM
-Max CSV
-OGC Webservices
-RadMap API
-RADAR Services
-
-WebcamsWebcam mainpage
-Build your own lapses
-Cool lapses
-IEM Webcam Viewer
-ISU Campus Webcams
-Recent lapses
-Still images
-
-                
-            
-            
-                
-                    
-                        
-                            Home
-                        
-                        
-                            
-Iowa Atmospheric Observatory
-Iowa Environmental Mesonet
-CoCoRaHS
-Daily Erosion Project
-Weather.IM Project
-                            
-                        
-                    
-AppsApplication Index
-Automated Data Plotting
-Climodat
-Climodat Monitor
-IEM Explorer
-Hourly Precip
-Interactive Radar
-Pest Maps + Forecasting
-Sortable Currents
-Time Machine
-Wind Roses
-
-AreasAg Weather/Climate Info
-Archive Mainpage
-Climate Mainpage
-Current Mainpage
-Drought
-GIS Mainpage
-NWS Mainpage
-Severe Weather Mainpage
-
-DatasetsDaily Climatology
-Daily Observations
-Dataset Documentation
-IEM Reanalysis
-Model Output Statistics
-NEXRAD Mosaic
-PIREP - Pilot Reports
-Roads Mainpage
-RADAR & Satellite
-Rainfall Data
-Sounding Archive
-Soil Moisture Satellite
-
-InfoInfo Mainpage
-Daily Features
-Links
-News
-Presentations
-Referenced By
-Station Data and Metadata
-Quality Control
-Variables
-
-NetworksNetwork Tables
-ASOS/AWOS Airports
-CoCoRaHS - Citizen Science
-DCP/HADS/SHEF - Hydrological
-NWS COOP - Daily Climate
-ISU Soil Moisture
-NLAE Flux
-RWIS - Roadway Weather
-SCAN - NRCS Soil Climate
-Other
-US Climate Reference
-
-NWS DataNWS Mainpage
-Local Storm Report App
-IEM Cow (SBW Verification)
-IEM Raccoon (SBW Powerpoints)
-River Summary
-Satellite Data
-Search for Warnings
-Special Weather Statement (SPS) Search
-SPC Convective Outlook / MCD Search
-SPC Watches
-Text Archives Mainpage
-Text Listing by WFO/Center/Product
-Text by Product ID
-VTEC Browser
-
-ServicesAPI Mainpage
-CGI / Bulk Data
-Gibson Ridge Placefiles
-iembot
-JSON Webservices
-LDM
-Max CSV
-OGC Webservices
-RadMap API
-RADAR Services
-
-WebcamsWebcam mainpage
-Build your own lapses
-Cool lapses
-IEM Webcam Viewer
-ISU Campus Webcams
-Recent lapses
-Still images
-
-                
-            
-        
-    
-
-
-  
-    NWS Text ProductsFFGORNNational Weather Service Text ProductAFOS product FFGORNDates interpreted at 00:00 UTCSorry, could not find product.  
-
-
-    
-        
-
-            
-            
-                
-                    
-                    College of Ag
-                    Department of Agronomy
-                
-            
-
-            
-            
-                Contact
-                
-                    Department of Agronomy
-
-                    716 Farm House Ln
-
-                    Ames, IA 50011
-                
-                akrherz@iastate.edu
-
-            
-
-            
-            
-                Social media
-                
-                 Facebook
-                 Twitter
-                 Github
-                 YouTube
-                 RSS
-                
-            
-
-            
-            
-                Legal
-                Copyright © 2001-2026
-
-                                Iowa State University
-
-                                of Science and Technology
-
-                                All rights reserved.
-                
-                    Non-discrimination Policy
-                    Privacy Policy
-                    Digital Access & Accessibility
-                
-            
-
-        
-    
-
-    
-    
-
-      
-
+DUTY FORECASTER:  Kai Roth

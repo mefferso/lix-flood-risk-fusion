@@ -1,10 +1,59 @@
 {
-  "generated_utc": "2026-05-24T16:30:42.149785+00:00",
-  "status": "live FFG fetch or parse failed",
-  "fallback": "kept existing data/ffg/ffg.geojson",
-  "attempted_sources": [
-    "https://api.weather.gov/products/types/FFG/locations/ORN",
-    "https://mesonet.agron.iastate.edu/wx/afos/p.php?pil=FFGORN"
+  "generated_utc": "2026-05-24T16:35:31.152226+00:00",
+  "meta": {
+    "source": "IEM AFOS",
+    "product_url": "https://mesonet.agron.iastate.edu/wx/afos/p.php?pil=FFGLIX",
+    "pil": "FFGLIX"
+  },
+  "locations_tried": [
+    "ORN",
+    "LIX",
+    "JAN",
+    "LCH",
+    "SHV",
+    "MOB",
+    "MEG",
+    "BMX"
   ],
-  "note": "This file exists so GitHub Pages has a debug artifact even when the live FFG pull fails."
+  "pils_tried": [
+    "FFGORN",
+    "FFGLIX",
+    "FFGJAN",
+    "FFGLCH",
+    "FFGSHV",
+    "FFGMOB",
+    "FFGMEG",
+    "FFGBMX"
+  ],
+  "parsed_rows": [
+    {
+      "area_raw": "IDENT",
+      "area_norm": "IDENT",
+      "ffg_1hr": 1.0,
+      "ffg_3hr": 3.0,
+      "ffg_6hr": 6.0,
+      "values": [
+        1.0,
+        3.0,
+        6.0
+      ],
+      "line": ":IDENT    1HR   3HR   6HR  ZONE NAME"
+    }
+  ],
+  "unmatched_rows": [
+    {
+      "area_raw": "IDENT",
+      "area_norm": "IDENT",
+      "ffg_1hr": 1.0,
+      "ffg_3hr": 3.0,
+      "ffg_6hr": 6.0,
+      "values": [
+        1.0,
+        3.0,
+        6.0
+      ],
+      "line": ":IDENT    1HR   3HR   6HR  ZONE NAME"
+    }
+  ],
+  "matched_feature_count": 0
 }
