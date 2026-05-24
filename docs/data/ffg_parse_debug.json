@@ -1,0 +1,10 @@
+{
+  "generated_utc": "2026-05-24T16:30:42.149785+00:00",
+  "status": "live FFG fetch or parse failed",
+  "fallback": "kept existing data/ffg/ffg.geojson",
+  "attempted_sources": [
+    "https://api.weather.gov/products/types/FFG/locations/ORN",
+    "https://mesonet.agron.iastate.edu/wx/afos/p.php?pil=FFGORN"
+  ],
+  "note": "This file exists so GitHub Pages has a debug artifact even when the live FFG pull fails."
+}
