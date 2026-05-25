@@ -1,7 +1,7 @@
 {
   "type": "FeatureCollection",
   "metadata": {
-    "generated_utc": "2026-05-24T22:39:19.036593+00:00",
+    "generated_utc": "2026-05-25T11:01:18.027081+00:00",
     "method": "HREF QPF / FFG ratio intersected with local flood-prone polygons",
     "duration_hr": 6,
     "period_index": 1,
@@ -11,10 +11,10 @@
       "Significant": "qpf/ffg >= 1.50"
     },
     "href_layer": {
-      "id": "2026052412_max_f06_a06",
-      "url": "data/grids/2026052412_max_f06_a06.json.gz",
-      "valueGridUrl": "data/value_grids/2026052412_max_f06_a06.json.gz",
-      "rasterUrl": "data/rasters/2026052412_max_f06_a06.png",
+      "id": "2026052500_max_f06_a06",
+      "url": "data/grids/2026052500_max_f06_a06.json.gz",
+      "valueGridUrl": "data/value_grids/2026052500_max_f06_a06.json.gz",
+      "rasterUrl": "data/rasters/2026052500_max_f06_a06.png",
       "rasterBounds": {
         "south": 24.00002,
         "north": 33.99999,
@@ -22,162 +22,30 @@
         "east": -83.00002
       },
       "maxPoint": {
-        "lat": 26.2053,
-        "lon": -94.7466,
-        "value": 16.169
+        "lat": 28.2795,
+        "lon": -88.8107,
+        "value": 9.862
       },
       "periodKey": "f06_a06_00_06",
       "periodLabel": "F00-F06 (6-hr Ensemble Max QPF)",
       "stepStart": 0,
       "stepEnd": 6,
-      "run": "2026052412",
-      "runLabel": "20260524 12Z",
+      "run": "2026052500",
+      "runLabel": "20260525 00Z",
       "product": "max",
       "productLabel": "Ensemble Max",
       "forecastHour": 6,
       "accumHours": 6,
       "units": "inches",
-      "startTimeUTC": "2026-05-24T12:00:00+00:00",
-      "validTimeUTC": "2026-05-24T18:00:00+00:00",
+      "startTimeUTC": "2026-05-25T00:00:00+00:00",
+      "validTimeUTC": "2026-05-25T06:00:00+00:00",
       "stepRange": "0-6",
       "name": "HREF member-computed Ensemble Max QPF",
-      "sourceFile": "8 member APCP slices",
-      "maxValue": 16.17,
+      "sourceFile": "4 member APCP slices",
+      "maxValue": 9.86,
       "pointCount": 55200,
       "native": false
     }
   },
-  "features": [
-    {
-      "type": "Feature",
-      "properties": {
-        "category": "Possible",
-        "color": "#facc15",
-        "max_qpf_in": 3.618,
-        "min_ffg_in": 4.5,
-        "max_qpf_ffg_ratio": 0.804,
-        "cell_count": 18,
-        "href_layer_id": "2026052412_max_f06_a06",
-        "href_period": "F00-F06 (6-hr Ensemble Max QPF)",
-        "href_run": "20260524 12Z",
-        "valid_time_utc": "2026-05-24T18:00:00+00:00",
-        "part": 1
-      },
-      "geometry": {
-        "type": "Polygon",
-        "coordinates": [
-          [
-            [
-              -89.9482825,
-              30.30174401416122
-            ],
-            [
-              -89.9482825,
-              30.30719062091503
-            ],
-            [
-              -89.9482825,
-              30.31263722766884
-            ],
-            [
-              -89.9482825,
-              30.312637227668844
-            ],
-            [
-              -89.9482825,
-              30.318083834422655
-            ],
-            [
-              -89.9482825,
-              30.323530441176466
-            ],
-            [
-              -89.9482825,
-              30.32353044117647
-            ],
-            [
-              -89.9482825,
-              30.32897704793028
-            ],
-            [
-              -89.94203406250001,
-              30.32897704793028
-            ],
-            [
-              -89.9420340625,
-              30.32897704793028
-            ],
-            [
-              -89.93578562500001,
-              30.32897704793028
-            ],
-            [
-              -89.9295371875,
-              30.32897704793028
-            ],
-            [
-              -89.92328875,
-              30.32897704793028
-            ],
-            [
-              -89.92328875,
-              30.32353044117647
-            ],
-            [
-              -89.92328875,
-              30.323530441176466
-            ],
-            [
-              -89.92328875,
-              30.318083834422655
-            ],
-            [
-              -89.9295371875,
-              30.318083834422655
-            ],
-            [
-              -89.9295371875,
-              30.312637227668844
-            ],
-            [
-              -89.9295371875,
-              30.31263722766884
-            ],
-            [
-              -89.9295371875,
-              30.30719062091503
-            ],
-            [
-              -89.9295371875,
-              30.301744014161216
-            ],
-            [
-              -89.93578562500001,
-              30.301744014161216
-            ],
-            [
-              -89.9420340625,
-              30.301744014161216
-            ],
-            [
-              -89.9420340625,
-              30.296297407407405
-            ],
-            [
-              -89.9482825,
-              30.296297407407405
-            ],
-            [
-              -89.9482825,
-              30.301744014161216
-            ],
-            [
-              -89.9482825,
-              30.30174401416122
-            ]
-          ]
-        ]
-      }
-    }
-  ]
+  "features": []
 }
