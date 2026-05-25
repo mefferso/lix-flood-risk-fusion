@@ -1,7 +1,7 @@
 {
   "type": "FeatureCollection",
   "metadata": {
-    "generated_utc": "2026-05-25T20:17:06.897763+00:00",
+    "generated_utc": "2026-05-25T22:41:35.057233+00:00",
     "method": "HREF QPF / FFG ratio intersected with local flood-prone polygons",
     "duration_hr": 6,
     "period_index": 4,
@@ -52,9 +52,123 @@
       "type": "Feature",
       "properties": {
         "category": "Possible",
+        "qpf_in": 3.473,
+        "ffg_in": 4.5,
+        "qpf_ffg_ratio": 0.772,
+        "duration_hr": 6,
+        "flood_prone": true
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -88.60486843750002,
+              30.693899700435725
+            ],
+            [
+              -88.59862000000001,
+              30.693899700435725
+            ],
+            [
+              -88.59862000000001,
+              30.69934630718954
+            ],
+            [
+              -88.60486843750002,
+              30.69934630718954
+            ],
+            [
+              -88.60486843750002,
+              30.693899700435725
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "category": "Possible",
+        "qpf_in": 3.578,
+        "ffg_in": 4.5,
+        "qpf_ffg_ratio": 0.795,
+        "duration_hr": 6,
+        "flood_prone": true
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -88.59862000000001,
+              30.693899700435725
+            ],
+            [
+              -88.5923715625,
+              30.693899700435725
+            ],
+            [
+              -88.5923715625,
+              30.69934630718954
+            ],
+            [
+              -88.59862000000001,
+              30.69934630718954
+            ],
+            [
+              -88.59862000000001,
+              30.693899700435725
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "category": "Possible",
+        "qpf_in": 3.683,
+        "ffg_in": 4.5,
+        "qpf_ffg_ratio": 0.818,
+        "duration_hr": 6,
+        "flood_prone": true
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -88.5923715625,
+              30.693899700435725
+            ],
+            [
+              -88.586123125,
+              30.693899700435725
+            ],
+            [
+              -88.586123125,
+              30.69934630718954
+            ],
+            [
+              -88.5923715625,
+              30.69934630718954
+            ],
+            [
+              -88.5923715625,
+              30.693899700435725
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "category": "Possible",
         "qpf_in": 3.811,
-        "ffg_in": 5.0,
-        "qpf_ffg_ratio": 0.762,
+        "ffg_in": 4.5,
+        "qpf_ffg_ratio": 0.847,
         "duration_hr": 6,
         "flood_prone": true
       },
@@ -91,8 +205,8 @@
       "properties": {
         "category": "Possible",
         "qpf_in": 3.961,
-        "ffg_in": 5.0,
-        "qpf_ffg_ratio": 0.792,
+        "ffg_in": 4.5,
+        "qpf_ffg_ratio": 0.88,
         "duration_hr": 6,
         "flood_prone": true
       },
@@ -129,8 +243,8 @@
       "properties": {
         "category": "Possible",
         "qpf_in": 4.11,
-        "ffg_in": 5.0,
-        "qpf_ffg_ratio": 0.822,
+        "ffg_in": 4.5,
+        "qpf_ffg_ratio": 0.913,
         "duration_hr": 6,
         "flood_prone": true
       },
@@ -167,8 +281,8 @@
       "properties": {
         "category": "Possible",
         "qpf_in": 4.26,
-        "ffg_in": 5.0,
-        "qpf_ffg_ratio": 0.852,
+        "ffg_in": 4.5,
+        "qpf_ffg_ratio": 0.947,
         "duration_hr": 6,
         "flood_prone": true
       },
@@ -205,8 +319,8 @@
       "properties": {
         "category": "Possible",
         "qpf_in": 4.294,
-        "ffg_in": 5.0,
-        "qpf_ffg_ratio": 0.859,
+        "ffg_in": 4.5,
+        "qpf_ffg_ratio": 0.954,
         "duration_hr": 6,
         "flood_prone": true
       },
@@ -243,8 +357,8 @@
       "properties": {
         "category": "Possible",
         "qpf_in": 4.211,
-        "ffg_in": 5.0,
-        "qpf_ffg_ratio": 0.842,
+        "ffg_in": 4.5,
+        "qpf_ffg_ratio": 0.936,
         "duration_hr": 6,
         "flood_prone": true
       },
@@ -281,8 +395,8 @@
       "properties": {
         "category": "Possible",
         "qpf_in": 4.129,
-        "ffg_in": 5.0,
-        "qpf_ffg_ratio": 0.826,
+        "ffg_in": 4.5,
+        "qpf_ffg_ratio": 0.918,
         "duration_hr": 6,
         "flood_prone": true
       },
@@ -318,9 +432,237 @@
       "type": "Feature",
       "properties": {
         "category": "Possible",
-        "qpf_in": 3.868,
+        "qpf_in": 4.047,
         "ffg_in": 5.0,
-        "qpf_ffg_ratio": 0.774,
+        "qpf_ffg_ratio": 0.809,
+        "duration_hr": 6,
+        "flood_prone": true
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -88.5423840625,
+              30.693899700435725
+            ],
+            [
+              -88.536135625,
+              30.693899700435725
+            ],
+            [
+              -88.536135625,
+              30.69934630718954
+            ],
+            [
+              -88.5423840625,
+              30.69934630718954
+            ],
+            [
+              -88.5423840625,
+              30.693899700435725
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "category": "Possible",
+        "qpf_in": 3.863,
+        "ffg_in": 5.0,
+        "qpf_ffg_ratio": 0.773,
+        "duration_hr": 6,
+        "flood_prone": true
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -88.53613562500001,
+              30.693899700435725
+            ],
+            [
+              -88.52988718750001,
+              30.693899700435725
+            ],
+            [
+              -88.52988718750001,
+              30.69934630718954
+            ],
+            [
+              -88.53613562500001,
+              30.69934630718954
+            ],
+            [
+              -88.53613562500001,
+              30.693899700435725
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "category": "Possible",
+        "qpf_in": 3.479,
+        "ffg_in": 4.5,
+        "qpf_ffg_ratio": 0.773,
+        "duration_hr": 6,
+        "flood_prone": true
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -88.61111687500001,
+              30.688453093681915
+            ],
+            [
+              -88.6048684375,
+              30.688453093681915
+            ],
+            [
+              -88.6048684375,
+              30.69389970043573
+            ],
+            [
+              -88.61111687500001,
+              30.69389970043573
+            ],
+            [
+              -88.61111687500001,
+              30.688453093681915
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "category": "Possible",
+        "qpf_in": 3.568,
+        "ffg_in": 4.5,
+        "qpf_ffg_ratio": 0.793,
+        "duration_hr": 6,
+        "flood_prone": true
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -88.60486843750002,
+              30.688453093681915
+            ],
+            [
+              -88.59862000000001,
+              30.688453093681915
+            ],
+            [
+              -88.59862000000001,
+              30.69389970043573
+            ],
+            [
+              -88.60486843750002,
+              30.69389970043573
+            ],
+            [
+              -88.60486843750002,
+              30.688453093681915
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "category": "Possible",
+        "qpf_in": 3.657,
+        "ffg_in": 4.5,
+        "qpf_ffg_ratio": 0.813,
+        "duration_hr": 6,
+        "flood_prone": true
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -88.59862000000001,
+              30.688453093681915
+            ],
+            [
+              -88.5923715625,
+              30.688453093681915
+            ],
+            [
+              -88.5923715625,
+              30.69389970043573
+            ],
+            [
+              -88.59862000000001,
+              30.69389970043573
+            ],
+            [
+              -88.59862000000001,
+              30.688453093681915
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "category": "Possible",
+        "qpf_in": 3.746,
+        "ffg_in": 4.5,
+        "qpf_ffg_ratio": 0.832,
+        "duration_hr": 6,
+        "flood_prone": true
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -88.5923715625,
+              30.688453093681915
+            ],
+            [
+              -88.586123125,
+              30.688453093681915
+            ],
+            [
+              -88.586123125,
+              30.69389970043573
+            ],
+            [
+              -88.5923715625,
+              30.69389970043573
+            ],
+            [
+              -88.5923715625,
+              30.688453093681915
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "category": "Possible",
+        "qpf_in": 3.868,
+        "ffg_in": 4.5,
+        "qpf_ffg_ratio": 0.86,
         "duration_hr": 6,
         "flood_prone": true
       },
@@ -357,8 +699,8 @@
       "properties": {
         "category": "Possible",
         "qpf_in": 4.024,
-        "ffg_in": 5.0,
-        "qpf_ffg_ratio": 0.805,
+        "ffg_in": 4.5,
+        "qpf_ffg_ratio": 0.894,
         "duration_hr": 6,
         "flood_prone": true
       },
@@ -395,8 +737,8 @@
       "properties": {
         "category": "Possible",
         "qpf_in": 4.179,
-        "ffg_in": 5.0,
-        "qpf_ffg_ratio": 0.836,
+        "ffg_in": 4.5,
+        "qpf_ffg_ratio": 0.929,
         "duration_hr": 6,
         "flood_prone": true
       },
@@ -433,8 +775,8 @@
       "properties": {
         "category": "Possible",
         "qpf_in": 4.335,
-        "ffg_in": 5.0,
-        "qpf_ffg_ratio": 0.867,
+        "ffg_in": 4.5,
+        "qpf_ffg_ratio": 0.963,
         "duration_hr": 6,
         "flood_prone": true
       },
@@ -471,8 +813,8 @@
       "properties": {
         "category": "Possible",
         "qpf_in": 4.374,
-        "ffg_in": 5.0,
-        "qpf_ffg_ratio": 0.875,
+        "ffg_in": 4.5,
+        "qpf_ffg_ratio": 0.972,
         "duration_hr": 6,
         "flood_prone": true
       },
@@ -509,8 +851,8 @@
       "properties": {
         "category": "Possible",
         "qpf_in": 4.298,
-        "ffg_in": 5.0,
-        "qpf_ffg_ratio": 0.86,
+        "ffg_in": 4.5,
+        "qpf_ffg_ratio": 0.955,
         "duration_hr": 6,
         "flood_prone": true
       },
@@ -547,8 +889,8 @@
       "properties": {
         "category": "Possible",
         "qpf_in": 4.221,
-        "ffg_in": 5.0,
-        "qpf_ffg_ratio": 0.844,
+        "ffg_in": 4.5,
+        "qpf_ffg_ratio": 0.938,
         "duration_hr": 6,
         "flood_prone": true
       },
@@ -584,9 +926,237 @@
       "type": "Feature",
       "properties": {
         "category": "Possible",
-        "qpf_in": 3.809,
+        "qpf_in": 4.144,
         "ffg_in": 5.0,
-        "qpf_ffg_ratio": 0.762,
+        "qpf_ffg_ratio": 0.829,
+        "duration_hr": 6,
+        "flood_prone": true
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -88.5423840625,
+              30.688453093681915
+            ],
+            [
+              -88.536135625,
+              30.688453093681915
+            ],
+            [
+              -88.536135625,
+              30.69389970043573
+            ],
+            [
+              -88.5423840625,
+              30.69389970043573
+            ],
+            [
+              -88.5423840625,
+              30.688453093681915
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "category": "Possible",
+        "qpf_in": 3.958,
+        "ffg_in": 5.0,
+        "qpf_ffg_ratio": 0.792,
+        "duration_hr": 6,
+        "flood_prone": true
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -88.53613562500001,
+              30.688453093681915
+            ],
+            [
+              -88.52988718750001,
+              30.688453093681915
+            ],
+            [
+              -88.52988718750001,
+              30.69389970043573
+            ],
+            [
+              -88.53613562500001,
+              30.69389970043573
+            ],
+            [
+              -88.53613562500001,
+              30.688453093681915
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "category": "Possible",
+        "qpf_in": 3.483,
+        "ffg_in": 4.5,
+        "qpf_ffg_ratio": 0.774,
+        "duration_hr": 6,
+        "flood_prone": true
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -88.61736531250001,
+              30.6830064869281
+            ],
+            [
+              -88.61111687500001,
+              30.6830064869281
+            ],
+            [
+              -88.61111687500001,
+              30.688453093681915
+            ],
+            [
+              -88.61736531250001,
+              30.688453093681915
+            ],
+            [
+              -88.61736531250001,
+              30.6830064869281
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "category": "Possible",
+        "qpf_in": 3.589,
+        "ffg_in": 4.5,
+        "qpf_ffg_ratio": 0.798,
+        "duration_hr": 6,
+        "flood_prone": true
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -88.61111687500001,
+              30.6830064869281
+            ],
+            [
+              -88.6048684375,
+              30.6830064869281
+            ],
+            [
+              -88.6048684375,
+              30.688453093681915
+            ],
+            [
+              -88.61111687500001,
+              30.688453093681915
+            ],
+            [
+              -88.61111687500001,
+              30.6830064869281
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "category": "Possible",
+        "qpf_in": 3.662,
+        "ffg_in": 4.5,
+        "qpf_ffg_ratio": 0.814,
+        "duration_hr": 6,
+        "flood_prone": true
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -88.60486843750002,
+              30.6830064869281
+            ],
+            [
+              -88.59862000000001,
+              30.6830064869281
+            ],
+            [
+              -88.59862000000001,
+              30.688453093681915
+            ],
+            [
+              -88.60486843750002,
+              30.688453093681915
+            ],
+            [
+              -88.60486843750002,
+              30.6830064869281
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "category": "Possible",
+        "qpf_in": 3.736,
+        "ffg_in": 4.5,
+        "qpf_ffg_ratio": 0.83,
+        "duration_hr": 6,
+        "flood_prone": true
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -88.59862000000001,
+              30.6830064869281
+            ],
+            [
+              -88.5923715625,
+              30.6830064869281
+            ],
+            [
+              -88.5923715625,
+              30.688453093681915
+            ],
+            [
+              -88.59862000000001,
+              30.688453093681915
+            ],
+            [
+              -88.59862000000001,
+              30.6830064869281
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "category": "Possible",
+        "qpf_in": 3.809,
+        "ffg_in": 4.5,
+        "qpf_ffg_ratio": 0.846,
         "duration_hr": 6,
         "flood_prone": true
       },
@@ -623,8 +1193,8 @@
       "properties": {
         "category": "Possible",
         "qpf_in": 3.926,
-        "ffg_in": 5.0,
-        "qpf_ffg_ratio": 0.785,
+        "ffg_in": 4.5,
+        "qpf_ffg_ratio": 0.872,
         "duration_hr": 6,
         "flood_prone": true
       },
@@ -661,8 +1231,8 @@
       "properties": {
         "category": "Possible",
         "qpf_in": 4.087,
-        "ffg_in": 5.0,
-        "qpf_ffg_ratio": 0.817,
+        "ffg_in": 4.5,
+        "qpf_ffg_ratio": 0.908,
         "duration_hr": 6,
         "flood_prone": true
       },
@@ -699,8 +1269,8 @@
       "properties": {
         "category": "Possible",
         "qpf_in": 4.248,
-        "ffg_in": 5.0,
-        "qpf_ffg_ratio": 0.85,
+        "ffg_in": 4.5,
+        "qpf_ffg_ratio": 0.944,
         "duration_hr": 6,
         "flood_prone": true
       },
@@ -737,8 +1307,8 @@
       "properties": {
         "category": "Possible",
         "qpf_in": 4.409,
-        "ffg_in": 5.0,
-        "qpf_ffg_ratio": 0.882,
+        "ffg_in": 4.5,
+        "qpf_ffg_ratio": 0.98,
         "duration_hr": 6,
         "flood_prone": true
       },
@@ -775,8 +1345,8 @@
       "properties": {
         "category": "Possible",
         "qpf_in": 4.455,
-        "ffg_in": 5.0,
-        "qpf_ffg_ratio": 0.891,
+        "ffg_in": 4.5,
+        "qpf_ffg_ratio": 0.99,
         "duration_hr": 6,
         "flood_prone": true
       },
@@ -813,8 +1383,8 @@
       "properties": {
         "category": "Possible",
         "qpf_in": 4.384,
-        "ffg_in": 5.0,
-        "qpf_ffg_ratio": 0.877,
+        "ffg_in": 4.5,
+        "qpf_ffg_ratio": 0.974,
         "duration_hr": 6,
         "flood_prone": true
       },
@@ -851,8 +1421,8 @@
       "properties": {
         "category": "Possible",
         "qpf_in": 4.313,
-        "ffg_in": 5.0,
-        "qpf_ffg_ratio": 0.863,
+        "ffg_in": 4.5,
+        "qpf_ffg_ratio": 0.958,
         "duration_hr": 6,
         "flood_prone": true
       },
@@ -888,9 +1458,199 @@
       "type": "Feature",
       "properties": {
         "category": "Possible",
-        "qpf_in": 3.757,
+        "qpf_in": 4.242,
         "ffg_in": 5.0,
-        "qpf_ffg_ratio": 0.751,
+        "qpf_ffg_ratio": 0.848,
+        "duration_hr": 6,
+        "flood_prone": true
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -88.5423840625,
+              30.6830064869281
+            ],
+            [
+              -88.536135625,
+              30.6830064869281
+            ],
+            [
+              -88.536135625,
+              30.688453093681915
+            ],
+            [
+              -88.5423840625,
+              30.688453093681915
+            ],
+            [
+              -88.5423840625,
+              30.6830064869281
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "category": "Possible",
+        "qpf_in": 4.053,
+        "ffg_in": 5.0,
+        "qpf_ffg_ratio": 0.811,
+        "duration_hr": 6,
+        "flood_prone": true
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -88.53613562500001,
+              30.6830064869281
+            ],
+            [
+              -88.52988718750001,
+              30.6830064869281
+            ],
+            [
+              -88.52988718750001,
+              30.688453093681915
+            ],
+            [
+              -88.53613562500001,
+              30.688453093681915
+            ],
+            [
+              -88.53613562500001,
+              30.6830064869281
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "category": "Possible",
+        "qpf_in": 3.432,
+        "ffg_in": 4.5,
+        "qpf_ffg_ratio": 0.763,
+        "duration_hr": 6,
+        "flood_prone": true
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -88.62361375,
+              30.67755988017429
+            ],
+            [
+              -88.6173653125,
+              30.67755988017429
+            ],
+            [
+              -88.6173653125,
+              30.683006486928104
+            ],
+            [
+              -88.62361375,
+              30.683006486928104
+            ],
+            [
+              -88.62361375,
+              30.67755988017429
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "category": "Possible",
+        "qpf_in": 3.592,
+        "ffg_in": 4.5,
+        "qpf_ffg_ratio": 0.798,
+        "duration_hr": 6,
+        "flood_prone": true
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -88.61736531250001,
+              30.67755988017429
+            ],
+            [
+              -88.61111687500001,
+              30.67755988017429
+            ],
+            [
+              -88.61111687500001,
+              30.683006486928104
+            ],
+            [
+              -88.61736531250001,
+              30.683006486928104
+            ],
+            [
+              -88.61736531250001,
+              30.67755988017429
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "category": "Possible",
+        "qpf_in": 3.7,
+        "ffg_in": 4.5,
+        "qpf_ffg_ratio": 0.822,
+        "duration_hr": 6,
+        "flood_prone": true
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -88.61111687500001,
+              30.67755988017429
+            ],
+            [
+              -88.6048684375,
+              30.67755988017429
+            ],
+            [
+              -88.6048684375,
+              30.683006486928104
+            ],
+            [
+              -88.61111687500001,
+              30.683006486928104
+            ],
+            [
+              -88.61111687500001,
+              30.67755988017429
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "category": "Possible",
+        "qpf_in": 3.757,
+        "ffg_in": 4.5,
+        "qpf_ffg_ratio": 0.835,
         "duration_hr": 6,
         "flood_prone": true
       },
@@ -927,8 +1687,8 @@
       "properties": {
         "category": "Possible",
         "qpf_in": 3.814,
-        "ffg_in": 5.0,
-        "qpf_ffg_ratio": 0.763,
+        "ffg_in": 4.5,
+        "qpf_ffg_ratio": 0.848,
         "duration_hr": 6,
         "flood_prone": true
       },
@@ -965,8 +1725,8 @@
       "properties": {
         "category": "Possible",
         "qpf_in": 3.871,
-        "ffg_in": 5.0,
-        "qpf_ffg_ratio": 0.774,
+        "ffg_in": 4.5,
+        "qpf_ffg_ratio": 0.86,
         "duration_hr": 6,
         "flood_prone": true
       },
@@ -1003,8 +1763,8 @@
       "properties": {
         "category": "Possible",
         "qpf_in": 3.983,
-        "ffg_in": 5.0,
-        "qpf_ffg_ratio": 0.797,
+        "ffg_in": 4.5,
+        "qpf_ffg_ratio": 0.885,
         "duration_hr": 6,
         "flood_prone": true
       },
@@ -1041,8 +1801,8 @@
       "properties": {
         "category": "Possible",
         "qpf_in": 4.15,
-        "ffg_in": 5.0,
-        "qpf_ffg_ratio": 0.83,
+        "ffg_in": 4.5,
+        "qpf_ffg_ratio": 0.922,
         "duration_hr": 6,
         "flood_prone": true
       },
@@ -1079,8 +1839,8 @@
       "properties": {
         "category": "Possible",
         "qpf_in": 4.317,
-        "ffg_in": 5.0,
-        "qpf_ffg_ratio": 0.863,
+        "ffg_in": 4.5,
+        "qpf_ffg_ratio": 0.959,
         "duration_hr": 6,
         "flood_prone": true
       },
@@ -1117,8 +1877,8 @@
       "properties": {
         "category": "Possible",
         "qpf_in": 4.484,
-        "ffg_in": 5.0,
-        "qpf_ffg_ratio": 0.897,
+        "ffg_in": 4.5,
+        "qpf_ffg_ratio": 0.996,
         "duration_hr": 6,
         "flood_prone": true
       },
@@ -1153,10 +1913,10 @@
     {
       "type": "Feature",
       "properties": {
-        "category": "Possible",
+        "category": "Probable",
         "qpf_in": 4.535,
-        "ffg_in": 5.0,
-        "qpf_ffg_ratio": 0.907,
+        "ffg_in": 4.5,
+        "qpf_ffg_ratio": 1.008,
         "duration_hr": 6,
         "flood_prone": true
       },
@@ -1193,8 +1953,8 @@
       "properties": {
         "category": "Possible",
         "qpf_in": 4.47,
-        "ffg_in": 5.0,
-        "qpf_ffg_ratio": 0.894,
+        "ffg_in": 4.5,
+        "qpf_ffg_ratio": 0.993,
         "duration_hr": 6,
         "flood_prone": true
       },
@@ -1231,8 +1991,8 @@
       "properties": {
         "category": "Possible",
         "qpf_in": 4.405,
-        "ffg_in": 5.0,
-        "qpf_ffg_ratio": 0.881,
+        "ffg_in": 4.5,
+        "qpf_ffg_ratio": 0.979,
         "duration_hr": 6,
         "flood_prone": true
       },
@@ -1268,9 +2028,199 @@
       "type": "Feature",
       "properties": {
         "category": "Possible",
-        "qpf_in": 3.836,
+        "qpf_in": 4.339,
         "ffg_in": 5.0,
-        "qpf_ffg_ratio": 0.767,
+        "qpf_ffg_ratio": 0.868,
+        "duration_hr": 6,
+        "flood_prone": true
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -88.5423840625,
+              30.67755988017429
+            ],
+            [
+              -88.536135625,
+              30.67755988017429
+            ],
+            [
+              -88.536135625,
+              30.683006486928104
+            ],
+            [
+              -88.5423840625,
+              30.683006486928104
+            ],
+            [
+              -88.5423840625,
+              30.67755988017429
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "category": "Possible",
+        "qpf_in": 4.148,
+        "ffg_in": 5.0,
+        "qpf_ffg_ratio": 0.83,
+        "duration_hr": 6,
+        "flood_prone": true
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -88.53613562500001,
+              30.67755988017429
+            ],
+            [
+              -88.52988718750001,
+              30.67755988017429
+            ],
+            [
+              -88.52988718750001,
+              30.683006486928104
+            ],
+            [
+              -88.53613562500001,
+              30.683006486928104
+            ],
+            [
+              -88.53613562500001,
+              30.67755988017429
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "category": "Possible",
+        "qpf_in": 3.83,
+        "ffg_in": 5.0,
+        "qpf_ffg_ratio": 0.766,
+        "duration_hr": 6,
+        "flood_prone": true
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -88.52988718750001,
+              30.67755988017429
+            ],
+            [
+              -88.52363875,
+              30.67755988017429
+            ],
+            [
+              -88.52363875,
+              30.683006486928104
+            ],
+            [
+              -88.52988718750001,
+              30.683006486928104
+            ],
+            [
+              -88.52988718750001,
+              30.67755988017429
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "category": "Possible",
+        "qpf_in": 3.548,
+        "ffg_in": 4.5,
+        "qpf_ffg_ratio": 0.788,
+        "duration_hr": 6,
+        "flood_prone": true
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -88.62361375,
+              30.672113273420475
+            ],
+            [
+              -88.6173653125,
+              30.672113273420475
+            ],
+            [
+              -88.6173653125,
+              30.67755988017429
+            ],
+            [
+              -88.62361375,
+              30.67755988017429
+            ],
+            [
+              -88.62361375,
+              30.672113273420475
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "category": "Possible",
+        "qpf_in": 3.723,
+        "ffg_in": 4.5,
+        "qpf_ffg_ratio": 0.827,
+        "duration_hr": 6,
+        "flood_prone": true
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -88.61736531250001,
+              30.672113273420475
+            ],
+            [
+              -88.61111687500001,
+              30.672113273420475
+            ],
+            [
+              -88.61111687500001,
+              30.67755988017429
+            ],
+            [
+              -88.61736531250001,
+              30.67755988017429
+            ],
+            [
+              -88.61736531250001,
+              30.672113273420475
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "category": "Possible",
+        "qpf_in": 3.836,
+        "ffg_in": 4.5,
+        "qpf_ffg_ratio": 0.852,
         "duration_hr": 6,
         "flood_prone": true
       },
@@ -1307,8 +2257,8 @@
       "properties": {
         "category": "Possible",
         "qpf_in": 3.888,
-        "ffg_in": 5.0,
-        "qpf_ffg_ratio": 0.778,
+        "ffg_in": 4.5,
+        "qpf_ffg_ratio": 0.864,
         "duration_hr": 6,
         "flood_prone": true
       },
@@ -1345,8 +2295,8 @@
       "properties": {
         "category": "Possible",
         "qpf_in": 3.94,
-        "ffg_in": 5.0,
-        "qpf_ffg_ratio": 0.788,
+        "ffg_in": 4.5,
+        "qpf_ffg_ratio": 0.876,
         "duration_hr": 6,
         "flood_prone": true
       },
@@ -1383,8 +2333,8 @@
       "properties": {
         "category": "Possible",
         "qpf_in": 3.991,
-        "ffg_in": 5.0,
-        "qpf_ffg_ratio": 0.798,
+        "ffg_in": 4.5,
+        "qpf_ffg_ratio": 0.887,
         "duration_hr": 6,
         "flood_prone": true
       },
@@ -1421,8 +2371,8 @@
       "properties": {
         "category": "Possible",
         "qpf_in": 4.094,
-        "ffg_in": 5.0,
-        "qpf_ffg_ratio": 0.819,
+        "ffg_in": 4.5,
+        "qpf_ffg_ratio": 0.91,
         "duration_hr": 6,
         "flood_prone": true
       },
@@ -1459,8 +2409,8 @@
       "properties": {
         "category": "Possible",
         "qpf_in": 4.248,
-        "ffg_in": 5.0,
-        "qpf_ffg_ratio": 0.85,
+        "ffg_in": 4.5,
+        "qpf_ffg_ratio": 0.944,
         "duration_hr": 6,
         "flood_prone": true
       },
@@ -1497,8 +2447,8 @@
       "properties": {
         "category": "Possible",
         "qpf_in": 4.403,
-        "ffg_in": 5.0,
-        "qpf_ffg_ratio": 0.881,
+        "ffg_in": 4.5,
+        "qpf_ffg_ratio": 0.978,
         "duration_hr": 6,
         "flood_prone": true
       },
@@ -1533,10 +2483,10 @@
     {
       "type": "Feature",
       "properties": {
-        "category": "Possible",
+        "category": "Probable",
         "qpf_in": 4.557,
-        "ffg_in": 5.0,
-        "qpf_ffg_ratio": 0.911,
+        "ffg_in": 4.5,
+        "qpf_ffg_ratio": 1.013,
         "duration_hr": 6,
         "flood_prone": true
       },
@@ -1571,10 +2521,10 @@
     {
       "type": "Feature",
       "properties": {
-        "category": "Possible",
+        "category": "Probable",
         "qpf_in": 4.6,
-        "ffg_in": 5.0,
-        "qpf_ffg_ratio": 0.92,
+        "ffg_in": 4.5,
+        "qpf_ffg_ratio": 1.022,
         "duration_hr": 6,
         "flood_prone": true
       },
@@ -1609,10 +2559,10 @@
     {
       "type": "Feature",
       "properties": {
-        "category": "Possible",
+        "category": "Probable",
         "qpf_in": 4.533,
-        "ffg_in": 5.0,
-        "qpf_ffg_ratio": 0.907,
+        "ffg_in": 4.5,
+        "qpf_ffg_ratio": 1.007,
         "duration_hr": 6,
         "flood_prone": true
       },
@@ -1649,8 +2599,8 @@
       "properties": {
         "category": "Possible",
         "qpf_in": 4.466,
-        "ffg_in": 5.0,
-        "qpf_ffg_ratio": 0.893,
+        "ffg_in": 4.5,
+        "qpf_ffg_ratio": 0.992,
         "duration_hr": 6,
         "flood_prone": true
       },
@@ -1686,9 +2636,199 @@
       "type": "Feature",
       "properties": {
         "category": "Possible",
+        "qpf_in": 4.398,
+        "ffg_in": 5.0,
+        "qpf_ffg_ratio": 0.88,
+        "duration_hr": 6,
+        "flood_prone": true
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -88.5423840625,
+              30.672113273420475
+            ],
+            [
+              -88.536135625,
+              30.672113273420475
+            ],
+            [
+              -88.536135625,
+              30.67755988017429
+            ],
+            [
+              -88.5423840625,
+              30.67755988017429
+            ],
+            [
+              -88.5423840625,
+              30.672113273420475
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "category": "Possible",
+        "qpf_in": 4.202,
+        "ffg_in": 5.0,
+        "qpf_ffg_ratio": 0.84,
+        "duration_hr": 6,
+        "flood_prone": true
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -88.53613562500001,
+              30.672113273420475
+            ],
+            [
+              -88.52988718750001,
+              30.672113273420475
+            ],
+            [
+              -88.52988718750001,
+              30.67755988017429
+            ],
+            [
+              -88.53613562500001,
+              30.67755988017429
+            ],
+            [
+              -88.53613562500001,
+              30.672113273420475
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "category": "Possible",
         "qpf_in": 3.877,
         "ffg_in": 5.0,
         "qpf_ffg_ratio": 0.775,
+        "duration_hr": 6,
+        "flood_prone": true
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -88.52988718750001,
+              30.672113273420475
+            ],
+            [
+              -88.52363875,
+              30.672113273420475
+            ],
+            [
+              -88.52363875,
+              30.67755988017429
+            ],
+            [
+              -88.52988718750001,
+              30.67755988017429
+            ],
+            [
+              -88.52988718750001,
+              30.672113273420475
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "category": "Possible",
+        "qpf_in": 3.504,
+        "ffg_in": 4.5,
+        "qpf_ffg_ratio": 0.779,
+        "duration_hr": 6,
+        "flood_prone": true
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -88.62986218750001,
+              30.666666666666664
+            ],
+            [
+              -88.62361375,
+              30.666666666666664
+            ],
+            [
+              -88.62361375,
+              30.67211327342048
+            ],
+            [
+              -88.62986218750001,
+              30.67211327342048
+            ],
+            [
+              -88.62986218750001,
+              30.666666666666664
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "category": "Possible",
+        "qpf_in": 3.69,
+        "ffg_in": 4.5,
+        "qpf_ffg_ratio": 0.82,
+        "duration_hr": 6,
+        "flood_prone": true
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -88.62361375,
+              30.666666666666664
+            ],
+            [
+              -88.6173653125,
+              30.666666666666664
+            ],
+            [
+              -88.6173653125,
+              30.67211327342048
+            ],
+            [
+              -88.62361375,
+              30.67211327342048
+            ],
+            [
+              -88.62361375,
+              30.666666666666664
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "category": "Possible",
+        "qpf_in": 3.877,
+        "ffg_in": 4.5,
+        "qpf_ffg_ratio": 0.862,
         "duration_hr": 6,
         "flood_prone": true
       },
@@ -1725,8 +2865,8 @@
       "properties": {
         "category": "Possible",
         "qpf_in": 3.999,
-        "ffg_in": 5.0,
-        "qpf_ffg_ratio": 0.8,
+        "ffg_in": 4.5,
+        "qpf_ffg_ratio": 0.889,
         "duration_hr": 6,
         "flood_prone": true
       },
@@ -1763,8 +2903,8 @@
       "properties": {
         "category": "Possible",
         "qpf_in": 4.055,
-        "ffg_in": 5.0,
-        "qpf_ffg_ratio": 0.811,
+        "ffg_in": 4.5,
+        "qpf_ffg_ratio": 0.901,
         "duration_hr": 6,
         "flood_prone": true
       },
@@ -1801,8 +2941,8 @@
       "properties": {
         "category": "Possible",
         "qpf_in": 4.112,
-        "ffg_in": 5.0,
-        "qpf_ffg_ratio": 0.822,
+        "ffg_in": 4.5,
+        "qpf_ffg_ratio": 0.914,
         "duration_hr": 6,
         "flood_prone": true
       },
@@ -1839,8 +2979,8 @@
       "properties": {
         "category": "Possible",
         "qpf_in": 4.168,
-        "ffg_in": 5.0,
-        "qpf_ffg_ratio": 0.834,
+        "ffg_in": 4.5,
+        "qpf_ffg_ratio": 0.926,
         "duration_hr": 6,
         "flood_prone": true
       },
@@ -1877,8 +3017,8 @@
       "properties": {
         "category": "Possible",
         "qpf_in": 4.258,
-        "ffg_in": 5.0,
-        "qpf_ffg_ratio": 0.852,
+        "ffg_in": 4.5,
+        "qpf_ffg_ratio": 0.946,
         "duration_hr": 6,
         "flood_prone": true
       },
@@ -1915,8 +3055,8 @@
       "properties": {
         "category": "Possible",
         "qpf_in": 4.381,
-        "ffg_in": 5.0,
-        "qpf_ffg_ratio": 0.876,
+        "ffg_in": 4.5,
+        "qpf_ffg_ratio": 0.974,
         "duration_hr": 6,
         "flood_prone": true
       },
@@ -1951,10 +3091,10 @@
     {
       "type": "Feature",
       "properties": {
-        "category": "Possible",
+        "category": "Probable",
         "qpf_in": 4.505,
-        "ffg_in": 5.0,
-        "qpf_ffg_ratio": 0.901,
+        "ffg_in": 4.5,
+        "qpf_ffg_ratio": 1.001,
         "duration_hr": 6,
         "flood_prone": true
       },
@@ -1989,10 +3129,10 @@
     {
       "type": "Feature",
       "properties": {
-        "category": "Possible",
+        "category": "Probable",
         "qpf_in": 4.628,
-        "ffg_in": 5.0,
-        "qpf_ffg_ratio": 0.926,
+        "ffg_in": 4.5,
+        "qpf_ffg_ratio": 1.028,
         "duration_hr": 6,
         "flood_prone": true
       },
@@ -2027,10 +3167,10 @@
     {
       "type": "Feature",
       "properties": {
-        "category": "Possible",
+        "category": "Probable",
         "qpf_in": 4.651,
-        "ffg_in": 5.0,
-        "qpf_ffg_ratio": 0.93,
+        "ffg_in": 4.5,
+        "qpf_ffg_ratio": 1.034,
         "duration_hr": 6,
         "flood_prone": true
       },
@@ -2065,10 +3205,10 @@
     {
       "type": "Feature",
       "properties": {
-        "category": "Possible",
+        "category": "Probable",
         "qpf_in": 4.573,
-        "ffg_in": 5.0,
-        "qpf_ffg_ratio": 0.915,
+        "ffg_in": 4.5,
+        "qpf_ffg_ratio": 1.016,
         "duration_hr": 6,
         "flood_prone": true
       },
@@ -2105,8 +3245,8 @@
       "properties": {
         "category": "Possible",
         "qpf_in": 4.496,
-        "ffg_in": 5.0,
-        "qpf_ffg_ratio": 0.899,
+        "ffg_in": 4.5,
+        "qpf_ffg_ratio": 0.999,
         "duration_hr": 6,
         "flood_prone": true
       },
@@ -2142,9 +3282,199 @@
       "type": "Feature",
       "properties": {
         "category": "Possible",
-        "qpf_in": 3.832,
+        "qpf_in": 4.419,
         "ffg_in": 5.0,
-        "qpf_ffg_ratio": 0.766,
+        "qpf_ffg_ratio": 0.884,
+        "duration_hr": 6,
+        "flood_prone": true
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -88.5423840625,
+              30.666666666666664
+            ],
+            [
+              -88.536135625,
+              30.666666666666664
+            ],
+            [
+              -88.536135625,
+              30.67211327342048
+            ],
+            [
+              -88.5423840625,
+              30.67211327342048
+            ],
+            [
+              -88.5423840625,
+              30.666666666666664
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "category": "Possible",
+        "qpf_in": 4.216,
+        "ffg_in": 5.0,
+        "qpf_ffg_ratio": 0.843,
+        "duration_hr": 6,
+        "flood_prone": true
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -88.53613562500001,
+              30.666666666666664
+            ],
+            [
+              -88.52988718750001,
+              30.666666666666664
+            ],
+            [
+              -88.52988718750001,
+              30.67211327342048
+            ],
+            [
+              -88.53613562500001,
+              30.67211327342048
+            ],
+            [
+              -88.53613562500001,
+              30.666666666666664
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "category": "Possible",
+        "qpf_in": 3.889,
+        "ffg_in": 5.0,
+        "qpf_ffg_ratio": 0.778,
+        "duration_hr": 6,
+        "flood_prone": true
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -88.52988718750001,
+              30.666666666666664
+            ],
+            [
+              -88.52363875,
+              30.666666666666664
+            ],
+            [
+              -88.52363875,
+              30.67211327342048
+            ],
+            [
+              -88.52988718750001,
+              30.67211327342048
+            ],
+            [
+              -88.52988718750001,
+              30.666666666666664
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "category": "Possible",
+        "qpf_in": 3.435,
+        "ffg_in": 4.5,
+        "qpf_ffg_ratio": 0.763,
+        "duration_hr": 6,
+        "flood_prone": true
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -88.63611062500001,
+              30.66122005991285
+            ],
+            [
+              -88.62986218750001,
+              30.66122005991285
+            ],
+            [
+              -88.62986218750001,
+              30.666666666666664
+            ],
+            [
+              -88.63611062500001,
+              30.666666666666664
+            ],
+            [
+              -88.63611062500001,
+              30.66122005991285
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "category": "Possible",
+        "qpf_in": 3.634,
+        "ffg_in": 4.5,
+        "qpf_ffg_ratio": 0.808,
+        "duration_hr": 6,
+        "flood_prone": true
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -88.62986218750001,
+              30.66122005991285
+            ],
+            [
+              -88.62361375,
+              30.66122005991285
+            ],
+            [
+              -88.62361375,
+              30.666666666666664
+            ],
+            [
+              -88.62986218750001,
+              30.666666666666664
+            ],
+            [
+              -88.62986218750001,
+              30.66122005991285
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "category": "Possible",
+        "qpf_in": 3.832,
+        "ffg_in": 4.5,
+        "qpf_ffg_ratio": 0.852,
         "duration_hr": 6,
         "flood_prone": true
       },
@@ -2181,8 +3511,8 @@
       "properties": {
         "category": "Possible",
         "qpf_in": 4.031,
-        "ffg_in": 5.0,
-        "qpf_ffg_ratio": 0.806,
+        "ffg_in": 4.5,
+        "qpf_ffg_ratio": 0.896,
         "duration_hr": 6,
         "flood_prone": true
       },
@@ -2219,8 +3549,8 @@
       "properties": {
         "category": "Possible",
         "qpf_in": 4.161,
-        "ffg_in": 5.0,
-        "qpf_ffg_ratio": 0.832,
+        "ffg_in": 4.5,
+        "qpf_ffg_ratio": 0.925,
         "duration_hr": 6,
         "flood_prone": true
       },
@@ -2257,8 +3587,8 @@
       "properties": {
         "category": "Possible",
         "qpf_in": 4.223,
-        "ffg_in": 5.0,
-        "qpf_ffg_ratio": 0.845,
+        "ffg_in": 4.5,
+        "qpf_ffg_ratio": 0.938,
         "duration_hr": 6,
         "flood_prone": true
       },
@@ -2295,8 +3625,8 @@
       "properties": {
         "category": "Possible",
         "qpf_in": 4.284,
-        "ffg_in": 5.0,
-        "qpf_ffg_ratio": 0.857,
+        "ffg_in": 4.5,
+        "qpf_ffg_ratio": 0.952,
         "duration_hr": 6,
         "flood_prone": true
       },
@@ -2333,8 +3663,8 @@
       "properties": {
         "category": "Possible",
         "qpf_in": 4.345,
-        "ffg_in": 5.0,
-        "qpf_ffg_ratio": 0.869,
+        "ffg_in": 4.5,
+        "qpf_ffg_ratio": 0.966,
         "duration_hr": 6,
         "flood_prone": true
       },
@@ -2371,8 +3701,8 @@
       "properties": {
         "category": "Possible",
         "qpf_in": 4.422,
-        "ffg_in": 5.0,
-        "qpf_ffg_ratio": 0.884,
+        "ffg_in": 4.5,
+        "qpf_ffg_ratio": 0.983,
         "duration_hr": 6,
         "flood_prone": true
       },
@@ -2407,10 +3737,10 @@
     {
       "type": "Feature",
       "properties": {
-        "category": "Possible",
+        "category": "Probable",
         "qpf_in": 4.514,
-        "ffg_in": 5.0,
-        "qpf_ffg_ratio": 0.903,
+        "ffg_in": 4.5,
+        "qpf_ffg_ratio": 1.003,
         "duration_hr": 6,
         "flood_prone": true
       },
@@ -2445,10 +3775,10 @@
     {
       "type": "Feature",
       "properties": {
-        "category": "Possible",
+        "category": "Probable",
         "qpf_in": 4.607,
-        "ffg_in": 5.0,
-        "qpf_ffg_ratio": 0.921,
+        "ffg_in": 4.5,
+        "qpf_ffg_ratio": 1.024,
         "duration_hr": 6,
         "flood_prone": true
       },
@@ -2483,10 +3813,10 @@
     {
       "type": "Feature",
       "properties": {
-        "category": "Possible",
+        "category": "Probable",
         "qpf_in": 4.699,
-        "ffg_in": 5.0,
-        "qpf_ffg_ratio": 0.94,
+        "ffg_in": 4.5,
+        "qpf_ffg_ratio": 1.044,
         "duration_hr": 6,
         "flood_prone": true
       },
@@ -2521,10 +3851,10 @@
     {
       "type": "Feature",
       "properties": {
-        "category": "Possible",
+        "category": "Probable",
         "qpf_in": 4.701,
-        "ffg_in": 5.0,
-        "qpf_ffg_ratio": 0.94,
+        "ffg_in": 4.5,
+        "qpf_ffg_ratio": 1.045,
         "duration_hr": 6,
         "flood_prone": true
       },
@@ -2559,10 +3889,10 @@
     {
       "type": "Feature",
       "properties": {
-        "category": "Possible",
+        "category": "Probable",
         "qpf_in": 4.614,
-        "ffg_in": 5.0,
-        "qpf_ffg_ratio": 0.923,
+        "ffg_in": 4.5,
+        "qpf_ffg_ratio": 1.025,
         "duration_hr": 6,
         "flood_prone": true
       },
@@ -2597,10 +3927,10 @@
     {
       "type": "Feature",
       "properties": {
-        "category": "Possible",
+        "category": "Probable",
         "qpf_in": 4.527,
-        "ffg_in": 5.0,
-        "qpf_ffg_ratio": 0.905,
+        "ffg_in": 4.5,
+        "qpf_ffg_ratio": 1.006,
         "duration_hr": 6,
         "flood_prone": true
       },
@@ -2627,6 +3957,158 @@
             [
               -88.54863250000001,
               30.66122005991285
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "category": "Possible",
+        "qpf_in": 4.439,
+        "ffg_in": 5.0,
+        "qpf_ffg_ratio": 0.888,
+        "duration_hr": 6,
+        "flood_prone": true
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -88.5423840625,
+              30.66122005991285
+            ],
+            [
+              -88.536135625,
+              30.66122005991285
+            ],
+            [
+              -88.536135625,
+              30.666666666666664
+            ],
+            [
+              -88.5423840625,
+              30.666666666666664
+            ],
+            [
+              -88.5423840625,
+              30.66122005991285
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "category": "Possible",
+        "qpf_in": 4.231,
+        "ffg_in": 5.0,
+        "qpf_ffg_ratio": 0.846,
+        "duration_hr": 6,
+        "flood_prone": true
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -88.53613562500001,
+              30.66122005991285
+            ],
+            [
+              -88.52988718750001,
+              30.66122005991285
+            ],
+            [
+              -88.52988718750001,
+              30.666666666666664
+            ],
+            [
+              -88.53613562500001,
+              30.666666666666664
+            ],
+            [
+              -88.53613562500001,
+              30.66122005991285
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "category": "Possible",
+        "qpf_in": 3.9,
+        "ffg_in": 5.0,
+        "qpf_ffg_ratio": 0.78,
+        "duration_hr": 6,
+        "flood_prone": true
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -88.52988718750001,
+              30.66122005991285
+            ],
+            [
+              -88.52363875,
+              30.66122005991285
+            ],
+            [
+              -88.52363875,
+              30.666666666666664
+            ],
+            [
+              -88.52988718750001,
+              30.666666666666664
+            ],
+            [
+              -88.52988718750001,
+              30.66122005991285
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "category": "Possible",
+        "qpf_in": 3.553,
+        "ffg_in": 4.5,
+        "qpf_ffg_ratio": 0.79,
+        "duration_hr": 6,
+        "flood_prone": true
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -88.63611062500001,
+              30.65577345315904
+            ],
+            [
+              -88.62986218750001,
+              30.65577345315904
+            ],
+            [
+              -88.62986218750001,
+              30.661220059912853
+            ],
+            [
+              -88.63611062500001,
+              30.661220059912853
+            ],
+            [
+              -88.63611062500001,
+              30.65577345315904
             ]
           ]
         ]
@@ -2637,8 +4119,8 @@
       "properties": {
         "category": "Possible",
         "qpf_in": 3.764,
-        "ffg_in": 5.0,
-        "qpf_ffg_ratio": 0.753,
+        "ffg_in": 4.5,
+        "qpf_ffg_ratio": 0.836,
         "duration_hr": 6,
         "flood_prone": true
       },
@@ -2675,8 +4157,8 @@
       "properties": {
         "category": "Possible",
         "qpf_in": 3.974,
-        "ffg_in": 5.0,
-        "qpf_ffg_ratio": 0.795,
+        "ffg_in": 4.5,
+        "qpf_ffg_ratio": 0.883,
         "duration_hr": 6,
         "flood_prone": true
       },
@@ -2713,8 +4195,8 @@
       "properties": {
         "category": "Possible",
         "qpf_in": 4.185,
-        "ffg_in": 5.0,
-        "qpf_ffg_ratio": 0.837,
+        "ffg_in": 4.5,
+        "qpf_ffg_ratio": 0.93,
         "duration_hr": 6,
         "flood_prone": true
       },
@@ -2751,8 +4233,8 @@
       "properties": {
         "category": "Possible",
         "qpf_in": 4.323,
-        "ffg_in": 5.0,
-        "qpf_ffg_ratio": 0.865,
+        "ffg_in": 4.5,
+        "qpf_ffg_ratio": 0.961,
         "duration_hr": 6,
         "flood_prone": true
       },
@@ -2789,8 +4271,8 @@
       "properties": {
         "category": "Possible",
         "qpf_in": 4.39,
-        "ffg_in": 5.0,
-        "qpf_ffg_ratio": 0.878,
+        "ffg_in": 4.5,
+        "qpf_ffg_ratio": 0.976,
         "duration_hr": 6,
         "flood_prone": true
       },
@@ -2827,8 +4309,8 @@
       "properties": {
         "category": "Possible",
         "qpf_in": 4.456,
-        "ffg_in": 5.0,
-        "qpf_ffg_ratio": 0.891,
+        "ffg_in": 4.5,
+        "qpf_ffg_ratio": 0.99,
         "duration_hr": 6,
         "flood_prone": true
       },
@@ -2863,10 +4345,10 @@
     {
       "type": "Feature",
       "properties": {
-        "category": "Possible",
+        "category": "Probable",
         "qpf_in": 4.523,
-        "ffg_in": 5.0,
-        "qpf_ffg_ratio": 0.905,
+        "ffg_in": 4.5,
+        "qpf_ffg_ratio": 1.005,
         "duration_hr": 6,
         "flood_prone": true
       },
@@ -2901,10 +4383,10 @@
     {
       "type": "Feature",
       "properties": {
-        "category": "Possible",
+        "category": "Probable",
         "qpf_in": 4.586,
-        "ffg_in": 5.0,
-        "qpf_ffg_ratio": 0.917,
+        "ffg_in": 4.5,
+        "qpf_ffg_ratio": 1.019,
         "duration_hr": 6,
         "flood_prone": true
       },
@@ -2939,10 +4421,10 @@
     {
       "type": "Feature",
       "properties": {
-        "category": "Possible",
+        "category": "Probable",
         "qpf_in": 4.647,
-        "ffg_in": 5.0,
-        "qpf_ffg_ratio": 0.929,
+        "ffg_in": 4.5,
+        "qpf_ffg_ratio": 1.033,
         "duration_hr": 6,
         "flood_prone": true
       },
@@ -2977,10 +4459,10 @@
     {
       "type": "Feature",
       "properties": {
-        "category": "Possible",
+        "category": "Probable",
         "qpf_in": 4.709,
-        "ffg_in": 5.0,
-        "qpf_ffg_ratio": 0.942,
+        "ffg_in": 4.5,
+        "qpf_ffg_ratio": 1.046,
         "duration_hr": 6,
         "flood_prone": true
       },
@@ -3015,10 +4497,10 @@
     {
       "type": "Feature",
       "properties": {
-        "category": "Possible",
+        "category": "Probable",
         "qpf_in": 4.77,
-        "ffg_in": 5.0,
-        "qpf_ffg_ratio": 0.954,
+        "ffg_in": 4.5,
+        "qpf_ffg_ratio": 1.06,
         "duration_hr": 6,
         "flood_prone": true
       },
@@ -3053,10 +4535,10 @@
     {
       "type": "Feature",
       "properties": {
-        "category": "Possible",
+        "category": "Probable",
         "qpf_in": 4.752,
-        "ffg_in": 5.0,
-        "qpf_ffg_ratio": 0.95,
+        "ffg_in": 4.5,
+        "qpf_ffg_ratio": 1.056,
         "duration_hr": 6,
         "flood_prone": true
       },
@@ -3091,10 +4573,10 @@
     {
       "type": "Feature",
       "properties": {
-        "category": "Possible",
+        "category": "Probable",
         "qpf_in": 4.654,
-        "ffg_in": 5.0,
-        "qpf_ffg_ratio": 0.931,
+        "ffg_in": 4.5,
+        "qpf_ffg_ratio": 1.034,
         "duration_hr": 6,
         "flood_prone": true
       },
@@ -3129,10 +4611,10 @@
     {
       "type": "Feature",
       "properties": {
-        "category": "Possible",
+        "category": "Probable",
         "qpf_in": 4.557,
-        "ffg_in": 5.0,
-        "qpf_ffg_ratio": 0.911,
+        "ffg_in": 4.5,
+        "qpf_ffg_ratio": 1.013,
         "duration_hr": 6,
         "flood_prone": true
       },
@@ -3159,6 +4641,196 @@
             [
               -88.54863250000001,
               30.65577345315904
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "category": "Possible",
+        "qpf_in": 4.46,
+        "ffg_in": 5.0,
+        "qpf_ffg_ratio": 0.892,
+        "duration_hr": 6,
+        "flood_prone": true
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -88.5423840625,
+              30.65577345315904
+            ],
+            [
+              -88.536135625,
+              30.65577345315904
+            ],
+            [
+              -88.536135625,
+              30.661220059912853
+            ],
+            [
+              -88.5423840625,
+              30.661220059912853
+            ],
+            [
+              -88.5423840625,
+              30.65577345315904
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "category": "Possible",
+        "qpf_in": 4.245,
+        "ffg_in": 5.0,
+        "qpf_ffg_ratio": 0.849,
+        "duration_hr": 6,
+        "flood_prone": true
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -88.53613562500001,
+              30.65577345315904
+            ],
+            [
+              -88.52988718750001,
+              30.65577345315904
+            ],
+            [
+              -88.52988718750001,
+              30.661220059912853
+            ],
+            [
+              -88.53613562500001,
+              30.661220059912853
+            ],
+            [
+              -88.53613562500001,
+              30.65577345315904
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "category": "Possible",
+        "qpf_in": 3.912,
+        "ffg_in": 5.0,
+        "qpf_ffg_ratio": 0.782,
+        "duration_hr": 6,
+        "flood_prone": true
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -88.52988718750001,
+              30.65577345315904
+            ],
+            [
+              -88.52363875,
+              30.65577345315904
+            ],
+            [
+              -88.52363875,
+              30.661220059912853
+            ],
+            [
+              -88.52988718750001,
+              30.661220059912853
+            ],
+            [
+              -88.52988718750001,
+              30.65577345315904
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "category": "Possible",
+        "qpf_in": 3.426,
+        "ffg_in": 4.5,
+        "qpf_ffg_ratio": 0.761,
+        "duration_hr": 6,
+        "flood_prone": true
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -88.6423590625,
+              30.650326846405225
+            ],
+            [
+              -88.636110625,
+              30.650326846405225
+            ],
+            [
+              -88.636110625,
+              30.65577345315904
+            ],
+            [
+              -88.6423590625,
+              30.65577345315904
+            ],
+            [
+              -88.6423590625,
+              30.650326846405225
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "category": "Possible",
+        "qpf_in": 3.662,
+        "ffg_in": 4.5,
+        "qpf_ffg_ratio": 0.814,
+        "duration_hr": 6,
+        "flood_prone": true
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -88.63611062500001,
+              30.650326846405225
+            ],
+            [
+              -88.62986218750001,
+              30.650326846405225
+            ],
+            [
+              -88.62986218750001,
+              30.65577345315904
+            ],
+            [
+              -88.63611062500001,
+              30.65577345315904
+            ],
+            [
+              -88.63611062500001,
+              30.650326846405225
             ]
           ]
         ]
@@ -3169,8 +4841,8 @@
       "properties": {
         "category": "Possible",
         "qpf_in": 3.878,
-        "ffg_in": 5.0,
-        "qpf_ffg_ratio": 0.776,
+        "ffg_in": 4.5,
+        "qpf_ffg_ratio": 0.862,
         "duration_hr": 6,
         "flood_prone": true
       },
@@ -3207,8 +4879,8 @@
       "properties": {
         "category": "Possible",
         "qpf_in": 4.095,
-        "ffg_in": 5.0,
-        "qpf_ffg_ratio": 0.819,
+        "ffg_in": 4.5,
+        "qpf_ffg_ratio": 0.91,
         "duration_hr": 6,
         "flood_prone": true
       },
@@ -3245,8 +4917,8 @@
       "properties": {
         "category": "Possible",
         "qpf_in": 4.311,
-        "ffg_in": 5.0,
-        "qpf_ffg_ratio": 0.862,
+        "ffg_in": 4.5,
+        "qpf_ffg_ratio": 0.958,
         "duration_hr": 6,
         "flood_prone": true
       },
@@ -3283,8 +4955,8 @@
       "properties": {
         "category": "Possible",
         "qpf_in": 4.451,
-        "ffg_in": 5.0,
-        "qpf_ffg_ratio": 0.89,
+        "ffg_in": 4.5,
+        "qpf_ffg_ratio": 0.989,
         "duration_hr": 6,
         "flood_prone": true
       },
@@ -3319,10 +4991,10 @@
     {
       "type": "Feature",
       "properties": {
-        "category": "Possible",
+        "category": "Probable",
         "qpf_in": 4.514,
-        "ffg_in": 5.0,
-        "qpf_ffg_ratio": 0.903,
+        "ffg_in": 4.5,
+        "qpf_ffg_ratio": 1.003,
         "duration_hr": 6,
         "flood_prone": true
       },
@@ -3357,10 +5029,10 @@
     {
       "type": "Feature",
       "properties": {
-        "category": "Possible",
+        "category": "Probable",
         "qpf_in": 4.577,
-        "ffg_in": 5.0,
-        "qpf_ffg_ratio": 0.915,
+        "ffg_in": 4.5,
+        "qpf_ffg_ratio": 1.017,
         "duration_hr": 6,
         "flood_prone": true
       },
@@ -3395,10 +5067,10 @@
     {
       "type": "Feature",
       "properties": {
-        "category": "Possible",
+        "category": "Probable",
         "qpf_in": 4.64,
-        "ffg_in": 5.0,
-        "qpf_ffg_ratio": 0.928,
+        "ffg_in": 4.5,
+        "qpf_ffg_ratio": 1.031,
         "duration_hr": 6,
         "flood_prone": true
       },
@@ -3433,10 +5105,10 @@
     {
       "type": "Feature",
       "properties": {
-        "category": "Possible",
+        "category": "Probable",
         "qpf_in": 4.69,
-        "ffg_in": 5.0,
-        "qpf_ffg_ratio": 0.938,
+        "ffg_in": 4.5,
+        "qpf_ffg_ratio": 1.042,
         "duration_hr": 6,
         "flood_prone": true
       },
@@ -3471,10 +5143,10 @@
     {
       "type": "Feature",
       "properties": {
-        "category": "Possible",
+        "category": "Probable",
         "qpf_in": 4.728,
-        "ffg_in": 5.0,
-        "qpf_ffg_ratio": 0.946,
+        "ffg_in": 4.5,
+        "qpf_ffg_ratio": 1.051,
         "duration_hr": 6,
         "flood_prone": true
       },
@@ -3509,10 +5181,10 @@
     {
       "type": "Feature",
       "properties": {
-        "category": "Possible",
+        "category": "Probable",
         "qpf_in": 4.766,
-        "ffg_in": 5.0,
-        "qpf_ffg_ratio": 0.953,
+        "ffg_in": 4.5,
+        "qpf_ffg_ratio": 1.059,
         "duration_hr": 6,
         "flood_prone": true
       },
@@ -3547,10 +5219,10 @@
     {
       "type": "Feature",
       "properties": {
-        "category": "Possible",
+        "category": "Probable",
         "qpf_in": 4.804,
-        "ffg_in": 5.0,
-        "qpf_ffg_ratio": 0.961,
+        "ffg_in": 4.5,
+        "qpf_ffg_ratio": 1.068,
         "duration_hr": 6,
         "flood_prone": true
       },
@@ -3585,10 +5257,10 @@
     {
       "type": "Feature",
       "properties": {
-        "category": "Possible",
+        "category": "Probable",
         "qpf_in": 4.771,
-        "ffg_in": 5.0,
-        "qpf_ffg_ratio": 0.954,
+        "ffg_in": 4.5,
+        "qpf_ffg_ratio": 1.06,
         "duration_hr": 6,
         "flood_prone": true
       },
@@ -3623,10 +5295,10 @@
     {
       "type": "Feature",
       "properties": {
-        "category": "Possible",
+        "category": "Probable",
         "qpf_in": 4.667,
-        "ffg_in": 5.0,
-        "qpf_ffg_ratio": 0.933,
+        "ffg_in": 4.5,
+        "qpf_ffg_ratio": 1.037,
         "duration_hr": 6,
         "flood_prone": true
       },
@@ -3661,10 +5333,10 @@
     {
       "type": "Feature",
       "properties": {
-        "category": "Possible",
+        "category": "Probable",
         "qpf_in": 4.562,
-        "ffg_in": 5.0,
-        "qpf_ffg_ratio": 0.912,
+        "ffg_in": 4.5,
+        "qpf_ffg_ratio": 1.014,
         "duration_hr": 6,
         "flood_prone": true
       },
@@ -3691,6 +5363,158 @@
             [
               -88.54863250000001,
               30.650326846405225
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "category": "Possible",
+        "qpf_in": 4.458,
+        "ffg_in": 5.0,
+        "qpf_ffg_ratio": 0.892,
+        "duration_hr": 6,
+        "flood_prone": true
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -88.5423840625,
+              30.650326846405225
+            ],
+            [
+              -88.536135625,
+              30.650326846405225
+            ],
+            [
+              -88.536135625,
+              30.65577345315904
+            ],
+            [
+              -88.5423840625,
+              30.65577345315904
+            ],
+            [
+              -88.5423840625,
+              30.650326846405225
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "category": "Possible",
+        "qpf_in": 4.24,
+        "ffg_in": 5.0,
+        "qpf_ffg_ratio": 0.848,
+        "duration_hr": 6,
+        "flood_prone": true
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -88.53613562500001,
+              30.650326846405225
+            ],
+            [
+              -88.52988718750001,
+              30.650326846405225
+            ],
+            [
+              -88.52988718750001,
+              30.65577345315904
+            ],
+            [
+              -88.53613562500001,
+              30.65577345315904
+            ],
+            [
+              -88.53613562500001,
+              30.650326846405225
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "category": "Possible",
+        "qpf_in": 3.907,
+        "ffg_in": 5.0,
+        "qpf_ffg_ratio": 0.781,
+        "duration_hr": 6,
+        "flood_prone": true
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -88.52988718750001,
+              30.650326846405225
+            ],
+            [
+              -88.52363875,
+              30.650326846405225
+            ],
+            [
+              -88.52363875,
+              30.65577345315904
+            ],
+            [
+              -88.52988718750001,
+              30.65577345315904
+            ],
+            [
+              -88.52988718750001,
+              30.650326846405225
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "category": "Possible",
+        "qpf_in": 3.521,
+        "ffg_in": 4.5,
+        "qpf_ffg_ratio": 0.782,
+        "duration_hr": 6,
+        "flood_prone": true
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -88.6423590625,
+              30.644880239651414
+            ],
+            [
+              -88.636110625,
+              30.644880239651414
+            ],
+            [
+              -88.636110625,
+              30.65032684640523
+            ],
+            [
+              -88.6423590625,
+              30.65032684640523
+            ],
+            [
+              -88.6423590625,
+              30.644880239651414
             ]
           ]
         ]
@@ -3701,8 +5525,8 @@
       "properties": {
         "category": "Possible",
         "qpf_in": 3.762,
-        "ffg_in": 5.0,
-        "qpf_ffg_ratio": 0.752,
+        "ffg_in": 4.5,
+        "qpf_ffg_ratio": 0.836,
         "duration_hr": 6,
         "flood_prone": true
       },
@@ -3739,8 +5563,8 @@
       "properties": {
         "category": "Possible",
         "qpf_in": 3.978,
-        "ffg_in": 5.0,
-        "qpf_ffg_ratio": 0.796,
+        "ffg_in": 4.5,
+        "qpf_ffg_ratio": 0.884,
         "duration_hr": 6,
         "flood_prone": true
       },
@@ -3777,8 +5601,8 @@
       "properties": {
         "category": "Possible",
         "qpf_in": 4.194,
-        "ffg_in": 5.0,
-        "qpf_ffg_ratio": 0.839,
+        "ffg_in": 4.5,
+        "qpf_ffg_ratio": 0.932,
         "duration_hr": 6,
         "flood_prone": true
       },
@@ -3815,8 +5639,8 @@
       "properties": {
         "category": "Possible",
         "qpf_in": 4.41,
-        "ffg_in": 5.0,
-        "qpf_ffg_ratio": 0.882,
+        "ffg_in": 4.5,
+        "qpf_ffg_ratio": 0.98,
         "duration_hr": 6,
         "flood_prone": true
       },
@@ -3851,10 +5675,10 @@
     {
       "type": "Feature",
       "properties": {
-        "category": "Possible",
+        "category": "Probable",
         "qpf_in": 4.543,
-        "ffg_in": 5.0,
-        "qpf_ffg_ratio": 0.909,
+        "ffg_in": 4.5,
+        "qpf_ffg_ratio": 1.01,
         "duration_hr": 6,
         "flood_prone": true
       },
@@ -3889,10 +5713,10 @@
     {
       "type": "Feature",
       "properties": {
-        "category": "Possible",
+        "category": "Probable",
         "qpf_in": 4.594,
-        "ffg_in": 5.0,
-        "qpf_ffg_ratio": 0.919,
+        "ffg_in": 4.5,
+        "qpf_ffg_ratio": 1.021,
         "duration_hr": 6,
         "flood_prone": true
       },
@@ -3927,10 +5751,10 @@
     {
       "type": "Feature",
       "properties": {
-        "category": "Possible",
+        "category": "Probable",
         "qpf_in": 4.646,
-        "ffg_in": 5.0,
-        "qpf_ffg_ratio": 0.929,
+        "ffg_in": 4.5,
+        "qpf_ffg_ratio": 1.032,
         "duration_hr": 6,
         "flood_prone": true
       },
@@ -3965,10 +5789,10 @@
     {
       "type": "Feature",
       "properties": {
-        "category": "Possible",
+        "category": "Probable",
         "qpf_in": 4.697,
-        "ffg_in": 5.0,
-        "qpf_ffg_ratio": 0.939,
+        "ffg_in": 4.5,
+        "qpf_ffg_ratio": 1.044,
         "duration_hr": 6,
         "flood_prone": true
       },
@@ -4003,10 +5827,10 @@
     {
       "type": "Feature",
       "properties": {
-        "category": "Possible",
+        "category": "Probable",
         "qpf_in": 4.734,
-        "ffg_in": 5.0,
-        "qpf_ffg_ratio": 0.947,
+        "ffg_in": 4.5,
+        "qpf_ffg_ratio": 1.052,
         "duration_hr": 6,
         "flood_prone": true
       },
@@ -4041,10 +5865,10 @@
     {
       "type": "Feature",
       "properties": {
-        "category": "Possible",
+        "category": "Probable",
         "qpf_in": 4.756,
-        "ffg_in": 5.0,
-        "qpf_ffg_ratio": 0.951,
+        "ffg_in": 4.5,
+        "qpf_ffg_ratio": 1.057,
         "duration_hr": 6,
         "flood_prone": true
       },
@@ -4079,10 +5903,10 @@
     {
       "type": "Feature",
       "properties": {
-        "category": "Possible",
+        "category": "Probable",
         "qpf_in": 4.779,
-        "ffg_in": 5.0,
-        "qpf_ffg_ratio": 0.956,
+        "ffg_in": 4.5,
+        "qpf_ffg_ratio": 1.062,
         "duration_hr": 6,
         "flood_prone": true
       },
@@ -4117,10 +5941,10 @@
     {
       "type": "Feature",
       "properties": {
-        "category": "Possible",
+        "category": "Probable",
         "qpf_in": 4.801,
-        "ffg_in": 5.0,
-        "qpf_ffg_ratio": 0.96,
+        "ffg_in": 4.5,
+        "qpf_ffg_ratio": 1.067,
         "duration_hr": 6,
         "flood_prone": true
       },
@@ -4155,10 +5979,10 @@
     {
       "type": "Feature",
       "properties": {
-        "category": "Possible",
+        "category": "Probable",
         "qpf_in": 4.759,
-        "ffg_in": 5.0,
-        "qpf_ffg_ratio": 0.952,
+        "ffg_in": 4.5,
+        "qpf_ffg_ratio": 1.058,
         "duration_hr": 6,
         "flood_prone": true
       },
@@ -4193,10 +6017,10 @@
     {
       "type": "Feature",
       "properties": {
-        "category": "Possible",
+        "category": "Probable",
         "qpf_in": 4.651,
-        "ffg_in": 5.0,
-        "qpf_ffg_ratio": 0.93,
+        "ffg_in": 4.5,
+        "qpf_ffg_ratio": 1.034,
         "duration_hr": 6,
         "flood_prone": true
       },
@@ -4231,10 +6055,10 @@
     {
       "type": "Feature",
       "properties": {
-        "category": "Possible",
+        "category": "Probable",
         "qpf_in": 4.543,
-        "ffg_in": 5.0,
-        "qpf_ffg_ratio": 0.909,
+        "ffg_in": 4.5,
+        "qpf_ffg_ratio": 1.01,
         "duration_hr": 6,
         "flood_prone": true
       },
@@ -4261,6 +6085,158 @@
             [
               -88.54863250000001,
               30.644880239651414
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "category": "Possible",
+        "qpf_in": 4.435,
+        "ffg_in": 5.0,
+        "qpf_ffg_ratio": 0.887,
+        "duration_hr": 6,
+        "flood_prone": true
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -88.5423840625,
+              30.644880239651414
+            ],
+            [
+              -88.536135625,
+              30.644880239651414
+            ],
+            [
+              -88.536135625,
+              30.65032684640523
+            ],
+            [
+              -88.5423840625,
+              30.65032684640523
+            ],
+            [
+              -88.5423840625,
+              30.644880239651414
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "category": "Possible",
+        "qpf_in": 4.216,
+        "ffg_in": 5.0,
+        "qpf_ffg_ratio": 0.843,
+        "duration_hr": 6,
+        "flood_prone": true
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -88.53613562500001,
+              30.644880239651414
+            ],
+            [
+              -88.52988718750001,
+              30.644880239651414
+            ],
+            [
+              -88.52988718750001,
+              30.65032684640523
+            ],
+            [
+              -88.53613562500001,
+              30.65032684640523
+            ],
+            [
+              -88.53613562500001,
+              30.644880239651414
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "category": "Possible",
+        "qpf_in": 3.885,
+        "ffg_in": 5.0,
+        "qpf_ffg_ratio": 0.777,
+        "duration_hr": 6,
+        "flood_prone": true
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -88.52988718750001,
+              30.644880239651414
+            ],
+            [
+              -88.52363875,
+              30.644880239651414
+            ],
+            [
+              -88.52363875,
+              30.65032684640523
+            ],
+            [
+              -88.52988718750001,
+              30.65032684640523
+            ],
+            [
+              -88.52988718750001,
+              30.644880239651414
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "category": "Possible",
+        "qpf_in": 3.616,
+        "ffg_in": 4.5,
+        "qpf_ffg_ratio": 0.804,
+        "duration_hr": 6,
+        "flood_prone": true
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -88.6423590625,
+              30.6394336328976
+            ],
+            [
+              -88.636110625,
+              30.6394336328976
+            ],
+            [
+              -88.636110625,
+              30.644880239651414
+            ],
+            [
+              -88.6423590625,
+              30.644880239651414
+            ],
+            [
+              -88.6423590625,
+              30.6394336328976
             ]
           ]
         ]
@@ -4271,8 +6247,8 @@
       "properties": {
         "category": "Possible",
         "qpf_in": 3.862,
-        "ffg_in": 5.0,
-        "qpf_ffg_ratio": 0.772,
+        "ffg_in": 4.5,
+        "qpf_ffg_ratio": 0.858,
         "duration_hr": 6,
         "flood_prone": true
       },
@@ -4309,8 +6285,8 @@
       "properties": {
         "category": "Possible",
         "qpf_in": 4.077,
-        "ffg_in": 5.0,
-        "qpf_ffg_ratio": 0.815,
+        "ffg_in": 4.5,
+        "qpf_ffg_ratio": 0.906,
         "duration_hr": 6,
         "flood_prone": true
       },
@@ -4347,8 +6323,8 @@
       "properties": {
         "category": "Possible",
         "qpf_in": 4.293,
-        "ffg_in": 5.0,
-        "qpf_ffg_ratio": 0.859,
+        "ffg_in": 4.5,
+        "qpf_ffg_ratio": 0.954,
         "duration_hr": 6,
         "flood_prone": true
       },
@@ -4383,10 +6359,10 @@
     {
       "type": "Feature",
       "properties": {
-        "category": "Possible",
+        "category": "Probable",
         "qpf_in": 4.508,
-        "ffg_in": 5.0,
-        "qpf_ffg_ratio": 0.902,
+        "ffg_in": 4.5,
+        "qpf_ffg_ratio": 1.002,
         "duration_hr": 6,
         "flood_prone": true
       },
@@ -4421,10 +6397,10 @@
     {
       "type": "Feature",
       "properties": {
-        "category": "Possible",
+        "category": "Probable",
         "qpf_in": 4.636,
-        "ffg_in": 5.0,
-        "qpf_ffg_ratio": 0.927,
+        "ffg_in": 4.5,
+        "qpf_ffg_ratio": 1.03,
         "duration_hr": 6,
         "flood_prone": true
       },
@@ -4459,10 +6435,10 @@
     {
       "type": "Feature",
       "properties": {
-        "category": "Possible",
+        "category": "Probable",
         "qpf_in": 4.675,
-        "ffg_in": 5.0,
-        "qpf_ffg_ratio": 0.935,
+        "ffg_in": 4.5,
+        "qpf_ffg_ratio": 1.039,
         "duration_hr": 6,
         "flood_prone": true
       },
@@ -4497,10 +6473,10 @@
     {
       "type": "Feature",
       "properties": {
-        "category": "Possible",
+        "category": "Probable",
         "qpf_in": 4.714,
-        "ffg_in": 5.0,
-        "qpf_ffg_ratio": 0.943,
+        "ffg_in": 4.5,
+        "qpf_ffg_ratio": 1.048,
         "duration_hr": 6,
         "flood_prone": true
       },
@@ -4535,10 +6511,10 @@
     {
       "type": "Feature",
       "properties": {
-        "category": "Possible",
+        "category": "Probable",
         "qpf_in": 4.754,
-        "ffg_in": 5.0,
-        "qpf_ffg_ratio": 0.951,
+        "ffg_in": 4.5,
+        "qpf_ffg_ratio": 1.056,
         "duration_hr": 6,
         "flood_prone": true
       },
@@ -4573,10 +6549,10 @@
     {
       "type": "Feature",
       "properties": {
-        "category": "Possible",
+        "category": "Probable",
         "qpf_in": 4.777,
-        "ffg_in": 5.0,
-        "qpf_ffg_ratio": 0.955,
+        "ffg_in": 4.5,
+        "qpf_ffg_ratio": 1.062,
         "duration_hr": 6,
         "flood_prone": true
       },
@@ -4611,10 +6587,10 @@
     {
       "type": "Feature",
       "properties": {
-        "category": "Possible",
+        "category": "Probable",
         "qpf_in": 4.784,
-        "ffg_in": 5.0,
-        "qpf_ffg_ratio": 0.957,
+        "ffg_in": 4.5,
+        "qpf_ffg_ratio": 1.063,
         "duration_hr": 6,
         "flood_prone": true
       },
@@ -4649,10 +6625,10 @@
     {
       "type": "Feature",
       "properties": {
-        "category": "Possible",
+        "category": "Probable",
         "qpf_in": 4.791,
-        "ffg_in": 5.0,
-        "qpf_ffg_ratio": 0.958,
+        "ffg_in": 4.5,
+        "qpf_ffg_ratio": 1.065,
         "duration_hr": 6,
         "flood_prone": true
       },
@@ -4687,10 +6663,10 @@
     {
       "type": "Feature",
       "properties": {
-        "category": "Possible",
+        "category": "Probable",
         "qpf_in": 4.799,
-        "ffg_in": 5.0,
-        "qpf_ffg_ratio": 0.96,
+        "ffg_in": 4.5,
+        "qpf_ffg_ratio": 1.066,
         "duration_hr": 6,
         "flood_prone": true
       },
@@ -4725,10 +6701,10 @@
     {
       "type": "Feature",
       "properties": {
-        "category": "Possible",
+        "category": "Probable",
         "qpf_in": 4.746,
-        "ffg_in": 5.0,
-        "qpf_ffg_ratio": 0.949,
+        "ffg_in": 4.5,
+        "qpf_ffg_ratio": 1.055,
         "duration_hr": 6,
         "flood_prone": true
       },
@@ -4763,10 +6739,10 @@
     {
       "type": "Feature",
       "properties": {
-        "category": "Possible",
+        "category": "Probable",
         "qpf_in": 4.635,
-        "ffg_in": 5.0,
-        "qpf_ffg_ratio": 0.927,
+        "ffg_in": 4.5,
+        "qpf_ffg_ratio": 1.03,
         "duration_hr": 6,
         "flood_prone": true
       },
@@ -4801,10 +6777,10 @@
     {
       "type": "Feature",
       "properties": {
-        "category": "Possible",
+        "category": "Probable",
         "qpf_in": 4.523,
-        "ffg_in": 5.0,
-        "qpf_ffg_ratio": 0.905,
+        "ffg_in": 4.5,
+        "qpf_ffg_ratio": 1.005,
         "duration_hr": 6,
         "flood_prone": true
       },
@@ -4831,6 +6807,196 @@
             [
               -88.54863250000001,
               30.6394336328976
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "category": "Possible",
+        "qpf_in": 4.411,
+        "ffg_in": 5.0,
+        "qpf_ffg_ratio": 0.882,
+        "duration_hr": 6,
+        "flood_prone": true
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -88.5423840625,
+              30.6394336328976
+            ],
+            [
+              -88.536135625,
+              30.6394336328976
+            ],
+            [
+              -88.536135625,
+              30.644880239651414
+            ],
+            [
+              -88.5423840625,
+              30.644880239651414
+            ],
+            [
+              -88.5423840625,
+              30.6394336328976
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "category": "Possible",
+        "qpf_in": 4.191,
+        "ffg_in": 5.0,
+        "qpf_ffg_ratio": 0.838,
+        "duration_hr": 6,
+        "flood_prone": true
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -88.53613562500001,
+              30.6394336328976
+            ],
+            [
+              -88.52988718750001,
+              30.6394336328976
+            ],
+            [
+              -88.52988718750001,
+              30.644880239651414
+            ],
+            [
+              -88.53613562500001,
+              30.644880239651414
+            ],
+            [
+              -88.53613562500001,
+              30.6394336328976
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "category": "Possible",
+        "qpf_in": 3.863,
+        "ffg_in": 5.0,
+        "qpf_ffg_ratio": 0.773,
+        "duration_hr": 6,
+        "flood_prone": true
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -88.52988718750001,
+              30.6394336328976
+            ],
+            [
+              -88.52363875,
+              30.6394336328976
+            ],
+            [
+              -88.52363875,
+              30.644880239651414
+            ],
+            [
+              -88.52988718750001,
+              30.644880239651414
+            ],
+            [
+              -88.52988718750001,
+              30.6394336328976
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "category": "Possible",
+        "qpf_in": 3.423,
+        "ffg_in": 4.5,
+        "qpf_ffg_ratio": 0.761,
+        "duration_hr": 6,
+        "flood_prone": true
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -88.64860750000001,
+              30.63398702614379
+            ],
+            [
+              -88.6423590625,
+              30.63398702614379
+            ],
+            [
+              -88.6423590625,
+              30.639433632897603
+            ],
+            [
+              -88.64860750000001,
+              30.639433632897603
+            ],
+            [
+              -88.64860750000001,
+              30.63398702614379
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "category": "Possible",
+        "qpf_in": 3.71,
+        "ffg_in": 4.5,
+        "qpf_ffg_ratio": 0.824,
+        "duration_hr": 6,
+        "flood_prone": true
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -88.6423590625,
+              30.63398702614379
+            ],
+            [
+              -88.636110625,
+              30.63398702614379
+            ],
+            [
+              -88.636110625,
+              30.639433632897603
+            ],
+            [
+              -88.6423590625,
+              30.639433632897603
+            ],
+            [
+              -88.6423590625,
+              30.63398702614379
             ]
           ]
         ]
@@ -4841,8 +7007,8 @@
       "properties": {
         "category": "Possible",
         "qpf_in": 3.962,
-        "ffg_in": 5.0,
-        "qpf_ffg_ratio": 0.792,
+        "ffg_in": 4.5,
+        "qpf_ffg_ratio": 0.88,
         "duration_hr": 6,
         "flood_prone": true
       },
@@ -4879,8 +7045,8 @@
       "properties": {
         "category": "Possible",
         "qpf_in": 4.177,
-        "ffg_in": 5.0,
-        "qpf_ffg_ratio": 0.835,
+        "ffg_in": 4.5,
+        "qpf_ffg_ratio": 0.928,
         "duration_hr": 6,
         "flood_prone": true
       },
@@ -4917,6 +7083,500 @@
       "properties": {
         "category": "Possible",
         "qpf_in": 4.392,
+        "ffg_in": 4.5,
+        "qpf_ffg_ratio": 0.976,
+        "duration_hr": 6,
+        "flood_prone": true
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -88.62361375,
+              30.63398702614379
+            ],
+            [
+              -88.6173653125,
+              30.63398702614379
+            ],
+            [
+              -88.6173653125,
+              30.639433632897603
+            ],
+            [
+              -88.62361375,
+              30.639433632897603
+            ],
+            [
+              -88.62361375,
+              30.63398702614379
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "category": "Probable",
+        "qpf_in": 4.607,
+        "ffg_in": 4.5,
+        "qpf_ffg_ratio": 1.024,
+        "duration_hr": 6,
+        "flood_prone": true
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -88.61736531250001,
+              30.63398702614379
+            ],
+            [
+              -88.61111687500001,
+              30.63398702614379
+            ],
+            [
+              -88.61111687500001,
+              30.639433632897603
+            ],
+            [
+              -88.61736531250001,
+              30.639433632897603
+            ],
+            [
+              -88.61736531250001,
+              30.63398702614379
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "category": "Probable",
+        "qpf_in": 4.728,
+        "ffg_in": 4.5,
+        "qpf_ffg_ratio": 1.051,
+        "duration_hr": 6,
+        "flood_prone": true
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -88.61111687500001,
+              30.63398702614379
+            ],
+            [
+              -88.6048684375,
+              30.63398702614379
+            ],
+            [
+              -88.6048684375,
+              30.639433632897603
+            ],
+            [
+              -88.61111687500001,
+              30.639433632897603
+            ],
+            [
+              -88.61111687500001,
+              30.63398702614379
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "category": "Probable",
+        "qpf_in": 4.756,
+        "ffg_in": 4.5,
+        "qpf_ffg_ratio": 1.057,
+        "duration_hr": 6,
+        "flood_prone": true
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -88.60486843750002,
+              30.63398702614379
+            ],
+            [
+              -88.59862000000001,
+              30.63398702614379
+            ],
+            [
+              -88.59862000000001,
+              30.639433632897603
+            ],
+            [
+              -88.60486843750002,
+              30.639433632897603
+            ],
+            [
+              -88.60486843750002,
+              30.63398702614379
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "category": "Probable",
+        "qpf_in": 4.783,
+        "ffg_in": 4.5,
+        "qpf_ffg_ratio": 1.063,
+        "duration_hr": 6,
+        "flood_prone": true
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -88.59862000000001,
+              30.63398702614379
+            ],
+            [
+              -88.5923715625,
+              30.63398702614379
+            ],
+            [
+              -88.5923715625,
+              30.639433632897603
+            ],
+            [
+              -88.59862000000001,
+              30.639433632897603
+            ],
+            [
+              -88.59862000000001,
+              30.63398702614379
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "category": "Probable",
+        "qpf_in": 4.811,
+        "ffg_in": 4.5,
+        "qpf_ffg_ratio": 1.069,
+        "duration_hr": 6,
+        "flood_prone": true
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -88.5923715625,
+              30.63398702614379
+            ],
+            [
+              -88.586123125,
+              30.63398702614379
+            ],
+            [
+              -88.586123125,
+              30.639433632897603
+            ],
+            [
+              -88.5923715625,
+              30.639433632897603
+            ],
+            [
+              -88.5923715625,
+              30.63398702614379
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "category": "Probable",
+        "qpf_in": 4.821,
+        "ffg_in": 4.5,
+        "qpf_ffg_ratio": 1.071,
+        "duration_hr": 6,
+        "flood_prone": true
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -88.58612312500001,
+              30.63398702614379
+            ],
+            [
+              -88.57987468750001,
+              30.63398702614379
+            ],
+            [
+              -88.57987468750001,
+              30.639433632897603
+            ],
+            [
+              -88.58612312500001,
+              30.639433632897603
+            ],
+            [
+              -88.58612312500001,
+              30.63398702614379
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "category": "Probable",
+        "qpf_in": 4.812,
+        "ffg_in": 4.5,
+        "qpf_ffg_ratio": 1.069,
+        "duration_hr": 6,
+        "flood_prone": true
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -88.57987468750001,
+              30.63398702614379
+            ],
+            [
+              -88.57362625,
+              30.63398702614379
+            ],
+            [
+              -88.57362625,
+              30.639433632897603
+            ],
+            [
+              -88.57987468750001,
+              30.639433632897603
+            ],
+            [
+              -88.57987468750001,
+              30.63398702614379
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "category": "Probable",
+        "qpf_in": 4.804,
+        "ffg_in": 4.5,
+        "qpf_ffg_ratio": 1.068,
+        "duration_hr": 6,
+        "flood_prone": true
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -88.57362625,
+              30.63398702614379
+            ],
+            [
+              -88.5673778125,
+              30.63398702614379
+            ],
+            [
+              -88.5673778125,
+              30.639433632897603
+            ],
+            [
+              -88.57362625,
+              30.639433632897603
+            ],
+            [
+              -88.57362625,
+              30.63398702614379
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "category": "Probable",
+        "qpf_in": 4.796,
+        "ffg_in": 4.5,
+        "qpf_ffg_ratio": 1.066,
+        "duration_hr": 6,
+        "flood_prone": true
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -88.56737781250001,
+              30.63398702614379
+            ],
+            [
+              -88.56112937500001,
+              30.63398702614379
+            ],
+            [
+              -88.56112937500001,
+              30.639433632897603
+            ],
+            [
+              -88.56737781250001,
+              30.639433632897603
+            ],
+            [
+              -88.56737781250001,
+              30.63398702614379
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "category": "Probable",
+        "qpf_in": 4.734,
+        "ffg_in": 4.5,
+        "qpf_ffg_ratio": 1.052,
+        "duration_hr": 6,
+        "flood_prone": true
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -88.56112937500001,
+              30.63398702614379
+            ],
+            [
+              -88.5548809375,
+              30.63398702614379
+            ],
+            [
+              -88.5548809375,
+              30.639433632897603
+            ],
+            [
+              -88.56112937500001,
+              30.639433632897603
+            ],
+            [
+              -88.56112937500001,
+              30.63398702614379
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "category": "Probable",
+        "qpf_in": 4.619,
+        "ffg_in": 4.5,
+        "qpf_ffg_ratio": 1.026,
+        "duration_hr": 6,
+        "flood_prone": true
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -88.5548809375,
+              30.63398702614379
+            ],
+            [
+              -88.5486325,
+              30.63398702614379
+            ],
+            [
+              -88.5486325,
+              30.639433632897603
+            ],
+            [
+              -88.5548809375,
+              30.639433632897603
+            ],
+            [
+              -88.5548809375,
+              30.63398702614379
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "category": "Probable",
+        "qpf_in": 4.503,
+        "ffg_in": 4.5,
+        "qpf_ffg_ratio": 1.001,
+        "duration_hr": 6,
+        "flood_prone": true
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -88.54863250000001,
+              30.63398702614379
+            ],
+            [
+              -88.5423840625,
+              30.63398702614379
+            ],
+            [
+              -88.5423840625,
+              30.639433632897603
+            ],
+            [
+              -88.54863250000001,
+              30.639433632897603
+            ],
+            [
+              -88.54863250000001,
+              30.63398702614379
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "category": "Possible",
+        "qpf_in": 4.388,
         "ffg_in": 5.0,
         "qpf_ffg_ratio": 0.878,
         "duration_hr": 6,
@@ -4927,480 +7587,138 @@
         "coordinates": [
           [
             [
-              -88.62361375,
-              30.63398702614379
-            ],
-            [
-              -88.6173653125,
-              30.63398702614379
-            ],
-            [
-              -88.6173653125,
-              30.639433632897603
-            ],
-            [
-              -88.62361375,
-              30.639433632897603
-            ],
-            [
-              -88.62361375,
-              30.63398702614379
-            ]
-          ]
-        ]
-      }
-    },
-    {
-      "type": "Feature",
-      "properties": {
-        "category": "Possible",
-        "qpf_in": 4.607,
-        "ffg_in": 5.0,
-        "qpf_ffg_ratio": 0.921,
-        "duration_hr": 6,
-        "flood_prone": true
-      },
-      "geometry": {
-        "type": "Polygon",
-        "coordinates": [
-          [
-            [
-              -88.61736531250001,
-              30.63398702614379
-            ],
-            [
-              -88.61111687500001,
-              30.63398702614379
-            ],
-            [
-              -88.61111687500001,
-              30.639433632897603
-            ],
-            [
-              -88.61736531250001,
-              30.639433632897603
-            ],
-            [
-              -88.61736531250001,
-              30.63398702614379
-            ]
-          ]
-        ]
-      }
-    },
-    {
-      "type": "Feature",
-      "properties": {
-        "category": "Possible",
-        "qpf_in": 4.728,
-        "ffg_in": 5.0,
-        "qpf_ffg_ratio": 0.946,
-        "duration_hr": 6,
-        "flood_prone": true
-      },
-      "geometry": {
-        "type": "Polygon",
-        "coordinates": [
-          [
-            [
-              -88.61111687500001,
-              30.63398702614379
-            ],
-            [
-              -88.6048684375,
-              30.63398702614379
-            ],
-            [
-              -88.6048684375,
-              30.639433632897603
-            ],
-            [
-              -88.61111687500001,
-              30.639433632897603
-            ],
-            [
-              -88.61111687500001,
-              30.63398702614379
-            ]
-          ]
-        ]
-      }
-    },
-    {
-      "type": "Feature",
-      "properties": {
-        "category": "Possible",
-        "qpf_in": 4.756,
-        "ffg_in": 5.0,
-        "qpf_ffg_ratio": 0.951,
-        "duration_hr": 6,
-        "flood_prone": true
-      },
-      "geometry": {
-        "type": "Polygon",
-        "coordinates": [
-          [
-            [
-              -88.60486843750002,
-              30.63398702614379
-            ],
-            [
-              -88.59862000000001,
-              30.63398702614379
-            ],
-            [
-              -88.59862000000001,
-              30.639433632897603
-            ],
-            [
-              -88.60486843750002,
-              30.639433632897603
-            ],
-            [
-              -88.60486843750002,
-              30.63398702614379
-            ]
-          ]
-        ]
-      }
-    },
-    {
-      "type": "Feature",
-      "properties": {
-        "category": "Possible",
-        "qpf_in": 4.783,
-        "ffg_in": 5.0,
-        "qpf_ffg_ratio": 0.957,
-        "duration_hr": 6,
-        "flood_prone": true
-      },
-      "geometry": {
-        "type": "Polygon",
-        "coordinates": [
-          [
-            [
-              -88.59862000000001,
-              30.63398702614379
-            ],
-            [
-              -88.5923715625,
-              30.63398702614379
-            ],
-            [
-              -88.5923715625,
-              30.639433632897603
-            ],
-            [
-              -88.59862000000001,
-              30.639433632897603
-            ],
-            [
-              -88.59862000000001,
-              30.63398702614379
-            ]
-          ]
-        ]
-      }
-    },
-    {
-      "type": "Feature",
-      "properties": {
-        "category": "Possible",
-        "qpf_in": 4.811,
-        "ffg_in": 5.0,
-        "qpf_ffg_ratio": 0.962,
-        "duration_hr": 6,
-        "flood_prone": true
-      },
-      "geometry": {
-        "type": "Polygon",
-        "coordinates": [
-          [
-            [
-              -88.5923715625,
-              30.63398702614379
-            ],
-            [
-              -88.586123125,
-              30.63398702614379
-            ],
-            [
-              -88.586123125,
-              30.639433632897603
-            ],
-            [
-              -88.5923715625,
-              30.639433632897603
-            ],
-            [
-              -88.5923715625,
-              30.63398702614379
-            ]
-          ]
-        ]
-      }
-    },
-    {
-      "type": "Feature",
-      "properties": {
-        "category": "Possible",
-        "qpf_in": 4.821,
-        "ffg_in": 5.0,
-        "qpf_ffg_ratio": 0.964,
-        "duration_hr": 6,
-        "flood_prone": true
-      },
-      "geometry": {
-        "type": "Polygon",
-        "coordinates": [
-          [
-            [
-              -88.58612312500001,
-              30.63398702614379
-            ],
-            [
-              -88.57987468750001,
-              30.63398702614379
-            ],
-            [
-              -88.57987468750001,
-              30.639433632897603
-            ],
-            [
-              -88.58612312500001,
-              30.639433632897603
-            ],
-            [
-              -88.58612312500001,
-              30.63398702614379
-            ]
-          ]
-        ]
-      }
-    },
-    {
-      "type": "Feature",
-      "properties": {
-        "category": "Possible",
-        "qpf_in": 4.812,
-        "ffg_in": 5.0,
-        "qpf_ffg_ratio": 0.962,
-        "duration_hr": 6,
-        "flood_prone": true
-      },
-      "geometry": {
-        "type": "Polygon",
-        "coordinates": [
-          [
-            [
-              -88.57987468750001,
-              30.63398702614379
-            ],
-            [
-              -88.57362625,
-              30.63398702614379
-            ],
-            [
-              -88.57362625,
-              30.639433632897603
-            ],
-            [
-              -88.57987468750001,
-              30.639433632897603
-            ],
-            [
-              -88.57987468750001,
-              30.63398702614379
-            ]
-          ]
-        ]
-      }
-    },
-    {
-      "type": "Feature",
-      "properties": {
-        "category": "Possible",
-        "qpf_in": 4.804,
-        "ffg_in": 5.0,
-        "qpf_ffg_ratio": 0.961,
-        "duration_hr": 6,
-        "flood_prone": true
-      },
-      "geometry": {
-        "type": "Polygon",
-        "coordinates": [
-          [
-            [
-              -88.57362625,
-              30.63398702614379
-            ],
-            [
-              -88.5673778125,
-              30.63398702614379
-            ],
-            [
-              -88.5673778125,
-              30.639433632897603
-            ],
-            [
-              -88.57362625,
-              30.639433632897603
-            ],
-            [
-              -88.57362625,
-              30.63398702614379
-            ]
-          ]
-        ]
-      }
-    },
-    {
-      "type": "Feature",
-      "properties": {
-        "category": "Possible",
-        "qpf_in": 4.796,
-        "ffg_in": 5.0,
-        "qpf_ffg_ratio": 0.959,
-        "duration_hr": 6,
-        "flood_prone": true
-      },
-      "geometry": {
-        "type": "Polygon",
-        "coordinates": [
-          [
-            [
-              -88.56737781250001,
-              30.63398702614379
-            ],
-            [
-              -88.56112937500001,
-              30.63398702614379
-            ],
-            [
-              -88.56112937500001,
-              30.639433632897603
-            ],
-            [
-              -88.56737781250001,
-              30.639433632897603
-            ],
-            [
-              -88.56737781250001,
-              30.63398702614379
-            ]
-          ]
-        ]
-      }
-    },
-    {
-      "type": "Feature",
-      "properties": {
-        "category": "Possible",
-        "qpf_in": 4.734,
-        "ffg_in": 5.0,
-        "qpf_ffg_ratio": 0.947,
-        "duration_hr": 6,
-        "flood_prone": true
-      },
-      "geometry": {
-        "type": "Polygon",
-        "coordinates": [
-          [
-            [
-              -88.56112937500001,
-              30.63398702614379
-            ],
-            [
-              -88.5548809375,
-              30.63398702614379
-            ],
-            [
-              -88.5548809375,
-              30.639433632897603
-            ],
-            [
-              -88.56112937500001,
-              30.639433632897603
-            ],
-            [
-              -88.56112937500001,
-              30.63398702614379
-            ]
-          ]
-        ]
-      }
-    },
-    {
-      "type": "Feature",
-      "properties": {
-        "category": "Possible",
-        "qpf_in": 4.619,
-        "ffg_in": 5.0,
-        "qpf_ffg_ratio": 0.924,
-        "duration_hr": 6,
-        "flood_prone": true
-      },
-      "geometry": {
-        "type": "Polygon",
-        "coordinates": [
-          [
-            [
-              -88.5548809375,
-              30.63398702614379
-            ],
-            [
-              -88.5486325,
-              30.63398702614379
-            ],
-            [
-              -88.5486325,
-              30.639433632897603
-            ],
-            [
-              -88.5548809375,
-              30.639433632897603
-            ],
-            [
-              -88.5548809375,
-              30.63398702614379
-            ]
-          ]
-        ]
-      }
-    },
-    {
-      "type": "Feature",
-      "properties": {
-        "category": "Possible",
-        "qpf_in": 4.503,
-        "ffg_in": 5.0,
-        "qpf_ffg_ratio": 0.901,
-        "duration_hr": 6,
-        "flood_prone": true
-      },
-      "geometry": {
-        "type": "Polygon",
-        "coordinates": [
-          [
-            [
-              -88.54863250000001,
-              30.63398702614379
-            ],
-            [
               -88.5423840625,
               30.63398702614379
+            ],
+            [
+              -88.536135625,
+              30.63398702614379
+            ],
+            [
+              -88.536135625,
+              30.639433632897603
             ],
             [
               -88.5423840625,
               30.639433632897603
             ],
             [
-              -88.54863250000001,
+              -88.5423840625,
+              30.63398702614379
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "category": "Possible",
+        "qpf_in": 4.167,
+        "ffg_in": 5.0,
+        "qpf_ffg_ratio": 0.833,
+        "duration_hr": 6,
+        "flood_prone": true
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -88.53613562500001,
+              30.63398702614379
+            ],
+            [
+              -88.52988718750001,
+              30.63398702614379
+            ],
+            [
+              -88.52988718750001,
               30.639433632897603
             ],
             [
-              -88.54863250000001,
+              -88.53613562500001,
+              30.639433632897603
+            ],
+            [
+              -88.53613562500001,
               30.63398702614379
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "category": "Possible",
+        "qpf_in": 3.841,
+        "ffg_in": 5.0,
+        "qpf_ffg_ratio": 0.768,
+        "duration_hr": 6,
+        "flood_prone": true
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -88.52988718750001,
+              30.63398702614379
+            ],
+            [
+              -88.52363875,
+              30.63398702614379
+            ],
+            [
+              -88.52363875,
+              30.639433632897603
+            ],
+            [
+              -88.52988718750001,
+              30.639433632897603
+            ],
+            [
+              -88.52988718750001,
+              30.63398702614379
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "category": "Possible",
+        "qpf_in": 3.485,
+        "ffg_in": 4.5,
+        "qpf_ffg_ratio": 0.774,
+        "duration_hr": 6,
+        "flood_prone": true
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -88.64860750000001,
+              30.628540419389974
+            ],
+            [
+              -88.6423590625,
+              30.628540419389974
+            ],
+            [
+              -88.6423590625,
+              30.63398702614379
+            ],
+            [
+              -88.64860750000001,
+              30.63398702614379
+            ],
+            [
+              -88.64860750000001,
+              30.628540419389974
             ]
           ]
         ]
@@ -5411,8 +7729,8 @@
       "properties": {
         "category": "Possible",
         "qpf_in": 3.78,
-        "ffg_in": 5.0,
-        "qpf_ffg_ratio": 0.756,
+        "ffg_in": 4.5,
+        "qpf_ffg_ratio": 0.84,
         "duration_hr": 6,
         "flood_prone": true
       },
@@ -5449,8 +7767,8 @@
       "properties": {
         "category": "Possible",
         "qpf_in": 4.033,
-        "ffg_in": 5.0,
-        "qpf_ffg_ratio": 0.807,
+        "ffg_in": 4.5,
+        "qpf_ffg_ratio": 0.896,
         "duration_hr": 6,
         "flood_prone": true
       },
@@ -5487,8 +7805,8 @@
       "properties": {
         "category": "Possible",
         "qpf_in": 4.244,
-        "ffg_in": 5.0,
-        "qpf_ffg_ratio": 0.849,
+        "ffg_in": 4.5,
+        "qpf_ffg_ratio": 0.943,
         "duration_hr": 6,
         "flood_prone": true
       },
@@ -5525,8 +7843,8 @@
       "properties": {
         "category": "Possible",
         "qpf_in": 4.455,
-        "ffg_in": 5.0,
-        "qpf_ffg_ratio": 0.891,
+        "ffg_in": 4.5,
+        "qpf_ffg_ratio": 0.99,
         "duration_hr": 6,
         "flood_prone": true
       },
@@ -5561,10 +7879,10 @@
     {
       "type": "Feature",
       "properties": {
-        "category": "Possible",
+        "category": "Probable",
         "qpf_in": 4.666,
-        "ffg_in": 5.0,
-        "qpf_ffg_ratio": 0.933,
+        "ffg_in": 4.5,
+        "qpf_ffg_ratio": 1.037,
         "duration_hr": 6,
         "flood_prone": true
       },
@@ -5599,10 +7917,10 @@
     {
       "type": "Feature",
       "properties": {
-        "category": "Possible",
+        "category": "Probable",
         "qpf_in": 4.785,
-        "ffg_in": 5.0,
-        "qpf_ffg_ratio": 0.957,
+        "ffg_in": 4.5,
+        "qpf_ffg_ratio": 1.063,
         "duration_hr": 6,
         "flood_prone": true
       },
@@ -5637,10 +7955,10 @@
     {
       "type": "Feature",
       "properties": {
-        "category": "Possible",
+        "category": "Probable",
         "qpf_in": 4.81,
-        "ffg_in": 5.0,
-        "qpf_ffg_ratio": 0.962,
+        "ffg_in": 4.5,
+        "qpf_ffg_ratio": 1.069,
         "duration_hr": 6,
         "flood_prone": true
       },
@@ -5675,10 +7993,10 @@
     {
       "type": "Feature",
       "properties": {
-        "category": "Possible",
+        "category": "Probable",
         "qpf_in": 4.835,
-        "ffg_in": 5.0,
-        "qpf_ffg_ratio": 0.967,
+        "ffg_in": 4.5,
+        "qpf_ffg_ratio": 1.074,
         "duration_hr": 6,
         "flood_prone": true
       },
@@ -5713,10 +8031,10 @@
     {
       "type": "Feature",
       "properties": {
-        "category": "Possible",
+        "category": "Probable",
         "qpf_in": 4.86,
-        "ffg_in": 5.0,
-        "qpf_ffg_ratio": 0.972,
+        "ffg_in": 4.5,
+        "qpf_ffg_ratio": 1.08,
         "duration_hr": 6,
         "flood_prone": true
       },
@@ -5751,10 +8069,10 @@
     {
       "type": "Feature",
       "properties": {
-        "category": "Possible",
+        "category": "Probable",
         "qpf_in": 4.861,
-        "ffg_in": 5.0,
-        "qpf_ffg_ratio": 0.972,
+        "ffg_in": 4.5,
+        "qpf_ffg_ratio": 1.08,
         "duration_hr": 6,
         "flood_prone": true
       },
@@ -5789,10 +8107,10 @@
     {
       "type": "Feature",
       "properties": {
-        "category": "Possible",
+        "category": "Probable",
         "qpf_in": 4.837,
-        "ffg_in": 5.0,
-        "qpf_ffg_ratio": 0.967,
+        "ffg_in": 4.5,
+        "qpf_ffg_ratio": 1.075,
         "duration_hr": 6,
         "flood_prone": true
       },
@@ -5827,10 +8145,10 @@
     {
       "type": "Feature",
       "properties": {
-        "category": "Possible",
+        "category": "Probable",
         "qpf_in": 4.812,
-        "ffg_in": 5.0,
-        "qpf_ffg_ratio": 0.962,
+        "ffg_in": 4.5,
+        "qpf_ffg_ratio": 1.069,
         "duration_hr": 6,
         "flood_prone": true
       },
@@ -5865,10 +8183,10 @@
     {
       "type": "Feature",
       "properties": {
-        "category": "Possible",
+        "category": "Probable",
         "qpf_in": 4.788,
-        "ffg_in": 5.0,
-        "qpf_ffg_ratio": 0.958,
+        "ffg_in": 4.5,
+        "qpf_ffg_ratio": 1.064,
         "duration_hr": 6,
         "flood_prone": true
       },
@@ -5903,10 +8221,10 @@
     {
       "type": "Feature",
       "properties": {
-        "category": "Possible",
+        "category": "Probable",
         "qpf_in": 4.712,
-        "ffg_in": 5.0,
-        "qpf_ffg_ratio": 0.942,
+        "ffg_in": 4.5,
+        "qpf_ffg_ratio": 1.047,
         "duration_hr": 6,
         "flood_prone": true
       },
@@ -5941,10 +8259,10 @@
     {
       "type": "Feature",
       "properties": {
-        "category": "Possible",
+        "category": "Probable",
         "qpf_in": 4.582,
-        "ffg_in": 5.0,
-        "qpf_ffg_ratio": 0.916,
+        "ffg_in": 4.5,
+        "qpf_ffg_ratio": 1.018,
         "duration_hr": 6,
         "flood_prone": true
       },
@@ -5981,8 +8299,8 @@
       "properties": {
         "category": "Possible",
         "qpf_in": 4.453,
-        "ffg_in": 5.0,
-        "qpf_ffg_ratio": 0.891,
+        "ffg_in": 4.5,
+        "qpf_ffg_ratio": 0.99,
         "duration_hr": 6,
         "flood_prone": true
       },
@@ -6018,9 +8336,161 @@
       "type": "Feature",
       "properties": {
         "category": "Possible",
-        "qpf_in": 3.824,
+        "qpf_in": 4.324,
         "ffg_in": 5.0,
-        "qpf_ffg_ratio": 0.765,
+        "qpf_ffg_ratio": 0.865,
+        "duration_hr": 6,
+        "flood_prone": true
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -88.5423840625,
+              30.628540419389974
+            ],
+            [
+              -88.536135625,
+              30.628540419389974
+            ],
+            [
+              -88.536135625,
+              30.63398702614379
+            ],
+            [
+              -88.5423840625,
+              30.63398702614379
+            ],
+            [
+              -88.5423840625,
+              30.628540419389974
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "category": "Possible",
+        "qpf_in": 4.101,
+        "ffg_in": 5.0,
+        "qpf_ffg_ratio": 0.82,
+        "duration_hr": 6,
+        "flood_prone": true
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -88.53613562500001,
+              30.628540419389974
+            ],
+            [
+              -88.52988718750001,
+              30.628540419389974
+            ],
+            [
+              -88.52988718750001,
+              30.63398702614379
+            ],
+            [
+              -88.53613562500001,
+              30.63398702614379
+            ],
+            [
+              -88.53613562500001,
+              30.628540419389974
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "category": "Possible",
+        "qpf_in": 3.784,
+        "ffg_in": 5.0,
+        "qpf_ffg_ratio": 0.757,
+        "duration_hr": 6,
+        "flood_prone": true
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -88.52988718750001,
+              30.628540419389974
+            ],
+            [
+              -88.52363875,
+              30.628540419389974
+            ],
+            [
+              -88.52363875,
+              30.63398702614379
+            ],
+            [
+              -88.52988718750001,
+              30.63398702614379
+            ],
+            [
+              -88.52988718750001,
+              30.628540419389974
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "category": "Possible",
+        "qpf_in": 3.524,
+        "ffg_in": 4.5,
+        "qpf_ffg_ratio": 0.783,
+        "duration_hr": 6,
+        "flood_prone": true
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -88.64860750000001,
+              30.623093812636164
+            ],
+            [
+              -88.6423590625,
+              30.623093812636164
+            ],
+            [
+              -88.6423590625,
+              30.628540419389978
+            ],
+            [
+              -88.64860750000001,
+              30.628540419389978
+            ],
+            [
+              -88.64860750000001,
+              30.623093812636164
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "category": "Possible",
+        "qpf_in": 3.824,
+        "ffg_in": 4.5,
+        "qpf_ffg_ratio": 0.85,
         "duration_hr": 6,
         "flood_prone": true
       },
@@ -6057,8 +8527,8 @@
       "properties": {
         "category": "Possible",
         "qpf_in": 4.075,
-        "ffg_in": 5.0,
-        "qpf_ffg_ratio": 0.815,
+        "ffg_in": 4.5,
+        "qpf_ffg_ratio": 0.906,
         "duration_hr": 6,
         "flood_prone": true
       },
@@ -6095,8 +8565,8 @@
       "properties": {
         "category": "Possible",
         "qpf_in": 4.279,
-        "ffg_in": 5.0,
-        "qpf_ffg_ratio": 0.856,
+        "ffg_in": 4.5,
+        "qpf_ffg_ratio": 0.951,
         "duration_hr": 6,
         "flood_prone": true
       },
@@ -6133,8 +8603,8 @@
       "properties": {
         "category": "Possible",
         "qpf_in": 4.484,
-        "ffg_in": 5.0,
-        "qpf_ffg_ratio": 0.897,
+        "ffg_in": 4.5,
+        "qpf_ffg_ratio": 0.996,
         "duration_hr": 6,
         "flood_prone": true
       },
@@ -6169,10 +8639,10 @@
     {
       "type": "Feature",
       "properties": {
-        "category": "Possible",
+        "category": "Probable",
         "qpf_in": 4.688,
-        "ffg_in": 5.0,
-        "qpf_ffg_ratio": 0.938,
+        "ffg_in": 4.5,
+        "qpf_ffg_ratio": 1.042,
         "duration_hr": 6,
         "flood_prone": true
       },
@@ -6207,10 +8677,10 @@
     {
       "type": "Feature",
       "properties": {
-        "category": "Possible",
+        "category": "Probable",
         "qpf_in": 4.806,
-        "ffg_in": 5.0,
-        "qpf_ffg_ratio": 0.961,
+        "ffg_in": 4.5,
+        "qpf_ffg_ratio": 1.068,
         "duration_hr": 6,
         "flood_prone": true
       },
@@ -6245,10 +8715,10 @@
     {
       "type": "Feature",
       "properties": {
-        "category": "Possible",
+        "category": "Probable",
         "qpf_in": 4.838,
-        "ffg_in": 5.0,
-        "qpf_ffg_ratio": 0.968,
+        "ffg_in": 4.5,
+        "qpf_ffg_ratio": 1.075,
         "duration_hr": 6,
         "flood_prone": true
       },
@@ -6283,10 +8753,10 @@
     {
       "type": "Feature",
       "properties": {
-        "category": "Possible",
+        "category": "Probable",
         "qpf_in": 4.87,
-        "ffg_in": 5.0,
-        "qpf_ffg_ratio": 0.974,
+        "ffg_in": 4.5,
+        "qpf_ffg_ratio": 1.082,
         "duration_hr": 6,
         "flood_prone": true
       },
@@ -6321,10 +8791,10 @@
     {
       "type": "Feature",
       "properties": {
-        "category": "Possible",
+        "category": "Probable",
         "qpf_in": 4.902,
-        "ffg_in": 5.0,
-        "qpf_ffg_ratio": 0.98,
+        "ffg_in": 4.5,
+        "qpf_ffg_ratio": 1.089,
         "duration_hr": 6,
         "flood_prone": true
       },
@@ -6359,10 +8829,10 @@
     {
       "type": "Feature",
       "properties": {
-        "category": "Possible",
+        "category": "Probable",
         "qpf_in": 4.897,
-        "ffg_in": 5.0,
-        "qpf_ffg_ratio": 0.979,
+        "ffg_in": 4.5,
+        "qpf_ffg_ratio": 1.088,
         "duration_hr": 6,
         "flood_prone": true
       },
@@ -6397,10 +8867,10 @@
     {
       "type": "Feature",
       "properties": {
-        "category": "Possible",
+        "category": "Probable",
         "qpf_in": 4.857,
-        "ffg_in": 5.0,
-        "qpf_ffg_ratio": 0.971,
+        "ffg_in": 4.5,
+        "qpf_ffg_ratio": 1.079,
         "duration_hr": 6,
         "flood_prone": true
       },
@@ -6435,10 +8905,10 @@
     {
       "type": "Feature",
       "properties": {
-        "category": "Possible",
+        "category": "Probable",
         "qpf_in": 4.816,
-        "ffg_in": 5.0,
-        "qpf_ffg_ratio": 0.963,
+        "ffg_in": 4.5,
+        "qpf_ffg_ratio": 1.07,
         "duration_hr": 6,
         "flood_prone": true
       },
@@ -6473,10 +8943,10 @@
     {
       "type": "Feature",
       "properties": {
-        "category": "Possible",
+        "category": "Probable",
         "qpf_in": 4.776,
-        "ffg_in": 5.0,
-        "qpf_ffg_ratio": 0.955,
+        "ffg_in": 4.5,
+        "qpf_ffg_ratio": 1.061,
         "duration_hr": 6,
         "flood_prone": true
       },
@@ -6511,10 +8981,10 @@
     {
       "type": "Feature",
       "properties": {
-        "category": "Possible",
+        "category": "Probable",
         "qpf_in": 4.679,
-        "ffg_in": 5.0,
-        "qpf_ffg_ratio": 0.936,
+        "ffg_in": 4.5,
+        "qpf_ffg_ratio": 1.04,
         "duration_hr": 6,
         "flood_prone": true
       },
@@ -6549,10 +9019,10 @@
     {
       "type": "Feature",
       "properties": {
-        "category": "Possible",
+        "category": "Probable",
         "qpf_in": 4.526,
-        "ffg_in": 5.0,
-        "qpf_ffg_ratio": 0.905,
+        "ffg_in": 4.5,
+        "qpf_ffg_ratio": 1.006,
         "duration_hr": 6,
         "flood_prone": true
       },
@@ -6589,8 +9059,8 @@
       "properties": {
         "category": "Possible",
         "qpf_in": 4.373,
-        "ffg_in": 5.0,
-        "qpf_ffg_ratio": 0.875,
+        "ffg_in": 4.5,
+        "qpf_ffg_ratio": 0.972,
         "duration_hr": 6,
         "flood_prone": true
       },
@@ -6626,9 +9096,123 @@
       "type": "Feature",
       "properties": {
         "category": "Possible",
-        "qpf_in": 3.868,
+        "qpf_in": 4.22,
         "ffg_in": 5.0,
-        "qpf_ffg_ratio": 0.774,
+        "qpf_ffg_ratio": 0.844,
+        "duration_hr": 6,
+        "flood_prone": true
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -88.5423840625,
+              30.623093812636164
+            ],
+            [
+              -88.536135625,
+              30.623093812636164
+            ],
+            [
+              -88.536135625,
+              30.628540419389978
+            ],
+            [
+              -88.5423840625,
+              30.628540419389978
+            ],
+            [
+              -88.5423840625,
+              30.623093812636164
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "category": "Possible",
+        "qpf_in": 3.993,
+        "ffg_in": 5.0,
+        "qpf_ffg_ratio": 0.799,
+        "duration_hr": 6,
+        "flood_prone": true
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -88.53613562500001,
+              30.623093812636164
+            ],
+            [
+              -88.52988718750001,
+              30.623093812636164
+            ],
+            [
+              -88.52988718750001,
+              30.628540419389978
+            ],
+            [
+              -88.53613562500001,
+              30.628540419389978
+            ],
+            [
+              -88.53613562500001,
+              30.623093812636164
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "category": "Possible",
+        "qpf_in": 3.564,
+        "ffg_in": 4.5,
+        "qpf_ffg_ratio": 0.792,
+        "duration_hr": 6,
+        "flood_prone": true
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -88.64860750000001,
+              30.61764720588235
+            ],
+            [
+              -88.6423590625,
+              30.61764720588235
+            ],
+            [
+              -88.6423590625,
+              30.623093812636164
+            ],
+            [
+              -88.64860750000001,
+              30.623093812636164
+            ],
+            [
+              -88.64860750000001,
+              30.61764720588235
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "category": "Possible",
+        "qpf_in": 3.868,
+        "ffg_in": 4.5,
+        "qpf_ffg_ratio": 0.86,
         "duration_hr": 6,
         "flood_prone": true
       },
@@ -6665,8 +9249,8 @@
       "properties": {
         "category": "Possible",
         "qpf_in": 4.118,
-        "ffg_in": 5.0,
-        "qpf_ffg_ratio": 0.824,
+        "ffg_in": 4.5,
+        "qpf_ffg_ratio": 0.915,
         "duration_hr": 6,
         "flood_prone": true
       },
@@ -6703,8 +9287,8 @@
       "properties": {
         "category": "Possible",
         "qpf_in": 4.315,
-        "ffg_in": 5.0,
-        "qpf_ffg_ratio": 0.863,
+        "ffg_in": 4.5,
+        "qpf_ffg_ratio": 0.959,
         "duration_hr": 6,
         "flood_prone": true
       },
@@ -6739,10 +9323,10 @@
     {
       "type": "Feature",
       "properties": {
-        "category": "Possible",
+        "category": "Probable",
         "qpf_in": 4.512,
-        "ffg_in": 5.0,
-        "qpf_ffg_ratio": 0.902,
+        "ffg_in": 4.5,
+        "qpf_ffg_ratio": 1.003,
         "duration_hr": 6,
         "flood_prone": true
       },
@@ -6777,10 +9361,10 @@
     {
       "type": "Feature",
       "properties": {
-        "category": "Possible",
+        "category": "Probable",
         "qpf_in": 4.709,
-        "ffg_in": 5.0,
-        "qpf_ffg_ratio": 0.942,
+        "ffg_in": 4.5,
+        "qpf_ffg_ratio": 1.046,
         "duration_hr": 6,
         "flood_prone": true
       },
@@ -6815,10 +9399,10 @@
     {
       "type": "Feature",
       "properties": {
-        "category": "Possible",
+        "category": "Probable",
         "qpf_in": 4.827,
-        "ffg_in": 5.0,
-        "qpf_ffg_ratio": 0.965,
+        "ffg_in": 4.5,
+        "qpf_ffg_ratio": 1.073,
         "duration_hr": 6,
         "flood_prone": true
       },
@@ -6853,10 +9437,10 @@
     {
       "type": "Feature",
       "properties": {
-        "category": "Possible",
+        "category": "Probable",
         "qpf_in": 4.865,
-        "ffg_in": 5.0,
-        "qpf_ffg_ratio": 0.973,
+        "ffg_in": 4.5,
+        "qpf_ffg_ratio": 1.081,
         "duration_hr": 6,
         "flood_prone": true
       },
@@ -6891,10 +9475,10 @@
     {
       "type": "Feature",
       "properties": {
-        "category": "Possible",
+        "category": "Probable",
         "qpf_in": 4.904,
-        "ffg_in": 5.0,
-        "qpf_ffg_ratio": 0.981,
+        "ffg_in": 4.5,
+        "qpf_ffg_ratio": 1.09,
         "duration_hr": 6,
         "flood_prone": true
       },
@@ -6929,10 +9513,10 @@
     {
       "type": "Feature",
       "properties": {
-        "category": "Possible",
+        "category": "Probable",
         "qpf_in": 4.943,
-        "ffg_in": 5.0,
-        "qpf_ffg_ratio": 0.989,
+        "ffg_in": 4.5,
+        "qpf_ffg_ratio": 1.098,
         "duration_hr": 6,
         "flood_prone": true
       },
@@ -6967,10 +9551,10 @@
     {
       "type": "Feature",
       "properties": {
-        "category": "Possible",
+        "category": "Probable",
         "qpf_in": 4.934,
-        "ffg_in": 5.0,
-        "qpf_ffg_ratio": 0.987,
+        "ffg_in": 4.5,
+        "qpf_ffg_ratio": 1.096,
         "duration_hr": 6,
         "flood_prone": true
       },
@@ -7005,10 +9589,10 @@
     {
       "type": "Feature",
       "properties": {
-        "category": "Possible",
+        "category": "Probable",
         "qpf_in": 4.877,
-        "ffg_in": 5.0,
-        "qpf_ffg_ratio": 0.975,
+        "ffg_in": 4.5,
+        "qpf_ffg_ratio": 1.084,
         "duration_hr": 6,
         "flood_prone": true
       },
@@ -7043,10 +9627,10 @@
     {
       "type": "Feature",
       "properties": {
-        "category": "Possible",
+        "category": "Probable",
         "qpf_in": 4.82,
-        "ffg_in": 5.0,
-        "qpf_ffg_ratio": 0.964,
+        "ffg_in": 4.5,
+        "qpf_ffg_ratio": 1.071,
         "duration_hr": 6,
         "flood_prone": true
       },
@@ -7081,10 +9665,10 @@
     {
       "type": "Feature",
       "properties": {
-        "category": "Possible",
+        "category": "Probable",
         "qpf_in": 4.763,
-        "ffg_in": 5.0,
-        "qpf_ffg_ratio": 0.953,
+        "ffg_in": 4.5,
+        "qpf_ffg_ratio": 1.058,
         "duration_hr": 6,
         "flood_prone": true
       },
@@ -7119,10 +9703,10 @@
     {
       "type": "Feature",
       "properties": {
-        "category": "Possible",
+        "category": "Probable",
         "qpf_in": 4.646,
-        "ffg_in": 5.0,
-        "qpf_ffg_ratio": 0.929,
+        "ffg_in": 4.5,
+        "qpf_ffg_ratio": 1.032,
         "duration_hr": 6,
         "flood_prone": true
       },
@@ -7159,8 +9743,8 @@
       "properties": {
         "category": "Possible",
         "qpf_in": 4.469,
-        "ffg_in": 5.0,
-        "qpf_ffg_ratio": 0.894,
+        "ffg_in": 4.5,
+        "qpf_ffg_ratio": 0.993,
         "duration_hr": 6,
         "flood_prone": true
       },
@@ -7197,8 +9781,8 @@
       "properties": {
         "category": "Possible",
         "qpf_in": 4.292,
-        "ffg_in": 5.0,
-        "qpf_ffg_ratio": 0.858,
+        "ffg_in": 4.5,
+        "qpf_ffg_ratio": 0.954,
         "duration_hr": 6,
         "flood_prone": true
       },
@@ -7234,9 +9818,123 @@
       "type": "Feature",
       "properties": {
         "category": "Possible",
-        "qpf_in": 3.912,
+        "qpf_in": 4.115,
         "ffg_in": 5.0,
-        "qpf_ffg_ratio": 0.782,
+        "qpf_ffg_ratio": 0.823,
+        "duration_hr": 6,
+        "flood_prone": true
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -88.5423840625,
+              30.61764720588235
+            ],
+            [
+              -88.536135625,
+              30.61764720588235
+            ],
+            [
+              -88.536135625,
+              30.623093812636164
+            ],
+            [
+              -88.5423840625,
+              30.623093812636164
+            ],
+            [
+              -88.5423840625,
+              30.61764720588235
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "category": "Possible",
+        "qpf_in": 3.885,
+        "ffg_in": 5.0,
+        "qpf_ffg_ratio": 0.777,
+        "duration_hr": 6,
+        "flood_prone": true
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -88.53613562500001,
+              30.61764720588235
+            ],
+            [
+              -88.52988718750001,
+              30.61764720588235
+            ],
+            [
+              -88.52988718750001,
+              30.623093812636164
+            ],
+            [
+              -88.53613562500001,
+              30.623093812636164
+            ],
+            [
+              -88.53613562500001,
+              30.61764720588235
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "category": "Possible",
+        "qpf_in": 3.604,
+        "ffg_in": 4.5,
+        "qpf_ffg_ratio": 0.801,
+        "duration_hr": 6,
+        "flood_prone": true
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -88.64860750000001,
+              30.61220059912854
+            ],
+            [
+              -88.6423590625,
+              30.61220059912854
+            ],
+            [
+              -88.6423590625,
+              30.617647205882353
+            ],
+            [
+              -88.64860750000001,
+              30.617647205882353
+            ],
+            [
+              -88.64860750000001,
+              30.61220059912854
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "category": "Possible",
+        "qpf_in": 3.912,
+        "ffg_in": 4.5,
+        "qpf_ffg_ratio": 0.869,
         "duration_hr": 6,
         "flood_prone": true
       },
@@ -7273,8 +9971,8 @@
       "properties": {
         "category": "Possible",
         "qpf_in": 4.161,
-        "ffg_in": 5.0,
-        "qpf_ffg_ratio": 0.832,
+        "ffg_in": 4.5,
+        "qpf_ffg_ratio": 0.925,
         "duration_hr": 6,
         "flood_prone": true
       },
@@ -7311,8 +10009,8 @@
       "properties": {
         "category": "Possible",
         "qpf_in": 4.35,
-        "ffg_in": 5.0,
-        "qpf_ffg_ratio": 0.87,
+        "ffg_in": 4.5,
+        "qpf_ffg_ratio": 0.967,
         "duration_hr": 6,
         "flood_prone": true
       },
@@ -7347,10 +10045,10 @@
     {
       "type": "Feature",
       "properties": {
-        "category": "Possible",
+        "category": "Probable",
         "qpf_in": 4.54,
-        "ffg_in": 5.0,
-        "qpf_ffg_ratio": 0.908,
+        "ffg_in": 4.5,
+        "qpf_ffg_ratio": 1.009,
         "duration_hr": 6,
         "flood_prone": true
       },
@@ -7385,10 +10083,10 @@
     {
       "type": "Feature",
       "properties": {
-        "category": "Possible",
+        "category": "Probable",
         "qpf_in": 4.73,
-        "ffg_in": 5.0,
-        "qpf_ffg_ratio": 0.946,
+        "ffg_in": 4.5,
+        "qpf_ffg_ratio": 1.051,
         "duration_hr": 6,
         "flood_prone": true
       },
@@ -7423,10 +10121,10 @@
     {
       "type": "Feature",
       "properties": {
-        "category": "Possible",
+        "category": "Probable",
         "qpf_in": 4.848,
-        "ffg_in": 5.0,
-        "qpf_ffg_ratio": 0.97,
+        "ffg_in": 4.5,
+        "qpf_ffg_ratio": 1.077,
         "duration_hr": 6,
         "flood_prone": true
       },
@@ -7461,10 +10159,10 @@
     {
       "type": "Feature",
       "properties": {
-        "category": "Possible",
+        "category": "Probable",
         "qpf_in": 4.893,
-        "ffg_in": 5.0,
-        "qpf_ffg_ratio": 0.979,
+        "ffg_in": 4.5,
+        "qpf_ffg_ratio": 1.087,
         "duration_hr": 6,
         "flood_prone": true
       },
@@ -7499,10 +10197,10 @@
     {
       "type": "Feature",
       "properties": {
-        "category": "Possible",
+        "category": "Probable",
         "qpf_in": 4.939,
-        "ffg_in": 5.0,
-        "qpf_ffg_ratio": 0.988,
+        "ffg_in": 4.5,
+        "qpf_ffg_ratio": 1.098,
         "duration_hr": 6,
         "flood_prone": true
       },
@@ -7537,10 +10235,10 @@
     {
       "type": "Feature",
       "properties": {
-        "category": "Possible",
+        "category": "Probable",
         "qpf_in": 4.984,
-        "ffg_in": 5.0,
-        "qpf_ffg_ratio": 0.997,
+        "ffg_in": 4.5,
+        "qpf_ffg_ratio": 1.108,
         "duration_hr": 6,
         "flood_prone": true
       },
@@ -7575,10 +10273,10 @@
     {
       "type": "Feature",
       "properties": {
-        "category": "Possible",
+        "category": "Probable",
         "qpf_in": 4.971,
-        "ffg_in": 5.0,
-        "qpf_ffg_ratio": 0.994,
+        "ffg_in": 4.5,
+        "qpf_ffg_ratio": 1.105,
         "duration_hr": 6,
         "flood_prone": true
       },
@@ -7613,10 +10311,10 @@
     {
       "type": "Feature",
       "properties": {
-        "category": "Possible",
+        "category": "Probable",
         "qpf_in": 4.897,
-        "ffg_in": 5.0,
-        "qpf_ffg_ratio": 0.979,
+        "ffg_in": 4.5,
+        "qpf_ffg_ratio": 1.088,
         "duration_hr": 6,
         "flood_prone": true
       },
@@ -7651,10 +10349,10 @@
     {
       "type": "Feature",
       "properties": {
-        "category": "Possible",
+        "category": "Probable",
         "qpf_in": 4.824,
-        "ffg_in": 5.0,
-        "qpf_ffg_ratio": 0.965,
+        "ffg_in": 4.5,
+        "qpf_ffg_ratio": 1.072,
         "duration_hr": 6,
         "flood_prone": true
       },
@@ -7689,10 +10387,10 @@
     {
       "type": "Feature",
       "properties": {
-        "category": "Possible",
+        "category": "Probable",
         "qpf_in": 4.751,
-        "ffg_in": 5.0,
-        "qpf_ffg_ratio": 0.95,
+        "ffg_in": 4.5,
+        "qpf_ffg_ratio": 1.056,
         "duration_hr": 6,
         "flood_prone": true
       },
@@ -7727,10 +10425,10 @@
     {
       "type": "Feature",
       "properties": {
-        "category": "Possible",
+        "category": "Probable",
         "qpf_in": 4.613,
-        "ffg_in": 5.0,
-        "qpf_ffg_ratio": 0.923,
+        "ffg_in": 4.5,
+        "qpf_ffg_ratio": 1.025,
         "duration_hr": 6,
         "flood_prone": true
       },
@@ -7767,8 +10465,8 @@
       "properties": {
         "category": "Possible",
         "qpf_in": 4.413,
-        "ffg_in": 5.0,
-        "qpf_ffg_ratio": 0.883,
+        "ffg_in": 4.5,
+        "qpf_ffg_ratio": 0.981,
         "duration_hr": 6,
         "flood_prone": true
       },
@@ -7805,8 +10503,8 @@
       "properties": {
         "category": "Possible",
         "qpf_in": 4.212,
-        "ffg_in": 5.0,
-        "qpf_ffg_ratio": 0.842,
+        "ffg_in": 4.5,
+        "qpf_ffg_ratio": 0.936,
         "duration_hr": 6,
         "flood_prone": true
       },
@@ -7842,9 +10540,123 @@
       "type": "Feature",
       "properties": {
         "category": "Possible",
-        "qpf_in": 3.989,
+        "qpf_in": 4.011,
         "ffg_in": 5.0,
-        "qpf_ffg_ratio": 0.798,
+        "qpf_ffg_ratio": 0.802,
+        "duration_hr": 6,
+        "flood_prone": true
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -88.5423840625,
+              30.61220059912854
+            ],
+            [
+              -88.536135625,
+              30.61220059912854
+            ],
+            [
+              -88.536135625,
+              30.617647205882353
+            ],
+            [
+              -88.5423840625,
+              30.617647205882353
+            ],
+            [
+              -88.5423840625,
+              30.61220059912854
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "category": "Possible",
+        "qpf_in": 3.777,
+        "ffg_in": 5.0,
+        "qpf_ffg_ratio": 0.755,
+        "duration_hr": 6,
+        "flood_prone": true
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -88.53613562500001,
+              30.61220059912854
+            ],
+            [
+              -88.52988718750001,
+              30.61220059912854
+            ],
+            [
+              -88.52988718750001,
+              30.617647205882353
+            ],
+            [
+              -88.53613562500001,
+              30.617647205882353
+            ],
+            [
+              -88.53613562500001,
+              30.61220059912854
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "category": "Possible",
+        "qpf_in": 3.675,
+        "ffg_in": 4.5,
+        "qpf_ffg_ratio": 0.817,
+        "duration_hr": 6,
+        "flood_prone": true
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -88.64860750000001,
+              30.606753992374724
+            ],
+            [
+              -88.6423590625,
+              30.606753992374724
+            ],
+            [
+              -88.6423590625,
+              30.61220059912854
+            ],
+            [
+              -88.64860750000001,
+              30.61220059912854
+            ],
+            [
+              -88.64860750000001,
+              30.606753992374724
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "category": "Possible",
+        "qpf_in": 3.989,
+        "ffg_in": 4.5,
+        "qpf_ffg_ratio": 0.886,
         "duration_hr": 6,
         "flood_prone": true
       },
@@ -7881,8 +10693,8 @@
       "properties": {
         "category": "Possible",
         "qpf_in": 4.235,
-        "ffg_in": 5.0,
-        "qpf_ffg_ratio": 0.847,
+        "ffg_in": 4.5,
+        "qpf_ffg_ratio": 0.941,
         "duration_hr": 6,
         "flood_prone": true
       },
@@ -7919,8 +10731,8 @@
       "properties": {
         "category": "Possible",
         "qpf_in": 4.414,
-        "ffg_in": 5.0,
-        "qpf_ffg_ratio": 0.883,
+        "ffg_in": 4.5,
+        "qpf_ffg_ratio": 0.981,
         "duration_hr": 6,
         "flood_prone": true
       },
@@ -7955,10 +10767,10 @@
     {
       "type": "Feature",
       "properties": {
-        "category": "Possible",
+        "category": "Probable",
         "qpf_in": 4.592,
-        "ffg_in": 5.0,
-        "qpf_ffg_ratio": 0.918,
+        "ffg_in": 4.5,
+        "qpf_ffg_ratio": 1.02,
         "duration_hr": 6,
         "flood_prone": true
       },
@@ -7993,10 +10805,10 @@
     {
       "type": "Feature",
       "properties": {
-        "category": "Possible",
+        "category": "Probable",
         "qpf_in": 4.771,
-        "ffg_in": 5.0,
-        "qpf_ffg_ratio": 0.954,
+        "ffg_in": 4.5,
+        "qpf_ffg_ratio": 1.06,
         "duration_hr": 6,
         "flood_prone": true
       },
@@ -8031,10 +10843,10 @@
     {
       "type": "Feature",
       "properties": {
-        "category": "Possible",
+        "category": "Probable",
         "qpf_in": 4.883,
-        "ffg_in": 5.0,
-        "qpf_ffg_ratio": 0.977,
+        "ffg_in": 4.5,
+        "qpf_ffg_ratio": 1.085,
         "duration_hr": 6,
         "flood_prone": true
       },
@@ -8069,10 +10881,10 @@
     {
       "type": "Feature",
       "properties": {
-        "category": "Possible",
+        "category": "Probable",
         "qpf_in": 4.93,
-        "ffg_in": 5.0,
-        "qpf_ffg_ratio": 0.986,
+        "ffg_in": 4.5,
+        "qpf_ffg_ratio": 1.096,
         "duration_hr": 6,
         "flood_prone": true
       },
@@ -8107,10 +10919,10 @@
     {
       "type": "Feature",
       "properties": {
-        "category": "Possible",
+        "category": "Probable",
         "qpf_in": 4.976,
-        "ffg_in": 5.0,
-        "qpf_ffg_ratio": 0.995,
+        "ffg_in": 4.5,
+        "qpf_ffg_ratio": 1.106,
         "duration_hr": 6,
         "flood_prone": true
       },
@@ -8147,8 +10959,8 @@
       "properties": {
         "category": "Probable",
         "qpf_in": 5.022,
-        "ffg_in": 5.0,
-        "qpf_ffg_ratio": 1.004,
+        "ffg_in": 4.5,
+        "qpf_ffg_ratio": 1.116,
         "duration_hr": 6,
         "flood_prone": true
       },
@@ -8183,10 +10995,10 @@
     {
       "type": "Feature",
       "properties": {
-        "category": "Possible",
+        "category": "Probable",
         "qpf_in": 4.998,
-        "ffg_in": 5.0,
-        "qpf_ffg_ratio": 1.0,
+        "ffg_in": 4.5,
+        "qpf_ffg_ratio": 1.111,
         "duration_hr": 6,
         "flood_prone": true
       },
@@ -8221,10 +11033,10 @@
     {
       "type": "Feature",
       "properties": {
-        "category": "Possible",
+        "category": "Probable",
         "qpf_in": 4.904,
-        "ffg_in": 5.0,
-        "qpf_ffg_ratio": 0.981,
+        "ffg_in": 4.5,
+        "qpf_ffg_ratio": 1.09,
         "duration_hr": 6,
         "flood_prone": true
       },
@@ -8259,10 +11071,10 @@
     {
       "type": "Feature",
       "properties": {
-        "category": "Possible",
+        "category": "Probable",
         "qpf_in": 4.81,
-        "ffg_in": 5.0,
-        "qpf_ffg_ratio": 0.962,
+        "ffg_in": 4.5,
+        "qpf_ffg_ratio": 1.069,
         "duration_hr": 6,
         "flood_prone": true
       },
@@ -8297,10 +11109,10 @@
     {
       "type": "Feature",
       "properties": {
-        "category": "Possible",
+        "category": "Probable",
         "qpf_in": 4.715,
-        "ffg_in": 5.0,
-        "qpf_ffg_ratio": 0.943,
+        "ffg_in": 4.5,
+        "qpf_ffg_ratio": 1.048,
         "duration_hr": 6,
         "flood_prone": true
       },
@@ -8335,10 +11147,10 @@
     {
       "type": "Feature",
       "properties": {
-        "category": "Possible",
+        "category": "Probable",
         "qpf_in": 4.557,
-        "ffg_in": 5.0,
-        "qpf_ffg_ratio": 0.911,
+        "ffg_in": 4.5,
+        "qpf_ffg_ratio": 1.013,
         "duration_hr": 6,
         "flood_prone": true
       },
@@ -8375,8 +11187,8 @@
       "properties": {
         "category": "Possible",
         "qpf_in": 4.334,
-        "ffg_in": 5.0,
-        "qpf_ffg_ratio": 0.867,
+        "ffg_in": 4.5,
+        "qpf_ffg_ratio": 0.963,
         "duration_hr": 6,
         "flood_prone": true
       },
@@ -8413,8 +11225,8 @@
       "properties": {
         "category": "Possible",
         "qpf_in": 4.111,
-        "ffg_in": 5.0,
-        "qpf_ffg_ratio": 0.822,
+        "ffg_in": 4.5,
+        "qpf_ffg_ratio": 0.914,
         "duration_hr": 6,
         "flood_prone": true
       },
@@ -8450,9 +11262,47 @@
       "type": "Feature",
       "properties": {
         "category": "Possible",
-        "qpf_in": 3.777,
+        "qpf_in": 3.888,
         "ffg_in": 5.0,
-        "qpf_ffg_ratio": 0.755,
+        "qpf_ffg_ratio": 0.778,
+        "duration_hr": 6,
+        "flood_prone": true
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -88.5423840625,
+              30.606753992374724
+            ],
+            [
+              -88.536135625,
+              30.606753992374724
+            ],
+            [
+              -88.536135625,
+              30.61220059912854
+            ],
+            [
+              -88.5423840625,
+              30.61220059912854
+            ],
+            [
+              -88.5423840625,
+              30.606753992374724
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "category": "Possible",
+        "qpf_in": 3.777,
+        "ffg_in": 4.5,
+        "qpf_ffg_ratio": 0.839,
         "duration_hr": 6,
         "flood_prone": true
       },
@@ -8489,8 +11339,8 @@
       "properties": {
         "category": "Possible",
         "qpf_in": 4.098,
-        "ffg_in": 5.0,
-        "qpf_ffg_ratio": 0.82,
+        "ffg_in": 4.5,
+        "qpf_ffg_ratio": 0.911,
         "duration_hr": 6,
         "flood_prone": true
       },
@@ -8527,8 +11377,8 @@
       "properties": {
         "category": "Possible",
         "qpf_in": 4.341,
-        "ffg_in": 5.0,
-        "qpf_ffg_ratio": 0.868,
+        "ffg_in": 4.5,
+        "qpf_ffg_ratio": 0.965,
         "duration_hr": 6,
         "flood_prone": true
       },
@@ -8563,10 +11413,10 @@
     {
       "type": "Feature",
       "properties": {
-        "category": "Possible",
+        "category": "Probable",
         "qpf_in": 4.504,
-        "ffg_in": 5.0,
-        "qpf_ffg_ratio": 0.901,
+        "ffg_in": 4.5,
+        "qpf_ffg_ratio": 1.001,
         "duration_hr": 6,
         "flood_prone": true
       },
@@ -8601,10 +11451,10 @@
     {
       "type": "Feature",
       "properties": {
-        "category": "Possible",
+        "category": "Probable",
         "qpf_in": 4.668,
-        "ffg_in": 5.0,
-        "qpf_ffg_ratio": 0.934,
+        "ffg_in": 4.5,
+        "qpf_ffg_ratio": 1.037,
         "duration_hr": 6,
         "flood_prone": true
       },
@@ -8639,10 +11489,10 @@
     {
       "type": "Feature",
       "properties": {
-        "category": "Possible",
+        "category": "Probable",
         "qpf_in": 4.832,
-        "ffg_in": 5.0,
-        "qpf_ffg_ratio": 0.966,
+        "ffg_in": 4.5,
+        "qpf_ffg_ratio": 1.074,
         "duration_hr": 6,
         "flood_prone": true
       },
@@ -8677,10 +11527,10 @@
     {
       "type": "Feature",
       "properties": {
-        "category": "Possible",
+        "category": "Probable",
         "qpf_in": 4.934,
-        "ffg_in": 5.0,
-        "qpf_ffg_ratio": 0.987,
+        "ffg_in": 4.5,
+        "qpf_ffg_ratio": 1.096,
         "duration_hr": 6,
         "flood_prone": true
       },
@@ -8715,10 +11565,10 @@
     {
       "type": "Feature",
       "properties": {
-        "category": "Possible",
+        "category": "Probable",
         "qpf_in": 4.975,
-        "ffg_in": 5.0,
-        "qpf_ffg_ratio": 0.995,
+        "ffg_in": 4.5,
+        "qpf_ffg_ratio": 1.106,
         "duration_hr": 6,
         "flood_prone": true
       },
@@ -8755,8 +11605,8 @@
       "properties": {
         "category": "Probable",
         "qpf_in": 5.016,
-        "ffg_in": 5.0,
-        "qpf_ffg_ratio": 1.003,
+        "ffg_in": 4.5,
+        "qpf_ffg_ratio": 1.115,
         "duration_hr": 6,
         "flood_prone": true
       },
@@ -8793,8 +11643,8 @@
       "properties": {
         "category": "Probable",
         "qpf_in": 5.057,
-        "ffg_in": 5.0,
-        "qpf_ffg_ratio": 1.011,
+        "ffg_in": 4.5,
+        "qpf_ffg_ratio": 1.124,
         "duration_hr": 6,
         "flood_prone": true
       },
@@ -8831,8 +11681,8 @@
       "properties": {
         "category": "Probable",
         "qpf_in": 5.018,
-        "ffg_in": 5.0,
-        "qpf_ffg_ratio": 1.004,
+        "ffg_in": 4.5,
+        "qpf_ffg_ratio": 1.115,
         "duration_hr": 6,
         "flood_prone": true
       },
@@ -8867,10 +11717,10 @@
     {
       "type": "Feature",
       "properties": {
-        "category": "Possible",
+        "category": "Probable",
         "qpf_in": 4.898,
-        "ffg_in": 5.0,
-        "qpf_ffg_ratio": 0.98,
+        "ffg_in": 4.5,
+        "qpf_ffg_ratio": 1.088,
         "duration_hr": 6,
         "flood_prone": true
       },
@@ -8905,10 +11755,10 @@
     {
       "type": "Feature",
       "properties": {
-        "category": "Possible",
+        "category": "Probable",
         "qpf_in": 4.777,
-        "ffg_in": 5.0,
-        "qpf_ffg_ratio": 0.955,
+        "ffg_in": 4.5,
+        "qpf_ffg_ratio": 1.062,
         "duration_hr": 6,
         "flood_prone": true
       },
@@ -8943,10 +11793,10 @@
     {
       "type": "Feature",
       "properties": {
-        "category": "Possible",
+        "category": "Probable",
         "qpf_in": 4.657,
-        "ffg_in": 5.0,
-        "qpf_ffg_ratio": 0.931,
+        "ffg_in": 4.5,
+        "qpf_ffg_ratio": 1.035,
         "duration_hr": 6,
         "flood_prone": true
       },
@@ -8983,8 +11833,8 @@
       "properties": {
         "category": "Possible",
         "qpf_in": 4.476,
-        "ffg_in": 5.0,
-        "qpf_ffg_ratio": 0.895,
+        "ffg_in": 4.5,
+        "qpf_ffg_ratio": 0.995,
         "duration_hr": 6,
         "flood_prone": true
       },
@@ -9021,8 +11871,8 @@
       "properties": {
         "category": "Possible",
         "qpf_in": 4.233,
-        "ffg_in": 5.0,
-        "qpf_ffg_ratio": 0.847,
+        "ffg_in": 4.5,
+        "qpf_ffg_ratio": 0.941,
         "duration_hr": 6,
         "flood_prone": true
       },
@@ -9059,8 +11909,8 @@
       "properties": {
         "category": "Possible",
         "qpf_in": 3.99,
-        "ffg_in": 5.0,
-        "qpf_ffg_ratio": 0.798,
+        "ffg_in": 4.5,
+        "qpf_ffg_ratio": 0.887,
         "duration_hr": 6,
         "flood_prone": true
       },
@@ -9096,9 +11946,47 @@
       "type": "Feature",
       "properties": {
         "category": "Possible",
+        "qpf_in": 3.552,
+        "ffg_in": 4.5,
+        "qpf_ffg_ratio": 0.789,
+        "duration_hr": 6,
+        "flood_prone": true
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -88.6548559375,
+              30.5958607788671
+            ],
+            [
+              -88.6486075,
+              30.5958607788671
+            ],
+            [
+              -88.6486075,
+              30.601307385620913
+            ],
+            [
+              -88.6548559375,
+              30.601307385620913
+            ],
+            [
+              -88.6548559375,
+              30.5958607788671
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "category": "Possible",
         "qpf_in": 3.88,
-        "ffg_in": 5.0,
-        "qpf_ffg_ratio": 0.776,
+        "ffg_in": 4.5,
+        "qpf_ffg_ratio": 0.862,
         "duration_hr": 6,
         "flood_prone": true
       },
@@ -9135,8 +12023,8 @@
       "properties": {
         "category": "Possible",
         "qpf_in": 4.208,
-        "ffg_in": 5.0,
-        "qpf_ffg_ratio": 0.842,
+        "ffg_in": 4.5,
+        "qpf_ffg_ratio": 0.935,
         "duration_hr": 6,
         "flood_prone": true
       },
@@ -9173,8 +12061,8 @@
       "properties": {
         "category": "Possible",
         "qpf_in": 4.446,
-        "ffg_in": 5.0,
-        "qpf_ffg_ratio": 0.889,
+        "ffg_in": 4.5,
+        "qpf_ffg_ratio": 0.988,
         "duration_hr": 6,
         "flood_prone": true
       },
@@ -9209,10 +12097,10 @@
     {
       "type": "Feature",
       "properties": {
-        "category": "Possible",
+        "category": "Probable",
         "qpf_in": 4.595,
-        "ffg_in": 5.0,
-        "qpf_ffg_ratio": 0.919,
+        "ffg_in": 4.5,
+        "qpf_ffg_ratio": 1.021,
         "duration_hr": 6,
         "flood_prone": true
       },
@@ -9247,10 +12135,10 @@
     {
       "type": "Feature",
       "properties": {
-        "category": "Possible",
+        "category": "Probable",
         "qpf_in": 4.744,
-        "ffg_in": 5.0,
-        "qpf_ffg_ratio": 0.949,
+        "ffg_in": 4.5,
+        "qpf_ffg_ratio": 1.054,
         "duration_hr": 6,
         "flood_prone": true
       },
@@ -9285,10 +12173,10 @@
     {
       "type": "Feature",
       "properties": {
-        "category": "Possible",
+        "category": "Probable",
         "qpf_in": 4.892,
-        "ffg_in": 5.0,
-        "qpf_ffg_ratio": 0.978,
+        "ffg_in": 4.5,
+        "qpf_ffg_ratio": 1.087,
         "duration_hr": 6,
         "flood_prone": true
       },
@@ -9323,10 +12211,10 @@
     {
       "type": "Feature",
       "properties": {
-        "category": "Possible",
+        "category": "Probable",
         "qpf_in": 4.984,
-        "ffg_in": 5.0,
-        "qpf_ffg_ratio": 0.997,
+        "ffg_in": 4.5,
+        "qpf_ffg_ratio": 1.108,
         "duration_hr": 6,
         "flood_prone": true
       },
@@ -9363,8 +12251,8 @@
       "properties": {
         "category": "Probable",
         "qpf_in": 5.02,
-        "ffg_in": 5.0,
-        "qpf_ffg_ratio": 1.004,
+        "ffg_in": 4.5,
+        "qpf_ffg_ratio": 1.116,
         "duration_hr": 6,
         "flood_prone": true
       },
@@ -9400,9 +12288,47 @@
       "type": "Feature",
       "properties": {
         "category": "Possible",
+        "qpf_in": 3.648,
+        "ffg_in": 4.5,
+        "qpf_ffg_ratio": 0.811,
+        "duration_hr": 6,
+        "flood_prone": true
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -88.6548559375,
+              30.590414172113288
+            ],
+            [
+              -88.6486075,
+              30.590414172113288
+            ],
+            [
+              -88.6486075,
+              30.595860778867102
+            ],
+            [
+              -88.6548559375,
+              30.595860778867102
+            ],
+            [
+              -88.6548559375,
+              30.590414172113288
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "category": "Possible",
         "qpf_in": 3.983,
-        "ffg_in": 5.0,
-        "qpf_ffg_ratio": 0.797,
+        "ffg_in": 4.5,
+        "qpf_ffg_ratio": 0.885,
         "duration_hr": 6,
         "flood_prone": true
       },
@@ -9439,8 +12365,8 @@
       "properties": {
         "category": "Possible",
         "qpf_in": 4.318,
-        "ffg_in": 5.0,
-        "qpf_ffg_ratio": 0.864,
+        "ffg_in": 4.5,
+        "qpf_ffg_ratio": 0.96,
         "duration_hr": 6,
         "flood_prone": true
       },
@@ -9475,10 +12401,10 @@
     {
       "type": "Feature",
       "properties": {
-        "category": "Possible",
+        "category": "Probable",
         "qpf_in": 4.552,
-        "ffg_in": 5.0,
-        "qpf_ffg_ratio": 0.91,
+        "ffg_in": 4.5,
+        "qpf_ffg_ratio": 1.012,
         "duration_hr": 6,
         "flood_prone": true
       },
@@ -9513,10 +12439,10 @@
     {
       "type": "Feature",
       "properties": {
-        "category": "Possible",
+        "category": "Probable",
         "qpf_in": 4.686,
-        "ffg_in": 5.0,
-        "qpf_ffg_ratio": 0.937,
+        "ffg_in": 4.5,
+        "qpf_ffg_ratio": 1.041,
         "duration_hr": 6,
         "flood_prone": true
       },
@@ -9551,10 +12477,10 @@
     {
       "type": "Feature",
       "properties": {
-        "category": "Possible",
+        "category": "Probable",
         "qpf_in": 4.819,
-        "ffg_in": 5.0,
-        "qpf_ffg_ratio": 0.964,
+        "ffg_in": 4.5,
+        "qpf_ffg_ratio": 1.071,
         "duration_hr": 6,
         "flood_prone": true
       },
@@ -9589,10 +12515,10 @@
     {
       "type": "Feature",
       "properties": {
-        "category": "Possible",
+        "category": "Probable",
         "qpf_in": 4.953,
-        "ffg_in": 5.0,
-        "qpf_ffg_ratio": 0.991,
+        "ffg_in": 4.5,
+        "qpf_ffg_ratio": 1.101,
         "duration_hr": 6,
         "flood_prone": true
       },
@@ -9629,8 +12555,8 @@
       "properties": {
         "category": "Probable",
         "qpf_in": 5.035,
-        "ffg_in": 5.0,
-        "qpf_ffg_ratio": 1.007,
+        "ffg_in": 4.5,
+        "qpf_ffg_ratio": 1.119,
         "duration_hr": 6,
         "flood_prone": true
       },
@@ -9667,8 +12593,8 @@
       "properties": {
         "category": "Probable",
         "qpf_in": 5.065,
-        "ffg_in": 5.0,
-        "qpf_ffg_ratio": 1.013,
+        "ffg_in": 4.5,
+        "qpf_ffg_ratio": 1.126,
         "duration_hr": 6,
         "flood_prone": true
       },
@@ -16839,82 +19765,6 @@
             [
               -88.6548559375,
               30.459695610021782
-            ]
-          ]
-        ]
-      }
-    },
-    {
-      "type": "Feature",
-      "properties": {
-        "category": "Possible",
-        "qpf_in": 1.314,
-        "ffg_in": 1.75,
-        "qpf_ffg_ratio": 0.751,
-        "duration_hr": 6,
-        "flood_prone": true
-      },
-      "geometry": {
-        "type": "Polygon",
-        "coordinates": [
-          [
-            [
-              -89.4671528125,
-              30.35621008169934
-            ],
-            [
-              -89.460904375,
-              30.35621008169934
-            ],
-            [
-              -89.460904375,
-              30.361656688453156
-            ],
-            [
-              -89.4671528125,
-              30.361656688453156
-            ],
-            [
-              -89.4671528125,
-              30.35621008169934
-            ]
-          ]
-        ]
-      }
-    },
-    {
-      "type": "Feature",
-      "properties": {
-        "category": "Possible",
-        "qpf_in": 1.332,
-        "ffg_in": 1.75,
-        "qpf_ffg_ratio": 0.761,
-        "duration_hr": 6,
-        "flood_prone": true
-      },
-      "geometry": {
-        "type": "Polygon",
-        "coordinates": [
-          [
-            [
-              -89.4671528125,
-              30.35076347494553
-            ],
-            [
-              -89.460904375,
-              30.35076347494553
-            ],
-            [
-              -89.460904375,
-              30.356210081699345
-            ],
-            [
-              -89.4671528125,
-              30.356210081699345
-            ],
-            [
-              -89.4671528125,
-              30.35076347494553
             ]
           ]
         ]
