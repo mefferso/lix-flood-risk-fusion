@@ -1,7 +1,7 @@
 {
   "type": "FeatureCollection",
   "metadata": {
-    "generated_utc": "2026-05-25T11:02:02.933543+00:00",
+    "generated_utc": "2026-05-25T20:17:06.897763+00:00",
     "method": "HREF QPF / FFG ratio intersected with local flood-prone polygons",
     "duration_hr": 6,
     "period_index": 4,
@@ -11,10 +11,10 @@
       "Significant": "qpf/ffg >= 1.50"
     },
     "href_layer": {
-      "id": "2026052500_max_f24_a06",
-      "url": "data/grids/2026052500_max_f24_a06.json.gz",
-      "valueGridUrl": "data/value_grids/2026052500_max_f24_a06.json.gz",
-      "rasterUrl": "data/rasters/2026052500_max_f24_a06.png",
+      "id": "2026052512_max_f24_a06",
+      "url": "data/grids/2026052512_max_f24_a06.json.gz",
+      "valueGridUrl": "data/value_grids/2026052512_max_f24_a06.json.gz",
+      "rasterUrl": "data/rasters/2026052512_max_f24_a06.png",
       "rasterBounds": {
         "south": 24.00002,
         "north": 33.99999,
@@ -22,27 +22,27 @@
         "east": -83.00002
       },
       "maxPoint": {
-        "lat": 26.6419,
-        "lon": -91.9665,
-        "value": 8.723
+        "lat": 26.7729,
+        "lon": -86.9573,
+        "value": 9.418
       },
       "periodKey": "f24_a06_18_24",
       "periodLabel": "F18-F24 (6-hr Ensemble Max QPF)",
       "stepStart": 18,
       "stepEnd": 24,
-      "run": "2026052500",
-      "runLabel": "20260525 00Z",
+      "run": "2026052512",
+      "runLabel": "20260525 12Z",
       "product": "max",
       "productLabel": "Ensemble Max",
       "forecastHour": 24,
       "accumHours": 6,
       "units": "inches",
-      "startTimeUTC": "2026-05-25T18:00:00+00:00",
-      "validTimeUTC": "2026-05-26T00:00:00+00:00",
+      "startTimeUTC": "2026-05-26T06:00:00+00:00",
+      "validTimeUTC": "2026-05-26T12:00:00+00:00",
       "stepRange": "18-24",
       "name": "HREF member-computed Ensemble Max QPF",
-      "sourceFile": "4 member APCP slices",
-      "maxValue": 8.72,
+      "sourceFile": "8 member APCP slices",
+      "maxValue": 9.42,
       "pointCount": 55200,
       "native": false
     }
@@ -16839,6 +16839,82 @@
             [
               -88.6548559375,
               30.459695610021782
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "category": "Possible",
+        "qpf_in": 1.314,
+        "ffg_in": 1.75,
+        "qpf_ffg_ratio": 0.751,
+        "duration_hr": 6,
+        "flood_prone": true
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -89.4671528125,
+              30.35621008169934
+            ],
+            [
+              -89.460904375,
+              30.35621008169934
+            ],
+            [
+              -89.460904375,
+              30.361656688453156
+            ],
+            [
+              -89.4671528125,
+              30.361656688453156
+            ],
+            [
+              -89.4671528125,
+              30.35621008169934
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "category": "Possible",
+        "qpf_in": 1.332,
+        "ffg_in": 1.75,
+        "qpf_ffg_ratio": 0.761,
+        "duration_hr": 6,
+        "flood_prone": true
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -89.4671528125,
+              30.35076347494553
+            ],
+            [
+              -89.460904375,
+              30.35076347494553
+            ],
+            [
+              -89.460904375,
+              30.356210081699345
+            ],
+            [
+              -89.4671528125,
+              30.356210081699345
+            ],
+            [
+              -89.4671528125,
+              30.35076347494553
             ]
           ]
         ]
