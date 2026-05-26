@@ -1,13 +1,12 @@
 {
   "status": "success",
   "path": "data/ffg/ffg.geojson",
-  "changed": 393,
-  "skipped": 2,
+  "changed": 379,
+  "skipped": 0,
   "class_counts": {
-    "1": 283,
-    "2": 91,
-    "3": 11,
-    "4": 8
+    "1": 329,
+    "2": 49,
+    "3": 1
   },
   "bin_map": {
     "1": {
