@@ -1,7 +1,7 @@
 {
   "type": "FeatureCollection",
   "metadata": {
-    "generated_utc": "2026-05-26T16:33:50.416548+00:00",
+    "generated_utc": "2026-05-26T20:35:40.841685+00:00",
     "method": "HREF QPF / FFG ratio intersected with local flood-prone polygons",
     "duration_hr": 6,
     "period_index": 4,
@@ -11,10 +11,10 @@
       "Significant": "qpf/ffg >= 1.50"
     },
     "href_layer": {
-      "id": "2026052600_max_f24_a06",
-      "url": "data/grids/2026052600_max_f24_a06.json.gz",
-      "valueGridUrl": "data/value_grids/2026052600_max_f24_a06.json.gz",
-      "rasterUrl": "data/rasters/2026052600_max_f24_a06.png",
+      "id": "2026052612_max_f24_a06",
+      "url": "data/grids/2026052612_max_f24_a06.json.gz",
+      "valueGridUrl": "data/value_grids/2026052612_max_f24_a06.json.gz",
+      "rasterUrl": "data/rasters/2026052612_max_f24_a06.png",
       "rasterBounds": {
         "south": 24.00002,
         "north": 33.99999,
@@ -30,18 +30,18 @@
       "periodLabel": "F18-F24 (6-hr Ensemble Max QPF)",
       "stepStart": 18,
       "stepEnd": 24,
-      "run": "2026052600",
-      "runLabel": "20260526 00Z",
+      "run": "2026052612",
+      "runLabel": "20260526 12Z",
       "product": "max",
       "productLabel": "Ensemble Max",
       "forecastHour": 24,
       "accumHours": 6,
       "units": "inches",
-      "startTimeUTC": "2026-05-26T18:00:00+00:00",
-      "validTimeUTC": "2026-05-27T00:00:00+00:00",
+      "startTimeUTC": "2026-05-27T06:00:00+00:00",
+      "validTimeUTC": "2026-05-27T12:00:00+00:00",
       "stepRange": "18-24",
       "name": "HREF member-computed Ensemble Max QPF",
-      "sourceFile": "4 member APCP slices",
+      "sourceFile": "8 member APCP slices",
       "maxValue": 8.13,
       "pointCount": 55200,
       "native": false
@@ -56,11 +56,11 @@
         "max_qpf_in": 4.483,
         "min_ffg_in": 4.5,
         "max_qpf_ffg_ratio": 0.996,
-        "cell_count": 165,
-        "href_layer_id": "2026052600_max_f24_a06",
+        "cell_count": 166,
+        "href_layer_id": "2026052612_max_f24_a06",
         "href_period": "F18-F24 (6-hr Ensemble Max QPF)",
-        "href_run": "20260526 00Z",
-        "valid_time_utc": "2026-05-27T00:00:00+00:00",
+        "href_run": "20260526 12Z",
+        "valid_time_utc": "2026-05-27T12:00:00+00:00",
         "part": 1
       },
       "geometry": {
@@ -387,17 +387,29 @@
         "max_qpf_in": 4.483,
         "min_ffg_in": 4.5,
         "max_qpf_ffg_ratio": 0.996,
-        "cell_count": 165,
-        "href_layer_id": "2026052600_max_f24_a06",
+        "cell_count": 166,
+        "href_layer_id": "2026052612_max_f24_a06",
         "href_period": "F18-F24 (6-hr Ensemble Max QPF)",
-        "href_run": "20260526 00Z",
-        "valid_time_utc": "2026-05-27T00:00:00+00:00",
+        "href_run": "20260526 12Z",
+        "valid_time_utc": "2026-05-27T12:00:00+00:00",
         "part": 2
       },
       "geometry": {
         "type": "Polygon",
         "coordinates": [
           [
+            [
+              -89.685848125,
+              30.318083834422655
+            ],
+            [
+              -89.685848125,
+              30.323530441176466
+            ],
+            [
+              -89.69209656250001,
+              30.323530441176466
+            ],
             [
               -89.69209656250001,
               30.32897704793028
@@ -515,8 +527,12 @@
               30.318083834422655
             ],
             [
-              -89.66085437500001,
-              30.318083834422655
+              -89.660854375,
+              30.31263722766884
+            ],
+            [
+              -89.6671028125,
+              30.31263722766884
             ],
             [
               -89.6671028125,
@@ -537,18 +553,6 @@
             [
               -89.685848125,
               30.318083834422655
-            ],
-            [
-              -89.685848125,
-              30.323530441176466
-            ],
-            [
-              -89.69209656250001,
-              30.323530441176466
-            ],
-            [
-              -89.69209656250001,
-              30.32897704793028
             ]
           ]
         ]
