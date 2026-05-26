@@ -1,5 +1,5 @@
 {
-  "generated_utc": "2026-05-25T22:37:20.763037+00:00",
+  "generated_utc": "2026-05-26T10:36:03.943785+00:00",
   "status": "success",
   "service_url": "https://mapservices.weather.noaa.gov/raster/rest/services/precip/rfc_gridded_ffg/MapServer",
   "duration": 6,
@@ -17,9 +17,12 @@
   "attempted_points": 700,
   "value_fields_seen": {
     "Classify.Class value": 393,
-    "Service Pixel Value": 6
+    "Service Pixel Value": 2
   },
-  "sample_errors": [],
+  "sample_errors": [
+    "HTTP failure for https://mapservices.weather.noaa.gov/raster/rest/services/precip/rfc_gridded_ffg/MapServer/identify?f=json&tolerance=2&returnGeometry=false&imageDisplay=1000%2C1000%2C96&mapExtent=%7B%22xmin%22%3A+-92.75%2C+%22ymin%22%3A+28.75%2C+%22xmax%22%3A+-88.25%2C+%22ymax%22%3A+31.25%2C+%22spatialReference%22%3A+%7B%22wkid%22%3A+4326%7D%7D&geometry=%7B%22x%22%3A+-92.68422064855197%2C+%22y%22%3A+31.18422064855197%2C+%22spatialReference%22%3A+%7B%22wkid%22%3A+4326%7D%7D&geometryType=esriGeometryPoint&sr=4326&layers=all%3A11: 504 Server Error: Gateway Time-out for url: https://mapservices.weather.noaa.gov/raster/rest/services/precip/rfc_gridded_ffg/MapServer/identify?f=json&tolerance=2&returnGeometry=false&imageDisplay=1000%2C1000%2C96&mapExtent=%7B%22xmin%22%3A+-92.75%2C+%22ymin%22%3A+28.75%2C+%22xmax%22%3A+-88.25%2C+%22ymax%22%3A+31.25%2C+%22spatialReference%22%3A+%7B%22wkid%22%3A+4326%7D%7D&geometry=%7B%22x%22%3A+-92.68422064855197%2C+%22y%22%3A+31.18422064855197%2C+%22spatialReference%22%3A+%7B%22wkid%22%3A+4326%7D%7D&geometryType=esriGeometryPoint&sr=4326&layers=all%3A11; preview='<html>\\r\\n<head><title>504 Gateway Time-out</title></head>\\r\\n<body>\\r\\n<center><h1>504 Gateway Time-out</h1></center>\\r\\n</body>\\r\\n</html>\\r\\n'",
+    "HTTP failure for https://mapservices.weather.noaa.gov/raster/rest/services/precip/rfc_gridded_ffg/MapServer/identify?f=json&tolerance=2&returnGeometry=false&imageDisplay=1000%2C1000%2C96&mapExtent=%7B%22xmin%22%3A+-92.75%2C+%22ymin%22%3A+28.75%2C+%22xmax%22%3A+-88.25%2C+%22ymax%22%3A+31.25%2C+%22spatialReference%22%3A+%7B%22wkid%22%3A+4326%7D%7D&geometry=%7B%22x%22%3A+-92.42110324275987%2C+%22y%22%3A+31.18422064855197%2C+%22spatialReference%22%3A+%7B%22wkid%22%3A+4326%7D%7D&geometryType=esriGeometryPoint&sr=4326&layers=all%3A11: 504 Server Error: Gateway Time-out for url: https://mapservices.weather.noaa.gov/raster/rest/services/precip/rfc_gridded_ffg/MapServer/identify?f=json&tolerance=2&returnGeometry=false&imageDisplay=1000%2C1000%2C96&mapExtent=%7B%22xmin%22%3A+-92.75%2C+%22ymin%22%3A+28.75%2C+%22xmax%22%3A+-88.25%2C+%22ymax%22%3A+31.25%2C+%22spatialReference%22%3A+%7B%22wkid%22%3A+4326%7D%7D&geometry=%7B%22x%22%3A+-92.42110324275987%2C+%22y%22%3A+31.18422064855197%2C+%22spatialReference%22%3A+%7B%22wkid%22%3A+4326%7D%7D&geometryType=esriGeometryPoint&sr=4326&layers=all%3A11; preview='<html>\\r\\n<head><title>504 Gateway Time-out</title></head>\\r\\n<body>\\r\\n<center><h1>504 Gateway Time-out</h1></center>\\r\\n</body>\\r\\n</html>\\r\\n'"
+  ],
   "service_name": "Flash Flood Guidance",
   "layers": [
     {
@@ -123,5 +126,5 @@
       "type": "Raster Layer"
     }
   ],
-  "feature_count": 399
+  "feature_count": 395
 }
