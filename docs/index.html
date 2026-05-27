@@ -48,10 +48,18 @@
     <div class="row"><span class="swatch" style="background:#f97316"></span> Probable</div>
     <div class="row"><span class="swatch" style="background:#facc15"></span> Possible</div>
     <div class="row"><span class="swatch" style="background:#22c55e"></span> HREF QPF</div>
+    <div class="row"><span class="swatch" style="background:#38bdf8"></span> 6-hr FFG overlay</div>
+    <div class="row"><span class="swatch" style="background:#a78bfa"></span> Flood-prone overlay</div>
 
     <hr style="border-color:#334155">
     <div class="control-row">
       <label><input id="hrefRasterToggle" type="checkbox" checked> Show HREF QPF</label>
+    </div>
+    <div class="control-row">
+      <label><input id="ffgLayerToggle" type="checkbox"> Show 6-hr FFG</label>
+    </div>
+    <div class="control-row">
+      <label><input id="proneLayerToggle" type="checkbox"> Show flood-prone areas</label>
     </div>
     <div class="control-row small">
       <span>QPF opacity</span>
@@ -161,7 +169,7 @@ var proneLayer = L.geoJSON(null, {
   }
 });
 
-var layerControl = L.control.layers({ 'OpenStreetMap': osm }, { 'Risk polygons': riskLayer, 'Raw risk cells': rawLayer, 'Guidance inputs': ffgLayer, 'Flood-prone inputs': proneLayer }, { collapsed: true }).addTo(map);
+var layerControl = L.control.layers({ 'OpenStreetMap': osm }, { 'Risk polygons': riskLayer, 'Raw risk cells': rawLayer, '6-hr FFG': ffgLayer, 'Flood-prone areas': proneLayer }, { collapsed: true }).addTo(map);
 
 function resolveHrefAssetUrl(catalogUrl, rel) {
   if (!rel) return null;
@@ -181,12 +189,29 @@ function syncHrefRasterVisibility() {
   hrefRasterLayer.setOpacity(currentHrefOpacity());
   if (map.hasLayer(hrefRasterLayer)) hrefRasterLayer.bringToBack();
 }
-function wireHrefControls() {
-  var toggle = document.getElementById('hrefRasterToggle');
+function syncOptionalOverlayVisibility() {
+  var ffgToggle = document.getElementById('ffgLayerToggle');
+  var proneToggle = document.getElementById('proneLayerToggle');
+  if (ffgToggle && ffgToggle.checked && !map.hasLayer(ffgLayer)) ffgLayer.addTo(map);
+  if (ffgToggle && !ffgToggle.checked && map.hasLayer(ffgLayer)) map.removeLayer(ffgLayer);
+  if (proneToggle && proneToggle.checked && !map.hasLayer(proneLayer)) proneLayer.addTo(map);
+  if (proneToggle && !proneToggle.checked && map.hasLayer(proneLayer)) map.removeLayer(proneLayer);
+}
+function wireLayerControls() {
+  var hrefToggle = document.getElementById('hrefRasterToggle');
+  var ffgToggle = document.getElementById('ffgLayerToggle');
+  var proneToggle = document.getElementById('proneLayerToggle');
   var slider = document.getElementById('hrefOpacity');
-  if (toggle) toggle.addEventListener('change', syncHrefRasterVisibility);
+  if (hrefToggle) hrefToggle.addEventListener('change', syncHrefRasterVisibility);
+  if (ffgToggle) ffgToggle.addEventListener('change', syncOptionalOverlayVisibility);
+  if (proneToggle) proneToggle.addEventListener('change', syncOptionalOverlayVisibility);
   if (slider) slider.addEventListener('input', function(){ updateHrefOpacityLabel(); syncHrefRasterVisibility(); });
+  map.on('overlayadd overlayremove', function(e) {
+    if (e.layer === ffgLayer && ffgToggle) ffgToggle.checked = map.hasLayer(ffgLayer);
+    if (e.layer === proneLayer && proneToggle) proneToggle.checked = map.hasLayer(proneLayer);
+  });
   updateHrefOpacityLabel();
+  syncOptionalOverlayVisibility();
 }
 function removeHrefRaster() {
   if (!hrefRasterLayer) return;
@@ -252,7 +277,7 @@ function loadPeriod(periodIndex) {
   });
 }
 
-wireHrefControls();
+wireLayerControls();
 Promise.all([
   getJSON('data/manifest.json'),
   getJSON('data/periods_manifest.json'),
@@ -266,6 +291,7 @@ Promise.all([
   document.getElementById('sourceMode').innerHTML = describeSource(ffgData);
   ffgLayer.addData(ffgData);
   proneLayer.addData(proneData);
+  syncOptionalOverlayVisibility();
   renderPeriodButtons();
   loadPeriod(1);
 }).catch(function(err) {
