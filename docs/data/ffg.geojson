@@ -1,17 +1,17 @@
 {
   "type": "FeatureCollection",
   "metadata": {
-    "generated_utc": "2026-05-27T16:29:15.603162+00:00",
+    "generated_utc": "2026-05-27T18:41:18.974383+00:00",
     "source_service": "https://mapservices.weather.noaa.gov/raster/rest/services/precip/rfc_gridded_ffg/MapServer",
     "method": "ArcGIS MapServer identify sampling of production RFC gridded FFG raster",
     "duration_hr": 6,
     "mosaic_layer_id": 8,
     "image_layer_id": 11,
-    "feature_count": 283,
+    "feature_count": 329,
     "official_ffg": true,
     "value_note": "FFG values are estimated from service legend bins, not continuous raw raster pixel values.",
     "bin_conversion_applied": true,
-    "bin_conversion_changed_count": 283
+    "bin_conversion_changed_count": 329
   },
   "features": [
     {
@@ -253,6 +253,55 @@
             ],
             [
               -92.09220648551972,
+              31.118441297103942
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Official RFC gridded FFG sampled cell",
+        "source": "official_rfc_gridded_ffg_arcgis_identify",
+        "official_ffg": true,
+        "source_service": "https://mapservices.weather.noaa.gov/raster/rest/services/precip/rfc_gridded_ffg/MapServer",
+        "source_mosaic_layer_id": 8,
+        "source_image_layer_id": 11,
+        "source_value_field": "Classify.Class value",
+        "duration_hr": 6,
+        "ffg_6hr": 5.0,
+        "sample_lon": -91.89487,
+        "sample_lat": 31.18422,
+        "sample_step_deg": 0.13156,
+        "raw_ffg_class_code": 1,
+        "ffg_bin_label": ">= 5 inches",
+        "ffg_bin_low_in": 5.0,
+        "ffg_bin_high_in": null,
+        "ffg_estimate_method": "legend_bin_estimate"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -91.96064778262368,
+              31.118441297103942
+            ],
+            [
+              -91.82908907972762,
+              31.118441297103942
+            ],
+            [
+              -91.82908907972762,
+              31.25
+            ],
+            [
+              -91.96064778262368,
+              31.25
+            ],
+            [
+              -91.96064778262368,
               31.118441297103942
             ]
           ]
@@ -565,6 +614,55 @@
         "source_value_field": "Classify.Class value",
         "duration_hr": 6,
         "ffg_6hr": 5.0,
+        "sample_lon": -90.71084,
+        "sample_lat": 31.18422,
+        "sample_step_deg": 0.13156,
+        "raw_ffg_class_code": 1,
+        "ffg_bin_label": ">= 5 inches",
+        "ffg_bin_low_in": 5.0,
+        "ffg_bin_high_in": null,
+        "ffg_estimate_method": "legend_bin_estimate"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -90.77661945655919,
+              31.118441297103942
+            ],
+            [
+              -90.64506075366313,
+              31.118441297103942
+            ],
+            [
+              -90.64506075366313,
+              31.25
+            ],
+            [
+              -90.77661945655919,
+              31.25
+            ],
+            [
+              -90.77661945655919,
+              31.118441297103942
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Official RFC gridded FFG sampled cell",
+        "source": "official_rfc_gridded_ffg_arcgis_identify",
+        "official_ffg": true,
+        "source_service": "https://mapservices.weather.noaa.gov/raster/rest/services/precip/rfc_gridded_ffg/MapServer",
+        "source_mosaic_layer_id": 8,
+        "source_image_layer_id": 11,
+        "source_value_field": "Classify.Class value",
+        "duration_hr": 6,
+        "ffg_6hr": 5.0,
         "sample_lon": -90.44772,
         "sample_lat": 31.18422,
         "sample_step_deg": 0.13156,
@@ -841,6 +939,55 @@
             ],
             [
               -89.72414983339075,
+              31.118441297103942
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Official RFC gridded FFG sampled cell",
+        "source": "official_rfc_gridded_ffg_arcgis_identify",
+        "official_ffg": true,
+        "source_service": "https://mapservices.weather.noaa.gov/raster/rest/services/precip/rfc_gridded_ffg/MapServer",
+        "source_mosaic_layer_id": 8,
+        "source_image_layer_id": 11,
+        "source_value_field": "Classify.Class value",
+        "duration_hr": 6,
+        "ffg_6hr": 5.0,
+        "sample_lon": -89.52681,
+        "sample_lat": 31.18422,
+        "sample_step_deg": 0.13156,
+        "raw_ffg_class_code": 1,
+        "ffg_bin_label": ">= 5 inches",
+        "ffg_bin_low_in": 5.0,
+        "ffg_bin_high_in": null,
+        "ffg_estimate_method": "legend_bin_estimate"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -89.5925911304947,
+              31.118441297103942
+            ],
+            [
+              -89.46103242759864,
+              31.118441297103942
+            ],
+            [
+              -89.46103242759864,
+              31.25
+            ],
+            [
+              -89.5925911304947,
+              31.25
+            ],
+            [
+              -89.5925911304947,
               31.118441297103942
             ]
           ]
@@ -1202,6 +1349,55 @@
         "source_value_field": "Classify.Class value",
         "duration_hr": 6,
         "ffg_6hr": 5.0,
+        "sample_lon": -92.02643,
+        "sample_lat": 31.05266,
+        "sample_step_deg": 0.13156,
+        "raw_ffg_class_code": 1,
+        "ffg_bin_label": ">= 5 inches",
+        "ffg_bin_low_in": 5.0,
+        "ffg_bin_high_in": null,
+        "ffg_estimate_method": "legend_bin_estimate"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -92.09220648551972,
+              30.986882594207888
+            ],
+            [
+              -91.96064778262367,
+              30.986882594207888
+            ],
+            [
+              -91.96064778262367,
+              31.118441297103946
+            ],
+            [
+              -92.09220648551972,
+              31.118441297103946
+            ],
+            [
+              -92.09220648551972,
+              30.986882594207888
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Official RFC gridded FFG sampled cell",
+        "source": "official_rfc_gridded_ffg_arcgis_identify",
+        "official_ffg": true,
+        "source_service": "https://mapservices.weather.noaa.gov/raster/rest/services/precip/rfc_gridded_ffg/MapServer",
+        "source_mosaic_layer_id": 8,
+        "source_image_layer_id": 11,
+        "source_value_field": "Classify.Class value",
+        "duration_hr": 6,
+        "ffg_6hr": 5.0,
         "sample_lon": -91.89487,
         "sample_lat": 31.05266,
         "sample_step_deg": 0.13156,
@@ -1888,6 +2084,55 @@
         "source_value_field": "Classify.Class value",
         "duration_hr": 6,
         "ffg_6hr": 5.0,
+        "sample_lon": -89.39525,
+        "sample_lat": 31.05266,
+        "sample_step_deg": 0.13156,
+        "raw_ffg_class_code": 1,
+        "ffg_bin_label": ">= 5 inches",
+        "ffg_bin_low_in": 5.0,
+        "ffg_bin_high_in": null,
+        "ffg_estimate_method": "legend_bin_estimate"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -89.46103242759864,
+              30.986882594207888
+            ],
+            [
+              -89.32947372470258,
+              30.986882594207888
+            ],
+            [
+              -89.32947372470258,
+              31.118441297103946
+            ],
+            [
+              -89.46103242759864,
+              31.118441297103946
+            ],
+            [
+              -89.46103242759864,
+              30.986882594207888
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Official RFC gridded FFG sampled cell",
+        "source": "official_rfc_gridded_ffg_arcgis_identify",
+        "official_ffg": true,
+        "source_service": "https://mapservices.weather.noaa.gov/raster/rest/services/precip/rfc_gridded_ffg/MapServer",
+        "source_mosaic_layer_id": 8,
+        "source_image_layer_id": 11,
+        "source_value_field": "Classify.Class value",
+        "duration_hr": 6,
+        "ffg_6hr": 5.0,
         "sample_lon": -89.13214,
         "sample_lat": 31.05266,
         "sample_step_deg": 0.13156,
@@ -2017,6 +2262,55 @@
             ],
             [
               -88.93479761601442,
+              30.986882594207888
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Official RFC gridded FFG sampled cell",
+        "source": "official_rfc_gridded_ffg_arcgis_identify",
+        "official_ffg": true,
+        "source_service": "https://mapservices.weather.noaa.gov/raster/rest/services/precip/rfc_gridded_ffg/MapServer",
+        "source_mosaic_layer_id": 8,
+        "source_image_layer_id": 11,
+        "source_value_field": "Classify.Class value",
+        "duration_hr": 6,
+        "ffg_6hr": 5.0,
+        "sample_lon": -88.47434,
+        "sample_lat": 31.05266,
+        "sample_step_deg": 0.13156,
+        "raw_ffg_class_code": 1,
+        "ffg_bin_label": ">= 5 inches",
+        "ffg_bin_low_in": 5.0,
+        "ffg_bin_high_in": null,
+        "ffg_estimate_method": "legend_bin_estimate"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -88.54012150732626,
+              30.986882594207888
+            ],
+            [
+              -88.4085628044302,
+              30.986882594207888
+            ],
+            [
+              -88.4085628044302,
+              31.118441297103946
+            ],
+            [
+              -88.54012150732626,
+              31.118441297103946
+            ],
+            [
+              -88.54012150732626,
               30.986882594207888
             ]
           ]
@@ -2279,6 +2573,55 @@
         "source_image_layer_id": 11,
         "source_value_field": "Classify.Class value",
         "duration_hr": 6,
+        "ffg_6hr": 5.0,
+        "sample_lon": -92.02643,
+        "sample_lat": 30.9211,
+        "sample_step_deg": 0.13156,
+        "raw_ffg_class_code": 1,
+        "ffg_bin_label": ">= 5 inches",
+        "ffg_bin_low_in": 5.0,
+        "ffg_bin_high_in": null,
+        "ffg_estimate_method": "legend_bin_estimate"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -92.09220648551972,
+              30.855323891311834
+            ],
+            [
+              -91.96064778262367,
+              30.855323891311834
+            ],
+            [
+              -91.96064778262367,
+              30.98688259420789
+            ],
+            [
+              -92.09220648551972,
+              30.98688259420789
+            ],
+            [
+              -92.09220648551972,
+              30.855323891311834
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Official RFC gridded FFG sampled cell",
+        "source": "official_rfc_gridded_ffg_arcgis_identify",
+        "official_ffg": true,
+        "source_service": "https://mapservices.weather.noaa.gov/raster/rest/services/precip/rfc_gridded_ffg/MapServer",
+        "source_mosaic_layer_id": 8,
+        "source_image_layer_id": 11,
+        "source_value_field": "Classify.Class value",
+        "duration_hr": 6,
         "ffg_6hr": 4.5,
         "sample_lon": -91.89487,
         "sample_lat": 30.9211,
@@ -2458,6 +2801,55 @@
             ],
             [
               -91.43441297103946,
+              30.855323891311834
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Official RFC gridded FFG sampled cell",
+        "source": "official_rfc_gridded_ffg_arcgis_identify",
+        "official_ffg": true,
+        "source_service": "https://mapservices.weather.noaa.gov/raster/rest/services/precip/rfc_gridded_ffg/MapServer",
+        "source_mosaic_layer_id": 8,
+        "source_image_layer_id": 11,
+        "source_value_field": "Classify.Class value",
+        "duration_hr": 6,
+        "ffg_6hr": 5.0,
+        "sample_lon": -91.10552,
+        "sample_lat": 30.9211,
+        "sample_step_deg": 0.13156,
+        "raw_ffg_class_code": 1,
+        "ffg_bin_label": ">= 5 inches",
+        "ffg_bin_low_in": 5.0,
+        "ffg_bin_high_in": null,
+        "ffg_estimate_method": "legend_bin_estimate"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -91.17129556524735,
+              30.855323891311834
+            ],
+            [
+              -91.03973686235129,
+              30.855323891311834
+            ],
+            [
+              -91.03973686235129,
+              30.98688259420789
+            ],
+            [
+              -91.17129556524735,
+              30.98688259420789
+            ],
+            [
+              -91.17129556524735,
               30.855323891311834
             ]
           ]
@@ -2770,6 +3162,55 @@
         "source_value_field": "Classify.Class value",
         "duration_hr": 6,
         "ffg_6hr": 5.0,
+        "sample_lon": -90.05305,
+        "sample_lat": 30.9211,
+        "sample_step_deg": 0.13156,
+        "raw_ffg_class_code": 1,
+        "ffg_bin_label": ">= 5 inches",
+        "ffg_bin_low_in": 5.0,
+        "ffg_bin_high_in": null,
+        "ffg_estimate_method": "legend_bin_estimate"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -90.11882594207891,
+              30.855323891311834
+            ],
+            [
+              -89.98726723918286,
+              30.855323891311834
+            ],
+            [
+              -89.98726723918286,
+              30.98688259420789
+            ],
+            [
+              -90.11882594207891,
+              30.98688259420789
+            ],
+            [
+              -90.11882594207891,
+              30.855323891311834
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Official RFC gridded FFG sampled cell",
+        "source": "official_rfc_gridded_ffg_arcgis_identify",
+        "official_ffg": true,
+        "source_service": "https://mapservices.weather.noaa.gov/raster/rest/services/precip/rfc_gridded_ffg/MapServer",
+        "source_mosaic_layer_id": 8,
+        "source_image_layer_id": 11,
+        "source_value_field": "Classify.Class value",
+        "duration_hr": 6,
+        "ffg_6hr": 5.0,
         "sample_lon": -89.92149,
         "sample_lat": 30.9211,
         "sample_step_deg": 0.13156,
@@ -2948,6 +3389,55 @@
             ],
             [
               -89.32947372470258,
+              30.855323891311834
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Official RFC gridded FFG sampled cell",
+        "source": "official_rfc_gridded_ffg_arcgis_identify",
+        "official_ffg": true,
+        "source_service": "https://mapservices.weather.noaa.gov/raster/rest/services/precip/rfc_gridded_ffg/MapServer",
+        "source_mosaic_layer_id": 8,
+        "source_image_layer_id": 11,
+        "source_value_field": "Classify.Class value",
+        "duration_hr": 6,
+        "ffg_6hr": 5.0,
+        "sample_lon": -89.13214,
+        "sample_lat": 30.9211,
+        "sample_step_deg": 0.13156,
+        "raw_ffg_class_code": 1,
+        "ffg_bin_label": ">= 5 inches",
+        "ffg_bin_low_in": 5.0,
+        "ffg_bin_high_in": null,
+        "ffg_estimate_method": "legend_bin_estimate"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -89.19791502180654,
+              30.855323891311834
+            ],
+            [
+              -89.06635631891048,
+              30.855323891311834
+            ],
+            [
+              -89.06635631891048,
+              30.98688259420789
+            ],
+            [
+              -89.19791502180654,
+              30.98688259420789
+            ],
+            [
+              -89.19791502180654,
               30.855323891311834
             ]
           ]
@@ -3554,6 +4044,55 @@
         "source_value_field": "Classify.Class value",
         "duration_hr": 6,
         "ffg_6hr": 5.0,
+        "sample_lon": -91.23707,
+        "sample_lat": 30.78954,
+        "sample_step_deg": 0.13156,
+        "raw_ffg_class_code": 1,
+        "ffg_bin_label": ">= 5 inches",
+        "ffg_bin_low_in": 5.0,
+        "ffg_bin_high_in": null,
+        "ffg_estimate_method": "legend_bin_estimate"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -91.3028542681434,
+              30.72376518841578
+            ],
+            [
+              -91.17129556524735,
+              30.72376518841578
+            ],
+            [
+              -91.17129556524735,
+              30.855323891311837
+            ],
+            [
+              -91.3028542681434,
+              30.855323891311837
+            ],
+            [
+              -91.3028542681434,
+              30.72376518841578
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Official RFC gridded FFG sampled cell",
+        "source": "official_rfc_gridded_ffg_arcgis_identify",
+        "official_ffg": true,
+        "source_service": "https://mapservices.weather.noaa.gov/raster/rest/services/precip/rfc_gridded_ffg/MapServer",
+        "source_mosaic_layer_id": 8,
+        "source_image_layer_id": 11,
+        "source_value_field": "Classify.Class value",
+        "duration_hr": 6,
+        "ffg_6hr": 5.0,
         "sample_lon": -91.10552,
         "sample_lat": 30.78954,
         "sample_step_deg": 0.13156,
@@ -3897,6 +4436,55 @@
         "source_value_field": "Classify.Class value",
         "duration_hr": 6,
         "ffg_6hr": 5.0,
+        "sample_lon": -90.05305,
+        "sample_lat": 30.78954,
+        "sample_step_deg": 0.13156,
+        "raw_ffg_class_code": 1,
+        "ffg_bin_label": ">= 5 inches",
+        "ffg_bin_low_in": 5.0,
+        "ffg_bin_high_in": null,
+        "ffg_estimate_method": "legend_bin_estimate"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -90.11882594207891,
+              30.72376518841578
+            ],
+            [
+              -89.98726723918286,
+              30.72376518841578
+            ],
+            [
+              -89.98726723918286,
+              30.855323891311837
+            ],
+            [
+              -90.11882594207891,
+              30.855323891311837
+            ],
+            [
+              -90.11882594207891,
+              30.72376518841578
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Official RFC gridded FFG sampled cell",
+        "source": "official_rfc_gridded_ffg_arcgis_identify",
+        "official_ffg": true,
+        "source_service": "https://mapservices.weather.noaa.gov/raster/rest/services/precip/rfc_gridded_ffg/MapServer",
+        "source_mosaic_layer_id": 8,
+        "source_image_layer_id": 11,
+        "source_value_field": "Classify.Class value",
+        "duration_hr": 6,
+        "ffg_6hr": 5.0,
         "sample_lon": -89.92149,
         "sample_lat": 30.78954,
         "sample_step_deg": 0.13156,
@@ -4075,6 +4663,55 @@
             ],
             [
               -89.46103242759864,
+              30.72376518841578
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Official RFC gridded FFG sampled cell",
+        "source": "official_rfc_gridded_ffg_arcgis_identify",
+        "official_ffg": true,
+        "source_service": "https://mapservices.weather.noaa.gov/raster/rest/services/precip/rfc_gridded_ffg/MapServer",
+        "source_mosaic_layer_id": 8,
+        "source_image_layer_id": 11,
+        "source_value_field": "Classify.Class value",
+        "duration_hr": 6,
+        "ffg_6hr": 5.0,
+        "sample_lon": -89.26369,
+        "sample_lat": 30.78954,
+        "sample_step_deg": 0.13156,
+        "raw_ffg_class_code": 1,
+        "ffg_bin_label": ">= 5 inches",
+        "ffg_bin_low_in": 5.0,
+        "ffg_bin_high_in": null,
+        "ffg_estimate_method": "legend_bin_estimate"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -89.32947372470258,
+              30.72376518841578
+            ],
+            [
+              -89.19791502180652,
+              30.72376518841578
+            ],
+            [
+              -89.19791502180652,
+              30.855323891311837
+            ],
+            [
+              -89.32947372470258,
+              30.855323891311837
+            ],
+            [
+              -89.32947372470258,
               30.72376518841578
             ]
           ]
@@ -4338,6 +4975,55 @@
         "source_value_field": "Classify.Class value",
         "duration_hr": 6,
         "ffg_6hr": 5.0,
+        "sample_lon": -92.4211,
+        "sample_lat": 30.65799,
+        "sample_step_deg": 0.13156,
+        "raw_ffg_class_code": 1,
+        "ffg_bin_label": ">= 5 inches",
+        "ffg_bin_low_in": 5.0,
+        "ffg_bin_high_in": null,
+        "ffg_estimate_method": "legend_bin_estimate"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -92.4868825942079,
+              30.592206485519725
+            ],
+            [
+              -92.35532389131184,
+              30.592206485519725
+            ],
+            [
+              -92.35532389131184,
+              30.723765188415783
+            ],
+            [
+              -92.4868825942079,
+              30.723765188415783
+            ],
+            [
+              -92.4868825942079,
+              30.592206485519725
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Official RFC gridded FFG sampled cell",
+        "source": "official_rfc_gridded_ffg_arcgis_identify",
+        "official_ffg": true,
+        "source_service": "https://mapservices.weather.noaa.gov/raster/rest/services/precip/rfc_gridded_ffg/MapServer",
+        "source_mosaic_layer_id": 8,
+        "source_image_layer_id": 11,
+        "source_value_field": "Classify.Class value",
+        "duration_hr": 6,
+        "ffg_6hr": 5.0,
         "sample_lon": -92.28954,
         "sample_lat": 30.65799,
         "sample_step_deg": 0.13156,
@@ -4516,6 +5202,55 @@
             ],
             [
               -91.96064778262368,
+              30.592206485519725
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Official RFC gridded FFG sampled cell",
+        "source": "official_rfc_gridded_ffg_arcgis_identify",
+        "official_ffg": true,
+        "source_service": "https://mapservices.weather.noaa.gov/raster/rest/services/precip/rfc_gridded_ffg/MapServer",
+        "source_mosaic_layer_id": 8,
+        "source_image_layer_id": 11,
+        "source_value_field": "Classify.Class value",
+        "duration_hr": 6,
+        "ffg_6hr": 5.0,
+        "sample_lon": -91.63175,
+        "sample_lat": 30.65799,
+        "sample_step_deg": 0.13156,
+        "raw_ffg_class_code": 1,
+        "ffg_bin_label": ">= 5 inches",
+        "ffg_bin_low_in": 5.0,
+        "ffg_bin_high_in": null,
+        "ffg_estimate_method": "legend_bin_estimate"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -91.69753037683157,
+              30.592206485519725
+            ],
+            [
+              -91.56597167393551,
+              30.592206485519725
+            ],
+            [
+              -91.56597167393551,
+              30.723765188415783
+            ],
+            [
+              -91.69753037683157,
+              30.723765188415783
+            ],
+            [
+              -91.69753037683157,
               30.592206485519725
             ]
           ]
@@ -4810,6 +5545,55 @@
             ],
             [
               -90.90817815945525,
+              30.592206485519725
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Official RFC gridded FFG sampled cell",
+        "source": "official_rfc_gridded_ffg_arcgis_identify",
+        "official_ffg": true,
+        "source_service": "https://mapservices.weather.noaa.gov/raster/rest/services/precip/rfc_gridded_ffg/MapServer",
+        "source_mosaic_layer_id": 8,
+        "source_image_layer_id": 11,
+        "source_value_field": "Classify.Class value",
+        "duration_hr": 6,
+        "ffg_6hr": 5.0,
+        "sample_lon": -90.71084,
+        "sample_lat": 30.65799,
+        "sample_step_deg": 0.13156,
+        "raw_ffg_class_code": 1,
+        "ffg_bin_label": ">= 5 inches",
+        "ffg_bin_low_in": 5.0,
+        "ffg_bin_high_in": null,
+        "ffg_estimate_method": "legend_bin_estimate"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -90.77661945655919,
+              30.592206485519725
+            ],
+            [
+              -90.64506075366313,
+              30.592206485519725
+            ],
+            [
+              -90.64506075366313,
+              30.723765188415783
+            ],
+            [
+              -90.77661945655919,
+              30.723765188415783
+            ],
+            [
+              -90.77661945655919,
               30.592206485519725
             ]
           ]
@@ -5202,6 +5986,55 @@
             ],
             [
               -89.5925911304947,
+              30.592206485519725
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Official RFC gridded FFG sampled cell",
+        "source": "official_rfc_gridded_ffg_arcgis_identify",
+        "official_ffg": true,
+        "source_service": "https://mapservices.weather.noaa.gov/raster/rest/services/precip/rfc_gridded_ffg/MapServer",
+        "source_mosaic_layer_id": 8,
+        "source_image_layer_id": 11,
+        "source_value_field": "Classify.Class value",
+        "duration_hr": 6,
+        "ffg_6hr": 5.0,
+        "sample_lon": -89.26369,
+        "sample_lat": 30.65799,
+        "sample_step_deg": 0.13156,
+        "raw_ffg_class_code": 1,
+        "ffg_bin_label": ">= 5 inches",
+        "ffg_bin_low_in": 5.0,
+        "ffg_bin_high_in": null,
+        "ffg_estimate_method": "legend_bin_estimate"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -89.32947372470258,
+              30.592206485519725
+            ],
+            [
+              -89.19791502180652,
+              30.592206485519725
+            ],
+            [
+              -89.19791502180652,
+              30.723765188415783
+            ],
+            [
+              -89.32947372470258,
+              30.723765188415783
+            ],
+            [
+              -89.32947372470258,
               30.592206485519725
             ]
           ]
@@ -5660,6 +6493,55 @@
         "source_image_layer_id": 11,
         "source_value_field": "Classify.Class value",
         "duration_hr": 6,
+        "ffg_6hr": 5.0,
+        "sample_lon": -91.89487,
+        "sample_lat": 30.52643,
+        "sample_step_deg": 0.13156,
+        "raw_ffg_class_code": 1,
+        "ffg_bin_label": ">= 5 inches",
+        "ffg_bin_low_in": 5.0,
+        "ffg_bin_high_in": null,
+        "ffg_estimate_method": "legend_bin_estimate"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -91.96064778262368,
+              30.46064778262367
+            ],
+            [
+              -91.82908907972762,
+              30.46064778262367
+            ],
+            [
+              -91.82908907972762,
+              30.59220648551973
+            ],
+            [
+              -91.96064778262368,
+              30.59220648551973
+            ],
+            [
+              -91.96064778262368,
+              30.46064778262367
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Official RFC gridded FFG sampled cell",
+        "source": "official_rfc_gridded_ffg_arcgis_identify",
+        "official_ffg": true,
+        "source_service": "https://mapservices.weather.noaa.gov/raster/rest/services/precip/rfc_gridded_ffg/MapServer",
+        "source_mosaic_layer_id": 8,
+        "source_image_layer_id": 11,
+        "source_value_field": "Classify.Class value",
+        "duration_hr": 6,
         "ffg_6hr": 4.5,
         "sample_lon": -91.63175,
         "sample_lat": 30.52643,
@@ -5888,6 +6770,55 @@
             ],
             [
               -91.03973686235129,
+              30.46064778262367
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Official RFC gridded FFG sampled cell",
+        "source": "official_rfc_gridded_ffg_arcgis_identify",
+        "official_ffg": true,
+        "source_service": "https://mapservices.weather.noaa.gov/raster/rest/services/precip/rfc_gridded_ffg/MapServer",
+        "source_mosaic_layer_id": 8,
+        "source_image_layer_id": 11,
+        "source_value_field": "Classify.Class value",
+        "duration_hr": 6,
+        "ffg_6hr": 5.0,
+        "sample_lon": -90.8424,
+        "sample_lat": 30.52643,
+        "sample_step_deg": 0.13156,
+        "raw_ffg_class_code": 1,
+        "ffg_bin_label": ">= 5 inches",
+        "ffg_bin_low_in": 5.0,
+        "ffg_bin_high_in": null,
+        "ffg_estimate_method": "legend_bin_estimate"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -90.90817815945525,
+              30.46064778262367
+            ],
+            [
+              -90.77661945655919,
+              30.46064778262367
+            ],
+            [
+              -90.77661945655919,
+              30.59220648551973
+            ],
+            [
+              -90.90817815945525,
+              30.59220648551973
+            ],
+            [
+              -90.90817815945525,
               30.46064778262367
             ]
           ]
@@ -6182,6 +7113,55 @@
             ],
             [
               -90.11882594207891,
+              30.46064778262367
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Official RFC gridded FFG sampled cell",
+        "source": "official_rfc_gridded_ffg_arcgis_identify",
+        "official_ffg": true,
+        "source_service": "https://mapservices.weather.noaa.gov/raster/rest/services/precip/rfc_gridded_ffg/MapServer",
+        "source_mosaic_layer_id": 8,
+        "source_image_layer_id": 11,
+        "source_value_field": "Classify.Class value",
+        "duration_hr": 6,
+        "ffg_6hr": 5.0,
+        "sample_lon": -89.78993,
+        "sample_lat": 30.52643,
+        "sample_step_deg": 0.13156,
+        "raw_ffg_class_code": 1,
+        "ffg_bin_label": ">= 5 inches",
+        "ffg_bin_low_in": 5.0,
+        "ffg_bin_high_in": null,
+        "ffg_estimate_method": "legend_bin_estimate"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -89.8557085362868,
+              30.46064778262367
+            ],
+            [
+              -89.72414983339074,
+              30.46064778262367
+            ],
+            [
+              -89.72414983339074,
+              30.59220648551973
+            ],
+            [
+              -89.8557085362868,
+              30.59220648551973
+            ],
+            [
+              -89.8557085362868,
               30.46064778262367
             ]
           ]
@@ -6690,6 +7670,55 @@
         "source_value_field": "Classify.Class value",
         "duration_hr": 6,
         "ffg_6hr": 5.0,
+        "sample_lon": -92.15799,
+        "sample_lat": 30.39487,
+        "sample_step_deg": 0.13156,
+        "raw_ffg_class_code": 1,
+        "ffg_bin_label": ">= 5 inches",
+        "ffg_bin_low_in": 5.0,
+        "ffg_bin_high_in": null,
+        "ffg_estimate_method": "legend_bin_estimate"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -92.22376518841578,
+              30.329089079727616
+            ],
+            [
+              -92.09220648551972,
+              30.329089079727616
+            ],
+            [
+              -92.09220648551972,
+              30.460647782623674
+            ],
+            [
+              -92.22376518841578,
+              30.460647782623674
+            ],
+            [
+              -92.22376518841578,
+              30.329089079727616
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Official RFC gridded FFG sampled cell",
+        "source": "official_rfc_gridded_ffg_arcgis_identify",
+        "official_ffg": true,
+        "source_service": "https://mapservices.weather.noaa.gov/raster/rest/services/precip/rfc_gridded_ffg/MapServer",
+        "source_mosaic_layer_id": 8,
+        "source_image_layer_id": 11,
+        "source_value_field": "Classify.Class value",
+        "duration_hr": 6,
+        "ffg_6hr": 5.0,
         "sample_lon": -92.02643,
         "sample_lat": 30.39487,
         "sample_step_deg": 0.13156,
@@ -7015,6 +8044,55 @@
             ],
             [
               -91.3028542681434,
+              30.329089079727616
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Official RFC gridded FFG sampled cell",
+        "source": "official_rfc_gridded_ffg_arcgis_identify",
+        "official_ffg": true,
+        "source_service": "https://mapservices.weather.noaa.gov/raster/rest/services/precip/rfc_gridded_ffg/MapServer",
+        "source_mosaic_layer_id": 8,
+        "source_image_layer_id": 11,
+        "source_value_field": "Classify.Class value",
+        "duration_hr": 6,
+        "ffg_6hr": 5.0,
+        "sample_lon": -91.10552,
+        "sample_lat": 30.39487,
+        "sample_step_deg": 0.13156,
+        "raw_ffg_class_code": 1,
+        "ffg_bin_label": ">= 5 inches",
+        "ffg_bin_low_in": 5.0,
+        "ffg_bin_high_in": null,
+        "ffg_estimate_method": "legend_bin_estimate"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -91.17129556524735,
+              30.329089079727616
+            ],
+            [
+              -91.03973686235129,
+              30.329089079727616
+            ],
+            [
+              -91.03973686235129,
+              30.460647782623674
+            ],
+            [
+              -91.17129556524735,
+              30.460647782623674
+            ],
+            [
+              -91.17129556524735,
               30.329089079727616
             ]
           ]
@@ -7425,6 +8503,55 @@
         "source_value_field": "Classify.Class value",
         "duration_hr": 6,
         "ffg_6hr": 5.0,
+        "sample_lon": -89.92149,
+        "sample_lat": 30.39487,
+        "sample_step_deg": 0.13156,
+        "raw_ffg_class_code": 1,
+        "ffg_bin_label": ">= 5 inches",
+        "ffg_bin_low_in": 5.0,
+        "ffg_bin_high_in": null,
+        "ffg_estimate_method": "legend_bin_estimate"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -89.98726723918286,
+              30.329089079727616
+            ],
+            [
+              -89.8557085362868,
+              30.329089079727616
+            ],
+            [
+              -89.8557085362868,
+              30.460647782623674
+            ],
+            [
+              -89.98726723918286,
+              30.460647782623674
+            ],
+            [
+              -89.98726723918286,
+              30.329089079727616
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Official RFC gridded FFG sampled cell",
+        "source": "official_rfc_gridded_ffg_arcgis_identify",
+        "official_ffg": true,
+        "source_service": "https://mapservices.weather.noaa.gov/raster/rest/services/precip/rfc_gridded_ffg/MapServer",
+        "source_mosaic_layer_id": 8,
+        "source_image_layer_id": 11,
+        "source_value_field": "Classify.Class value",
+        "duration_hr": 6,
+        "ffg_6hr": 5.0,
         "sample_lon": -89.78993,
         "sample_lat": 30.39487,
         "sample_step_deg": 0.13156,
@@ -7572,6 +8699,55 @@
         "source_value_field": "Classify.Class value",
         "duration_hr": 6,
         "ffg_6hr": 5.0,
+        "sample_lon": -89.13214,
+        "sample_lat": 30.39487,
+        "sample_step_deg": 0.13156,
+        "raw_ffg_class_code": 1,
+        "ffg_bin_label": ">= 5 inches",
+        "ffg_bin_low_in": 5.0,
+        "ffg_bin_high_in": null,
+        "ffg_estimate_method": "legend_bin_estimate"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -89.19791502180654,
+              30.329089079727616
+            ],
+            [
+              -89.06635631891048,
+              30.329089079727616
+            ],
+            [
+              -89.06635631891048,
+              30.460647782623674
+            ],
+            [
+              -89.19791502180654,
+              30.460647782623674
+            ],
+            [
+              -89.19791502180654,
+              30.329089079727616
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Official RFC gridded FFG sampled cell",
+        "source": "official_rfc_gridded_ffg_arcgis_identify",
+        "official_ffg": true,
+        "source_service": "https://mapservices.weather.noaa.gov/raster/rest/services/precip/rfc_gridded_ffg/MapServer",
+        "source_mosaic_layer_id": 8,
+        "source_image_layer_id": 11,
+        "source_value_field": "Classify.Class value",
+        "duration_hr": 6,
+        "ffg_6hr": 5.0,
         "sample_lon": -89.00058,
         "sample_lat": 30.39487,
         "sample_step_deg": 0.13156,
@@ -7701,6 +8877,55 @@
             ],
             [
               -92.75,
+              30.197530376831562
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Official RFC gridded FFG sampled cell",
+        "source": "official_rfc_gridded_ffg_arcgis_identify",
+        "official_ffg": true,
+        "source_service": "https://mapservices.weather.noaa.gov/raster/rest/services/precip/rfc_gridded_ffg/MapServer",
+        "source_mosaic_layer_id": 8,
+        "source_image_layer_id": 11,
+        "source_value_field": "Classify.Class value",
+        "duration_hr": 6,
+        "ffg_6hr": 5.0,
+        "sample_lon": -92.55266,
+        "sample_lat": 30.26331,
+        "sample_step_deg": 0.13156,
+        "raw_ffg_class_code": 1,
+        "ffg_bin_label": ">= 5 inches",
+        "ffg_bin_low_in": 5.0,
+        "ffg_bin_high_in": null,
+        "ffg_estimate_method": "legend_bin_estimate"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -92.61844129710394,
+              30.197530376831562
+            ],
+            [
+              -92.48688259420788,
+              30.197530376831562
+            ],
+            [
+              -92.48688259420788,
+              30.32908907972762
+            ],
+            [
+              -92.61844129710394,
+              30.32908907972762
+            ],
+            [
+              -92.61844129710394,
               30.197530376831562
             ]
           ]
@@ -8062,6 +9287,55 @@
         "source_value_field": "Classify.Class value",
         "duration_hr": 6,
         "ffg_6hr": 5.0,
+        "sample_lon": -91.36863,
+        "sample_lat": 30.26331,
+        "sample_step_deg": 0.13156,
+        "raw_ffg_class_code": 1,
+        "ffg_bin_label": ">= 5 inches",
+        "ffg_bin_low_in": 5.0,
+        "ffg_bin_high_in": null,
+        "ffg_estimate_method": "legend_bin_estimate"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -91.43441297103946,
+              30.197530376831562
+            ],
+            [
+              -91.3028542681434,
+              30.197530376831562
+            ],
+            [
+              -91.3028542681434,
+              30.32908907972762
+            ],
+            [
+              -91.43441297103946,
+              30.32908907972762
+            ],
+            [
+              -91.43441297103946,
+              30.197530376831562
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Official RFC gridded FFG sampled cell",
+        "source": "official_rfc_gridded_ffg_arcgis_identify",
+        "official_ffg": true,
+        "source_service": "https://mapservices.weather.noaa.gov/raster/rest/services/precip/rfc_gridded_ffg/MapServer",
+        "source_mosaic_layer_id": 8,
+        "source_image_layer_id": 11,
+        "source_value_field": "Classify.Class value",
+        "duration_hr": 6,
+        "ffg_6hr": 5.0,
         "sample_lon": -91.23707,
         "sample_lat": 30.26331,
         "sample_step_deg": 0.13156,
@@ -8356,6 +9630,55 @@
         "source_value_field": "Classify.Class value",
         "duration_hr": 6,
         "ffg_6hr": 5.0,
+        "sample_lon": -90.44772,
+        "sample_lat": 30.26331,
+        "sample_step_deg": 0.13156,
+        "raw_ffg_class_code": 1,
+        "ffg_bin_label": ">= 5 inches",
+        "ffg_bin_low_in": 5.0,
+        "ffg_bin_high_in": null,
+        "ffg_estimate_method": "legend_bin_estimate"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -90.51350205076707,
+              30.197530376831562
+            ],
+            [
+              -90.38194334787102,
+              30.197530376831562
+            ],
+            [
+              -90.38194334787102,
+              30.32908907972762
+            ],
+            [
+              -90.51350205076707,
+              30.32908907972762
+            ],
+            [
+              -90.51350205076707,
+              30.197530376831562
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Official RFC gridded FFG sampled cell",
+        "source": "official_rfc_gridded_ffg_arcgis_identify",
+        "official_ffg": true,
+        "source_service": "https://mapservices.weather.noaa.gov/raster/rest/services/precip/rfc_gridded_ffg/MapServer",
+        "source_mosaic_layer_id": 8,
+        "source_image_layer_id": 11,
+        "source_value_field": "Classify.Class value",
+        "duration_hr": 6,
+        "ffg_6hr": 5.0,
         "sample_lon": -90.18461,
         "sample_lat": 30.26331,
         "sample_step_deg": 0.13156,
@@ -8632,6 +9955,55 @@
             ],
             [
               -89.5925911304947,
+              30.197530376831562
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Official RFC gridded FFG sampled cell",
+        "source": "official_rfc_gridded_ffg_arcgis_identify",
+        "official_ffg": true,
+        "source_service": "https://mapservices.weather.noaa.gov/raster/rest/services/precip/rfc_gridded_ffg/MapServer",
+        "source_mosaic_layer_id": 8,
+        "source_image_layer_id": 11,
+        "source_value_field": "Classify.Class value",
+        "duration_hr": 6,
+        "ffg_6hr": 5.0,
+        "sample_lon": -89.39525,
+        "sample_lat": 30.26331,
+        "sample_step_deg": 0.13156,
+        "raw_ffg_class_code": 1,
+        "ffg_bin_label": ">= 5 inches",
+        "ffg_bin_low_in": 5.0,
+        "ffg_bin_high_in": null,
+        "ffg_estimate_method": "legend_bin_estimate"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -89.46103242759864,
+              30.197530376831562
+            ],
+            [
+              -89.32947372470258,
+              30.197530376831562
+            ],
+            [
+              -89.32947372470258,
+              30.32908907972762
+            ],
+            [
+              -89.46103242759864,
+              30.32908907972762
+            ],
+            [
+              -89.46103242759864,
               30.197530376831562
             ]
           ]
@@ -9220,6 +10592,55 @@
             ],
             [
               -91.96064778262368,
+              30.065971673935508
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Official RFC gridded FFG sampled cell",
+        "source": "official_rfc_gridded_ffg_arcgis_identify",
+        "official_ffg": true,
+        "source_service": "https://mapservices.weather.noaa.gov/raster/rest/services/precip/rfc_gridded_ffg/MapServer",
+        "source_mosaic_layer_id": 8,
+        "source_image_layer_id": 11,
+        "source_value_field": "Classify.Class value",
+        "duration_hr": 6,
+        "ffg_6hr": 5.0,
+        "sample_lon": -91.76331,
+        "sample_lat": 30.13175,
+        "sample_step_deg": 0.13156,
+        "raw_ffg_class_code": 1,
+        "ffg_bin_label": ">= 5 inches",
+        "ffg_bin_low_in": 5.0,
+        "ffg_bin_high_in": null,
+        "ffg_estimate_method": "legend_bin_estimate"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -91.82908907972762,
+              30.065971673935508
+            ],
+            [
+              -91.69753037683157,
+              30.065971673935508
+            ],
+            [
+              -91.69753037683157,
+              30.197530376831565
+            ],
+            [
+              -91.82908907972762,
+              30.197530376831565
+            ],
+            [
+              -91.82908907972762,
               30.065971673935508
             ]
           ]
@@ -10022,6 +11443,55 @@
         "source_value_field": "Classify.Class value",
         "duration_hr": 6,
         "ffg_6hr": 5.0,
+        "sample_lon": -92.28954,
+        "sample_lat": 30.00019,
+        "sample_step_deg": 0.13156,
+        "raw_ffg_class_code": 1,
+        "ffg_bin_label": ">= 5 inches",
+        "ffg_bin_low_in": 5.0,
+        "ffg_bin_high_in": null,
+        "ffg_estimate_method": "legend_bin_estimate"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -92.35532389131184,
+              29.934412971039453
+            ],
+            [
+              -92.22376518841578,
+              29.934412971039453
+            ],
+            [
+              -92.22376518841578,
+              30.06597167393551
+            ],
+            [
+              -92.35532389131184,
+              30.06597167393551
+            ],
+            [
+              -92.35532389131184,
+              29.934412971039453
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Official RFC gridded FFG sampled cell",
+        "source": "official_rfc_gridded_ffg_arcgis_identify",
+        "official_ffg": true,
+        "source_service": "https://mapservices.weather.noaa.gov/raster/rest/services/precip/rfc_gridded_ffg/MapServer",
+        "source_mosaic_layer_id": 8,
+        "source_image_layer_id": 11,
+        "source_value_field": "Classify.Class value",
+        "duration_hr": 6,
+        "ffg_6hr": 5.0,
         "sample_lon": -92.15799,
         "sample_lat": 30.00019,
         "sample_step_deg": 0.13156,
@@ -10364,6 +11834,55 @@
         "source_image_layer_id": 11,
         "source_value_field": "Classify.Class value",
         "duration_hr": 6,
+        "ffg_6hr": 4.5,
+        "sample_lon": -91.23707,
+        "sample_lat": 30.00019,
+        "sample_step_deg": 0.13156,
+        "raw_ffg_class_code": 2,
+        "ffg_bin_label": "4 to 5 inches",
+        "ffg_bin_low_in": 4.0,
+        "ffg_bin_high_in": 5.0,
+        "ffg_estimate_method": "legend_bin_estimate"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -91.3028542681434,
+              29.934412971039453
+            ],
+            [
+              -91.17129556524735,
+              29.934412971039453
+            ],
+            [
+              -91.17129556524735,
+              30.06597167393551
+            ],
+            [
+              -91.3028542681434,
+              30.06597167393551
+            ],
+            [
+              -91.3028542681434,
+              29.934412971039453
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Official RFC gridded FFG sampled cell",
+        "source": "official_rfc_gridded_ffg_arcgis_identify",
+        "official_ffg": true,
+        "source_service": "https://mapservices.weather.noaa.gov/raster/rest/services/precip/rfc_gridded_ffg/MapServer",
+        "source_mosaic_layer_id": 8,
+        "source_image_layer_id": 11,
+        "source_value_field": "Classify.Class value",
+        "duration_hr": 6,
         "ffg_6hr": 5.0,
         "sample_lon": -91.10552,
         "sample_lat": 30.00019,
@@ -10659,6 +12178,55 @@
         "source_value_field": "Classify.Class value",
         "duration_hr": 6,
         "ffg_6hr": 5.0,
+        "sample_lon": -90.18461,
+        "sample_lat": 30.00019,
+        "sample_step_deg": 0.13156,
+        "raw_ffg_class_code": 1,
+        "ffg_bin_label": ">= 5 inches",
+        "ffg_bin_low_in": 5.0,
+        "ffg_bin_high_in": null,
+        "ffg_estimate_method": "legend_bin_estimate"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -90.25038464497497,
+              29.934412971039453
+            ],
+            [
+              -90.11882594207891,
+              29.934412971039453
+            ],
+            [
+              -90.11882594207891,
+              30.06597167393551
+            ],
+            [
+              -90.25038464497497,
+              30.06597167393551
+            ],
+            [
+              -90.25038464497497,
+              29.934412971039453
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Official RFC gridded FFG sampled cell",
+        "source": "official_rfc_gridded_ffg_arcgis_identify",
+        "official_ffg": true,
+        "source_service": "https://mapservices.weather.noaa.gov/raster/rest/services/precip/rfc_gridded_ffg/MapServer",
+        "source_mosaic_layer_id": 8,
+        "source_image_layer_id": 11,
+        "source_value_field": "Classify.Class value",
+        "duration_hr": 6,
+        "ffg_6hr": 5.0,
         "sample_lon": -90.05305,
         "sample_lat": 30.00019,
         "sample_step_deg": 0.13156,
@@ -10837,6 +12405,55 @@
             ],
             [
               -92.4868825942079,
+              29.8028542681434
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Official RFC gridded FFG sampled cell",
+        "source": "official_rfc_gridded_ffg_arcgis_identify",
+        "official_ffg": true,
+        "source_service": "https://mapservices.weather.noaa.gov/raster/rest/services/precip/rfc_gridded_ffg/MapServer",
+        "source_mosaic_layer_id": 8,
+        "source_image_layer_id": 11,
+        "source_value_field": "Classify.Class value",
+        "duration_hr": 6,
+        "ffg_6hr": 5.0,
+        "sample_lon": -92.28954,
+        "sample_lat": 29.86863,
+        "sample_step_deg": 0.13156,
+        "raw_ffg_class_code": 1,
+        "ffg_bin_label": ">= 5 inches",
+        "ffg_bin_low_in": 5.0,
+        "ffg_bin_high_in": null,
+        "ffg_estimate_method": "legend_bin_estimate"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -92.35532389131184,
+              29.8028542681434
+            ],
+            [
+              -92.22376518841578,
+              29.8028542681434
+            ],
+            [
+              -92.22376518841578,
+              29.934412971039457
+            ],
+            [
+              -92.35532389131184,
+              29.934412971039457
+            ],
+            [
+              -92.35532389131184,
               29.8028542681434
             ]
           ]
@@ -11149,6 +12766,55 @@
         "source_value_field": "Classify.Class value",
         "duration_hr": 6,
         "ffg_6hr": 5.0,
+        "sample_lon": -91.23707,
+        "sample_lat": 29.86863,
+        "sample_step_deg": 0.13156,
+        "raw_ffg_class_code": 1,
+        "ffg_bin_label": ">= 5 inches",
+        "ffg_bin_low_in": 5.0,
+        "ffg_bin_high_in": null,
+        "ffg_estimate_method": "legend_bin_estimate"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -91.3028542681434,
+              29.8028542681434
+            ],
+            [
+              -91.17129556524735,
+              29.8028542681434
+            ],
+            [
+              -91.17129556524735,
+              29.934412971039457
+            ],
+            [
+              -91.3028542681434,
+              29.934412971039457
+            ],
+            [
+              -91.3028542681434,
+              29.8028542681434
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Official RFC gridded FFG sampled cell",
+        "source": "official_rfc_gridded_ffg_arcgis_identify",
+        "official_ffg": true,
+        "source_service": "https://mapservices.weather.noaa.gov/raster/rest/services/precip/rfc_gridded_ffg/MapServer",
+        "source_mosaic_layer_id": 8,
+        "source_image_layer_id": 11,
+        "source_value_field": "Classify.Class value",
+        "duration_hr": 6,
+        "ffg_6hr": 5.0,
         "sample_lon": -91.10552,
         "sample_lat": 29.86863,
         "sample_step_deg": 0.13156,
@@ -11425,6 +13091,55 @@
             ],
             [
               -90.38194334787103,
+              29.8028542681434
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Official RFC gridded FFG sampled cell",
+        "source": "official_rfc_gridded_ffg_arcgis_identify",
+        "official_ffg": true,
+        "source_service": "https://mapservices.weather.noaa.gov/raster/rest/services/precip/rfc_gridded_ffg/MapServer",
+        "source_mosaic_layer_id": 8,
+        "source_image_layer_id": 11,
+        "source_value_field": "Classify.Class value",
+        "duration_hr": 6,
+        "ffg_6hr": 5.0,
+        "sample_lon": -90.18461,
+        "sample_lat": 29.86863,
+        "sample_step_deg": 0.13156,
+        "raw_ffg_class_code": 1,
+        "ffg_bin_label": ">= 5 inches",
+        "ffg_bin_low_in": 5.0,
+        "ffg_bin_high_in": null,
+        "ffg_estimate_method": "legend_bin_estimate"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -90.25038464497497,
+              29.8028542681434
+            ],
+            [
+              -90.11882594207891,
+              29.8028542681434
+            ],
+            [
+              -90.11882594207891,
+              29.934412971039457
+            ],
+            [
+              -90.25038464497497,
+              29.934412971039457
+            ],
+            [
+              -90.25038464497497,
               29.8028542681434
             ]
           ]
@@ -11835,6 +13550,55 @@
         "source_value_field": "Classify.Class value",
         "duration_hr": 6,
         "ffg_6hr": 5.0,
+        "sample_lon": -91.89487,
+        "sample_lat": 29.73707,
+        "sample_step_deg": 0.13156,
+        "raw_ffg_class_code": 1,
+        "ffg_bin_label": ">= 5 inches",
+        "ffg_bin_low_in": 5.0,
+        "ffg_bin_high_in": null,
+        "ffg_estimate_method": "legend_bin_estimate"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -91.96064778262368,
+              29.671295565247345
+            ],
+            [
+              -91.82908907972762,
+              29.671295565247345
+            ],
+            [
+              -91.82908907972762,
+              29.802854268143403
+            ],
+            [
+              -91.96064778262368,
+              29.802854268143403
+            ],
+            [
+              -91.96064778262368,
+              29.671295565247345
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Official RFC gridded FFG sampled cell",
+        "source": "official_rfc_gridded_ffg_arcgis_identify",
+        "official_ffg": true,
+        "source_service": "https://mapservices.weather.noaa.gov/raster/rest/services/precip/rfc_gridded_ffg/MapServer",
+        "source_mosaic_layer_id": 8,
+        "source_image_layer_id": 11,
+        "source_value_field": "Classify.Class value",
+        "duration_hr": 6,
+        "ffg_6hr": 5.0,
         "sample_lon": -91.76331,
         "sample_lat": 29.73707,
         "sample_step_deg": 0.13156,
@@ -12062,6 +13826,55 @@
             ],
             [
               -91.17129556524735,
+              29.671295565247345
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Official RFC gridded FFG sampled cell",
+        "source": "official_rfc_gridded_ffg_arcgis_identify",
+        "official_ffg": true,
+        "source_service": "https://mapservices.weather.noaa.gov/raster/rest/services/precip/rfc_gridded_ffg/MapServer",
+        "source_mosaic_layer_id": 8,
+        "source_image_layer_id": 11,
+        "source_value_field": "Classify.Class value",
+        "duration_hr": 6,
+        "ffg_6hr": 5.0,
+        "sample_lon": -90.97396,
+        "sample_lat": 29.73707,
+        "sample_step_deg": 0.13156,
+        "raw_ffg_class_code": 1,
+        "ffg_bin_label": ">= 5 inches",
+        "ffg_bin_low_in": 5.0,
+        "ffg_bin_high_in": null,
+        "ffg_estimate_method": "legend_bin_estimate"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -91.03973686235129,
+              29.671295565247345
+            ],
+            [
+              -90.90817815945523,
+              29.671295565247345
+            ],
+            [
+              -90.90817815945523,
+              29.802854268143403
+            ],
+            [
+              -91.03973686235129,
+              29.802854268143403
+            ],
+            [
+              -91.03973686235129,
               29.671295565247345
             ]
           ]
@@ -13599,6 +15412,55 @@
         "source_value_field": "Classify.Class value",
         "duration_hr": 6,
         "ffg_6hr": 5.0,
+        "sample_lon": -90.44772,
+        "sample_lat": 29.47396,
+        "sample_step_deg": 0.13156,
+        "raw_ffg_class_code": 1,
+        "ffg_bin_label": ">= 5 inches",
+        "ffg_bin_low_in": 5.0,
+        "ffg_bin_high_in": null,
+        "ffg_estimate_method": "legend_bin_estimate"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -90.51350205076707,
+              29.408178159455236
+            ],
+            [
+              -90.38194334787102,
+              29.408178159455236
+            ],
+            [
+              -90.38194334787102,
+              29.539736862351294
+            ],
+            [
+              -90.51350205076707,
+              29.539736862351294
+            ],
+            [
+              -90.51350205076707,
+              29.408178159455236
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Official RFC gridded FFG sampled cell",
+        "source": "official_rfc_gridded_ffg_arcgis_identify",
+        "official_ffg": true,
+        "source_service": "https://mapservices.weather.noaa.gov/raster/rest/services/precip/rfc_gridded_ffg/MapServer",
+        "source_mosaic_layer_id": 8,
+        "source_image_layer_id": 11,
+        "source_value_field": "Classify.Class value",
+        "duration_hr": 6,
+        "ffg_6hr": 5.0,
         "sample_lon": -90.31616,
         "sample_lat": 29.47396,
         "sample_step_deg": 0.13156,
@@ -13778,6 +15640,153 @@
             [
               -89.72414983339075,
               29.408178159455236
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Official RFC gridded FFG sampled cell",
+        "source": "official_rfc_gridded_ffg_arcgis_identify",
+        "official_ffg": true,
+        "source_service": "https://mapservices.weather.noaa.gov/raster/rest/services/precip/rfc_gridded_ffg/MapServer",
+        "source_mosaic_layer_id": 8,
+        "source_image_layer_id": 11,
+        "source_value_field": "Classify.Class value",
+        "duration_hr": 6,
+        "ffg_6hr": 5.0,
+        "sample_lon": -92.15799,
+        "sample_lat": 29.3424,
+        "sample_step_deg": 0.13156,
+        "raw_ffg_class_code": 1,
+        "ffg_bin_label": ">= 5 inches",
+        "ffg_bin_low_in": 5.0,
+        "ffg_bin_high_in": null,
+        "ffg_estimate_method": "legend_bin_estimate"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -92.22376518841578,
+              29.27661945655918
+            ],
+            [
+              -92.09220648551972,
+              29.27661945655918
+            ],
+            [
+              -92.09220648551972,
+              29.40817815945524
+            ],
+            [
+              -92.22376518841578,
+              29.40817815945524
+            ],
+            [
+              -92.22376518841578,
+              29.27661945655918
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Official RFC gridded FFG sampled cell",
+        "source": "official_rfc_gridded_ffg_arcgis_identify",
+        "official_ffg": true,
+        "source_service": "https://mapservices.weather.noaa.gov/raster/rest/services/precip/rfc_gridded_ffg/MapServer",
+        "source_mosaic_layer_id": 8,
+        "source_image_layer_id": 11,
+        "source_value_field": "Classify.Class value",
+        "duration_hr": 6,
+        "ffg_6hr": 5.0,
+        "sample_lon": -92.02643,
+        "sample_lat": 29.3424,
+        "sample_step_deg": 0.13156,
+        "raw_ffg_class_code": 1,
+        "ffg_bin_label": ">= 5 inches",
+        "ffg_bin_low_in": 5.0,
+        "ffg_bin_high_in": null,
+        "ffg_estimate_method": "legend_bin_estimate"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -92.09220648551972,
+              29.27661945655918
+            ],
+            [
+              -91.96064778262367,
+              29.27661945655918
+            ],
+            [
+              -91.96064778262367,
+              29.40817815945524
+            ],
+            [
+              -92.09220648551972,
+              29.40817815945524
+            ],
+            [
+              -92.09220648551972,
+              29.27661945655918
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Official RFC gridded FFG sampled cell",
+        "source": "official_rfc_gridded_ffg_arcgis_identify",
+        "official_ffg": true,
+        "source_service": "https://mapservices.weather.noaa.gov/raster/rest/services/precip/rfc_gridded_ffg/MapServer",
+        "source_mosaic_layer_id": 8,
+        "source_image_layer_id": 11,
+        "source_value_field": "Classify.Class value",
+        "duration_hr": 6,
+        "ffg_6hr": 5.0,
+        "sample_lon": -91.76331,
+        "sample_lat": 29.3424,
+        "sample_step_deg": 0.13156,
+        "raw_ffg_class_code": 1,
+        "ffg_bin_label": ">= 5 inches",
+        "ffg_bin_low_in": 5.0,
+        "ffg_bin_high_in": null,
+        "ffg_estimate_method": "legend_bin_estimate"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -91.82908907972762,
+              29.27661945655918
+            ],
+            [
+              -91.69753037683157,
+              29.27661945655918
+            ],
+            [
+              -91.69753037683157,
+              29.40817815945524
+            ],
+            [
+              -91.82908907972762,
+              29.40817815945524
+            ],
+            [
+              -91.82908907972762,
+              29.27661945655918
             ]
           ]
         ]
@@ -13844,6 +15853,104 @@
         "source_value_field": "Classify.Class value",
         "duration_hr": 6,
         "ffg_6hr": 5.0,
+        "sample_lon": -90.44772,
+        "sample_lat": 29.3424,
+        "sample_step_deg": 0.13156,
+        "raw_ffg_class_code": 1,
+        "ffg_bin_label": ">= 5 inches",
+        "ffg_bin_low_in": 5.0,
+        "ffg_bin_high_in": null,
+        "ffg_estimate_method": "legend_bin_estimate"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -90.51350205076707,
+              29.27661945655918
+            ],
+            [
+              -90.38194334787102,
+              29.27661945655918
+            ],
+            [
+              -90.38194334787102,
+              29.40817815945524
+            ],
+            [
+              -90.51350205076707,
+              29.40817815945524
+            ],
+            [
+              -90.51350205076707,
+              29.27661945655918
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Official RFC gridded FFG sampled cell",
+        "source": "official_rfc_gridded_ffg_arcgis_identify",
+        "official_ffg": true,
+        "source_service": "https://mapservices.weather.noaa.gov/raster/rest/services/precip/rfc_gridded_ffg/MapServer",
+        "source_mosaic_layer_id": 8,
+        "source_image_layer_id": 11,
+        "source_value_field": "Classify.Class value",
+        "duration_hr": 6,
+        "ffg_6hr": 5.0,
+        "sample_lon": -89.52681,
+        "sample_lat": 28.94772,
+        "sample_step_deg": 0.13156,
+        "raw_ffg_class_code": 1,
+        "ffg_bin_label": ">= 5 inches",
+        "ffg_bin_low_in": 5.0,
+        "ffg_bin_high_in": null,
+        "ffg_estimate_method": "legend_bin_estimate"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -89.5925911304947,
+              28.88194334787102
+            ],
+            [
+              -89.46103242759864,
+              28.88194334787102
+            ],
+            [
+              -89.46103242759864,
+              29.013502050767077
+            ],
+            [
+              -89.5925911304947,
+              29.013502050767077
+            ],
+            [
+              -89.5925911304947,
+              28.88194334787102
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Official RFC gridded FFG sampled cell",
+        "source": "official_rfc_gridded_ffg_arcgis_identify",
+        "official_ffg": true,
+        "source_service": "https://mapservices.weather.noaa.gov/raster/rest/services/precip/rfc_gridded_ffg/MapServer",
+        "source_mosaic_layer_id": 8,
+        "source_image_layer_id": 11,
+        "source_value_field": "Classify.Class value",
+        "duration_hr": 6,
+        "ffg_6hr": 5.0,
         "sample_lon": -89.39525,
         "sample_lat": 28.94772,
         "sample_step_deg": 0.13156,
@@ -13876,6 +15983,153 @@
             [
               -89.46103242759864,
               28.88194334787102
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Official RFC gridded FFG sampled cell",
+        "source": "official_rfc_gridded_ffg_arcgis_identify",
+        "official_ffg": true,
+        "source_service": "https://mapservices.weather.noaa.gov/raster/rest/services/precip/rfc_gridded_ffg/MapServer",
+        "source_mosaic_layer_id": 8,
+        "source_image_layer_id": 11,
+        "source_value_field": "Classify.Class value",
+        "duration_hr": 6,
+        "ffg_6hr": 5.0,
+        "sample_lon": -89.52681,
+        "sample_lat": 28.81616,
+        "sample_step_deg": 0.13156,
+        "raw_ffg_class_code": 1,
+        "ffg_bin_label": ">= 5 inches",
+        "ffg_bin_low_in": 5.0,
+        "ffg_bin_high_in": null,
+        "ffg_estimate_method": "legend_bin_estimate"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -89.5925911304947,
+              28.750384644974964
+            ],
+            [
+              -89.46103242759864,
+              28.750384644974964
+            ],
+            [
+              -89.46103242759864,
+              28.881943347871022
+            ],
+            [
+              -89.5925911304947,
+              28.881943347871022
+            ],
+            [
+              -89.5925911304947,
+              28.750384644974964
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Official RFC gridded FFG sampled cell",
+        "source": "official_rfc_gridded_ffg_arcgis_identify",
+        "official_ffg": true,
+        "source_service": "https://mapservices.weather.noaa.gov/raster/rest/services/precip/rfc_gridded_ffg/MapServer",
+        "source_mosaic_layer_id": 8,
+        "source_image_layer_id": 11,
+        "source_value_field": "Classify.Class value",
+        "duration_hr": 6,
+        "ffg_6hr": 5.0,
+        "sample_lon": -89.39525,
+        "sample_lat": 28.81616,
+        "sample_step_deg": 0.13156,
+        "raw_ffg_class_code": 1,
+        "ffg_bin_label": ">= 5 inches",
+        "ffg_bin_low_in": 5.0,
+        "ffg_bin_high_in": null,
+        "ffg_estimate_method": "legend_bin_estimate"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -89.46103242759864,
+              28.750384644974964
+            ],
+            [
+              -89.32947372470258,
+              28.750384644974964
+            ],
+            [
+              -89.32947372470258,
+              28.881943347871022
+            ],
+            [
+              -89.46103242759864,
+              28.881943347871022
+            ],
+            [
+              -89.46103242759864,
+              28.750384644974964
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Official RFC gridded FFG sampled cell",
+        "source": "official_rfc_gridded_ffg_arcgis_identify",
+        "official_ffg": true,
+        "source_service": "https://mapservices.weather.noaa.gov/raster/rest/services/precip/rfc_gridded_ffg/MapServer",
+        "source_mosaic_layer_id": 8,
+        "source_image_layer_id": 11,
+        "source_value_field": "Classify.Class value",
+        "duration_hr": 6,
+        "ffg_6hr": 5.0,
+        "sample_lon": -89.26369,
+        "sample_lat": 28.81616,
+        "sample_step_deg": 0.13156,
+        "raw_ffg_class_code": 1,
+        "ffg_bin_label": ">= 5 inches",
+        "ffg_bin_low_in": 5.0,
+        "ffg_bin_high_in": null,
+        "ffg_estimate_method": "legend_bin_estimate"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -89.32947372470258,
+              28.750384644974964
+            ],
+            [
+              -89.19791502180652,
+              28.750384644974964
+            ],
+            [
+              -89.19791502180652,
+              28.881943347871022
+            ],
+            [
+              -89.32947372470258,
+              28.881943347871022
+            ],
+            [
+              -89.32947372470258,
+              28.750384644974964
             ]
           ]
         ]
