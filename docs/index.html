@@ -12,8 +12,9 @@
     .topbar { position: absolute; z-index: 1000; top: 12px; left: 54px; right: 12px; background: rgba(15,23,42,.94); border: 1px solid #334155; border-radius: 12px; padding: 12px 14px; box-shadow: 0 6px 20px rgba(0,0,0,.25); }
     .title { font-weight: 900; font-size: 21px; margin: 0; }
     .subtitle { margin-top: 4px; color: #f8fafc; font-size: 17px; font-weight: 800; }
-    .panel { position: absolute; z-index: 1000; top: 108px; right: 12px; width: 390px; background: rgba(15,23,42,.94); border: 1px solid #334155; border-radius: 12px; padding: 13px; box-shadow: 0 6px 20px rgba(0,0,0,.25); font-size: 15px; line-height: 1.35; }
+    .panel { position: absolute; z-index: 1000; top: 108px; right: 12px; width: 405px; background: rgba(15,23,42,.94); border: 1px solid #334155; border-radius: 12px; padding: 13px; box-shadow: 0 6px 20px rgba(0,0,0,.25); font-size: 15px; line-height: 1.35; }
     .panel h2 { margin: 0 0 9px 0; font-size: 18px; }
+    .legend-heading { color: #f8fafc; font-weight: 900; margin: 10px 0 5px 0; }
     .row { display: flex; align-items: center; gap: 9px; margin: 7px 0; font-size: 15px; }
     .control-row { display: flex; align-items: center; gap: 8px; margin: 10px 0; font-size: 15px; }
     .control-row input[type="range"] { flex: 1; }
@@ -44,19 +45,33 @@
 
     <hr style="border-color:#334155">
     <div id="sourceMode" class="sourcebox small">Checking data source...</div>
+
+    <div class="legend-heading">Highlighted risk polygons</div>
     <div class="row"><span class="swatch" style="background:#dc2626"></span> Significant</div>
     <div class="row"><span class="swatch" style="background:#f97316"></span> Probable</div>
     <div class="row"><span class="swatch" style="background:#facc15"></span> Possible</div>
+
+    <div class="legend-heading">Rainfall / FFG ratio layer</div>
+    <div class="row"><span class="swatch" style="background:#67000d"></span> ≥ 125% of FFG</div>
+    <div class="row"><span class="swatch" style="background:#a50f15"></span> ≥ 100% of FFG</div>
+    <div class="row"><span class="swatch" style="background:#ef3b2c"></span> 75–100% of FFG</div>
+    <div class="row"><span class="swatch" style="background:#fb6a4a"></span> 50–75% of FFG</div>
+    <div class="row"><span class="swatch" style="background:#fcbba1"></span> 25–50% of FFG</div>
+
+    <div class="legend-heading">Reference overlays</div>
     <div class="row"><span class="swatch" style="background:#22c55e"></span> HREF QPF</div>
-    <div class="row"><span class="swatch" style="background:#38bdf8"></span> 6-hr FFG overlay</div>
-    <div class="row"><span class="swatch" style="background:#a78bfa"></span> Flood-prone overlay</div>
+    <div class="row"><span class="swatch" style="background:#38bdf8"></span> Muted raw 6-hr FFG</div>
+    <div class="row"><span class="swatch" style="background:#a78bfa"></span> Flood-prone areas</div>
 
     <hr style="border-color:#334155">
     <div class="control-row">
       <label><input id="hrefRasterToggle" type="checkbox" checked> Show HREF QPF</label>
     </div>
     <div class="control-row">
-      <label><input id="ffgLayerToggle" type="checkbox"> Show 6-hr FFG</label>
+      <label><input id="ratioLayerToggle" type="checkbox" checked> Show rainfall / FFG ratio</label>
+    </div>
+    <div class="control-row">
+      <label><input id="ffgLayerToggle" type="checkbox"> Show raw 6-hr FFG</label>
     </div>
     <div class="control-row">
       <label><input id="proneLayerToggle" type="checkbox"> Show flood-prone areas</label>
@@ -80,10 +95,18 @@ var proneData = null;
 var activePeriodIndex = 1;
 var localTimeZone = 'America/Chicago';
 
-function fmtIn(value) { return value == null || value === '' ? '' : Number(value).toFixed(2).replace(/\.00$/, '') + ' in'; }
+function fmtIn(value) { return value == null || value === '' || Number.isNaN(Number(value)) ? '' : Number(value).toFixed(2).replace(/\.00$/, '') + ' in'; }
+function fmtRatio(value) { return value == null || value === '' || Number.isNaN(Number(value)) ? '' : Number(value).toFixed(2); }
 function featureCount(fc) { return fc && fc.features ? fc.features.length : 0; }
 function getJSON(url) { return fetch(url, { cache: 'no-store' }).then(function(r){ if(!r.ok) throw new Error(url + ': HTTP ' + r.status); return r.json(); }); }
 function pad2(n) { return String(n).padStart(2, '0'); }
+function num() {
+  for (var i = 0; i < arguments.length; i++) {
+    var v = arguments[i];
+    if (v !== null && v !== undefined && v !== '' && Number.isFinite(Number(v))) return Number(v);
+  }
+  return null;
+}
 
 function parseRunDate(runLabel) {
   var m = String(runLabel || '').match(/^(\d{4})(\d{2})(\d{2})\s+(\d{2})Z/);
@@ -124,6 +147,74 @@ function periodLabel(period) {
   return { dateLine: dateLine, timeLine: timeLine, topLine: dateLine + ' • ' + timeLine };
 }
 
+function getRatioColor(ratio) {
+  if (ratio >= 1.25) return '#67000d';
+  if (ratio >= 1.00) return '#a50f15';
+  if (ratio >= 0.75) return '#ef3b2c';
+  if (ratio >= 0.50) return '#fb6a4a';
+  if (ratio >= 0.25) return '#fcbba1';
+  return '#ffffff';
+}
+
+function ratioFromProps(p) {
+  var ratio = num(p.qpf_ffg_ratio, p.max_qpf_ffg_ratio, p.ratio);
+  if (ratio !== null) return ratio;
+  var qpf = num(p.qpf_in, p.rain_6hr, p.rainfall, p.max_qpf_in);
+  var ffg = num(p.ffg_in, p.ffg_6hr, p.guidance, p.min_ffg_in);
+  if (qpf !== null && ffg && ffg > 0) return qpf / ffg;
+  return null;
+}
+
+function styleRatioFeature(f) {
+  var p = f.properties || {};
+  var ratio = ratioFromProps(p);
+  if (ratio === null) return { color: '#999', weight: 0, fillOpacity: 0 };
+  var color = getRatioColor(ratio);
+  return {
+    color: color,
+    weight: ratio >= 0.75 ? 0.55 : 0.35,
+    opacity: ratio >= 0.50 ? 0.9 : 0.45,
+    fillColor: color,
+    fillOpacity: ratio >= 1.0 ? 0.62 : ratio >= 0.75 ? 0.52 : ratio >= 0.50 ? 0.36 : 0.18
+  };
+}
+
+function getFFGValue(p) {
+  return num(p.ffg_6hr, p.ffg_in, p.value, p.ffg_bin_low_in, p.guidance);
+}
+
+function styleFFGFeature(f) {
+  var p = f.properties || {};
+  var value = getFFGValue(p);
+  var fill = '#67a9cf';
+  var opacity = 0.06;
+  var weight = 0.65;
+
+  if (value !== null && value < 1) { fill = '#b2182b'; opacity = 0.45; weight = 1.1; }
+  else if (value !== null && value < 2) { fill = '#ef8a62'; opacity = 0.35; weight = 0.95; }
+  else if (value !== null && value < 3) { fill = '#fddbc7'; opacity = 0.26; weight = 0.85; }
+  else if (value !== null && value < 4) { fill = '#d1e5f0'; opacity = 0.18; }
+  else if (value !== null && value < 5) { fill = '#92c5de'; opacity = 0.12; }
+
+  return {
+    color: '#38bdf8',
+    weight: weight,
+    opacity: 0.55,
+    fillColor: fill,
+    fillOpacity: opacity
+  };
+}
+
+function concernLabel(ratio, floodProne) {
+  if (ratio === null) return 'No ratio';
+  if (ratio >= 1.0 && floodProne) return 'High concern: FFG exceeded in flood-prone area';
+  if (ratio >= 1.0) return 'FFG exceeded';
+  if (ratio >= 0.75 && floodProne) return 'Elevated concern: near FFG in flood-prone area';
+  if (ratio >= 0.50 && floodProne) return 'Watch: flood-prone area with rising signal';
+  if (ratio >= 0.75) return 'Near FFG';
+  return 'Lower signal';
+}
+
 var riskLayer = L.geoJSON(null, {
   style: function(f) {
     var color = (f.properties && f.properties.color) || '#f97316';
@@ -136,28 +227,42 @@ var riskLayer = L.geoJSON(null, {
       'Run: ' + (p.href_run || '') + '<br>' +
       'Max QPF: ' + fmtIn(p.max_qpf_in) + '<br>' +
       'Min guidance: ' + fmtIn(p.min_ffg_in) + '<br>' +
-      'Max QPF/guidance: ' + (p.max_qpf_ffg_ratio == null ? '' : p.max_qpf_ffg_ratio) + '<br>' +
+      'Max QPF/guidance: ' + fmtRatio(p.max_qpf_ffg_ratio) + '<br>' +
       'Grid cells: ' + (p.cell_count == null ? '' : p.cell_count);
     layer.bindPopup(html);
   }
 }).addTo(map);
 
-var rawLayer = L.geoJSON(null, {
-  style: function(f) {
-    var cat = f.properties ? f.properties.category : '';
-    var color = cat === 'Significant' ? '#dc2626' : cat === 'Probable' ? '#f97316' : '#facc15';
-    return { color: color, weight: 0.5, opacity: 0.45, fillColor: color, fillOpacity: 0.12 };
+var ratioLayer = L.geoJSON(null, {
+  style: styleRatioFeature,
+  onEachFeature: function(f, layer) {
+    var p = f.properties || {};
+    var qpf = num(p.qpf_in, p.rain_6hr, p.rainfall, p.max_qpf_in);
+    var ffg = num(p.ffg_in, p.ffg_6hr, p.guidance, p.min_ffg_in);
+    var ratio = ratioFromProps(p);
+    var floodProne = p.flood_prone === true || p.flood_prone === 'true';
+    var html = '<b>Rainfall / FFG ratio</b><br>' +
+      '6-hr QPF: ' + fmtIn(qpf) + '<br>' +
+      '6-hr FFG: ' + fmtIn(ffg) + '<br>' +
+      'QPF/FFG ratio: ' + fmtRatio(ratio) + '<br>' +
+      'Flood-prone intersect: ' + (floodProne ? 'yes' : 'no') + '<br>' +
+      '<b>' + concernLabel(ratio, floodProne) + '</b>';
+    layer.bindPopup(html);
+    layer.bindTooltip(html, { sticky: true });
   }
-});
+}).addTo(map);
 
 var ffgLayer = L.geoJSON(null, {
-  style: { color: '#38bdf8', weight: 2, opacity: 0.8, fillColor: '#38bdf8', fillOpacity: 0.08 },
+  style: styleFFGFeature,
   onEachFeature: function(f, layer) {
     var p = f.properties || {};
     var details = '';
     if (p.ffg_bin_label) details += '<br>Bin: ' + p.ffg_bin_label;
     if (p.raw_ffg_class_code != null) details += '<br>Raw class code: ' + p.raw_ffg_class_code;
-    layer.bindPopup('<b>Guidance input</b><br>6hr: ' + fmtIn(p.ffg_6hr) + details);
+    if (p.ffg_estimate_method) details += '<br>Method: ' + p.ffg_estimate_method;
+    var html = '<b>Guidance input</b><br>6hr: ' + fmtIn(getFFGValue(p)) + details;
+    layer.bindPopup(html);
+    layer.bindTooltip(html, { sticky: true });
   }
 });
 
@@ -169,7 +274,11 @@ var proneLayer = L.geoJSON(null, {
   }
 });
 
-var layerControl = L.control.layers({ 'OpenStreetMap': osm }, { 'Risk polygons': riskLayer, 'Raw risk cells': rawLayer, '6-hr FFG': ffgLayer, 'Flood-prone areas': proneLayer }, { collapsed: true }).addTo(map);
+var layerControl = L.control.layers(
+  { 'OpenStreetMap': osm },
+  { 'Risk polygons': riskLayer, 'Rainfall / FFG ratio': ratioLayer, 'Raw 6-hr FFG': ffgLayer, 'Flood-prone areas': proneLayer },
+  { collapsed: true }
+).addTo(map);
 
 function resolveHrefAssetUrl(catalogUrl, rel) {
   if (!rel) return null;
@@ -188,25 +297,39 @@ function syncHrefRasterVisibility() {
   if (!shouldShow && map.hasLayer(hrefRasterLayer)) map.removeLayer(hrefRasterLayer);
   hrefRasterLayer.setOpacity(currentHrefOpacity());
   if (map.hasLayer(hrefRasterLayer)) hrefRasterLayer.bringToBack();
+  if (map.hasLayer(ratioLayer)) ratioLayer.bringToFront();
+  if (map.hasLayer(riskLayer)) riskLayer.bringToFront();
 }
 function syncOptionalOverlayVisibility() {
+  var ratioToggle = document.getElementById('ratioLayerToggle');
   var ffgToggle = document.getElementById('ffgLayerToggle');
   var proneToggle = document.getElementById('proneLayerToggle');
+
+  if (ratioToggle && ratioToggle.checked && !map.hasLayer(ratioLayer)) ratioLayer.addTo(map);
+  if (ratioToggle && !ratioToggle.checked && map.hasLayer(ratioLayer)) map.removeLayer(ratioLayer);
+
   if (ffgToggle && ffgToggle.checked && !map.hasLayer(ffgLayer)) ffgLayer.addTo(map);
   if (ffgToggle && !ffgToggle.checked && map.hasLayer(ffgLayer)) map.removeLayer(ffgLayer);
+
   if (proneToggle && proneToggle.checked && !map.hasLayer(proneLayer)) proneLayer.addTo(map);
   if (proneToggle && !proneToggle.checked && map.hasLayer(proneLayer)) map.removeLayer(proneLayer);
+
+  if (map.hasLayer(ratioLayer)) ratioLayer.bringToFront();
+  if (map.hasLayer(riskLayer)) riskLayer.bringToFront();
 }
 function wireLayerControls() {
   var hrefToggle = document.getElementById('hrefRasterToggle');
+  var ratioToggle = document.getElementById('ratioLayerToggle');
   var ffgToggle = document.getElementById('ffgLayerToggle');
   var proneToggle = document.getElementById('proneLayerToggle');
   var slider = document.getElementById('hrefOpacity');
   if (hrefToggle) hrefToggle.addEventListener('change', syncHrefRasterVisibility);
+  if (ratioToggle) ratioToggle.addEventListener('change', syncOptionalOverlayVisibility);
   if (ffgToggle) ffgToggle.addEventListener('change', syncOptionalOverlayVisibility);
   if (proneToggle) proneToggle.addEventListener('change', syncOptionalOverlayVisibility);
   if (slider) slider.addEventListener('input', function(){ updateHrefOpacityLabel(); syncHrefRasterVisibility(); });
   map.on('overlayadd overlayremove', function(e) {
+    if (e.layer === ratioLayer && ratioToggle) ratioToggle.checked = map.hasLayer(ratioLayer);
     if (e.layer === ffgLayer && ffgToggle) ffgToggle.checked = map.hasLayer(ffgLayer);
     if (e.layer === proneLayer && proneToggle) proneToggle.checked = map.hasLayer(proneLayer);
   });
@@ -234,8 +357,9 @@ function addHrefRasterForRisk(period, risk) {
 
 function describeSource(ffg) {
   var meta = ffg && ffg.metadata ? ffg.metadata : {};
-  if (meta.official_ffg === true) return '<span class="badge good">Official FFG</span>';
-  return '<span class="badge warn">Local fallback FFG</span>';
+  var note = meta.value_note ? '<br>' + meta.value_note : '';
+  if (meta.official_ffg === true) return '<span class="badge good">Official FFG</span>' + note;
+  return '<span class="badge warn">Local fallback FFG</span>' + note;
 }
 
 function renderPeriodButtons() {
@@ -266,11 +390,14 @@ function loadPeriod(periodIndex) {
     var risk = results[0];
     var raw = results[1];
     riskLayer.clearLayers();
-    rawLayer.clearLayers();
+    ratioLayer.clearLayers();
     riskLayer.addData(risk);
-    rawLayer.addData(raw);
+    ratioLayer.addData(raw);
     addHrefRasterForRisk(period, risk);
-    document.getElementById('status').innerHTML = (period.risk_feature_count || 0) === 0 ? '<span class="warn">No highlighted risk areas this period.</span>' : '';
+    syncOptionalOverlayVisibility();
+    var count = period.risk_feature_count || featureCount(risk);
+    var rawCount = period.raw_cell_count || featureCount(raw);
+    document.getElementById('status').innerHTML = count === 0 ? '<span class="warn">No highlighted risk areas this period.</span><br>Ratio cells: ' + rawCount : 'Risk polygons: ' + count + '<br>Ratio cells: ' + rawCount;
   }).catch(function(err) {
     document.getElementById('status').textContent = 'Load failed: ' + err.message;
     console.error(err);
