@@ -1,5 +1,5 @@
 {
-  "generated_utc": "2026-05-28T12:08:00.395842+00:00",
+  "generated_utc": "2026-05-28T16:40:35.657016+00:00",
   "status": "success",
   "service_url": "https://mapservices.weather.noaa.gov/raster/rest/services/precip/rfc_gridded_ffg/MapServer",
   "duration": 6,
@@ -16,8 +16,7 @@
   "cols": 35,
   "attempted_points": 700,
   "value_fields_seen": {
-    "Classify.Class value": 321,
-    "Service Pixel Value": 1
+    "Classify.Class value": 205
   },
   "sample_errors": [],
   "service_name": "Flash Flood Guidance",
@@ -123,5 +122,5 @@
       "type": "Raster Layer"
     }
   ],
-  "feature_count": 322
+  "feature_count": 205
 }
