@@ -17,12 +17,29 @@ This is intentionally built in pieces so it can work before every final data fee
      `https://mefferso.github.io/href-qpf-viewer/data/catalog.json`
 
 2. **Flash Flood Guidance**
-   - Starts with `data/ffg/ffg.geojson`.
+   - Numeric fusion uses `data/ffg/ffg.geojson`.
    - This can be county/parish based, basin based, or gridded-to-polygons.
-   - Required field, initially:
+   - Required fields:
+     - `ffg_1hr`
+     - `ffg_3hr`
      - `ffg_6hr`
 
-3. **Local flood-prone areas**
+3. **Real IEM RFC FFG display maps**
+   - The workflow can now fetch actual IEM Autoplot #178 RFC FFG maps.
+   - These are for display only.
+   - PNGs are written to:
+
+```text
+docs/assets/ffg/
+```
+
+   Example:
+
+```bash
+python scripts/fetch_ffg_iem.py --wfo LIX --hours 1,3,6
+```
+
+4. **Local flood-prone areas**
    - Starts with `data/flood_prone/flood_prone.geojson`.
    - This can come from your Flash-Flood-Guidance / Flash-Flood-Guidance-Map / Urban-Flash-Flooding outputs.
    - For now, any polygon in this file is treated as locally susceptible.
@@ -35,6 +52,7 @@ The workflow writes:
 docs/data/flash_flood_risk.geojson
 docs/data/flash_flood_risk_raw_cells.geojson
 docs/data/manifest.json
+docs/data/ffg_manifest.json
 ```
 
 and serves:
@@ -43,13 +61,15 @@ and serves:
 docs/index.html
 ```
 
-## Risk logic, v0.1
+## Risk logic, v0.2
 
 For each HREF grid cell:
 
 ```text
-qpf_ratio = href_6hr_qpf / ffg_6hr
+qpf_ratio = href_qpf / ffg
 ```
+
+The workflow supports 1-hour, 3-hour, and 6-hour FFG fusion.
 
 Then:
 
@@ -61,11 +81,29 @@ Then:
 
 This is deliberately simple. No magic AI fairy dust. Just a clean first fusion pass.
 
+## Important architecture note
+
+The IEM PNGs are NOT used for math.
+
+The architecture is intentionally:
+
+```text
+Numeric FFG data → risk fusion math
+IEM PNGs         → operational display layer
+```
+
+That avoids trying to reverse-engineer FFG values from rendered image colors like a feral raccoon doing computer vision.
+
 ## First local test
 
 ```bash
 python -m pip install -r requirements.txt
 python scripts/make_sample_inputs.py
+
+# Fetch real IEM FFG display maps
+python scripts/fetch_ffg_iem.py --wfo LIX --hours 1,3,6
+
+# Run fusion
 python scripts/fuse_flash_flood_risk.py \
   --href-catalog-url https://mefferso.github.io/href-qpf-viewer/data/catalog.json \
   --ffg data/ffg/ffg.geojson \
@@ -79,42 +117,9 @@ Then open:
 docs/index.html
 ```
 
-## GitHub Pages setup
-
-1. Create a new public repo, suggested name:
-   `lix-flood-risk-fusion`
-2. Upload this folder.
-3. Go to **Settings → Pages**.
-4. Set source to **GitHub Actions**.
-5. Run the workflow manually.
-
-## The hard part still to solve
-
-The most important unresolved piece is the **best automated real-time FFG feed**.
-
-This repo assumes we normalize whatever source we choose into:
-
-```text
-data/ffg/ffg.geojson
-```
-
-with fields like:
-
-```json
-{
-  "ffg_1hr": 2.1,
-  "ffg_3hr": 3.0,
-  "ffg_6hr": 4.2,
-  "source": "RFC/FFG/feed name",
-  "valid_time_utc": "2026-05-24T12:00:00Z"
-}
-```
-
-Once that exists, the fusion logic is plug-and-play.
-
 ## Near-term upgrade path
 
-1. Get sample basin/county/parish FFG into `data/ffg/ffg.geojson`.
+1. Replace sample FFG polygons with real gridded RFC FFG normalization.
 2. Swap the placeholder flood-prone polygons for your real heatmap/threshold polygons.
 3. Add multiple durations:
    - 1-hour HREF/HRRR vs 1-hour FFG
@@ -126,6 +131,10 @@ Once that exists, the fusion logic is plug-and-play.
    - HREF probability of exceeding FFG
    - neighborhood of max QPF
    - PWAT / Corfidi / storm motion flags later
+6. Add native gridded FFG ingestion:
+   - GRIB2 ingest
+   - xarray/cfgrib support
+   - direct QPF/FFG raster fusion
 
 ## Repo layout
 
@@ -138,9 +147,12 @@ Once that exists, the fusion logic is plug-and-play.
 │   └── flood_prone/
 │       └── flood_prone.geojson
 ├── docs/
+│   ├── assets/
+│   │   └── ffg/
 │   ├── index.html
 │   └── data/
 ├── scripts/
+│   ├── fetch_ffg_iem.py
 │   ├── fuse_flash_flood_risk.py
 │   ├── make_sample_inputs.py
 │   └── normalize_ffg_geojson.py
