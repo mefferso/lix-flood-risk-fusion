@@ -1,5 +1,5 @@
 {
-  "generated_utc": "2026-05-27T23:03:12.180666+00:00",
+  "generated_utc": "2026-05-28T04:53:52.752019+00:00",
   "status": "found candidates",
   "metadata_url": "https://www.weather.gov/source/gis/Geodata/rfc_gridded_ffg.xml",
   "metadata": {
@@ -78,7 +78,7 @@
       "base_url": "http://idpgis.ncep.noaa.gov/arcgis/services/NWS_Forecasts_Guidance_Warnings/rfc_gridded_ffg/MapServer/WMSServer",
       "service": "WCS",
       "version": "2.0.1",
-      "started_utc": "2026-05-27T23:02:57.712561+00:00",
+      "started_utc": "2026-05-28T04:53:35.132530+00:00",
       "status": "failed",
       "error": "HTTPConnectionPool(host='idpgis.ncep.noaa.gov', port=80): Max retries exceeded with url: /arcgis/services/NWS_Forecasts_Guidance_Warnings/rfc_gridded_ffg/MapServer/WMSServer?service=WCS&version=2.0.1&request=GetCapabilities (Caused by NameResolutionError(\"HTTPConnection(host='idpgis.ncep.noaa.gov', port=80): Failed to resolve 'idpgis.ncep.noaa.gov' ([Errno -5] No address associated with hostname)\"))"
     },
@@ -86,7 +86,7 @@
       "base_url": "http://idpgis.ncep.noaa.gov/arcgis/services/NWS_Forecasts_Guidance_Warnings/rfc_gridded_ffg/MapServer/WMSServer",
       "service": "WCS",
       "version": "1.0.0",
-      "started_utc": "2026-05-27T23:02:57.834525+00:00",
+      "started_utc": "2026-05-28T04:53:35.223862+00:00",
       "status": "failed",
       "error": "HTTPConnectionPool(host='idpgis.ncep.noaa.gov', port=80): Max retries exceeded with url: /arcgis/services/NWS_Forecasts_Guidance_Warnings/rfc_gridded_ffg/MapServer/WMSServer?service=WCS&version=1.0.0&request=GetCapabilities (Caused by NameResolutionError(\"HTTPConnection(host='idpgis.ncep.noaa.gov', port=80): Failed to resolve 'idpgis.ncep.noaa.gov' ([Errno -5] No address associated with hostname)\"))"
     },
@@ -94,7 +94,7 @@
       "base_url": "http://idpgis.ncep.noaa.gov/arcgis/services/NWS_Forecasts_Guidance_Warnings/rfc_gridded_ffg/MapServer/WMSServer",
       "service": "WMS",
       "version": "1.3.0",
-      "started_utc": "2026-05-27T23:02:57.959576+00:00",
+      "started_utc": "2026-05-28T04:53:35.313929+00:00",
       "status": "failed",
       "error": "HTTPConnectionPool(host='idpgis.ncep.noaa.gov', port=80): Max retries exceeded with url: /arcgis/services/NWS_Forecasts_Guidance_Warnings/rfc_gridded_ffg/MapServer/WMSServer?service=WMS&version=1.3.0&request=GetCapabilities (Caused by NameResolutionError(\"HTTPConnection(host='idpgis.ncep.noaa.gov', port=80): Failed to resolve 'idpgis.ncep.noaa.gov' ([Errno -5] No address associated with hostname)\"))"
     },
@@ -102,7 +102,7 @@
       "base_url": "http://idpgis.ncep.noaa.gov/arcgis/services/NWS_Forecasts_Guidance_Warnings/rfc_gridded_ffg/MapServer/WMSServer",
       "service": "WMS",
       "version": "1.1.1",
-      "started_utc": "2026-05-27T23:02:58.083887+00:00",
+      "started_utc": "2026-05-28T04:53:35.460202+00:00",
       "status": "failed",
       "error": "HTTPConnectionPool(host='idpgis.ncep.noaa.gov', port=80): Max retries exceeded with url: /arcgis/services/NWS_Forecasts_Guidance_Warnings/rfc_gridded_ffg/MapServer/WMSServer?service=WMS&version=1.1.1&request=GetCapabilities (Caused by NameResolutionError(\"HTTPConnection(host='idpgis.ncep.noaa.gov', port=80): Failed to resolve 'idpgis.ncep.noaa.gov' ([Errno -5] No address associated with hostname)\"))"
     },
@@ -110,7 +110,7 @@
       "base_url": "http://idpgis.ncep.noaa.gov/arcgis/services/NWS_Forecasts_Guidance_Warnings/rfc_gridded_ffg/MapServer/WMSServer",
       "service": "WFS",
       "version": "2.0.0",
-      "started_utc": "2026-05-27T23:02:58.204526+00:00",
+      "started_utc": "2026-05-28T04:53:35.523471+00:00",
       "status": "failed",
       "error": "HTTPConnectionPool(host='idpgis.ncep.noaa.gov', port=80): Max retries exceeded with url: /arcgis/services/NWS_Forecasts_Guidance_Warnings/rfc_gridded_ffg/MapServer/WMSServer?service=WFS&version=2.0.0&request=GetCapabilities (Caused by NameResolutionError(\"HTTPConnection(host='idpgis.ncep.noaa.gov', port=80): Failed to resolve 'idpgis.ncep.noaa.gov' ([Errno -5] No address associated with hostname)\"))"
     },
@@ -118,7 +118,7 @@
       "base_url": "https://idpgis.ncep.noaa.gov/arcgis/services/NWS_Forecasts_Guidance_Warnings/rfc_gridded_ffg/MapServer/WMSServer",
       "service": "WCS",
       "version": "2.0.1",
-      "started_utc": "2026-05-27T23:02:58.326021+00:00",
+      "started_utc": "2026-05-28T04:53:35.592997+00:00",
       "status": "failed",
       "error": "HTTPSConnectionPool(host='idpgis.ncep.noaa.gov', port=443): Max retries exceeded with url: /arcgis/services/NWS_Forecasts_Guidance_Warnings/rfc_gridded_ffg/MapServer/WMSServer?service=WCS&version=2.0.1&request=GetCapabilities (Caused by NameResolutionError(\"HTTPSConnection(host='idpgis.ncep.noaa.gov', port=443): Failed to resolve 'idpgis.ncep.noaa.gov' ([Errno -5] No address associated with hostname)\"))"
     },
@@ -126,7 +126,7 @@
       "base_url": "https://idpgis.ncep.noaa.gov/arcgis/services/NWS_Forecasts_Guidance_Warnings/rfc_gridded_ffg/MapServer/WMSServer",
       "service": "WCS",
       "version": "1.0.0",
-      "started_utc": "2026-05-27T23:02:58.446248+00:00",
+      "started_utc": "2026-05-28T04:53:35.684408+00:00",
       "status": "failed",
       "error": "HTTPSConnectionPool(host='idpgis.ncep.noaa.gov', port=443): Max retries exceeded with url: /arcgis/services/NWS_Forecasts_Guidance_Warnings/rfc_gridded_ffg/MapServer/WMSServer?service=WCS&version=1.0.0&request=GetCapabilities (Caused by NameResolutionError(\"HTTPSConnection(host='idpgis.ncep.noaa.gov', port=443): Failed to resolve 'idpgis.ncep.noaa.gov' ([Errno -5] No address associated with hostname)\"))"
     },
@@ -134,7 +134,7 @@
       "base_url": "https://idpgis.ncep.noaa.gov/arcgis/services/NWS_Forecasts_Guidance_Warnings/rfc_gridded_ffg/MapServer/WMSServer",
       "service": "WMS",
       "version": "1.3.0",
-      "started_utc": "2026-05-27T23:02:58.565463+00:00",
+      "started_utc": "2026-05-28T04:53:35.746741+00:00",
       "status": "failed",
       "error": "HTTPSConnectionPool(host='idpgis.ncep.noaa.gov', port=443): Max retries exceeded with url: /arcgis/services/NWS_Forecasts_Guidance_Warnings/rfc_gridded_ffg/MapServer/WMSServer?service=WMS&version=1.3.0&request=GetCapabilities (Caused by NameResolutionError(\"HTTPSConnection(host='idpgis.ncep.noaa.gov', port=443): Failed to resolve 'idpgis.ncep.noaa.gov' ([Errno -5] No address associated with hostname)\"))"
     },
@@ -142,7 +142,7 @@
       "base_url": "https://idpgis.ncep.noaa.gov/arcgis/services/NWS_Forecasts_Guidance_Warnings/rfc_gridded_ffg/MapServer/WMSServer",
       "service": "WMS",
       "version": "1.1.1",
-      "started_utc": "2026-05-27T23:02:58.680488+00:00",
+      "started_utc": "2026-05-28T04:53:35.835017+00:00",
       "status": "failed",
       "error": "HTTPSConnectionPool(host='idpgis.ncep.noaa.gov', port=443): Max retries exceeded with url: /arcgis/services/NWS_Forecasts_Guidance_Warnings/rfc_gridded_ffg/MapServer/WMSServer?service=WMS&version=1.1.1&request=GetCapabilities (Caused by NameResolutionError(\"HTTPSConnection(host='idpgis.ncep.noaa.gov', port=443): Failed to resolve 'idpgis.ncep.noaa.gov' ([Errno -5] No address associated with hostname)\"))"
     },
@@ -150,7 +150,7 @@
       "base_url": "https://idpgis.ncep.noaa.gov/arcgis/services/NWS_Forecasts_Guidance_Warnings/rfc_gridded_ffg/MapServer/WMSServer",
       "service": "WFS",
       "version": "2.0.0",
-      "started_utc": "2026-05-27T23:02:58.795137+00:00",
+      "started_utc": "2026-05-28T04:53:35.924918+00:00",
       "status": "failed",
       "error": "HTTPSConnectionPool(host='idpgis.ncep.noaa.gov', port=443): Max retries exceeded with url: /arcgis/services/NWS_Forecasts_Guidance_Warnings/rfc_gridded_ffg/MapServer/WMSServer?service=WFS&version=2.0.0&request=GetCapabilities (Caused by NameResolutionError(\"HTTPSConnection(host='idpgis.ncep.noaa.gov', port=443): Failed to resolve 'idpgis.ncep.noaa.gov' ([Errno -5] No address associated with hostname)\"))"
     },
@@ -158,7 +158,7 @@
       "base_url": "https://opengeo.ncep.noaa.gov/geoserver/ows",
       "service": "WCS",
       "version": "2.0.1",
-      "started_utc": "2026-05-27T23:02:58.912903+00:00",
+      "started_utc": "2026-05-28T04:53:35.997774+00:00",
       "status": "fetched",
       "final_url": "https://opengeo.ncep.noaa.gov/geoserver/ows?service=WCS&version=2.0.1&request=GetCapabilities",
       "content_type": "application/xml",
@@ -337,7 +337,7 @@
       "base_url": "https://opengeo.ncep.noaa.gov/geoserver/ows",
       "service": "WCS",
       "version": "1.0.0",
-      "started_utc": "2026-05-27T23:02:59.303261+00:00",
+      "started_utc": "2026-05-28T04:53:36.354921+00:00",
       "status": "fetched",
       "final_url": "https://opengeo.ncep.noaa.gov/geoserver/ows?service=WCS&version=1.0.0&request=GetCapabilities",
       "content_type": "application/xml",
@@ -355,11 +355,11 @@
       "base_url": "https://opengeo.ncep.noaa.gov/geoserver/ows",
       "service": "WMS",
       "version": "1.3.0",
-      "started_utc": "2026-05-27T23:03:02.103496+00:00",
+      "started_utc": "2026-05-28T04:53:38.913594+00:00",
       "status": "candidate_match",
       "final_url": "https://opengeo.ncep.noaa.gov/geoserver/ows?service=WMS&version=1.3.0&request=GetCapabilities",
       "content_type": "text/xml",
-      "byte_count": 2487116,
+      "byte_count": 2464691,
       "parse_status": "ok",
       "matching_items": [
         {
@@ -573,11 +573,11 @@
       "base_url": "https://opengeo.ncep.noaa.gov/geoserver/ows",
       "service": "WMS",
       "version": "1.1.1",
-      "started_utc": "2026-05-27T23:03:05.648461+00:00",
+      "started_utc": "2026-05-28T04:53:42.090516+00:00",
       "status": "candidate_match",
       "final_url": "https://opengeo.ncep.noaa.gov/geoserver/ows?service=WMS&version=1.1.1&request=GetCapabilities",
       "content_type": "application/vnd.ogc.wms_xml",
-      "byte_count": 2215533,
+      "byte_count": 2193008,
       "parse_status": "ok",
       "matching_items": [
         {
@@ -816,7 +816,7 @@
       "base_url": "https://opengeo.ncep.noaa.gov/geoserver/ows",
       "service": "WFS",
       "version": "2.0.0",
-      "started_utc": "2026-05-27T23:03:08.534427+00:00",
+      "started_utc": "2026-05-28T04:53:45.137403+00:00",
       "status": "candidate_match",
       "final_url": "https://opengeo.ncep.noaa.gov/geoserver/ows?service=WFS&version=2.0.0&request=GetCapabilities",
       "content_type": "application/xml",
@@ -876,7 +876,7 @@
       "base_url": "https://opengeo.ncep.noaa.gov/geoserver/rfc/rfc_gridded_ffg/ows",
       "service": "WCS",
       "version": "2.0.1",
-      "started_utc": "2026-05-27T23:03:08.796052+00:00",
+      "started_utc": "2026-05-28T04:53:45.290255+00:00",
       "status": "failed",
       "error": "404 Client Error: Not Found for url: https://opengeo.ncep.noaa.gov/geoserver/rfc/rfc_gridded_ffg/ows?service=WCS&version=2.0.1&request=GetCapabilities"
     },
@@ -884,7 +884,7 @@
       "base_url": "https://opengeo.ncep.noaa.gov/geoserver/rfc/rfc_gridded_ffg/ows",
       "service": "WCS",
       "version": "1.0.0",
-      "started_utc": "2026-05-27T23:03:08.897715+00:00",
+      "started_utc": "2026-05-28T04:53:45.437635+00:00",
       "status": "failed",
       "error": "404 Client Error: Not Found for url: https://opengeo.ncep.noaa.gov/geoserver/rfc/rfc_gridded_ffg/ows?service=WCS&version=1.0.0&request=GetCapabilities"
     },
@@ -892,7 +892,7 @@
       "base_url": "https://opengeo.ncep.noaa.gov/geoserver/rfc/rfc_gridded_ffg/ows",
       "service": "WMS",
       "version": "1.3.0",
-      "started_utc": "2026-05-27T23:03:08.960641+00:00",
+      "started_utc": "2026-05-28T04:53:45.550586+00:00",
       "status": "failed",
       "error": "404 Client Error: Not Found for url: https://opengeo.ncep.noaa.gov/geoserver/rfc/rfc_gridded_ffg/ows?service=WMS&version=1.3.0&request=GetCapabilities"
     },
@@ -900,7 +900,7 @@
       "base_url": "https://opengeo.ncep.noaa.gov/geoserver/rfc/rfc_gridded_ffg/ows",
       "service": "WMS",
       "version": "1.1.1",
-      "started_utc": "2026-05-27T23:03:09.026775+00:00",
+      "started_utc": "2026-05-28T04:53:45.663670+00:00",
       "status": "failed",
       "error": "404 Client Error: Not Found for url: https://opengeo.ncep.noaa.gov/geoserver/rfc/rfc_gridded_ffg/ows?service=WMS&version=1.1.1&request=GetCapabilities"
     },
@@ -908,7 +908,7 @@
       "base_url": "https://opengeo.ncep.noaa.gov/geoserver/rfc/rfc_gridded_ffg/ows",
       "service": "WFS",
       "version": "2.0.0",
-      "started_utc": "2026-05-27T23:03:09.097747+00:00",
+      "started_utc": "2026-05-28T04:53:45.788077+00:00",
       "status": "failed",
       "error": "404 Client Error: Not Found for url: https://opengeo.ncep.noaa.gov/geoserver/rfc/rfc_gridded_ffg/ows?service=WFS&version=2.0.0&request=GetCapabilities"
     },
@@ -916,7 +916,7 @@
       "base_url": "https://opengeo.ncep.noaa.gov/geoserver/rfc_gridded_ffg/rfc_gridded_ffg/ows",
       "service": "WCS",
       "version": "2.0.1",
-      "started_utc": "2026-05-27T23:03:09.196330+00:00",
+      "started_utc": "2026-05-28T04:53:45.900300+00:00",
       "status": "failed",
       "error": "404 Client Error: Not Found for url: https://opengeo.ncep.noaa.gov/geoserver/rfc_gridded_ffg/rfc_gridded_ffg/ows?service=WCS&version=2.0.1&request=GetCapabilities"
     },
@@ -924,7 +924,7 @@
       "base_url": "https://opengeo.ncep.noaa.gov/geoserver/rfc_gridded_ffg/rfc_gridded_ffg/ows",
       "service": "WCS",
       "version": "1.0.0",
-      "started_utc": "2026-05-27T23:03:09.283330+00:00",
+      "started_utc": "2026-05-28T04:53:46.025950+00:00",
       "status": "failed",
       "error": "404 Client Error: Not Found for url: https://opengeo.ncep.noaa.gov/geoserver/rfc_gridded_ffg/rfc_gridded_ffg/ows?service=WCS&version=1.0.0&request=GetCapabilities"
     },
@@ -932,7 +932,7 @@
       "base_url": "https://opengeo.ncep.noaa.gov/geoserver/rfc_gridded_ffg/rfc_gridded_ffg/ows",
       "service": "WMS",
       "version": "1.3.0",
-      "started_utc": "2026-05-27T23:03:09.355289+00:00",
+      "started_utc": "2026-05-28T04:53:46.156865+00:00",
       "status": "failed",
       "error": "404 Client Error: Not Found for url: https://opengeo.ncep.noaa.gov/geoserver/rfc_gridded_ffg/rfc_gridded_ffg/ows?service=WMS&version=1.3.0&request=GetCapabilities"
     },
@@ -940,7 +940,7 @@
       "base_url": "https://opengeo.ncep.noaa.gov/geoserver/rfc_gridded_ffg/rfc_gridded_ffg/ows",
       "service": "WMS",
       "version": "1.1.1",
-      "started_utc": "2026-05-27T23:03:09.448332+00:00",
+      "started_utc": "2026-05-28T04:53:46.271190+00:00",
       "status": "failed",
       "error": "404 Client Error: Not Found for url: https://opengeo.ncep.noaa.gov/geoserver/rfc_gridded_ffg/rfc_gridded_ffg/ows?service=WMS&version=1.1.1&request=GetCapabilities"
     },
@@ -948,7 +948,7 @@
       "base_url": "https://opengeo.ncep.noaa.gov/geoserver/rfc_gridded_ffg/rfc_gridded_ffg/ows",
       "service": "WFS",
       "version": "2.0.0",
-      "started_utc": "2026-05-27T23:03:09.537721+00:00",
+      "started_utc": "2026-05-28T04:53:46.393371+00:00",
       "status": "failed",
       "error": "404 Client Error: Not Found for url: https://opengeo.ncep.noaa.gov/geoserver/rfc_gridded_ffg/rfc_gridded_ffg/ows?service=WFS&version=2.0.0&request=GetCapabilities"
     },
@@ -956,7 +956,7 @@
       "base_url": "https://opengeo.ncep.noaa.gov/geoserver/water/rfc_gridded_ffg/ows",
       "service": "WCS",
       "version": "2.0.1",
-      "started_utc": "2026-05-27T23:03:09.598621+00:00",
+      "started_utc": "2026-05-28T04:53:46.508733+00:00",
       "status": "failed",
       "error": "404 Client Error: Not Found for url: https://opengeo.ncep.noaa.gov/geoserver/water/rfc_gridded_ffg/ows?service=WCS&version=2.0.1&request=GetCapabilities"
     },
@@ -964,7 +964,7 @@
       "base_url": "https://opengeo.ncep.noaa.gov/geoserver/water/rfc_gridded_ffg/ows",
       "service": "WCS",
       "version": "1.0.0",
-      "started_utc": "2026-05-27T23:03:09.682670+00:00",
+      "started_utc": "2026-05-28T04:53:46.621179+00:00",
       "status": "failed",
       "error": "404 Client Error: Not Found for url: https://opengeo.ncep.noaa.gov/geoserver/water/rfc_gridded_ffg/ows?service=WCS&version=1.0.0&request=GetCapabilities"
     },
@@ -972,7 +972,7 @@
       "base_url": "https://opengeo.ncep.noaa.gov/geoserver/water/rfc_gridded_ffg/ows",
       "service": "WMS",
       "version": "1.3.0",
-      "started_utc": "2026-05-27T23:03:09.759470+00:00",
+      "started_utc": "2026-05-28T04:53:46.745365+00:00",
       "status": "failed",
       "error": "404 Client Error: Not Found for url: https://opengeo.ncep.noaa.gov/geoserver/water/rfc_gridded_ffg/ows?service=WMS&version=1.3.0&request=GetCapabilities"
     },
@@ -980,7 +980,7 @@
       "base_url": "https://opengeo.ncep.noaa.gov/geoserver/water/rfc_gridded_ffg/ows",
       "service": "WMS",
       "version": "1.1.1",
-      "started_utc": "2026-05-27T23:03:09.822011+00:00",
+      "started_utc": "2026-05-28T04:53:46.857064+00:00",
       "status": "failed",
       "error": "404 Client Error: Not Found for url: https://opengeo.ncep.noaa.gov/geoserver/water/rfc_gridded_ffg/ows?service=WMS&version=1.1.1&request=GetCapabilities"
     },
@@ -988,7 +988,7 @@
       "base_url": "https://opengeo.ncep.noaa.gov/geoserver/water/rfc_gridded_ffg/ows",
       "service": "WFS",
       "version": "2.0.0",
-      "started_utc": "2026-05-27T23:03:09.887367+00:00",
+      "started_utc": "2026-05-28T04:53:46.971788+00:00",
       "status": "failed",
       "error": "404 Client Error: Not Found for url: https://opengeo.ncep.noaa.gov/geoserver/water/rfc_gridded_ffg/ows?service=WFS&version=2.0.0&request=GetCapabilities"
     },
@@ -996,7 +996,7 @@
       "base_url": "https://opengeo.ncep.noaa.gov/geoserver/hydro/rfc_gridded_ffg/ows",
       "service": "WCS",
       "version": "2.0.1",
-      "started_utc": "2026-05-27T23:03:09.954325+00:00",
+      "started_utc": "2026-05-28T04:53:47.121378+00:00",
       "status": "failed",
       "error": "404 Client Error: Not Found for url: https://opengeo.ncep.noaa.gov/geoserver/hydro/rfc_gridded_ffg/ows?service=WCS&version=2.0.1&request=GetCapabilities"
     },
@@ -1004,7 +1004,7 @@
       "base_url": "https://opengeo.ncep.noaa.gov/geoserver/hydro/rfc_gridded_ffg/ows",
       "service": "WCS",
       "version": "1.0.0",
-      "started_utc": "2026-05-27T23:03:10.025953+00:00",
+      "started_utc": "2026-05-28T04:53:47.240140+00:00",
       "status": "failed",
       "error": "404 Client Error: Not Found for url: https://opengeo.ncep.noaa.gov/geoserver/hydro/rfc_gridded_ffg/ows?service=WCS&version=1.0.0&request=GetCapabilities"
     },
@@ -1012,7 +1012,7 @@
       "base_url": "https://opengeo.ncep.noaa.gov/geoserver/hydro/rfc_gridded_ffg/ows",
       "service": "WMS",
       "version": "1.3.0",
-      "started_utc": "2026-05-27T23:03:10.090316+00:00",
+      "started_utc": "2026-05-28T04:53:47.424688+00:00",
       "status": "failed",
       "error": "404 Client Error: Not Found for url: https://opengeo.ncep.noaa.gov/geoserver/hydro/rfc_gridded_ffg/ows?service=WMS&version=1.3.0&request=GetCapabilities"
     },
@@ -1020,7 +1020,7 @@
       "base_url": "https://opengeo.ncep.noaa.gov/geoserver/hydro/rfc_gridded_ffg/ows",
       "service": "WMS",
       "version": "1.1.1",
-      "started_utc": "2026-05-27T23:03:10.185725+00:00",
+      "started_utc": "2026-05-28T04:53:47.569138+00:00",
       "status": "failed",
       "error": "404 Client Error: Not Found for url: https://opengeo.ncep.noaa.gov/geoserver/hydro/rfc_gridded_ffg/ows?service=WMS&version=1.1.1&request=GetCapabilities"
     },
@@ -1028,7 +1028,7 @@
       "base_url": "https://opengeo.ncep.noaa.gov/geoserver/hydro/rfc_gridded_ffg/ows",
       "service": "WFS",
       "version": "2.0.0",
-      "started_utc": "2026-05-27T23:03:10.244710+00:00",
+      "started_utc": "2026-05-28T04:53:47.682603+00:00",
       "status": "failed",
       "error": "404 Client Error: Not Found for url: https://opengeo.ncep.noaa.gov/geoserver/hydro/rfc_gridded_ffg/ows?service=WFS&version=2.0.0&request=GetCapabilities"
     },
@@ -1036,7 +1036,7 @@
       "base_url": "https://opengeo.ncep.noaa.gov/geoserver/nws/rfc_gridded_ffg/ows",
       "service": "WCS",
       "version": "2.0.1",
-      "started_utc": "2026-05-27T23:03:10.340673+00:00",
+      "started_utc": "2026-05-28T04:53:47.802448+00:00",
       "status": "failed",
       "error": "404 Client Error: Not Found for url: https://opengeo.ncep.noaa.gov/geoserver/nws/rfc_gridded_ffg/ows?service=WCS&version=2.0.1&request=GetCapabilities"
     },
@@ -1044,7 +1044,7 @@
       "base_url": "https://opengeo.ncep.noaa.gov/geoserver/nws/rfc_gridded_ffg/ows",
       "service": "WCS",
       "version": "1.0.0",
-      "started_utc": "2026-05-27T23:03:10.439747+00:00",
+      "started_utc": "2026-05-28T04:53:47.915610+00:00",
       "status": "failed",
       "error": "404 Client Error: Not Found for url: https://opengeo.ncep.noaa.gov/geoserver/nws/rfc_gridded_ffg/ows?service=WCS&version=1.0.0&request=GetCapabilities"
     },
@@ -1052,7 +1052,7 @@
       "base_url": "https://opengeo.ncep.noaa.gov/geoserver/nws/rfc_gridded_ffg/ows",
       "service": "WMS",
       "version": "1.3.0",
-      "started_utc": "2026-05-27T23:03:10.519558+00:00",
+      "started_utc": "2026-05-28T04:53:48.037521+00:00",
       "status": "failed",
       "error": "404 Client Error: Not Found for url: https://opengeo.ncep.noaa.gov/geoserver/nws/rfc_gridded_ffg/ows?service=WMS&version=1.3.0&request=GetCapabilities"
     },
@@ -1060,7 +1060,7 @@
       "base_url": "https://opengeo.ncep.noaa.gov/geoserver/nws/rfc_gridded_ffg/ows",
       "service": "WMS",
       "version": "1.1.1",
-      "started_utc": "2026-05-27T23:03:10.576933+00:00",
+      "started_utc": "2026-05-28T04:53:48.148402+00:00",
       "status": "failed",
       "error": "404 Client Error: Not Found for url: https://opengeo.ncep.noaa.gov/geoserver/nws/rfc_gridded_ffg/ows?service=WMS&version=1.1.1&request=GetCapabilities"
     },
@@ -1068,7 +1068,7 @@
       "base_url": "https://opengeo.ncep.noaa.gov/geoserver/nws/rfc_gridded_ffg/ows",
       "service": "WFS",
       "version": "2.0.0",
-      "started_utc": "2026-05-27T23:03:10.638672+00:00",
+      "started_utc": "2026-05-28T04:53:48.265667+00:00",
       "status": "failed",
       "error": "404 Client Error: Not Found for url: https://opengeo.ncep.noaa.gov/geoserver/nws/rfc_gridded_ffg/ows?service=WFS&version=2.0.0&request=GetCapabilities"
     },
@@ -1076,7 +1076,7 @@
       "base_url": "https://opengeo.ncep.noaa.gov/geoserver/ffg/rfc_gridded_ffg/ows",
       "service": "WCS",
       "version": "2.0.1",
-      "started_utc": "2026-05-27T23:03:10.745149+00:00",
+      "started_utc": "2026-05-28T04:53:48.380599+00:00",
       "status": "failed",
       "error": "404 Client Error: Not Found for url: https://opengeo.ncep.noaa.gov/geoserver/ffg/rfc_gridded_ffg/ows?service=WCS&version=2.0.1&request=GetCapabilities"
     },
@@ -1084,7 +1084,7 @@
       "base_url": "https://opengeo.ncep.noaa.gov/geoserver/ffg/rfc_gridded_ffg/ows",
       "service": "WCS",
       "version": "1.0.0",
-      "started_utc": "2026-05-27T23:03:10.820891+00:00",
+      "started_utc": "2026-05-28T04:53:48.494245+00:00",
       "status": "failed",
       "error": "404 Client Error: Not Found for url: https://opengeo.ncep.noaa.gov/geoserver/ffg/rfc_gridded_ffg/ows?service=WCS&version=1.0.0&request=GetCapabilities"
     },
@@ -1092,7 +1092,7 @@
       "base_url": "https://opengeo.ncep.noaa.gov/geoserver/ffg/rfc_gridded_ffg/ows",
       "service": "WMS",
       "version": "1.3.0",
-      "started_utc": "2026-05-27T23:03:10.883070+00:00",
+      "started_utc": "2026-05-28T04:53:48.622055+00:00",
       "status": "failed",
       "error": "404 Client Error: Not Found for url: https://opengeo.ncep.noaa.gov/geoserver/ffg/rfc_gridded_ffg/ows?service=WMS&version=1.3.0&request=GetCapabilities"
     },
@@ -1100,7 +1100,7 @@
       "base_url": "https://opengeo.ncep.noaa.gov/geoserver/ffg/rfc_gridded_ffg/ows",
       "service": "WMS",
       "version": "1.1.1",
-      "started_utc": "2026-05-27T23:03:10.968123+00:00",
+      "started_utc": "2026-05-28T04:53:48.734978+00:00",
       "status": "failed",
       "error": "404 Client Error: Not Found for url: https://opengeo.ncep.noaa.gov/geoserver/ffg/rfc_gridded_ffg/ows?service=WMS&version=1.1.1&request=GetCapabilities"
     },
@@ -1108,7 +1108,7 @@
       "base_url": "https://opengeo.ncep.noaa.gov/geoserver/ffg/rfc_gridded_ffg/ows",
       "service": "WFS",
       "version": "2.0.0",
-      "started_utc": "2026-05-27T23:03:11.072698+00:00",
+      "started_utc": "2026-05-28T04:53:48.848745+00:00",
       "status": "failed",
       "error": "404 Client Error: Not Found for url: https://opengeo.ncep.noaa.gov/geoserver/ffg/rfc_gridded_ffg/ows?service=WFS&version=2.0.0&request=GetCapabilities"
     },
@@ -1116,7 +1116,7 @@
       "base_url": "https://opengeo.ncep.noaa.gov/geoserver/NWS_Forecasts_Guidance_Warnings/rfc_gridded_ffg/ows",
       "service": "WCS",
       "version": "2.0.1",
-      "started_utc": "2026-05-27T23:03:11.129444+00:00",
+      "started_utc": "2026-05-28T04:53:48.968134+00:00",
       "status": "failed",
       "error": "404 Client Error: Not Found for url: https://opengeo.ncep.noaa.gov/geoserver/NWS_Forecasts_Guidance_Warnings/rfc_gridded_ffg/ows?service=WCS&version=2.0.1&request=GetCapabilities"
     },
@@ -1124,7 +1124,7 @@
       "base_url": "https://opengeo.ncep.noaa.gov/geoserver/NWS_Forecasts_Guidance_Warnings/rfc_gridded_ffg/ows",
       "service": "WCS",
       "version": "1.0.0",
-      "started_utc": "2026-05-27T23:03:11.187784+00:00",
+      "started_utc": "2026-05-28T04:53:49.090942+00:00",
       "status": "failed",
       "error": "404 Client Error: Not Found for url: https://opengeo.ncep.noaa.gov/geoserver/NWS_Forecasts_Guidance_Warnings/rfc_gridded_ffg/ows?service=WCS&version=1.0.0&request=GetCapabilities"
     },
@@ -1132,7 +1132,7 @@
       "base_url": "https://opengeo.ncep.noaa.gov/geoserver/NWS_Forecasts_Guidance_Warnings/rfc_gridded_ffg/ows",
       "service": "WMS",
       "version": "1.3.0",
-      "started_utc": "2026-05-27T23:03:11.281801+00:00",
+      "started_utc": "2026-05-28T04:53:49.203621+00:00",
       "status": "failed",
       "error": "404 Client Error: Not Found for url: https://opengeo.ncep.noaa.gov/geoserver/NWS_Forecasts_Guidance_Warnings/rfc_gridded_ffg/ows?service=WMS&version=1.3.0&request=GetCapabilities"
     },
@@ -1140,7 +1140,7 @@
       "base_url": "https://opengeo.ncep.noaa.gov/geoserver/NWS_Forecasts_Guidance_Warnings/rfc_gridded_ffg/ows",
       "service": "WMS",
       "version": "1.1.1",
-      "started_utc": "2026-05-27T23:03:11.373372+00:00",
+      "started_utc": "2026-05-28T04:53:49.316564+00:00",
       "status": "failed",
       "error": "404 Client Error: Not Found for url: https://opengeo.ncep.noaa.gov/geoserver/NWS_Forecasts_Guidance_Warnings/rfc_gridded_ffg/ows?service=WMS&version=1.1.1&request=GetCapabilities"
     },
@@ -1148,7 +1148,7 @@
       "base_url": "https://opengeo.ncep.noaa.gov/geoserver/NWS_Forecasts_Guidance_Warnings/rfc_gridded_ffg/ows",
       "service": "WFS",
       "version": "2.0.0",
-      "started_utc": "2026-05-27T23:03:11.433720+00:00",
+      "started_utc": "2026-05-28T04:53:49.429483+00:00",
       "status": "failed",
       "error": "404 Client Error: Not Found for url: https://opengeo.ncep.noaa.gov/geoserver/NWS_Forecasts_Guidance_Warnings/rfc_gridded_ffg/ows?service=WFS&version=2.0.0&request=GetCapabilities"
     },
@@ -1156,7 +1156,7 @@
       "base_url": "https://mapservices.weather.noaa.gov/geoserver/ows",
       "service": "WCS",
       "version": "2.0.1",
-      "started_utc": "2026-05-27T23:03:11.539368+00:00",
+      "started_utc": "2026-05-28T04:53:49.543446+00:00",
       "status": "fetched",
       "final_url": "https://mapservices.weather.noaa.gov/geoserver/ows?service=WCS&version=2.0.1&request=GetCapabilities",
       "content_type": "application/xml",
@@ -1172,7 +1172,7 @@
       "base_url": "https://mapservices.weather.noaa.gov/geoserver/ows",
       "service": "WCS",
       "version": "1.0.0",
-      "started_utc": "2026-05-27T23:03:11.636301+00:00",
+      "started_utc": "2026-05-28T04:53:49.929725+00:00",
       "status": "fetched",
       "final_url": "https://mapservices.weather.noaa.gov/geoserver/ows?service=WCS&version=1.0.0&request=GetCapabilities",
       "content_type": "application/xml",
@@ -1188,7 +1188,7 @@
       "base_url": "https://mapservices.weather.noaa.gov/geoserver/ows",
       "service": "WMS",
       "version": "1.3.0",
-      "started_utc": "2026-05-27T23:03:11.716372+00:00",
+      "started_utc": "2026-05-28T04:53:50.236101+00:00",
       "status": "fetched",
       "final_url": "https://mapservices.weather.noaa.gov/geoserver/ows?service=WMS&version=1.3.0&request=GetCapabilities",
       "content_type": "application/xml",
@@ -1204,7 +1204,7 @@
       "base_url": "https://mapservices.weather.noaa.gov/geoserver/ows",
       "service": "WMS",
       "version": "1.1.1",
-      "started_utc": "2026-05-27T23:03:11.772108+00:00",
+      "started_utc": "2026-05-28T04:53:50.551143+00:00",
       "status": "fetched",
       "final_url": "https://mapservices.weather.noaa.gov/geoserver/ows?service=WMS&version=1.1.1&request=GetCapabilities",
       "content_type": "application/xml",
@@ -1220,7 +1220,7 @@
       "base_url": "https://mapservices.weather.noaa.gov/geoserver/ows",
       "service": "WFS",
       "version": "2.0.0",
-      "started_utc": "2026-05-27T23:03:11.846900+00:00",
+      "started_utc": "2026-05-28T04:53:50.857505+00:00",
       "status": "fetched",
       "final_url": "https://mapservices.weather.noaa.gov/geoserver/ows?service=WFS&version=2.0.0&request=GetCapabilities",
       "content_type": "application/xml",
@@ -1236,7 +1236,7 @@
       "base_url": "https://mapservices.weather.noaa.gov/geoserver/rfc/rfc_gridded_ffg/ows",
       "service": "WCS",
       "version": "2.0.1",
-      "started_utc": "2026-05-27T23:03:11.903862+00:00",
+      "started_utc": "2026-05-28T04:53:51.170448+00:00",
       "status": "failed",
       "error": "404 Client Error: Not Found for url: https://mapservices.weather.noaa.gov/geoserver/rfc/rfc_gridded_ffg/ows?service=WCS&version=2.0.1&request=GetCapabilities"
     },
@@ -1244,7 +1244,7 @@
       "base_url": "https://mapservices.weather.noaa.gov/geoserver/rfc/rfc_gridded_ffg/ows",
       "service": "WCS",
       "version": "1.0.0",
-      "started_utc": "2026-05-27T23:03:11.958580+00:00",
+      "started_utc": "2026-05-28T04:53:51.476941+00:00",
       "status": "failed",
       "error": "404 Client Error: Not Found for url: https://mapservices.weather.noaa.gov/geoserver/rfc/rfc_gridded_ffg/ows?service=WCS&version=1.0.0&request=GetCapabilities"
     },
@@ -1252,7 +1252,7 @@
       "base_url": "https://mapservices.weather.noaa.gov/geoserver/rfc/rfc_gridded_ffg/ows",
       "service": "WMS",
       "version": "1.3.0",
-      "started_utc": "2026-05-27T23:03:12.034950+00:00",
+      "started_utc": "2026-05-28T04:53:51.802174+00:00",
       "status": "failed",
       "error": "404 Client Error: Not Found for url: https://mapservices.weather.noaa.gov/geoserver/rfc/rfc_gridded_ffg/ows?service=WMS&version=1.3.0&request=GetCapabilities"
     },
@@ -1260,7 +1260,7 @@
       "base_url": "https://mapservices.weather.noaa.gov/geoserver/rfc/rfc_gridded_ffg/ows",
       "service": "WMS",
       "version": "1.1.1",
-      "started_utc": "2026-05-27T23:03:12.088036+00:00",
+      "started_utc": "2026-05-28T04:53:52.113692+00:00",
       "status": "failed",
       "error": "404 Client Error: Not Found for url: https://mapservices.weather.noaa.gov/geoserver/rfc/rfc_gridded_ffg/ows?service=WMS&version=1.1.1&request=GetCapabilities"
     },
@@ -1268,7 +1268,7 @@
       "base_url": "https://mapservices.weather.noaa.gov/geoserver/rfc/rfc_gridded_ffg/ows",
       "service": "WFS",
       "version": "2.0.0",
-      "started_utc": "2026-05-27T23:03:12.134361+00:00",
+      "started_utc": "2026-05-28T04:53:52.441239+00:00",
       "status": "failed",
       "error": "404 Client Error: Not Found for url: https://mapservices.weather.noaa.gov/geoserver/rfc/rfc_gridded_ffg/ows?service=WFS&version=2.0.0&request=GetCapabilities"
     }
