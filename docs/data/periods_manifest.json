@@ -1,5 +1,5 @@
 {
-  "generated_utc": "2026-05-28T21:02:20.895895+00:00",
+  "generated_utc": "2026-05-28T23:00:11.924933+00:00",
   "href_catalog_url": "https://mefferso.github.io/href-qpf-viewer/data/catalog.json",
   "href_run": "20260528 12Z",
   "duration_hr": 6,
@@ -18,8 +18,8 @@
       "href_value_grid_url": "https://mefferso.github.io/href-qpf-viewer/data/value_grids/2026052812_max_f06_a06.json.gz",
       "risk_url": "data/flash_flood_risk_p01.geojson",
       "raw_url": "data/flash_flood_risk_raw_cells_p01.geojson",
-      "risk_feature_count": 23,
-      "raw_cell_count": 2932
+      "risk_feature_count": 28,
+      "raw_cell_count": 3366
     },
     {
       "period_index": 2,
@@ -46,8 +46,8 @@
       "href_value_grid_url": "https://mefferso.github.io/href-qpf-viewer/data/value_grids/2026052812_max_f18_a06.json.gz",
       "risk_url": "data/flash_flood_risk_p03.geojson",
       "raw_url": "data/flash_flood_risk_raw_cells_p03.geojson",
-      "risk_feature_count": 13,
-      "raw_cell_count": 2126
+      "risk_feature_count": 14,
+      "raw_cell_count": 2347
     },
     {
       "period_index": 4,
