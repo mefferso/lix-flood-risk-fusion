@@ -62,7 +62,7 @@ jobs:
             --href-catalog-url https://mefferso.github.io/href-qpf-viewer/data/catalog.json \
             --ffg data/ffg/ffg.geojson \
             --flood-prone data/flood_prone/flood_prone.geojson \
-            --duration 1 \
+            --duration 6 \
             --period-count 4 \
             --out-dir docs/data \
             --manifest-out docs/data/manifest.json \
