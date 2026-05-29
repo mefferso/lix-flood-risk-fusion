@@ -1,17 +1,17 @@
 {
   "type": "FeatureCollection",
   "metadata": {
-    "generated_utc": "2026-05-29T11:55:39.297742+00:00",
+    "generated_utc": "2026-05-29T12:03:57.246515+00:00",
     "source_service": "https://mapservices.weather.noaa.gov/raster/rest/services/precip/rfc_gridded_ffg/MapServer",
     "method": "ArcGIS MapServer identify sampling of production RFC gridded FFG raster",
     "duration_hr": 6,
     "mosaic_layer_id": 8,
     "image_layer_id": 11,
-    "feature_count": 392,
+    "feature_count": 393,
     "official_ffg": true,
     "value_note": "FFG values are estimated from service legend bins, not continuous raw raster pixel values.",
     "bin_conversion_applied": true,
-    "bin_conversion_changed_count": 392
+    "bin_conversion_changed_count": 393
   },
   "features": [
     {
@@ -18824,6 +18824,55 @@
             ],
             [
               -91.82908907972762,
+              29.27661945655918
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Official RFC gridded FFG sampled cell",
+        "source": "official_rfc_gridded_ffg_arcgis_identify",
+        "official_ffg": true,
+        "source_service": "https://mapservices.weather.noaa.gov/raster/rest/services/precip/rfc_gridded_ffg/MapServer",
+        "source_mosaic_layer_id": 8,
+        "source_image_layer_id": 11,
+        "source_value_field": "Classify.Class value",
+        "duration_hr": 6,
+        "ffg_6hr": 5.0,
+        "sample_lon": -91.63175,
+        "sample_lat": 29.3424,
+        "sample_step_deg": 0.13156,
+        "raw_ffg_class_code": 1,
+        "ffg_bin_label": ">= 5 inches",
+        "ffg_bin_low_in": 5.0,
+        "ffg_bin_high_in": null,
+        "ffg_estimate_method": "legend_bin_estimate"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -91.69753037683157,
+              29.27661945655918
+            ],
+            [
+              -91.56597167393551,
+              29.27661945655918
+            ],
+            [
+              -91.56597167393551,
+              29.40817815945524
+            ],
+            [
+              -91.69753037683157,
+              29.40817815945524
+            ],
+            [
+              -91.69753037683157,
               29.27661945655918
             ]
           ]
