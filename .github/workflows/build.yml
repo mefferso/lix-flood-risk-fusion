@@ -3,7 +3,6 @@ name: Build flood risk fusion map
 on:
   workflow_dispatch:
   schedule:
-    # Runs every 3 hours. Adjust once the HREF/FFG timing is dialed in.
     - cron: "35 */3 * * *"
   push:
     branches: [main]
@@ -30,6 +29,11 @@ jobs:
         with:
           fetch-depth: 0
 
+      - name: Install system dependencies
+        run: |
+          sudo apt-get update
+          sudo apt-get install -y libeccodes-dev
+
       - name: Setup Python
         uses: actions/setup-python@v5
         with:
@@ -44,65 +48,13 @@ jobs:
       - name: Create sample inputs if missing
         run: python scripts/make_sample_inputs.py --only-if-missing
 
-      - name: Probe official OGC FFG sources
-        continue-on-error: true
+      - name: Build native LMRFC FFG layer
         run: |
-          mkdir -p docs/data
-          python scripts/probe_ffg_ogc_sources.py \
-            --out docs/data/ffg_ogc_probe.json
-
-      - name: Try production RFC gridded FFG MapServer
-        id: fetch_ffg_prod
-        continue-on-error: true
-        run: |
-          mkdir -p docs/data
-          python scripts/fetch_ffg_prod_arcgis.py \
-            --out data/ffg/ffg.geojson \
-            --debug-json docs/data/ffg_prod_arcgis_debug.json \
-            --bbox="-92.75,28.75,-88.25,31.25" \
-            --duration 6 \
-            --step-deg 0.10 \
-            --max-points 650
-
-      - name: Convert production FFG class bins
-        if: steps.fetch_ffg_prod.outcome == 'success'
-        run: |
-          python scripts/convert_ffg_bins.py \
-            --path data/ffg/ffg.geojson \
-            --debug-json docs/data/ffg_bin_conversion_debug.json
-
-      - name: Try fetching real gridded FFG from ArcGIS
-        id: fetch_ffg_arcgis
-        if: steps.fetch_ffg_prod.outcome == 'failure'
-        continue-on-error: true
-        run: |
-          mkdir -p docs/data
-          python scripts/fetch_ffg_arcgis.py \
-            --out data/ffg/ffg.geojson \
-            --debug-json docs/data/ffg_arcgis_debug.json \
-            --bbox="-92.75,28.75,-88.25,31.25" \
-            --duration 6
-
-      - name: Try fetching text FFG fallback
-        id: fetch_ffg_text
-        if: steps.fetch_ffg_prod.outcome == 'failure' && steps.fetch_ffg_arcgis.outcome == 'failure'
-        continue-on-error: true
-        run: |
-          mkdir -p docs/data
-          python scripts/fetch_ffg_orn.py \
-            --out data/ffg/ffg.geojson \
-            --raw-out docs/data/latest_ffg_product.txt \
-            --debug-json docs/data/ffg_parse_debug.json \
-            --states LA,MS
-
-      - name: Use local empirical threshold fallback
-        if: steps.fetch_ffg_prod.outcome == 'failure' && steps.fetch_ffg_arcgis.outcome == 'failure' && steps.fetch_ffg_text.outcome == 'failure'
-        run: |
-          python scripts/write_ffg_fallback_debug.py --reason "live FFG unavailable; using local empirical threshold fallback"
-          python scripts/fetch_local_threshold_fallback.py \
-            --out data/ffg/ffg.geojson \
-            --flood-prone-out data/flood_prone/flood_prone.geojson \
-            --debug-json docs/data/local_threshold_fallback_debug.json
+          mkdir -p docs/data data/ffg
+          python scripts/build_native_lmrfc_ffg.py \
+            --grid-json docs/data/ffg_grid.json \
+            --overlay-png docs/data/ffg_overlay.png \
+            --geojson data/ffg/ffg.geojson
 
       - name: Fuse four HREF QPF periods + FFG + flood-prone areas
         run: |
@@ -110,7 +62,7 @@ jobs:
             --href-catalog-url https://mefferso.github.io/href-qpf-viewer/data/catalog.json \
             --ffg data/ffg/ffg.geojson \
             --flood-prone data/flood_prone/flood_prone.geojson \
-            --duration 6 \
+            --duration 1 \
             --period-count 4 \
             --out-dir docs/data \
             --manifest-out docs/data/manifest.json \
@@ -127,7 +79,7 @@ jobs:
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add docs/data/*.geojson docs/data/*.json docs/data/*.txt data/ffg/ffg.geojson data/flood_prone/flood_prone.geojson || true
+          git add docs/data/*.geojson docs/data/*.json docs/data/*.png data/ffg/ffg.geojson data/flood_prone/flood_prone.geojson || true
           if git diff --cached --quiet; then
             echo "No generated data changes to commit."
           else
