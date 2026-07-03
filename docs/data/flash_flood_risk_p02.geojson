@@ -1,7 +1,7 @@
 {
   "type": "FeatureCollection",
   "metadata": {
-    "generated_utc": "2026-07-03T14:55:45.242870+00:00",
+    "generated_utc": "2026-07-03T16:59:57.640752+00:00",
     "method": "HREF QPF / FFG ratio intersected with local flood-prone polygons",
     "duration_hr": 6,
     "period_index": 2,
@@ -22,9 +22,9 @@
         "east": -83.00002
       },
       "maxPoint": {
-        "lat": 26.0524,
-        "lon": -89.0862,
-        "value": 2.491
+        "lat": 29.7205,
+        "lon": -92.3922,
+        "value": 6.586
       },
       "periodKey": "f12_a06_06_12",
       "periodLabel": "F06-F12 (6-hr Ensemble Max QPF)",
@@ -41,8 +41,8 @@
       "validTimeUTC": "2026-07-03T12:00:00+00:00",
       "stepRange": "6-12",
       "name": "HREF member-computed Ensemble Max QPF",
-      "sourceFile": "4 member APCP slices",
-      "maxValue": 2.49,
+      "sourceFile": "8 member APCP slices",
+      "maxValue": 6.59,
       "pointCount": 55200,
       "native": false
     }
