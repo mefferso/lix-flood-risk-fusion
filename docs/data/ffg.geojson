@@ -3,7 +3,7 @@
   "metadata": {
     "source_url": "https://ftp-wpc.ncep.noaa.gov/workoff/ffg/5kmffg_2026070806.grb2",
     "source_file": "5kmffg_2026070806.grb2",
-    "created_utc": "2026-07-08 09:10:03Z",
+    "created_utc": "2026-07-08 11:25:50Z",
     "method": "Native WPC/LMRFC GRIB2 FFG locally regridded for LA/MS",
     "duration_hr": 1,
     "official_ffg": true,
