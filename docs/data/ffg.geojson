@@ -3,7 +3,7 @@
   "metadata": {
     "source_url": "https://ftp-wpc.ncep.noaa.gov/workoff/ffg/5kmffg_2026072312.grb2",
     "source_file": "5kmffg_2026072312.grb2",
-    "created_utc": "2026-07-23 14:52:10Z",
+    "created_utc": "2026-07-23 17:02:40Z",
     "method": "Native WPC/LMRFC GRIB2 FFG locally regridded for LA/MS",
     "duration_hr": 1,
     "official_ffg": true,
@@ -51345,8 +51345,8 @@
         "source": "native_wpc_lmrfc_grib2",
         "official_ffg": true,
         "duration_hr": 1,
-        "ffg_1hr": 3.7,
-        "ffg_in": 3.7,
+        "ffg_1hr": 3.78,
+        "ffg_in": 3.78,
         "sample_lon": -92.05859,
         "sample_lat": 30.33636
       },
@@ -62825,8 +62825,8 @@
         "source": "native_wpc_lmrfc_grib2",
         "official_ffg": true,
         "duration_hr": 1,
-        "ffg_1hr": 3.39,
-        "ffg_in": 3.39,
+        "ffg_1hr": 3.31,
+        "ffg_in": 3.31,
         "sample_lon": -91.42208,
         "sample_lat": 30.7
       },
@@ -190025,8 +190025,8 @@
         "source": "native_wpc_lmrfc_grib2",
         "official_ffg": true,
         "duration_hr": 1,
-        "ffg_1hr": 3.07,
-        "ffg_in": 3.07,
+        "ffg_1hr": 2.99,
+        "ffg_in": 2.99,
         "sample_lon": -88.69415,
         "sample_lat": 34.79091
       },
@@ -190145,8 +190145,8 @@
         "source": "native_wpc_lmrfc_grib2",
         "official_ffg": true,
         "duration_hr": 1,
-        "ffg_1hr": 2.52,
-        "ffg_in": 2.52,
+        "ffg_1hr": 2.48,
+        "ffg_in": 2.48,
         "sample_lon": -88.42136,
         "sample_lat": 34.79091
       },
