@@ -1,9 +1,9 @@
 {
   "type": "FeatureCollection",
   "metadata": {
-    "source_url": "https://ftp-wpc.ncep.noaa.gov/workoff/ffg/5kmffg_2026082006.grb2",
-    "source_file": "5kmffg_2026082006.grb2",
-    "created_utc": "2026-08-20 10:03:22Z",
+    "source_url": "https://ftp-wpc.ncep.noaa.gov/workoff/ffg/5kmffg_2026082012.grb2",
+    "source_file": "5kmffg_2026082012.grb2",
+    "created_utc": "2026-08-20 13:29:58Z",
     "method": "Native WPC/LMRFC GRIB2 FFG locally regridded for LA/MS",
     "duration_hr": 1,
     "official_ffg": true,
@@ -11,7 +11,7 @@
     "grib_short_name": "ffldg",
     "grib_units": "kg m**-2",
     "grib_data_date": "20260820",
-    "grib_data_time": "600",
+    "grib_data_time": "1200",
     "grib_forecast_time": "0",
     "grib_step_range": "0-1",
     "grib_message_number": 1,
