@@ -1,7 +1,7 @@
 {
   "type": "FeatureCollection",
   "metadata": {
-    "generated_utc": "2026-10-06T06:49:17.090630+00:00",
+    "generated_utc": "2026-10-06T16:14:25.073882+00:00",
     "method": "HREF QPF / FFG ratio intersected with local flood-prone polygons",
     "duration_hr": 6,
     "period_index": 3,
@@ -11,10 +11,10 @@
       "Significant": "qpf/ffg >= 1.50"
     },
     "href_layer": {
-      "id": "2026100512_max_f18_a06",
-      "url": "data/grids/2026100512_max_f18_a06.json.gz",
-      "valueGridUrl": "data/value_grids/2026100512_max_f18_a06.json.gz",
-      "rasterUrl": "data/rasters/2026100512_max_f18_a06.png",
+      "id": "2026100612_max_f18_a06",
+      "url": "data/grids/2026100612_max_f18_a06.json.gz",
+      "valueGridUrl": "data/value_grids/2026100612_max_f18_a06.json.gz",
+      "rasterUrl": "data/rasters/2026100612_max_f18_a06.png",
       "rasterBounds": {
         "south": 24.00002,
         "north": 33.99999,
@@ -22,27 +22,27 @@
         "east": -83.00002
       },
       "maxPoint": {
-        "lat": 28.4542,
-        "lon": -87.358,
-        "value": 9.542
+        "lat": 29.1528,
+        "lon": -84.5278,
+        "value": 16.359
       },
       "periodKey": "f18_a06_12_18",
       "periodLabel": "F12-F18 (6-hr Ensemble Max QPF)",
       "stepStart": 12,
       "stepEnd": 18,
-      "run": "2026100512",
-      "runLabel": "20261005 12Z",
+      "run": "2026100612",
+      "runLabel": "20261006 12Z",
       "product": "max",
       "productLabel": "Ensemble Max",
       "forecastHour": 18,
       "accumHours": 6,
       "units": "inches",
-      "startTimeUTC": "2026-10-06T00:00:00+00:00",
-      "validTimeUTC": "2026-10-06T06:00:00+00:00",
+      "startTimeUTC": "2026-10-07T00:00:00+00:00",
+      "validTimeUTC": "2026-10-07T06:00:00+00:00",
       "stepRange": "12-18",
       "name": "HREF member-computed Ensemble Max QPF",
       "sourceFile": "8 member APCP slices",
-      "maxValue": 9.54,
+      "maxValue": 16.36,
       "pointCount": 55200,
       "native": false
     }
