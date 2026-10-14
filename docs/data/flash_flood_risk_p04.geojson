@@ -1,7 +1,7 @@
 {
   "type": "FeatureCollection",
   "metadata": {
-    "generated_utc": "2026-10-14T12:18:35.263884+00:00",
+    "generated_utc": "2026-10-14T17:33:50.688582+00:00",
     "method": "HREF QPF / FFG ratio intersected with local flood-prone polygons",
     "duration_hr": 6,
     "period_index": 4,
@@ -41,7 +41,7 @@
       "validTimeUTC": "2026-10-15T00:00:00+00:00",
       "stepRange": "18-24",
       "name": "HREF member-computed Ensemble Max QPF",
-      "sourceFile": "4 member APCP slices",
+      "sourceFile": "5 member APCP slices",
       "maxValue": 2.51,
       "pointCount": 55200,
       "native": false
