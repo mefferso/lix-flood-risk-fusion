@@ -1,7 +1,7 @@
 {
   "type": "FeatureCollection",
   "metadata": {
-    "generated_utc": "2026-10-15T05:05:56.019713+00:00",
+    "generated_utc": "2026-10-15T12:00:54.911414+00:00",
     "method": "HREF QPF / FFG ratio intersected with local flood-prone polygons",
     "duration_hr": 6,
     "period_index": 2,
@@ -11,10 +11,10 @@
       "Significant": "qpf/ffg >= 1.50"
     },
     "href_layer": {
-      "id": "2026101412_max_f12_a06",
-      "url": "data/grids/2026101412_max_f12_a06.json.gz",
-      "valueGridUrl": "data/value_grids/2026101412_max_f12_a06.json.gz",
-      "rasterUrl": "data/rasters/2026101412_max_f12_a06.png",
+      "id": "2026101500_max_f12_a06",
+      "url": "data/grids/2026101500_max_f12_a06.json.gz",
+      "valueGridUrl": "data/value_grids/2026101500_max_f12_a06.json.gz",
+      "rasterUrl": "data/rasters/2026101500_max_f12_a06.png",
       "rasterBounds": {
         "south": 24.00002,
         "north": 33.99999,
@@ -22,27 +22,27 @@
         "east": -83.00002
       },
       "maxPoint": {
-        "lat": 24.1529,
-        "lon": -83.526,
-        "value": 4.914
+        "lat": 25.0699,
+        "lon": -84.0519,
+        "value": 3.589
       },
       "periodKey": "f12_a06_06_12",
       "periodLabel": "F06-F12 (6-hr Ensemble Max QPF)",
       "stepStart": 6,
       "stepEnd": 12,
-      "run": "2026101412",
-      "runLabel": "20261014 12Z",
+      "run": "2026101500",
+      "runLabel": "20261015 00Z",
       "product": "max",
       "productLabel": "Ensemble Max",
       "forecastHour": 12,
       "accumHours": 6,
       "units": "inches",
-      "startTimeUTC": "2026-10-14T18:00:00+00:00",
-      "validTimeUTC": "2026-10-15T00:00:00+00:00",
+      "startTimeUTC": "2026-10-15T06:00:00+00:00",
+      "validTimeUTC": "2026-10-15T12:00:00+00:00",
       "stepRange": "6-12",
       "name": "HREF member-computed Ensemble Max QPF",
-      "sourceFile": "8 member APCP slices",
-      "maxValue": 4.91,
+      "sourceFile": "4 member APCP slices",
+      "maxValue": 3.59,
       "pointCount": 55200,
       "native": false
     }
